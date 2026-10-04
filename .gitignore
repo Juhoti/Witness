@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 state/
 *.egg-info/
+CLAUDE.md
+.env.example
+vault/human/
