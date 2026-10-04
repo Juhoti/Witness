@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ZM
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0x44c4F142009036cF477eD2d09932051843137CF1
 paused: False
@@ -17,6 +17,7 @@ address: `0x44c4F142009036cF477eD2d09932051843137CF1`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:e37f0b3906cb
 - 2026-10-04T21:07:40Z sha:e37f0b3906cb
 - 2026-10-04T20:26:03Z sha:e37f0b3906cb
 - 2026-10-04T19:58:00Z sha:e37f0b3906cb

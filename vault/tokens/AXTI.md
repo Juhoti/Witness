@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AXTI
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0x141eEa040c2250eEc0314e336975e81f85f6585e
 paused: False
@@ -17,6 +17,7 @@ address: `0x141eEa040c2250eEc0314e336975e81f85f6585e`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:ff69a4953a83
 - 2026-10-04T21:07:40Z sha:ff69a4953a83
 - 2026-10-04T20:26:03Z sha:ff69a4953a83
 - 2026-10-04T19:58:00Z sha:ff69a4953a83

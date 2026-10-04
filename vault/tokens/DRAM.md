@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: DRAM
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0x33C18e2CC8AE9AE486e785090D86B2CE632FF994
 paused: False
@@ -17,6 +17,7 @@ address: `0x33C18e2CC8AE9AE486e785090D86B2CE632FF994`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:d1a6264c1419
 - 2026-10-04T21:07:40Z sha:d1a6264c1419
 - 2026-10-04T20:26:03Z sha:d1a6264c1419
 - 2026-10-04T19:58:00Z sha:d1a6264c1419

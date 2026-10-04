@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SCHD
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0xd63ABB2C13d7a8421a8017a712802053568e3C1D
 paused: False
@@ -17,6 +17,7 @@ address: `0xd63ABB2C13d7a8421a8017a712802053568e3C1D`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:f84a7bad1d53
 - 2026-10-04T21:07:40Z sha:f84a7bad1d53
 - 2026-10-04T20:26:03Z sha:f84a7bad1d53
 - 2026-10-04T19:58:00Z sha:f84a7bad1d53

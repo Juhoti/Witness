@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PWR
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0x9Ab02Ead789b6903c3c44d0ED32F9c707CDF12FD
 paused: False
@@ -17,6 +17,7 @@ address: `0x9Ab02Ead789b6903c3c44d0ED32F9c707CDF12FD`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:d06c00aa6653
 - 2026-10-04T21:07:40Z sha:d06c00aa6653
 - 2026-10-04T20:26:03Z sha:d06c00aa6653
 - 2026-10-04T19:58:00Z sha:d06c00aa6653

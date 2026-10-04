@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TTD
-updated: 2026-10-04T21:07:40Z
+updated: 2026-10-04T21:46:11Z
 tags: [token]
 address: 0x0b5fb4031cae9163db10B169Ee72685F0EdC8545
 paused: False
@@ -17,6 +17,7 @@ address: `0x0b5fb4031cae9163db10B169Ee72685F0EdC8545`
 Markets:
 
 ## revisions
+- 2026-10-04T21:46:11Z sha:ef4e4f02ba5a
 - 2026-10-04T21:07:40Z sha:ef4e4f02ba5a
 - 2026-10-04T20:26:03Z sha:ef4e4f02ba5a
 - 2026-10-04T19:58:00Z sha:ef4e4f02ba5a
