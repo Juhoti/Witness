@@ -81,8 +81,7 @@ Secrets never reach the tree: keyed URLs and tokens are redacted from every log 
 ledger write. `config/chain.toml` holds every contract address the scanners use, each with the
 evidence it was checked against.
 
-To run it as a service on macOS, `./setup-macos.sh` installs the launchd definition in `launchd/`;
-any other supervisor that restarts `python -m agent.main` works the same.
+Run `python -m agent.main` under any supervisor that restarts it; how and where is the operator's business.
 
 ## Layout
 

@@ -9,3 +9,5 @@ CLAUDE.md
 .env.example
 vault/human/
 PLAN.md
+setup-macos.sh
+launchd/
