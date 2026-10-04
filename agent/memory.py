@@ -121,8 +121,12 @@ def remember_scorecard(card: dict) -> None:
                 ", ".join(f"[[markets/{m['key']}]]" for m in card.get('morpho', {}).get('items', [])
                           if m.get('collateral') == t['symbol']) or "none")
         upsert("tokens", t["symbol"], {"address": t["address"], "paused": t.get("paused")}, body, ["token"])
+    stock_symbols = {t["symbol"] for t in card.get("stock_tokens", {}).get("tokens", []) if t.get("symbol")}
     for m in card.get("morpho", {}).get("items", []):
-        body = (f"collateral: [[tokens/{m.get('collateral')}]] · loan: {m.get('loan')} · lltv: {m.get('lltv')}\n\n"
+        coll = m.get("collateral")
+        # link only to token notes that exist; other collateral (index tokens, stables) stays plain text
+        coll_ref = f"[[tokens/{coll}]]" if coll in stock_symbols else (coll or "none")
+        body = (f"collateral: {coll_ref} · loan: {m.get('loan')} · lltv: {m.get('lltv')}\n\n"
                 f"- supply_usd: {m.get('supply_usd')}\n- borrow_usd: {m.get('borrow_usd')}\n"
                 f"- utilization: {m.get('utilization')}\n- oracle: `{m.get('oracle')}`")
         upsert("markets", m["key"], {"collateral": m.get("collateral"), "utilization": m.get("utilization")}, body, ["market"])

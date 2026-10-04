@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TSEM
-updated: 2026-10-04T09:57:31Z
+updated: 2026-10-04T11:04:23Z
 tags: [token]
 address: 0x89776d4Cd68193597A2fC132cfaC1fDe36CCeA8a
 paused: False
@@ -17,5 +17,7 @@ address: `0x89776d4Cd68193597A2fC132cfaC1fDe36CCeA8a`
 Markets:
 
 ## revisions
+- 2026-10-04T11:04:23Z sha:b49900a1ce46
+- 2026-10-04T10:43:07Z sha:b49900a1ce46
+- 2026-10-04T10:05:09Z sha:b49900a1ce46
 - 2026-10-04T09:57:31Z sha:b49900a1ce46
-

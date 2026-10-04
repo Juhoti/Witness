@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SHY
-updated: 2026-10-04T09:57:31Z
+updated: 2026-10-04T11:04:23Z
 tags: [token]
 address: 0xBE274710Bf3d9567e1B290eF6a5F9f90ca016FD8
 paused: False
@@ -17,5 +17,7 @@ address: `0xBE274710Bf3d9567e1B290eF6a5F9f90ca016FD8`
 Markets:
 
 ## revisions
+- 2026-10-04T11:04:23Z sha:31eccdf9ae9b
+- 2026-10-04T10:43:07Z sha:31eccdf9ae9b
+- 2026-10-04T10:05:09Z sha:31eccdf9ae9b
 - 2026-10-04T09:57:31Z sha:31eccdf9ae9b
-

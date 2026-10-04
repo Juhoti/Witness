@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RKLB
-updated: 2026-10-04T09:57:31Z
+updated: 2026-10-04T11:04:23Z
 tags: [token]
 address: 0x3b14C39E89D60D627b42a1A4CA45b5bb45Fc12e2
 paused: False
@@ -17,5 +17,7 @@ address: `0x3b14C39E89D60D627b42a1A4CA45b5bb45Fc12e2`
 Markets: [[markets/0x14973a168cf6c6b1148309f5d567c255b292863ffe9cca59f4284e1426636f00]]
 
 ## revisions
+- 2026-10-04T11:04:23Z sha:eccc1e7d4680
+- 2026-10-04T10:43:07Z sha:eccc1e7d4680
+- 2026-10-04T10:05:09Z sha:eccc1e7d4680
 - 2026-10-04T09:57:31Z sha:eccc1e7d4680
-
