@@ -1,7 +1,7 @@
 ---
 kind: markets
 name: 0x7e6ebfdc58a893a5cddba0fba0483baf4fac2efece627ad50821dbe27d6f9738
-updated: 2026-10-04T22:21:32Z
+updated: 2026-10-04T22:54:56Z
 tags: [market]
 collateral: GOOGL
 utilization: 0
@@ -10,12 +10,13 @@ utilization: 0
 
 collateral: GOOGL · loan: USDG · lltv: 625000000000000000
 
-- supply_usd: 10.00155635609695
+- supply_usd: 10.001403414903244
 - borrow_usd: 0
 - utilization: 0
 - oracle: `0x26Ca40DD99E6bAf699dAdfdf427c2D709C19D92c`
 
 ## revisions
+- 2026-10-04T22:54:56Z sha:7636604801c5
 - 2026-10-04T22:21:32Z sha:0245126073bc
 - 2026-10-04T21:46:12Z sha:4a8f347ecd1d
 - 2026-10-04T21:07:40Z sha:c6a69cec55fb
