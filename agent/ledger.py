@@ -63,7 +63,7 @@ def _push() -> None:
     if not settings.LEDGER_GIT_REMOTE:
         return
     try:
-        subprocess.run(["git", "-C", str(settings.ROOT), "add", "ledger"], check=True, capture_output=True)
+        subprocess.run(["git", "-C", str(settings.ROOT), "add", "ledger", "vault"], check=True, capture_output=True)
         subprocess.run(["git", "-C", str(settings.ROOT), "commit", "-qm", "ledger: entry"], capture_output=True)
         subprocess.run(["git", "-C", str(settings.ROOT), "push", "-q", settings.LEDGER_GIT_REMOTE, "HEAD"], capture_output=True)
     except subprocess.CalledProcessError:
