@@ -1,7 +1,7 @@
 ---
 kind: markets
 name: 0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [market]
 collateral: NBIS
 utilization: 0
@@ -10,12 +10,27 @@ utilization: 0
 
 collateral: [[tokens/NBIS]] · loan: USDG · lltv: 625000000000000000
 
-- supply_usd: 124.99413726687926
+- supply_usd: 124.9995850919111
 - borrow_usd: 0
 - utilization: 0
 - oracle: `0xAD95eFBCF91Af709A7Bf8cB6Ee5F99F4547187F8`
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:6cc0e7b5c4f1
+- 2026-10-04T19:34:35Z sha:03135f6ac31a
+- 2026-10-04T18:55:47Z sha:8343c196a072
+- 2026-10-04T18:23:30Z sha:079aa85b3eea
+- 2026-10-04T17:45:30Z sha:0b09274b4a9d
+- 2026-10-04T17:13:20Z sha:533ba055bd4e
+- 2026-10-04T16:36:30Z sha:570ade5cb7a9
+- 2026-10-04T15:58:54Z sha:c0b9f0cdc8ef
+- 2026-10-04T15:20:51Z sha:8442766c7080
+- 2026-10-04T14:43:12Z sha:86e5b619572d
+- 2026-10-04T14:04:43Z sha:8ee8cf0f9b54
+- 2026-10-04T13:27:45Z sha:db7c8c6a46d1
+- 2026-10-04T12:51:33Z sha:76b87813d7a5
+- 2026-10-04T12:15:41Z sha:c9ca949978aa
+- 2026-10-04T11:39:56Z sha:e91910458563
 - 2026-10-04T11:34:44Z sha:1daada0d35d5
 - 2026-10-04T11:09:36Z sha:1daada0d35d5
 - 2026-10-04T11:04:23Z sha:1daada0d35d5

@@ -1,7 +1,7 @@
 ---
 kind: markets
 name: 0x7e375e21ade5caf251eef3e820bf8eda0e08f1378fe4aaedad7ead437be3e0e1
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [market]
 collateral: AMZN
 utilization: 0
@@ -16,6 +16,21 @@ collateral: [[tokens/AMZN]] · loan: USDG · lltv: 625000000000000000
 - oracle: `0x2e5Ee5bA2F128d9aF283f365A0D8b816bD9fb2B7`
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:7f2de25f4cd2
+- 2026-10-04T19:34:35Z sha:7f2de25f4cd2
+- 2026-10-04T18:55:48Z sha:7f2de25f4cd2
+- 2026-10-04T18:23:30Z sha:7f2de25f4cd2
+- 2026-10-04T17:45:30Z sha:7f2de25f4cd2
+- 2026-10-04T17:13:20Z sha:7f2de25f4cd2
+- 2026-10-04T16:36:30Z sha:7f2de25f4cd2
+- 2026-10-04T15:58:55Z sha:7f2de25f4cd2
+- 2026-10-04T15:20:51Z sha:7f2de25f4cd2
+- 2026-10-04T14:43:12Z sha:7f2de25f4cd2
+- 2026-10-04T14:04:43Z sha:7f2de25f4cd2
+- 2026-10-04T13:27:45Z sha:7f2de25f4cd2
+- 2026-10-04T12:51:33Z sha:7f2de25f4cd2
+- 2026-10-04T12:15:41Z sha:7f2de25f4cd2
+- 2026-10-04T11:39:56Z sha:7f2de25f4cd2
 - 2026-10-04T11:34:44Z sha:7f2de25f4cd2
 - 2026-10-04T11:09:37Z sha:7f2de25f4cd2
 - 2026-10-04T11:04:23Z sha:7f2de25f4cd2

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GLD
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [token]
 address: 0xC9a981FEE1F9DEc688bb123ccDeCc63D0deBFC4e
 paused: False
@@ -17,6 +17,19 @@ address: `0xC9a981FEE1F9DEc688bb123ccDeCc63D0deBFC4e`
 Markets: [[markets/0x6c12c02536aa27831f713d658b59f74e149cc62b48528cb74455e79fab32f772]]
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:7ae2abf83f1c
+- 2026-10-04T19:34:35Z sha:7ae2abf83f1c
+- 2026-10-04T18:23:30Z sha:7ae2abf83f1c
+- 2026-10-04T17:13:20Z sha:7ae2abf83f1c
+- 2026-10-04T16:36:30Z sha:7ae2abf83f1c
+- 2026-10-04T15:58:54Z sha:7ae2abf83f1c
+- 2026-10-04T15:20:51Z sha:7ae2abf83f1c
+- 2026-10-04T14:43:12Z sha:7ae2abf83f1c
+- 2026-10-04T14:04:43Z sha:7ae2abf83f1c
+- 2026-10-04T13:27:45Z sha:7ae2abf83f1c
+- 2026-10-04T12:51:33Z sha:7ae2abf83f1c
+- 2026-10-04T12:15:41Z sha:7ae2abf83f1c
+- 2026-10-04T11:39:56Z sha:7ae2abf83f1c
 - 2026-10-04T11:34:44Z sha:7ae2abf83f1c
 - 2026-10-04T11:09:36Z sha:7ae2abf83f1c
 - 2026-10-04T11:04:23Z sha:7ae2abf83f1c

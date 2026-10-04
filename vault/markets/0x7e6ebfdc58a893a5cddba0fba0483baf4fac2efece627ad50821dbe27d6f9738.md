@@ -1,7 +1,7 @@
 ---
 kind: markets
 name: 0x7e6ebfdc58a893a5cddba0fba0483baf4fac2efece627ad50821dbe27d6f9738
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [market]
 collateral: GOOGL
 utilization: 0
@@ -10,12 +10,27 @@ utilization: 0
 
 collateral: [[tokens/GOOGL]] · loan: USDG · lltv: 625000000000000000
 
-- supply_usd: 10.0004790566087
+- supply_usd: 10.00091492393277
 - borrow_usd: 0
 - utilization: 0
 - oracle: `0x26Ca40DD99E6bAf699dAdfdf427c2D709C19D92c`
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:4f797fe01980
+- 2026-10-04T19:34:35Z sha:4f78c6a8d447
+- 2026-10-04T18:55:48Z sha:1981d2419af8
+- 2026-10-04T18:23:30Z sha:63728a7715d3
+- 2026-10-04T17:45:30Z sha:1b0e0fdf85a6
+- 2026-10-04T17:13:20Z sha:f8deee555349
+- 2026-10-04T16:36:30Z sha:528542ec97b0
+- 2026-10-04T15:58:55Z sha:4281c2d0478d
+- 2026-10-04T15:20:51Z sha:32976fda82d1
+- 2026-10-04T14:43:12Z sha:6cb401985686
+- 2026-10-04T14:04:43Z sha:59e7f4fac098
+- 2026-10-04T13:27:45Z sha:b8516df52fd6
+- 2026-10-04T12:51:33Z sha:5f15941d6418
+- 2026-10-04T12:15:41Z sha:6155d0dfeb72
+- 2026-10-04T11:39:56Z sha:1548c52d1d84
 - 2026-10-04T11:34:44Z sha:9f00a7de08c9
 - 2026-10-04T11:09:37Z sha:9f00a7de08c9
 - 2026-10-04T11:04:23Z sha:9f00a7de08c9

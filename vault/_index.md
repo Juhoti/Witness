@@ -104,6 +104,7 @@ kind: index
 - [[tokens/LRCX]]
 - [[tokens/LULU]]
 - [[tokens/LUNR]]
+- [[tokens/MCD]]
 - [[tokens/MDB]]
 - [[tokens/META]]
 - [[tokens/MOD]]

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BABA
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [token]
 address: 0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4
 paused: False
@@ -17,6 +17,19 @@ address: `0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4`
 Markets: [[markets/0xdd578ca54b4ef6a7827c6e9fc06905699a577f6e2f00712853d8aab13383bc38]], [[markets/0x87479686089ea04b0ad36aaec410aa157401c05d26729a097b39e7b56ceeba46]]
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:b14bd3c01d4a
+- 2026-10-04T19:34:35Z sha:b14bd3c01d4a
+- 2026-10-04T18:23:30Z sha:b14bd3c01d4a
+- 2026-10-04T17:13:20Z sha:b14bd3c01d4a
+- 2026-10-04T16:36:30Z sha:b14bd3c01d4a
+- 2026-10-04T15:58:54Z sha:b14bd3c01d4a
+- 2026-10-04T15:20:51Z sha:b14bd3c01d4a
+- 2026-10-04T14:43:12Z sha:b14bd3c01d4a
+- 2026-10-04T14:04:43Z sha:b14bd3c01d4a
+- 2026-10-04T13:27:45Z sha:b14bd3c01d4a
+- 2026-10-04T12:51:33Z sha:b14bd3c01d4a
+- 2026-10-04T12:15:41Z sha:b14bd3c01d4a
+- 2026-10-04T11:39:56Z sha:b14bd3c01d4a
 - 2026-10-04T11:34:44Z sha:b14bd3c01d4a
 - 2026-10-04T11:09:36Z sha:b14bd3c01d4a
 - 2026-10-04T11:04:23Z sha:b14bd3c01d4a

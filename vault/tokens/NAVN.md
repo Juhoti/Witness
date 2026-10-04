@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NAVN
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [token]
 address: 0xf7181b63Fdb858558A74ba96BC42732684cd7965
 paused: False
@@ -17,6 +17,19 @@ address: `0xf7181b63Fdb858558A74ba96BC42732684cd7965`
 Markets:
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:2b9c8aa4dacf
+- 2026-10-04T19:34:35Z sha:2b9c8aa4dacf
+- 2026-10-04T18:23:30Z sha:2b9c8aa4dacf
+- 2026-10-04T17:13:20Z sha:2b9c8aa4dacf
+- 2026-10-04T16:36:30Z sha:2b9c8aa4dacf
+- 2026-10-04T15:58:54Z sha:2b9c8aa4dacf
+- 2026-10-04T15:20:51Z sha:2b9c8aa4dacf
+- 2026-10-04T14:43:12Z sha:2b9c8aa4dacf
+- 2026-10-04T14:04:43Z sha:2b9c8aa4dacf
+- 2026-10-04T13:27:45Z sha:2b9c8aa4dacf
+- 2026-10-04T12:51:33Z sha:2b9c8aa4dacf
+- 2026-10-04T12:15:41Z sha:2b9c8aa4dacf
+- 2026-10-04T11:39:56Z sha:2b9c8aa4dacf
 - 2026-10-04T11:34:44Z sha:2b9c8aa4dacf
 - 2026-10-04T11:09:36Z sha:2b9c8aa4dacf
 - 2026-10-04T11:04:23Z sha:2b9c8aa4dacf

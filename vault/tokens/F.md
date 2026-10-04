@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: F
-updated: 2026-10-04T11:34:44Z
+updated: 2026-10-04T19:58:00Z
 tags: [token]
 address: 0x25C288E6D899b9BC30160965aD9644c67e73bE0C
 paused: False
@@ -17,6 +17,19 @@ address: `0x25C288E6D899b9BC30160965aD9644c67e73bE0C`
 Markets: [[markets/0x9d61e320efb766ce5c375032b399f08afe644b095a9cb0b2d6d1f6ab68399a6f]]
 
 ## revisions
+- 2026-10-04T19:58:00Z sha:6dab0e1fa56b
+- 2026-10-04T19:34:35Z sha:6dab0e1fa56b
+- 2026-10-04T18:23:30Z sha:6dab0e1fa56b
+- 2026-10-04T17:13:20Z sha:6dab0e1fa56b
+- 2026-10-04T16:36:30Z sha:6dab0e1fa56b
+- 2026-10-04T15:58:54Z sha:6dab0e1fa56b
+- 2026-10-04T15:20:51Z sha:6dab0e1fa56b
+- 2026-10-04T14:43:12Z sha:6dab0e1fa56b
+- 2026-10-04T14:04:43Z sha:6dab0e1fa56b
+- 2026-10-04T13:27:45Z sha:6dab0e1fa56b
+- 2026-10-04T12:51:33Z sha:6dab0e1fa56b
+- 2026-10-04T12:15:41Z sha:6dab0e1fa56b
+- 2026-10-04T11:39:55Z sha:6dab0e1fa56b
 - 2026-10-04T11:34:44Z sha:6dab0e1fa56b
 - 2026-10-04T11:09:36Z sha:6dab0e1fa56b
 - 2026-10-04T11:04:23Z sha:6dab0e1fa56b
