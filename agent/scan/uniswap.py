@@ -88,6 +88,35 @@ def swaps_between(start: int, latest: int) -> tuple[dict[str, list], dict[str, l
     return v3, v4
 
 
+def prices_usdg(rows: list[dict], pools: dict, swaps_by_pool: dict, tokens: dict, usdg: str | None) -> dict:
+    """USDG price per token from the last swap in its busiest USDG pool in the window.
+    price(token) = USDG per 1 token, from sqrtPriceX96 and both decimals. Data, not an oracle."""
+    if not usdg:
+        return {}
+    out: dict = {}
+    for r in sorted(rows, key=lambda r: -r["swaps"]):
+        meta = pools.get(r["pool"])
+        if not meta or r["pool"] not in swaps_by_pool:
+            continue
+        t0, t1 = meta["token0"], meta["token1"]
+        if t0.lower() == usdg.lower():
+            tok, usdg_is_0 = t1, True
+        elif t1.lower() == usdg.lower():
+            tok, usdg_is_0 = t0, False
+        else:
+            continue
+        if tok in out:
+            continue  # busiest pool wins
+        d0 = (tokens.get(t0) or {}).get("decimals"); d1 = (tokens.get(t1) or {}).get("decimals")
+        last_sp = max(swaps_by_pool[r["pool"]])[4]
+        if d0 is None or d1 is None or last_sp <= 0:
+            continue
+        p1_per_0 = (last_sp / 2 ** 96) ** 2 * 10 ** (d0 - d1)  # token1 per token0, decimal-adjusted
+        price = (1 / p1_per_0) if usdg_is_0 else p1_per_0
+        out[tok] = {"price_usdg": price, "pool": r["pool"], "venue": r["venue"], "swaps": r["swaps"]}
+    return out
+
+
 def _row(key: str, swaps: list, meta: dict | None, tokens: dict, usdg: str | None) -> dict:
     swaps.sort()
     impacts, usd_vol, paid, degenerate = [], 0.0, 0.0, 0
@@ -123,8 +152,12 @@ def _row(key: str, swaps: list, meta: dict | None, tokens: dict, usdg: str | Non
     return row
 
 
-def report(start: int, end: int) -> dict:
-    """The uniswap section of a scorecard for swaps in blocks [start, end]."""
+def report(start: int, end: int, remember: bool = True) -> dict:
+    """The uniswap section of a scorecard for swaps in blocks [start, end].
+
+    With remember=True (live scans) token prices seen in this window are kept in the state cache and
+    tokens not traded this window carry their last known price, marked stale with its block. Backfill
+    passes remember=False so historical days neither read nor write the live price cache."""
     v3, v4 = swaps_between(start, end)
     window = end - start
     cache = _load_cache()
@@ -134,7 +167,17 @@ def report(start: int, end: int) -> dict:
     rows = [_row(k, s, cache["pools"].get(k), cache["tokens"], usdg) for k, s in list(v3.items()) + list(v4.items())]
     rows.sort(key=lambda r: (r["slippage_paid_usd_est"] is None, -(r["slippage_paid_usd_est"] or 0), -r["swaps"]))
     pairs = {(r["token0"], r["token1"]) for r in rows if r["token0"]}
+    prices = prices_usdg(rows, cache["pools"], {**v3, **v4}, cache["tokens"], usdg)
+    for px in prices.values():
+        px["as_of_block"], px["stale"] = end, False
+    if remember:
+        cache.setdefault("prices", {}).update(prices)
+        _save_cache(cache)
+        for tok, px in cache["prices"].items():
+            if tok not in prices:
+                prices[tok] = {**px, "stale": True}
     return {"pairs": len(pairs), "pools": len(rows), "swaps": sum(r["swaps"] for r in rows),
+            "prices_usdg": prices, "priced_tokens_fresh": sum(1 for p in prices.values() if not p["stale"]),
             "window_blocks": window, "unresolved_pools": sum(1 for r in rows if r["pair"] is None),
             "usdg_volume_usd": round(sum(r["volume_usd"] or 0 for r in rows), 2),
             "usdg_slippage_paid_usd_est": round(sum(r["slippage_paid_usd_est"] or 0 for r in rows), 2),

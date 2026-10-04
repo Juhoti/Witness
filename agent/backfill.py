@@ -60,7 +60,7 @@ def card_for_day(d: date, hour: int, proxies: list[str], hist: list[dict]) -> di
     card["stock_tokens"] = {"count": len(tokens), "tokens": tokens, "as_of_block": b_end,
                             "note": "backfill: beacon proxies only, state read at block_end"}
     card["morpho"] = morpho.section_for_day(hist, day_ts(d))
-    card["uniswap"] = uniswap.report(b_start, b_end) if b_end > b_start else {"pairs": 0, "items": [], "note": "no blocks in window"}
+    card["uniswap"] = uniswap.report(b_start, b_end, remember=False) if b_end > b_start else {"pairs": 0, "items": [], "note": "no blocks in window"}
     card["reverts"] = {"clusters": 0, "items": [], "note": "not backfillable: Blockscout has no historical failed-tx query"}
     card["perps"] = {"markets": 0, "items": [], "note": "perps scanner idle"}
     card["gap"] = gap.build(card)
