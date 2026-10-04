@@ -1,0 +1,21 @@
+---
+kind: tokens
+name: MRVL
+updated: 2026-10-04T09:57:31Z
+tags: [token]
+address: 0x62fd0668e10D8B72339BE2DCF7643001688ff13B
+paused: False
+---
+# MRVL
+
+address: `0x62fd0668e10D8B72339BE2DCF7643001688ff13B`
+
+- multiplier_raw: 1000000000000000000
+- paused: False
+- decimals: 18
+
+Markets:
+
+## revisions
+- 2026-10-04T09:57:31Z sha:560238639881
+

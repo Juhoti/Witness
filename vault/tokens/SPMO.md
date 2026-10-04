@@ -1,0 +1,21 @@
+---
+kind: tokens
+name: SPMO
+updated: 2026-10-04T09:57:31Z
+tags: [token]
+address: 0xAd622320e520de39e72d41EF07438C3Fd3354875
+paused: False
+---
+# SPMO
+
+address: `0xAd622320e520de39e72d41EF07438C3Fd3354875`
+
+- multiplier_raw: 1002024883742416310
+- paused: False
+- decimals: 18
+
+Markets:
+
+## revisions
+- 2026-10-04T09:57:31Z sha:d6ad7e04689c
+

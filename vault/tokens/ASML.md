@@ -1,0 +1,21 @@
+---
+kind: tokens
+name: ASML
+updated: 2026-10-04T09:57:31Z
+tags: [token]
+address: 0x47F93d52cBeC7C6D2CfC080e154002370a60dAEA
+paused: False
+---
+# ASML
+
+address: `0x47F93d52cBeC7C6D2CfC080e154002370a60dAEA`
+
+- multiplier_raw: 1000101323251417769
+- paused: False
+- decimals: 18
+
+Markets: [[markets/0xd3926328455494296c5c484d5f7e169600c67c7c6443047adf8203f9b182235f]], [[markets/0xbe881499e682850931951c998e76cfbf38c7979b1beeae7cbbb97a39b3336a07]]
+
+## revisions
+- 2026-10-04T09:57:31Z sha:a2a0506c5500
+

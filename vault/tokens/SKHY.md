@@ -1,0 +1,21 @@
+---
+kind: tokens
+name: SKHY
+updated: 2026-10-04T09:57:31Z
+tags: [token]
+address: 0x84CAb63bc87912E71ad199ff14A0bA45de68FeF8
+paused: False
+---
+# SKHY
+
+address: `0x84CAb63bc87912E71ad199ff14A0bA45de68FeF8`
+
+- multiplier_raw: 1000000000000000000
+- paused: False
+- decimals: 18
+
+Markets:
+
+## revisions
+- 2026-10-04T09:57:31Z sha:71b148da3e2e
+

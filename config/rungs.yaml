@@ -1,0 +1,22 @@
+# The first ladder. Human-written. Each rung has a witness the judge can run.
+# status: open | met | retired
+- id: r1
+  title: "Discover every stock token on 4663 and read its multiplier state"
+  witness: "stock_tokens.count >= 150"
+  status: open
+- id: r2
+  title: "Enumerate every Morpho market on 4663 with cap and utilisation"
+  witness: "morpho.markets >= 1"
+  status: open
+- id: r3
+  title: "Compute slippage paid per Uniswap pair over trailing 7 days"
+  witness: "uniswap.pairs >= 10"
+  status: open
+- id: r4
+  title: "Cluster reverted transactions by target contract and reason"
+  witness: "reverts.clusters >= 1"
+  status: open
+- id: r5
+  title: "Produce the first gap table and refuse to propose anything from it"
+  witness: "gap.candidates >= 1 and gap.proposals == 0"
+  status: open

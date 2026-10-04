@@ -1,0 +1,24 @@
+# The judge, run by CI on every build branch. The CI token cannot touch this file or the judge
+# (branch protection + CODEOWNERS). A green run here is a witness, not an adoption.
+name: judge
+on:
+  push:
+    branches: ["build/**"]
+  pull_request:
+    branches: [main]
+jobs:
+  judge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -e ".[dev]"
+      - run: python -m pytest -q
+      - run: python scripts/verify.py
+      - name: forge tests (if any product has contracts)
+        run: |
+          if ls products/*/contracts/foundry.toml >/dev/null 2>&1; then
+            curl -L https://foundry.paradigm.xyz | bash && ~/.foundry/bin/foundryup
+            for d in products/*/contracts; do ~/.foundry/bin/forge test --root "$d"; done
+          fi

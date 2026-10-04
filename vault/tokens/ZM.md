@@ -1,0 +1,21 @@
+---
+kind: tokens
+name: ZM
+updated: 2026-10-04T09:57:31Z
+tags: [token]
+address: 0x44c4F142009036cF477eD2d09932051843137CF1
+paused: False
+---
+# ZM
+
+address: `0x44c4F142009036cF477eD2d09932051843137CF1`
+
+- multiplier_raw: 1000000000000000000
+- paused: False
+- decimals: 18
+
+Markets:
+
+## revisions
+- 2026-10-04T09:57:31Z sha:e37f0b3906cb
+

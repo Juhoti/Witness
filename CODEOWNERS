@@ -1,0 +1,5 @@
+# The judge and the rails are owned by a human. The builder may only touch products/.
+/agent/judge.py        @YOUR_GITHUB_HANDLE
+/config/northstar.md   @YOUR_GITHUB_HANDLE
+/.github/workflows/    @YOUR_GITHUB_HANDLE
+/CODEOWNERS            @YOUR_GITHUB_HANDLE

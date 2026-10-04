@@ -1,0 +1,12 @@
+{
+  "version": 0,
+  "parent": null,
+  "listings": [],
+  "session_rules": {
+    "tighten_before_weekend_minutes": 60,
+    "weekend_cap_multiplier": 0.5,
+    "halt_action": "freeze_new_borrows"
+  },
+  "max_cap_increase_24h": 2.0,
+  "notes": "Changed only by a judged ledger entry. Hand edits must be recorded as proposer=human."
+}

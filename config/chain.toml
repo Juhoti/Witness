@@ -1,0 +1,76 @@
+# Robinhood Chain mainnet. Verify EVERY address marked UNVERIFIED on Blockscout before use.
+
+[chain]
+id = 4663
+name = "Robinhood Chain"
+rpc = "https://rpc.mainnet.chain.robinhood.com"          # public, rate-limited
+explorer = "https://robinhoodchain.blockscout.com"
+sequencer_feed = "wss://feed.mainnet.chain.robinhood.com"
+block_time_ms = 100
+# Multicall3, canonical CREATE2 address (same on every EVM chain). Used only to batch read calls.
+# 2026-10-04 (Claude Code): RPC eth_getCode returns 3808 bytes; aggregate3 answers correctly; code hash
+# compared against the same address on Arbitrum One. Blockscout (human, 2026-10-04): Multicall3.
+multicall3 = "0xcA11bde05977b3631167028862bE2a173976CA11"   # verified on Blockscout by human 2026-10-04: Multicall3
+
+[morpho]
+# From third-party docs (kinexbtdev/morpho-stock-vault). Confirm on Blockscout: code present, name matches.
+# Checked 2026-10-03 (Claude Code) via RPC and the Morpho API; Blockscout API returned 403 to scripts,
+# so the human checked both in a browser on 2026-10-04.
+# blue, confirmed by:
+#   - RPC eth_getCode: 15582 bytes; DOMAIN_SEPARATOR() equals the Morpho Blue EIP-712 domain for
+#     chainId 4663 + this address; idToMarketParams() returns the same params the API reports.
+#   - Morpho GraphQL (blue-api.morpho.org): morphoBlues(chainId 4663) lists this address
+#     (creation block 286); all 305 markets on 4663 reference it.
+# adaptive_curve_irm, confirmed by:
+#   - RPC eth_getCode: 2282 bytes; MORPHO() returns blue; blue.isIrmEnabled(irm) is true.
+#   - Morpho GraphQL: irmAddress on 302 of 305 markets (the other 3 have the zero address).
+blue = "0x9D53d5E3bd5E8d4Cbfa6DB1ca238AEA02E651010"              # verified on Blockscout by human 2026-10-04: Morpho; RPC + Morpho API agree
+adaptive_curve_irm = "0x2BD3d5965B26B51814AC95127B2b80dD6CcC0fa1" # verified on Blockscout by human 2026-10-04: AdaptiveCurveIRM; RPC + Morpho API agree
+graphql = "https://blue-api.morpho.org/graphql"                   # filter chainId 4663
+
+[tokens]
+# usdg found 2026-10-03 (Claude Code) as the loan token of Morpho market 0xff762c8a...50ca (AMZN/USDG):
+#   - Morpho GraphQL: loanAsset of 255 markets on 4663, ~$530M supplied, name "Global Dollar".
+#   - RPC: blue.idToMarketParams(that market).loanToken is this address; symbol() "USDG",
+#     name() "Global Dollar", decimals() 6; 170 bytes of code (a proxy).
+#   - Blockscout (human, 2026-10-04): token page is Global Dollar.
+# Do NOT confuse with 0x67240805B8477a514c3F9707F20fc05F34145505: also symbol "USDG", but
+# name() is "USDG Mock Token", 18 decimals, 5 unlisted markets with no supply.
+usdg = "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168"   # verified on Blockscout by human 2026-10-04: Global Dollar; RPC + Morpho API agree
+# weth found 2026-10-04 as the loan asset of 10 Morpho markets (Morpho GraphQL); RPC name() "WETH", 18 decimals.
+weth = "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73"   # verified on Blockscout by human 2026-10-04: WETH
+
+[stock_tokens]
+# Robinhood does not publish the list. Discovery: scan Transfer logs for ERC-20s whose symbol()
+# looks like a ticker AND which expose uiMultiplier(). Then read the beacon and enumerate siblings.
+# beacon found 2026-10-04 (Claude Code): AMZN, NVDA, TSLA, AAPL (addresses from Morpho markets) are
+# EIP-1967 beacon proxies whose beacon slot all hold this address; its implementation() is
+# 0xb35490d6f9163de4f80d88dc75c3516eb64c5ae2. Proxies emit BeaconUpgraded(beacon) at creation, which
+# is how scan/stock_tokens.py enumerates them. Blockscout (human, 2026-10-04): AccessControlledRegistry.
+beacon = "0xe10b6f6b275de231345c20d14ab812db62151b00"   # verified on Blockscout by human 2026-10-04: contract is named AccessControlledRegistry
+# registry: the beacon above is the contract Blockscout names AccessControlledRegistry, i.e. the beacon and the
+# registry are one contract. Same address, recorded here so code that asks for the registry finds it.
+registry = "0xe10b6f6b275de231345c20d14ab812db62151b00"   # same contract as beacon; see above
+# The logic contract every stock-token proxy delegates to (beacon.implementation()). Read-only reference:
+# its verified source is where uiMultiplier / pause / blocklist functions can be read.
+implementation = "0xb35490d6f9163de4f80d88dc75c3516eb64c5ae2"   # verified on Blockscout by human 2026-10-04: Stock
+multiplier_fn = "uiMultiplier()"   # confirmed 2026-10-04: 91 discovered tokens answer it with an 18-decimal multiplier
+# 2026-10-04: the first BeaconUpgraded for the beacon above is in blocks 0-29999, so token history
+# starts at chain genesis, not at 59M. Set to 0 so backfill (Gate 0c) covers it.
+discover_from_block = 0
+
+[uniswap]
+# Found 2026-10-04 (Claude Code). Source: Uniswap Labs deployment docs
+#   https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments
+#   https://developers.uniswap.org/docs/protocols/v4/deployments  (Robinhood Chain section)
+# RPC checks: v3 factory feeAmountTickSpacing(100/500/3000/10000) = 1/10/60/200, getPool(USDG,WETH,3000)
+#   returns a pool, 1,336 PoolCreated events in the trailing 2M blocks. v4 PoolManager answers owner()
+#   and protocolFeeController(); more than 10,000 Initialize events in the trailing 2M blocks.
+v3_factory = "0x1f7d7550b1b028f7571e69a784071f0205fd2efa"        # verified on Blockscout by human 2026-10-04: UniswapV3Factory; docs + RPC agree
+v4_pool_manager = "0x8366a39cc670b4001a1121b8f6a443a643e40951"   # verified on Blockscout by human 2026-10-04: PoolManager; docs + RPC agree
+v4_state_view = "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b"     # verified on Blockscout by human 2026-10-04: StateView. Read-only lens for v4 pool state.
+v3_quoter_v2 = "0x33e885ed0ec9bf04ecfb19341582aadcb4c8a9e7"      # verified on Blockscout by human 2026-10-04: QuoterV2. For simulating swaps at size.
+
+[perps]
+lighter_api = ""       # public market-data endpoint, fill in
+arcus_api = ""
