@@ -70,11 +70,10 @@ def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
     cache["tokens"].setdefault("0x0000000000000000000000000000000000000000", {"symbol": "ETH", "decimals": 18})
 
 
-def _swaps(window_blocks: int) -> tuple[dict[str, list], dict[str, list]]:
-    """Return {pool: [(block, logIndex, amount0, amount1, sqrtPriceX96)]} for v3 and v4."""
+def swaps_between(start: int, latest: int) -> tuple[dict[str, list], dict[str, list]]:
+    """Return {pool: [(block, logIndex, amount0, amount1, sqrtPriceX96)]} for v3 and v4 in [start, latest]."""
     codec = chain.w3().codec
-    latest = chain.w3_logs().eth.block_number
-    start = latest - window_blocks
+    window_blocks = max(latest - start, 1)
     v3: dict[str, list] = defaultdict(list)
     for chunk in chain.iter_logs(None, [V3_SWAP], start, latest, step=min(window_blocks, 30_000)):
         for l in chunk:
@@ -124,11 +123,10 @@ def _row(key: str, swaps: list, meta: dict | None, tokens: dict, usdg: str | Non
     return row
 
 
-def scan() -> dict:
-    if not settings.unverified("uniswap", "v3_factory") or not settings.unverified("uniswap", "v4_pool_manager"):
-        return {"pairs": 0, "items": [], "note": "uniswap addresses not set; scanner idle"}
-    window = max(6_000, min(36_000, settings.SCAN_EVERY_MINUTES * BLOCKS_PER_MINUTE))
-    v3, v4 = _swaps(window)
+def report(start: int, end: int) -> dict:
+    """The uniswap section of a scorecard for swaps in blocks [start, end]."""
+    v3, v4 = swaps_between(start, end)
+    window = end - start
     cache = _load_cache()
     _resolve_pools(cache, set(v3), set(v4))
     _save_cache(cache)
@@ -141,3 +139,11 @@ def scan() -> dict:
             "usdg_volume_usd": round(sum(r["volume_usd"] or 0 for r in rows), 2),
             "usdg_slippage_paid_usd_est": round(sum(r["slippage_paid_usd_est"] or 0 for r in rows), 2),
             "items": rows[:50]}
+
+
+def scan() -> dict:
+    if not settings.unverified("uniswap", "v3_factory") or not settings.unverified("uniswap", "v4_pool_manager"):
+        return {"pairs": 0, "items": [], "note": "uniswap addresses not set; scanner idle"}
+    window = max(6_000, min(36_000, settings.SCAN_EVERY_MINUTES * BLOCKS_PER_MINUTE))
+    latest = chain.w3_logs().eth.block_number
+    return report(latest - window, latest)
