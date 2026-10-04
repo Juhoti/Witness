@@ -22,6 +22,8 @@ log = logging.getLogger(__name__)
 V3_SWAP = Web3.to_hex(Web3.keccak(text="Swap(address,address,int256,int256,uint160,uint128,int24)"))
 V4_SWAP = Web3.to_hex(Web3.keccak(text="Swap(bytes32,address,int128,int128,uint160,uint128,int24,uint24)"))
 V4_POSITION_MANAGER = "0x58daec3116aae6d93017baaea7749052e8a04fa7"  # verified on Blockscout by human 2026-10-04 (Uniswap docs)
+INIT_CHUNK = 10_000_000  # public RPC cap for an address-filtered eth_getLogs range
+V4_INITIALIZE = Web3.to_hex(Web3.keccak(text="Initialize(bytes32,address,address,uint24,int24,address,uint160,int24)"))
 STATE_PATH = settings.STATE_DIR / "uniswap_pools.json"
 BLOCKS_PER_MINUTE = 60_000 // settings.CHAIN["chain"]["block_time_ms"]
 MAX_IMPACT = 1.0  # cap per-swap price impact at 100%; beyond that the pool was empty or being seeded
@@ -57,9 +59,34 @@ def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
         for pid, r in zip(new4, raws):
             if r and len(r) >= 160:
                 c0, c1, fee, _ts, _hooks = codec.decode(["address", "address", "uint24", "int24", "address"], r)
-                if int(c0, 16) or int(c1, 16):  # zero key = pool never touched PositionManager; leave unresolved
+                if int(c0, 16) or int(c1, 16):  # zero key = pool never touched PositionManager
                     cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(c0),
                                            "token1": Web3.to_checksum_address(c1), "fee": fee}
+        # Pools the PositionManager never saw: read the key from the pool's own Initialize event.
+        # Address+topic filtered queries may span 10M blocks on the public RPC; walk back from the
+        # head in those chunks (most such pools are recent) until the event turns up.
+        pm = Web3.to_checksum_address(settings.CHAIN["uniswap"]["v4_pool_manager"])
+        still = [i for i in new4 if i not in cache["pools"]]
+        latest = chain.w3_logs().eth.block_number if still else 0
+        for pid in still:
+            logs = []
+            try:
+                for end in range(latest, -1, -INIT_CHUNK):
+                    logs = chain.w3_logs().eth.get_logs({"address": pm, "fromBlock": max(end - INIT_CHUNK + 1, 0), "toBlock": end,
+                                                          "topics": [V4_INITIALIZE, pid]})
+                    if logs:
+                        break
+            except Exception as e:  # leave unresolved; the next scan retries
+                log.debug("v4 Initialize lookup failed for %s: %s", pid[:10], settings.redact(str(e)))
+                continue
+            if logs:
+                l = logs[0]
+                fee = codec.decode(["uint24", "int24", "address", "uint160", "int24"], l["data"])[0]
+                cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(bytes(l["topics"][2])[-20:]),
+                                       "token1": Web3.to_checksum_address(bytes(l["topics"][3])[-20:]), "fee": fee}
+        if still:
+            log.info("uniswap: %d v4 pools resolved from Initialize events, %d still unresolved",
+                     sum(1 for i in still if i in cache["pools"]), sum(1 for i in still if i not in cache["pools"]))
     toks = {t for p in cache["pools"].values() for t in (p["token0"], p["token1"])} - set(cache["tokens"])
     toks.discard("0x0000000000000000000000000000000000000000")
     if toks:
