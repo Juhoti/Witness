@@ -54,7 +54,7 @@ def _state(addr: str, raws: list[bytes | None]) -> dict:
     }
 
 
-def _load_state() -> dict:
+def load_state() -> dict:
     if STATE_PATH.exists():
         return json.loads(STATE_PATH.read_text())
     return {"beacon_cursor": 0, "proxies": [], "tokens": []}
@@ -83,29 +83,36 @@ def enumerate_beacon(st: dict, latest: int) -> set[str]:
     return found
 
 
+def fingerprint(candidates: list[str], proxies: set[str], block: int | None = None) -> list[dict]:
+    """Keep candidates whose symbol() is ticker-like AND whose multiplier function answers, then read
+    their state; all batched through Multicall3, optionally at a historical block (backfill).
+    A beacon proxy with a non-ticker symbol (e.g. PEACH_DEFI_1, a test token) is excluded on purpose."""
+    syms = chain.multicall([(a, _sel("symbol()")) for a in candidates], block=block)
+    tickerish = [a for a, r in zip(candidates, syms) if (s := chain.decode_string(r)) and TICKER_RE.match(s)]
+    mults = chain.multicall([(a, _sel(_mult_fn())) for a in tickerish], block=block)
+    hits = [a for a, r in zip(tickerish, mults) if chain.decode_uint(r) is not None]
+    fns = [f or _mult_fn() for f in STATE_FNS]
+    raws = chain.multicall([(a, _sel(f)) for a in hits for f in fns], block=block)
+    found = [_state(a, raws[i * len(fns):(i + 1) * len(fns)]) for i, a in enumerate(hits)]
+    for t in found:
+        t["on_beacon"] = t["address"] in proxies
+    return found
+
+
 def discover(window_blocks: int = 50_000) -> tuple[list[dict], dict]:
     latest = chain.w3_logs().eth.block_number
-    st = _load_state()
+    st = load_state()
     proxies = enumerate_beacon(st, latest)
     start = max(latest - window_blocks, settings.CHAIN["stock_tokens"].get("discover_from_block", 0))
     window = {Web3.to_checksum_address(l["address"])
               for chunk in chain.iter_logs(None, [TRANSFER_TOPIC], start, latest) for l in chunk}
     log.info("stock_tokens: %d transfer-emitting contracts in last %d blocks", len(window), window_blocks)
     candidates = sorted(proxies | window | set(st.get("tokens", [])))
-    # Fingerprint in two batched passes: ticker-like symbol(), then the multiplier function.
-    syms = chain.multicall([(a, _sel("symbol()")) for a in candidates])
-    tickerish = [a for a, r in zip(candidates, syms) if (s := chain.decode_string(r)) and TICKER_RE.match(s)]
-    mults = chain.multicall([(a, _sel(_mult_fn())) for a in tickerish])
-    hits = [a for a, r in zip(tickerish, mults) if chain.decode_uint(r) is not None]
-    fns = [f or _mult_fn() for f in STATE_FNS]
-    raws = chain.multicall([(a, _sel(f)) for a in hits for f in fns])
-    found = [_state(a, raws[i * len(fns):(i + 1) * len(fns)]) for i, a in enumerate(hits)]
-    for t in found:
-        t["on_beacon"] = t["address"] in proxies
-    st["tokens"] = hits
+    found = fingerprint(candidates, proxies)
+    st["tokens"] = [t["address"] for t in found]
     _save_state(st)
-    log.info("stock_tokens: %d candidates (%d beacon proxies), %d ticker-like, %d answer symbol()+multiplier",
-             len(candidates), len(proxies), len(tickerish), len(found))
+    log.info("stock_tokens: %d candidates (%d beacon proxies), %d answer symbol()+multiplier",
+             len(candidates), len(proxies), len(found))
     return found, {"beacon_cursor": st["beacon_cursor"], "beacon_caught_up": st["beacon_cursor"] > latest,
                    "beacon_proxies": len(proxies), "transfer_window_contracts": len(window)}
 
