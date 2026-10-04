@@ -1,0 +1,198 @@
+{
+ "per_chain": {
+  "Arbitrum One": {
+   "markets": 258,
+   "markets_with_realized_bad_debt": 7,
+   "median_lltv_of_affected_markets": 0.915,
+   "realized_bad_debt_bps_of_supply": 2.3873250653732555e-05,
+   "realized_bad_debt_usd": 31.486239991407608,
+   "supply_usd": 13188920289.11227,
+   "top": [
+    {
+     "lltv": 0.915,
+     "market": "PT-USDai-19FEB2026/USDT0",
+     "realized_bad_debt_usd": 14.418474680765977,
+     "supply_usd_now": 5.390492129163855
+    },
+    {
+     "lltv": 0.945,
+     "market": "wstETH/WETH",
+     "realized_bad_debt_usd": 10.097260130908435,
+     "supply_usd_now": 1.0829586005310434
+    },
+    {
+     "lltv": 0.965,
+     "market": "wstETH/WETH",
+     "realized_bad_debt_usd": 4.668016765188058,
+     "supply_usd_now": 0.6549640478629134
+    },
+    {
+     "lltv": 0.86,
+     "market": "weETH/USDT0",
+     "realized_bad_debt_usd": 2.074022454061993,
+     "supply_usd_now": 3.2734431294670454
+    },
+    {
+     "lltv": 0.86,
+     "market": "WETH/MYRC",
+     "realized_bad_debt_usd": 0.1752705952877776,
+     "supply_usd_now": 5.395954618408184
+    },
+    {
+     "lltv": 0.915,
+     "market": "PT-USDai-20NOV2025/USDC",
+     "realized_bad_debt_usd": 0.04533245902702581,
+     "supply_usd_now": 0.05041392844018446
+    },
+    {
+     "lltv": 0.915,
+     "market": "PT-USDai-19FEB2026/USDC",
+     "realized_bad_debt_usd": 0.007862906168343238,
+     "supply_usd_now": 0.2378889436149805
+    }
+   ]
+  },
+  "Base": {
+   "markets": 4317,
+   "markets_with_realized_bad_debt": 29,
+   "median_lltv_of_affected_markets": 0.86,
+   "realized_bad_debt_bps_of_supply": 0.2730546811626856,
+   "realized_bad_debt_usd": 114022.41951889162,
+   "supply_usd": 4175809000.3575954,
+   "top": [
+    {
+     "lltv": 0.86,
+     "market": "sAMM-USDC/cUSDO/USDC",
+     "realized_bad_debt_usd": 98741.57558460206,
+     "supply_usd_now": 2.57565425386768
+    },
+    {
+     "lltv": 0.86,
+     "market": "wbCOIN/USDC",
+     "realized_bad_debt_usd": 6435.710401723295,
+     "supply_usd_now": 6230.452585276121
+    },
+    {
+     "lltv": 0.915,
+     "market": "PT-apxUSD-18JUN2026/USDC",
+     "realized_bad_debt_usd": 4415.253049765281,
+     "supply_usd_now": 30676.465776560075
+    },
+    {
+     "lltv": 0.915,
+     "market": "weETH/WETH",
+     "realized_bad_debt_usd": 1834.472544450639,
+     "supply_usd_now": 2502.628022288052
+    },
+    {
+     "lltv": 0.77,
+     "market": "weETH/USDC",
+     "realized_bad_debt_usd": 935.1010860109109,
+     "supply_usd_now": 7857.25827414151
+    },
+    {
+     "lltv": 0.77,
+     "market": "uSUI/USDC",
+     "realized_bad_debt_usd": 508.6111695102132,
+     "supply_usd_now": 1565.7355049264022
+    },
+    {
+     "lltv": 0.945,
+     "market": "wrsETH/WETH",
+     "realized_bad_debt_usd": 383.59214470632105,
+     "supply_usd_now": 1832.6171167645946
+    },
+    {
+     "lltv": 0.625,
+     "market": "PERP/USDC",
+     "realized_bad_debt_usd": 300.7776506826819,
+     "supply_usd_now": 9.699579833166776
+    },
+    {
+     "lltv": 0.915,
+     "market": "ezETH/WETH",
+     "realized_bad_debt_usd": 169.6320731606217,
+     "supply_usd_now": 119.32910141889445
+    },
+    {
+     "lltv": 0.915,
+     "market": "yUSD/USDC",
+     "realized_bad_debt_usd": 131.94593142883204,
+     "supply_usd_now": 108865.76051685109
+    }
+   ]
+  },
+  "Ethereum": {
+   "markets": 1805,
+   "markets_with_realized_bad_debt": 119,
+   "median_lltv_of_affected_markets": 0.915,
+   "realized_bad_debt_bps_of_supply": 1.5355132278902002,
+   "realized_bad_debt_usd": 4514798.782033936,
+   "supply_usd": 29402539164.29807,
+   "top": [
+    {
+     "lltv": 0.77,
+     "market": "REKT/USDS",
+     "realized_bad_debt_usd": 1369635.6499349729,
+     "supply_usd_now": 19.168381987174104
+    },
+    {
+     "lltv": 0.86,
+     "market": "RLP/USDC",
+     "realized_bad_debt_usd": 1181239.830154663,
+     "supply_usd_now": 88677540.01050186
+    },
+    {
+     "lltv": 0.77,
+     "market": "IMF/USDS",
+     "realized_bad_debt_usd": 635021.866467462,
+     "supply_usd_now": 54.88023312670549
+    },
+    {
+     "lltv": 0.77,
+     "market": "PEPE/USDS",
+     "realized_bad_debt_usd": 541624.5993843789,
+     "supply_usd_now": 0.00022355144792763894
+    },
+    {
+     "lltv": 0.915,
+     "market": "sNUSD/USDC",
+     "realized_bad_debt_usd": 290156.1580378132,
+     "supply_usd_now": 6338.584111915284
+    },
+    {
+     "lltv": 0.77,
+     "market": "Mog/USDS",
+     "realized_bad_debt_usd": 191830.11010674955,
+     "supply_usd_now": 5.545703407217631
+    },
+    {
+     "lltv": 0.77,
+     "market": "JOE/USDS",
+     "realized_bad_debt_usd": 44644.079834848,
+     "supply_usd_now": 38.54781569804241
+    },
+    {
+     "lltv": 0.625,
+     "market": "SPX/USDS",
+     "realized_bad_debt_usd": 38881.44347954618,
+     "supply_usd_now": 0.05156873330539424
+    },
+    {
+     "lltv": 0.77,
+     "market": "SPX/USDS",
+     "realized_bad_debt_usd": 36621.9217063417,
+     "supply_usd_now": 0.046667065119751
+    },
+    {
+     "lltv": 0.86,
+     "market": "ezETH/WETH",
+     "realized_bad_debt_usd": 29520.60060023807,
+     "supply_usd_now": 286.33379220134236
+    }
+   ]
+  }
+ },
+ "retrieved": "2026-10-04T11:02:27Z",
+ "source": "https://blue-api.morpho.org/graphql"
+}

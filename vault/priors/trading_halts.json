@@ -1,0 +1,1305 @@
+{
+ "by_exchange": {
+  "Cboe BZX": 849,
+  "NYSE": 9661,
+  "NYSE American": 4294,
+  "NYSE Arca": 1920,
+  "Nasdaq": 57267
+ },
+ "by_year": {
+  "2019": {
+   "luld pause": 838,
+   "news dissemination": 25,
+   "news pending": 351
+  },
+  "2020": {
+   "luld pause": 14076,
+   "news dissemination": 56,
+   "news pending": 796
+  },
+  "2021": {
+   "corporate action": 1,
+   "luld pause": 4682,
+   "merger effective": 33,
+   "new security offering": 7,
+   "news dissemination": 12,
+   "news pending": 891,
+   "news released": 5,
+   "regulatory concern": 2
+  },
+  "2022": {
+   "corporate action": 1,
+   "luld pause": 5751,
+   "merger effective": 56,
+   "news pending": 1059,
+   "news released": 4,
+   "regulatory concern": 21
+  },
+  "2023": {
+   "intraday indicative value not available": 2,
+   "luld pause": 7772,
+   "merger effective": 63,
+   "new security offering": 4,
+   "news pending": 1456,
+   "news released": 33,
+   "regulatory concern": 54
+  },
+  "2024": {
+   "corporate action": 191,
+   "intraday ind val na": 3,
+   "luld pause": 8882,
+   "merger effective": 59,
+   "news pending": 1881,
+   "news released": 134,
+   "regulatory concern": 68
+  },
+  "2025": {
+   "corporate action": 195,
+   "etf component prc na": 1,
+   "etf component price": 1,
+   "luld pause": 10749,
+   "merger effective": 64,
+   "news pending": 2021,
+   "news released": 38,
+   "regulatory concern": 26
+  },
+  "2026": {
+   "corporate action": 174,
+   "etf component prices": 2,
+   "etf component prices not available": 3,
+   "etf iiv / etf component prices not available": 2,
+   "luld pause": 9444,
+   "merger effective": 47,
+   "news dissemination": 19,
+   "news pending": 1844,
+   "news released": 19,
+   "regulatory concern": 73
+  }
+ },
+ "per_ticker": {
+  "AAOI": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AAPL": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ABCL": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ADBE": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AEHR": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AEIS": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ALAB": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMAT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMBA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMC": {
+   "halts_12m": 0,
+   "halts_all": 77,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMKR": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AMZN": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ANET": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "APLD": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "APP": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ARM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ASML": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ASTS": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AUR": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AVAV": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AVGO": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AXON": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "AXTI": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BA": {
+   "halts_12m": 0,
+   "halts_all": 5,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BABA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BB": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BE": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BND": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "BULL": {
+   "halts_12m": 0,
+   "halts_all": 16,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CBRS": {
+   "halts_12m": 1,
+   "halts_all": 1,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "CCL": {
+   "halts_12m": 0,
+   "halts_all": 14,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CEG": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CELH": {
+   "halts_12m": 0,
+   "halts_all": 4,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CIEN": {
+   "halts_12m": 1,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 1
+  },
+  "CLOV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CLS": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CLSK": {
+   "halts_12m": 0,
+   "halts_all": 5,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "COHR": {
+   "halts_12m": 1,
+   "halts_all": 4,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "COIN": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "COST": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CRCL": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CRDO": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CRM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CRWD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CRWV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CSCO": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CTSH": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "CVNA": {
+   "halts_12m": 0,
+   "halts_all": 42,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "DDOG": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "DELL": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "DJT": {
+   "halts_12m": 0,
+   "halts_all": 19,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "DOCN": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "DRAM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ELF": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "EWT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "EWY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "F": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FICO": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FIG": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FISV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FIX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FLNC": {
+   "halts_12m": 0,
+   "halts_all": 8,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FLY": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FTNT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "FUTU": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GE": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GEV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GLD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GLW": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GLXY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GME": {
+   "halts_12m": 0,
+   "halts_all": 130,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "GOOGL": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "HII": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "HIMS": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "HPE": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "HWM": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "IBM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "IBRX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "INDA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "INFQ": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "INOD": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "INTC": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "INTU": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "IONQ": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "IREN": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "JBL": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "JEPQ": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "JNJ": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "JOBY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "KLAC": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "KSS": {
+   "halts_12m": 0,
+   "halts_all": 6,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "KTOS": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LHX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LITE": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LLY": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LMT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LRCX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LULU": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "LUNR": {
+   "halts_12m": 1,
+   "halts_all": 31,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "MDB": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "META": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MOD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MPWR": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MRNA": {
+   "halts_12m": 0,
+   "halts_all": 19,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MRVL": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MSFT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MSTR": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MTSI": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MU": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "MXL": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NASA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NAVN": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NBIS": {
+   "halts_12m": 0,
+   "halts_all": 10,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NET": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NFLX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NNE": {
+   "halts_12m": 0,
+   "halts_all": 10,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NOK": {
+   "halts_12m": 1,
+   "halts_all": 7,
+   "luld_12m": 0,
+   "news_12m": 1
+  },
+  "NOW": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NU": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NVDA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "NVTS": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "OKLO": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ON": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ONTO": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ORCL": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "OUST": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "P": {
+   "halts_12m": 1,
+   "halts_all": 1,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "PANW": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PATH": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PENG": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PFE": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PL": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PLTR": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "POET": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "POWL": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PR": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "PWR": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "QBTS": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "QCOM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "QNT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "QQQ": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "QUBT": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RBLX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RCAT": {
+   "halts_12m": 0,
+   "halts_all": 4,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RDDT": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RDW": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RGTI": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RIVN": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RKLB": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RUN": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "RVI": {
+   "halts_12m": 1,
+   "halts_all": 1,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "SATS": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SCHD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SGOV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SHOP": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SHY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SIMO": {
+   "halts_12m": 0,
+   "halts_all": 3,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SKHY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SLS": {
+   "halts_12m": 0,
+   "halts_all": 7,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SLV": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SMCI": {
+   "halts_12m": 0,
+   "halts_all": 4,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SMH": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SMR": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SNAP": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SNDK": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SNOW": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SOFI": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SOUN": {
+   "halts_12m": 0,
+   "halts_all": 10,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SOXX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SPCX": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SPMO": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "SPY": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TE": {
+   "halts_12m": 1,
+   "halts_all": 1,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "TEAM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TEM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TER": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TSEM": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TSLA": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TSM": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TTD": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "TTWO": {
+   "halts_12m": 0,
+   "halts_all": 5,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "UMC": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "UNH": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "UPS": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "USAR": {
+   "halts_12m": 0,
+   "halts_all": 9,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "USO": {
+   "halts_12m": 0,
+   "halts_all": 12,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "VICR": {
+   "halts_12m": 1,
+   "halts_all": 1,
+   "luld_12m": 1,
+   "news_12m": 0
+  },
+  "VRT": {
+   "halts_12m": 0,
+   "halts_all": 2,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "VSAT": {
+   "halts_12m": 0,
+   "halts_all": 4,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "VST": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "VTI": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "WDAY": {
+   "halts_12m": 3,
+   "halts_all": 3,
+   "luld_12m": 3,
+   "news_12m": 0
+  },
+  "WDC": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "WEEK": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "WULF": {
+   "halts_12m": 0,
+   "halts_all": 5,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "WYFI": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "XLK": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "XNDU": {
+   "halts_12m": 3,
+   "halts_all": 3,
+   "luld_12m": 3,
+   "news_12m": 0
+  },
+  "XOM": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ZETA": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ZM": {
+   "halts_12m": 0,
+   "halts_all": 0,
+   "luld_12m": 0,
+   "news_12m": 0
+  },
+  "ZS": {
+   "halts_12m": 0,
+   "halts_all": 1,
+   "luld_12m": 0,
+   "news_12m": 0
+  }
+ },
+ "range": [
+  "2019-02-22",
+  "2026-10-02"
+ ],
+ "retrieved": "2026-10-04T11:02:40Z",
+ "source": "https://www.nyse.com/api/trade-halts/historical/download"
+}
