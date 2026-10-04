@@ -24,10 +24,12 @@ def sha(obj) -> str:
     return hashlib.sha256(canonical(obj)).hexdigest()
 
 
-def write_scorecard(card: dict) -> str:
+def write_scorecard(card: dict, day: str | None = None) -> str:
+    """Write a scorecard named <day>_<hash16>.json. `day` defaults to today (UTC); backfill passes the
+    historical day so the file sorts where the scan would have happened."""
     settings.SCORECARD_DIR.mkdir(parents=True, exist_ok=True)
     h = sha(card)
-    day = time.strftime("%Y-%m-%d", time.gmtime())
+    day = day or time.strftime("%Y-%m-%d", time.gmtime())
     path = settings.SCORECARD_DIR / f"{day}_{h[:16]}.json"
     if not path.exists():
         path.write_bytes(canonical(card))
