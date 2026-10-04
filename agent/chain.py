@@ -87,7 +87,7 @@ def get_logs(address: str | None, topics: list, from_block: int, to_block: int |
     return [l for chunk in iter_logs(address, topics, from_block, to_block, step) for l in chunk]
 
 
-def multicall(calls: list[tuple[str, bytes]], batch: int = 300) -> list[bytes | None]:
+def multicall(calls: list[tuple[str, bytes]], batch: int = 300, block: int | None = None) -> list[bytes | None]:
     """Batch read calls through Multicall3.aggregate3 with allowFailure; None where a call reverted.
 
     Read-only: aggregate3 is a view aggregator and nothing here is signed. Falls back to smaller
@@ -99,13 +99,26 @@ def multicall(calls: list[tuple[str, bytes]], batch: int = 300) -> list[bytes | 
         chunk = [(Web3.to_checksum_address(a), True, d) for a, d in calls[i:i + batch]]
         data = sel + w3().codec.encode(["(address,bool,bytes)[]"], [chunk])
         try:
-            raw = _retry(lambda: w3().eth.call({"to": Web3.to_checksum_address(mc), "data": data}))
+            raw = _retry(lambda: w3().eth.call({"to": Web3.to_checksum_address(mc), "data": data}, block_identifier=block or "latest"))
         except (Web3Exception, ValueError, HTTPError) as e:
             if batch <= 20:
                 raise
             log.debug("multicall batch of %d failed (%s); halving", batch, settings.redact(str(e)))
-            out.extend(multicall(calls[i:i + batch], batch // 2))
+            out.extend(multicall(calls[i:i + batch], batch // 2, block))
             continue
         for ok, ret in w3().codec.decode(["(bool,bytes)[]"], raw)[0]:
             out.append(bytes(ret) if ok else None)
     return out
+
+
+def block_at(ts: int, lo: int = 0, hi: int | None = None) -> int:
+    """First block whose timestamp is >= ts (bisection over eth_getBlockByNumber)."""
+    w = w3()
+    hi = w.eth.block_number if hi is None else hi
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if _retry(lambda: w.eth.get_block(mid))["timestamp"] < ts:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo
