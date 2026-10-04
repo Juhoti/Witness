@@ -2,7 +2,7 @@
 from __future__ import annotations
 import logging
 import time
-from requests.exceptions import HTTPError
+from requests.exceptions import HTTPError, ConnectionError, Timeout, ChunkedEncodingError
 from web3 import Web3
 from web3.exceptions import Web3Exception
 from . import settings
@@ -53,14 +53,22 @@ def decode_bool(raw: bytes | None) -> bool | None:
     u = decode_uint(raw)
     return None if u is None else bool(u)
 
+TRANSIENT = (ConnectionError, Timeout, ChunkedEncodingError)
+
+
 def _retry(fn, tries: int = 6):
-    """Run fn, backing off on HTTP 429; public RPCs rate-limit hard."""
+    """Run fn, backing off on HTTP 429 and on dropped or timed-out connections; public RPCs do both."""
     for i in range(tries):
         try:
             return fn()
         except HTTPError as e:
             if e.response is None or e.response.status_code != 429 or i == tries - 1:
                 raise
+            time.sleep(min(2 ** i, 30))
+        except TRANSIENT as e:
+            if i == tries - 1:
+                raise
+            log.debug("transient rpc error (%s); retrying", settings.redact(str(e))[:80])
             time.sleep(min(2 ** i, 30))
 
 def iter_logs(address: str | None, topics: list, from_block: int, to_block: int | str = "latest", step: int = 20_000, min_step: int = 10):
