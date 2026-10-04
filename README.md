@@ -5,14 +5,20 @@ An agent that curates a lending vault on Robinhood Chain and keeps a public, rep
 ## Agent scaffold
 
 Runs on a Mac mini (Apple Silicon, macOS 14+) 24/7 under launchd. Gate 0 scope: scan the chain,
-write scorecards, append ledger entries, alert on failures. Read `PLAN.md` for what comes after.
+write scorecards, append ledger entries, alert on failures.
+
+Work is gated, not scheduled. In order: the scan loop runs unattended (Gate 0); every policy or
+code change goes through a fixed judge and leaves a replayable certificate (Gate 1); a model proposes
+changes and a human adopts them (Gate 2); a small real vault (Gate 3); an attested signing runtime
+(Gate 4); products built from measured demand, forever (Gate 5). Each gate opens only when the
+previous one's checks hold.
 
 ## One-time setup on the mini
 
 ```bash
 # from your laptop
-scp -r witness mini.local:~/witness
-ssh mini.local
+scp -r witness <your-mini>:~/witness
+ssh <your-mini>
 cd ~/witness
 ./setup-mini.sh          # installs brew deps, python venv, launchd service
 cp .env.example .env     # then edit: RPC URL, Telegram token, Anthropic key (Gate 2)
@@ -40,7 +46,6 @@ python -m agent.ledger show                          # list entries
 ## Layout
 
 ```
-PLAN.md                 the plan and the hard rails
 config/chain.toml       chain + contract addresses (verify every UNVERIFIED line)
 config/northstar.md     objective + rails the agent may not rewrite
 config/rungs.yaml       the human-written ladder (first goals)
