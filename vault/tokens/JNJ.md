@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: JNJ
-updated: 2026-10-04T11:09:36Z
+updated: 2026-10-04T11:34:44Z
 tags: [token]
 address: 0x03DfbBE0AC4E7bCDaFd08eD41A400326B77D8c80
 paused: False
@@ -17,6 +17,7 @@ address: `0x03DfbBE0AC4E7bCDaFd08eD41A400326B77D8c80`
 Markets:
 
 ## revisions
+- 2026-10-04T11:34:44Z sha:4ded0f23e6c4
 - 2026-10-04T11:09:36Z sha:4ded0f23e6c4
 - 2026-10-04T11:04:23Z sha:4ded0f23e6c4
 - 2026-10-04T10:43:07Z sha:4ded0f23e6c4
