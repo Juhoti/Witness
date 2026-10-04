@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SOFI
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x98E75885157C80992A8D41b696D8c9C6Fb30A926
 paused: False
@@ -17,6 +17,7 @@ address: `0x98E75885157C80992A8D41b696D8c9C6Fb30A926`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:a676b62fc663
 - 2026-10-04T19:58:00Z sha:a676b62fc663
 - 2026-10-04T19:34:35Z sha:a676b62fc663
 - 2026-10-04T18:23:30Z sha:a676b62fc663

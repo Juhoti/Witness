@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FLY
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x03BC731Ffb162cdd7B98D3C6542bFC291126075d
 paused: False
@@ -17,6 +17,7 @@ address: `0x03BC731Ffb162cdd7B98D3C6542bFC291126075d`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:0d22f28044e0
 - 2026-10-04T19:58:00Z sha:0d22f28044e0
 - 2026-10-04T19:34:35Z sha:0d22f28044e0
 - 2026-10-04T18:23:30Z sha:0d22f28044e0

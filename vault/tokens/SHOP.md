@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SHOP
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xF53F66751B1Eff985311b693531E3290F600c410
 paused: False
@@ -17,6 +17,7 @@ address: `0xF53F66751B1Eff985311b693531E3290F600c410`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:0d98fcfcf821
 - 2026-10-04T19:58:00Z sha:0d98fcfcf821
 - 2026-10-04T19:34:35Z sha:0d98fcfcf821
 - 2026-10-04T18:23:30Z sha:0d98fcfcf821

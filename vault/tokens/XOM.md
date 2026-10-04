@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: XOM
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xf9B46d3D1B22199D4D1025a9cEDB540A33F1a2d5
 paused: False
@@ -17,6 +17,7 @@ address: `0xf9B46d3D1B22199D4D1025a9cEDB540A33F1a2d5`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:fb4c7fc8d5b9
 - 2026-10-04T19:58:00Z sha:fb4c7fc8d5b9
 - 2026-10-04T19:34:35Z sha:fb4c7fc8d5b9
 - 2026-10-04T18:23:30Z sha:fb4c7fc8d5b9

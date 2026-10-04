@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: HII
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xEB61c0Ed490A367d4E3631cCf8a74B3bfc7E775D
 paused: False
@@ -17,6 +17,7 @@ address: `0xEB61c0Ed490A367d4E3631cCf8a74B3bfc7E775D`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:58bf75e06b2c
 - 2026-10-04T19:58:00Z sha:58bf75e06b2c
 - 2026-10-04T19:34:35Z sha:58bf75e06b2c
 - 2026-10-04T18:23:30Z sha:58bf75e06b2c

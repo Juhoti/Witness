@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AMBA
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x99D9D8663545151603863C5AcbD6FC3218899009
 paused: False
@@ -17,6 +17,7 @@ address: `0x99D9D8663545151603863C5AcbD6FC3218899009`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:a59e39a33c38
 - 2026-10-04T19:58:00Z sha:a59e39a33c38
 - 2026-10-04T19:34:35Z sha:a59e39a33c38
 - 2026-10-04T18:23:30Z sha:a59e39a33c38

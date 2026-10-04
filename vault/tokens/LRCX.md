@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LRCX
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x57b0030166DB0C31690d1A5aA167e2e26e2C29a4
 paused: False
@@ -17,6 +17,7 @@ address: `0x57b0030166DB0C31690d1A5aA167e2e26e2C29a4`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:fdb22232ff65
 - 2026-10-04T19:58:00Z sha:fdb22232ff65
 - 2026-10-04T19:34:35Z sha:fdb22232ff65
 - 2026-10-04T18:23:30Z sha:fdb22232ff65

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TSM
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x58FfE4a942d3885bAa22D7520691F611EF09e7AA
 paused: False
@@ -17,6 +17,7 @@ address: `0x58FfE4a942d3885bAa22D7520691F611EF09e7AA`
 Markets: [[markets/0xc738be0459585868fb5e8afa522f1597e72cde9488ed86a5402bd17f7b47ab39]], [[markets/0x859b05cd73f0c4117b97591ca5b4425c8f54cfedfba72ed6347ceeab3d9beb3e]], [[markets/0x243ac165f79a75a0590d2e994ffa9e260b70292fd1ca134ace95f3640895b19f]], [[markets/0x17d2f23d96c0a7c54197556f966a49e2802e49b574d8e39cfb3e1c0d91bf78fe]]
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:5ede0c498618
 - 2026-10-04T19:58:00Z sha:5ede0c498618
 - 2026-10-04T19:34:35Z sha:5ede0c498618
 - 2026-10-04T18:23:30Z sha:5ede0c498618

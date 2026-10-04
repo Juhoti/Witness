@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: POET
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xcf6B2D875361be807EAfa57458c80f28521F9333
 paused: False
@@ -17,6 +17,7 @@ address: `0xcf6B2D875361be807EAfa57458c80f28521F9333`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:f42a381b631d
 - 2026-10-04T19:58:00Z sha:f42a381b631d
 - 2026-10-04T19:34:35Z sha:f42a381b631d
 - 2026-10-04T18:23:30Z sha:f42a381b631d

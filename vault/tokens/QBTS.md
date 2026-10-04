@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: QBTS
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xC583c60aeF9Dc401Da72cEC1B404743a93cea1Cc
 paused: False
@@ -17,6 +17,7 @@ address: `0xC583c60aeF9Dc401Da72cEC1B404743a93cea1Cc`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:f1047cde7c13
 - 2026-10-04T19:58:00Z sha:f1047cde7c13
 - 2026-10-04T19:34:35Z sha:f1047cde7c13
 - 2026-10-04T18:23:30Z sha:f1047cde7c13

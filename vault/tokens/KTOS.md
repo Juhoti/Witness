@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: KTOS
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x7FD06a4d81cCfA3F351394E144d5191874C31313
 paused: False
@@ -17,6 +17,7 @@ address: `0x7FD06a4d81cCfA3F351394E144d5191874C31313`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:110aafe393f9
 - 2026-10-04T19:58:00Z sha:110aafe393f9
 - 2026-10-04T19:34:35Z sha:110aafe393f9
 - 2026-10-04T18:23:30Z sha:110aafe393f9

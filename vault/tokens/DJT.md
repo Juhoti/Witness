@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: DJT
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x1D11f0496982706C5e14A514D4E79F2e6BdE4516
 paused: False
@@ -17,6 +17,7 @@ address: `0x1D11f0496982706C5e14A514D4E79F2e6BdE4516`
 Markets: [[markets/0x3be7fe1b6b439cfeb737d9921e9b83c92095a23a4f50aeee0d6d04f44446170f]]
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:802c8be56ef3
 - 2026-10-04T19:58:00Z sha:802c8be56ef3
 - 2026-10-04T19:34:35Z sha:802c8be56ef3
 - 2026-10-04T18:23:30Z sha:802c8be56ef3

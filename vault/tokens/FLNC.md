@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FLNC
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0x282e87451E10fA6679BC7D76C69BE44cD3fC777C
 paused: False
@@ -17,6 +17,7 @@ address: `0x282e87451E10fA6679BC7D76C69BE44cD3fC777C`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:fb231d65df22
 - 2026-10-04T19:58:00Z sha:fb231d65df22
 - 2026-10-04T19:34:35Z sha:fb231d65df22
 - 2026-10-04T18:23:30Z sha:fb231d65df22

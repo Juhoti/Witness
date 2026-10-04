@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CRM
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xd95B44124e475743a7589e68F3D74008A5536D44
 paused: False
@@ -17,6 +17,7 @@ address: `0xd95B44124e475743a7589e68F3D74008A5536D44`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:1aad880847c5
 - 2026-10-04T19:58:00Z sha:1aad880847c5
 - 2026-10-04T19:34:35Z sha:1aad880847c5
 - 2026-10-04T18:23:30Z sha:1aad880847c5

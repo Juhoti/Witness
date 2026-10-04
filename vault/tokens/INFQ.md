@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: INFQ
-updated: 2026-10-04T19:58:00Z
+updated: 2026-10-04T20:26:03Z
 tags: [token]
 address: 0xB853bC83a753342a4f8320ea680b4B1E84118D21
 paused: False
@@ -17,6 +17,7 @@ address: `0xB853bC83a753342a4f8320ea680b4B1E84118D21`
 Markets:
 
 ## revisions
+- 2026-10-04T20:26:03Z sha:a964c4b62ad7
 - 2026-10-04T19:58:00Z sha:a964c4b62ad7
 - 2026-10-04T19:34:35Z sha:a964c4b62ad7
 - 2026-10-04T18:23:30Z sha:a964c4b62ad7
