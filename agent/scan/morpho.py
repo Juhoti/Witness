@@ -21,7 +21,7 @@ query Markets($chainId: Int!, $first: Int!, $skip: Int!) {
       collateralAsset { address symbol decimals }
       oracle { address }
       irmAddress
-      state { supplyAssetsUsd borrowAssetsUsd utilization supplyApy borrowApy }
+      state { supplyAssetsUsd borrowAssetsUsd collateralAssetsUsd utilization supplyApy borrowApy }
     }
   }
 }"""
@@ -56,6 +56,7 @@ def scan() -> dict:
             "lltv": m.get("lltv"),
             "supply_usd": st.get("supplyAssetsUsd"),
             "borrow_usd": st.get("borrowAssetsUsd"),
+            "collateral_usd": st.get("collateralAssetsUsd"),
             "utilization": st.get("utilization"),
             "borrow_apy": st.get("borrowApy"),
             "oracle": (m.get("oracle") or {}).get("address"),
