@@ -7,11 +7,23 @@ x-api-key: unkeyed requests are answered by a Cloudflare challenge page (HTTP 40
 """
 from __future__ import annotations
 import logging
+import time
 import httpx
 from collections import defaultdict
 from .. import settings
 
 log = logging.getLogger(__name__)
+
+
+def _get(client: httpx.Client, url: str, params: dict, tries: int = 3) -> httpx.Response:
+    """GET with a short backoff on transport errors (timeouts, dropped connections)."""
+    for i in range(tries):
+        try:
+            return client.get(url, params=params)
+        except httpx.TransportError:
+            if i == tries - 1:
+                raise
+            time.sleep(2 ** i)
 
 
 def _reason(tx: dict) -> str:
@@ -38,7 +50,7 @@ def scan(pages: int = 40) -> dict:
     try:
         with httpx.Client(timeout=30, headers=headers) as client:
             for _ in range(pages):
-                r = client.get(f"{base}/transactions", params=params)
+                r = _get(client, f"{base}/transactions", params)
                 r.raise_for_status()
                 j = r.json()
                 for tx in j.get("items", []):

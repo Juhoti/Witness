@@ -5,6 +5,7 @@ Treat the API as data; verify anything that will drive a policy change against t
 """
 from __future__ import annotations
 import logging
+import time
 import httpx
 from .. import settings
 
@@ -27,13 +28,24 @@ query Markets($chainId: Int!, $first: Int!, $skip: Int!) {
 }"""
 
 
+def _post(url: str, body: dict, tries: int = 3) -> httpx.Response:
+    """POST with a short backoff on transport errors."""
+    for i in range(tries):
+        try:
+            return httpx.post(url, json=body, timeout=30)
+        except httpx.TransportError:
+            if i == tries - 1:
+                raise
+            time.sleep(2 ** i)
+
+
 def scan() -> dict:
     url = settings.CHAIN["morpho"].get("graphql", "https://blue-api.morpho.org/graphql")
     try:
         items: list = []
         while True:
             variables = {"chainId": settings.CHAIN["chain"]["id"], "first": PAGE, "skip": len(items)}
-            r = httpx.post(url, json={"query": QUERY, "variables": variables}, timeout=30)
+            r = _post(url, {"query": QUERY, "variables": variables})
             r.raise_for_status()
             j = r.json()
             if j.get("errors"):
