@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: META
-updated: 2026-10-04T11:04:23Z
+updated: 2026-10-04T11:09:36Z
 tags: [token]
 address: 0xc0D6457C16Cc70d6790Dd43521C899C87ce02f35
 paused: False
@@ -17,6 +17,7 @@ address: `0xc0D6457C16Cc70d6790Dd43521C899C87ce02f35`
 Markets: [[markets/0xe1eea56f55e987d18f639f03a30c921d258d58e3fd696ef2afc2af1bd134d8ce]], [[markets/0x69400cfe81f2ae381b9a9f27076a4d637338379d999e9ffdfbde52f0876312ee]], [[markets/0x52a696df717bed55532a0cb16490cbe45b23f44e0bf4a4761968c9aa43fc4377]]
 
 ## revisions
+- 2026-10-04T11:09:36Z sha:9d137a3aa5a4
 - 2026-10-04T11:04:23Z sha:9d137a3aa5a4
 - 2026-10-04T10:43:07Z sha:9d137a3aa5a4
 - 2026-10-04T10:05:09Z sha:9d137a3aa5a4

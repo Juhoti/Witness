@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FIG
-updated: 2026-10-04T11:04:23Z
+updated: 2026-10-04T11:09:36Z
 tags: [token]
 address: 0x41F4267525a8AFf329540eF24fD83d9044758B33
 paused: False
@@ -17,6 +17,7 @@ address: `0x41F4267525a8AFf329540eF24fD83d9044758B33`
 Markets:
 
 ## revisions
+- 2026-10-04T11:09:36Z sha:f5207f6b8c05
 - 2026-10-04T11:04:23Z sha:f5207f6b8c05
 - 2026-10-04T10:43:07Z sha:f5207f6b8c05
 - 2026-10-04T10:05:09Z sha:f5207f6b8c05

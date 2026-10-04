@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MTSI
-updated: 2026-10-04T11:04:23Z
+updated: 2026-10-04T11:09:36Z
 tags: [token]
 address: 0xC93f4d80e268AB922e871bd169156C3CC41894e6
 paused: False
@@ -17,6 +17,7 @@ address: `0xC93f4d80e268AB922e871bd169156C3CC41894e6`
 Markets:
 
 ## revisions
+- 2026-10-04T11:09:36Z sha:c7c2384a388d
 - 2026-10-04T11:04:23Z sha:c7c2384a388d
 - 2026-10-04T10:43:07Z sha:c7c2384a388d
 - 2026-10-04T10:05:09Z sha:c7c2384a388d

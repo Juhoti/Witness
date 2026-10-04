@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CRWD
-updated: 2026-10-04T11:04:23Z
+updated: 2026-10-04T11:09:36Z
 tags: [token]
 address: 0xea72Ecca2d0f6bFA1394DBBCff85b52CD4233931
 paused: False
@@ -17,6 +17,7 @@ address: `0xea72Ecca2d0f6bFA1394DBBCff85b52CD4233931`
 Markets:
 
 ## revisions
+- 2026-10-04T11:09:36Z sha:e37dcd77ed6f
 - 2026-10-04T11:04:23Z sha:e37dcd77ed6f
 - 2026-10-04T10:43:07Z sha:e37dcd77ed6f
 - 2026-10-04T10:05:09Z sha:e37dcd77ed6f
