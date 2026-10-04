@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ARM
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x666716999E75d2652398FF830Bbc2e485946E140
 paused: False
@@ -17,6 +17,7 @@ address: `0x666716999E75d2652398FF830Bbc2e485946E140`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:4eb2abf60c56
 - 2026-10-04T20:26:03Z sha:4eb2abf60c56
 - 2026-10-04T19:58:00Z sha:4eb2abf60c56
 - 2026-10-04T19:34:35Z sha:4eb2abf60c56

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FTNT
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x3FB8976980d486084b2eb4a404BD12e72823958f
 paused: False
@@ -17,6 +17,7 @@ address: `0x3FB8976980d486084b2eb4a404BD12e72823958f`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:435ffcdd269f
 - 2026-10-04T20:26:03Z sha:435ffcdd269f
 - 2026-10-04T19:58:00Z sha:435ffcdd269f
 - 2026-10-04T19:34:35Z sha:435ffcdd269f

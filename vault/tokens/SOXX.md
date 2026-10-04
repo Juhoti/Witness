@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SOXX
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x75742c18BC1f1C5c5f448f4C9D9C6F66dafAAa38
 paused: False
@@ -17,6 +17,7 @@ address: `0x75742c18BC1f1C5c5f448f4C9D9C6F66dafAAa38`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:a18cfe7414bc
 - 2026-10-04T20:26:03Z sha:a18cfe7414bc
 - 2026-10-04T19:58:00Z sha:a18cfe7414bc
 - 2026-10-04T19:34:35Z sha:a18cfe7414bc

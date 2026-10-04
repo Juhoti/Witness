@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FISV
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x9ECe29A4A2397C0a35fb5fA8EE2b9509130a98cc
 paused: False
@@ -17,6 +17,7 @@ address: `0x9ECe29A4A2397C0a35fb5fA8EE2b9509130a98cc`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:7965780230ae
 - 2026-10-04T20:26:03Z sha:7965780230ae
 - 2026-10-04T19:58:00Z sha:7965780230ae
 - 2026-10-04T19:34:35Z sha:7965780230ae

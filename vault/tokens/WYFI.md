@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: WYFI
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x9e7ABD3C9139D14E4c86DcE0e455AAB7A0C2FB3E
 paused: False
@@ -17,6 +17,7 @@ address: `0x9e7ABD3C9139D14E4c86DcE0e455AAB7A0C2FB3E`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:9b84a0bf93a7
 - 2026-10-04T20:26:03Z sha:9b84a0bf93a7
 - 2026-10-04T19:58:00Z sha:9b84a0bf93a7
 - 2026-10-04T19:34:35Z sha:9b84a0bf93a7

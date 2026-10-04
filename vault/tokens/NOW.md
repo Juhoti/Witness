@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NOW
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x0C3260aF4B8f13a69c4c2dFb84fD667890CDFa14
 paused: False
@@ -17,6 +17,7 @@ address: `0x0C3260aF4B8f13a69c4c2dFb84fD667890CDFa14`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:b3d183cdf8d2
 - 2026-10-04T20:26:03Z sha:b3d183cdf8d2
 - 2026-10-04T19:58:00Z sha:b3d183cdf8d2
 - 2026-10-04T19:34:35Z sha:b3d183cdf8d2

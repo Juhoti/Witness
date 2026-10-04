@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SKHY
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x84CAb63bc87912E71ad199ff14A0bA45de68FeF8
 paused: False
@@ -17,6 +17,7 @@ address: `0x84CAb63bc87912E71ad199ff14A0bA45de68FeF8`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:71b148da3e2e
 - 2026-10-04T20:26:03Z sha:71b148da3e2e
 - 2026-10-04T19:58:00Z sha:71b148da3e2e
 - 2026-10-04T19:34:35Z sha:71b148da3e2e

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ORCL
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0xb0992820E760d836549ba69BC7598b4af75dEE03
 paused: False
@@ -17,6 +17,7 @@ address: `0xb0992820E760d836549ba69BC7598b4af75dEE03`
 Markets: [[markets/0xee04847a312224d551d2267bb5c2c2695777af5fd1f05347bdcca397e8f54336]], [[markets/0x967fa72999996bcec63cf5029224d14146cf1241a83ff7ff5fedfb8e6db3f737]]
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:13e641434f9a
 - 2026-10-04T20:26:03Z sha:13e641434f9a
 - 2026-10-04T19:58:00Z sha:13e641434f9a
 - 2026-10-04T19:34:35Z sha:13e641434f9a

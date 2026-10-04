@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GLD
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0xC9a981FEE1F9DEc688bb123ccDeCc63D0deBFC4e
 paused: False
@@ -17,6 +17,7 @@ address: `0xC9a981FEE1F9DEc688bb123ccDeCc63D0deBFC4e`
 Markets: [[markets/0x6c12c02536aa27831f713d658b59f74e149cc62b48528cb74455e79fab32f772]]
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:7ae2abf83f1c
 - 2026-10-04T20:26:03Z sha:7ae2abf83f1c
 - 2026-10-04T19:58:00Z sha:7ae2abf83f1c
 - 2026-10-04T19:34:35Z sha:7ae2abf83f1c

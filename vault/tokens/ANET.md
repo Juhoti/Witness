@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ANET
-updated: 2026-10-04T20:26:03Z
+updated: 2026-10-04T21:07:40Z
 tags: [token]
 address: 0x28bABD556b60E53663B8615036479a29c2CDd1Bf
 paused: False
@@ -17,6 +17,7 @@ address: `0x28bABD556b60E53663B8615036479a29c2CDd1Bf`
 Markets:
 
 ## revisions
+- 2026-10-04T21:07:40Z sha:69eaed53bce7
 - 2026-10-04T20:26:03Z sha:69eaed53bce7
 - 2026-10-04T19:58:00Z sha:69eaed53bce7
 - 2026-10-04T19:34:35Z sha:69eaed53bce7
