@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ASTS
-updated: 2026-10-05T02:26:38Z
+updated: 2026-10-05T04:13:38Z
 tags: [token]
 address: 0x1AF6446f07eb1d97c546AFC8c9544cBDF3AD5137
 paused: False
@@ -17,6 +17,7 @@ address: `0x1AF6446f07eb1d97c546AFC8c9544cBDF3AD5137`
 Markets:
 
 ## revisions
+- 2026-10-05T04:13:38Z sha:449cac291e99
 - 2026-10-05T02:26:38Z sha:449cac291e99
 - 2026-10-05T01:14:59Z sha:449cac291e99
 - 2026-10-04T21:46:11Z sha:449cac291e99

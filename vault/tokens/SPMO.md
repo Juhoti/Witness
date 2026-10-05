@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SPMO
-updated: 2026-10-05T02:26:38Z
+updated: 2026-10-05T04:13:38Z
 tags: [token]
 address: 0xAd622320e520de39e72d41EF07438C3Fd3354875
 paused: False
@@ -17,6 +17,7 @@ address: `0xAd622320e520de39e72d41EF07438C3Fd3354875`
 Markets:
 
 ## revisions
+- 2026-10-05T04:13:38Z sha:d6ad7e04689c
 - 2026-10-05T02:26:38Z sha:d6ad7e04689c
 - 2026-10-05T01:14:59Z sha:d6ad7e04689c
 - 2026-10-04T21:46:11Z sha:d6ad7e04689c

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CELH
-updated: 2026-10-05T02:26:38Z
+updated: 2026-10-05T04:13:38Z
 tags: [token]
 address: 0x8cF07C5A878945185d327aAa6e33FAa95F95e7bF
 paused: False
@@ -17,6 +17,7 @@ address: `0x8cF07C5A878945185d327aAa6e33FAa95F95e7bF`
 Markets:
 
 ## revisions
+- 2026-10-05T04:13:38Z sha:9e8821cea718
 - 2026-10-05T02:26:38Z sha:9e8821cea718
 - 2026-10-05T01:14:59Z sha:9e8821cea718
 - 2026-10-04T21:46:11Z sha:9e8821cea718

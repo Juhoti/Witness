@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SMR
-updated: 2026-10-05T02:26:38Z
+updated: 2026-10-05T04:13:38Z
 tags: [token]
 address: 0x1Eebee7F74517e0279dFb09d25B0407bEEc3FDd6
 paused: False
@@ -17,6 +17,7 @@ address: `0x1Eebee7F74517e0279dFb09d25B0407bEEc3FDd6`
 Markets:
 
 ## revisions
+- 2026-10-05T04:13:38Z sha:e332e7cdad6f
 - 2026-10-05T02:26:38Z sha:e332e7cdad6f
 - 2026-10-05T01:14:59Z sha:e332e7cdad6f
 - 2026-10-04T21:46:11Z sha:e332e7cdad6f
