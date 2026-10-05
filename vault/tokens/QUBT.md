@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: QUBT
-updated: 2026-10-05T15:52:01Z
+updated: 2026-10-05T16:07:35Z
 tags: [token]
 address: 0x59818904ab4cE163b3cE4FfB64f2D6Ca02c434B4
 paused: False
@@ -17,6 +17,7 @@ address: `0x59818904ab4cE163b3cE4FfB64f2D6Ca02c434B4`
 Markets:
 
 ## revisions
+- 2026-10-05T16:07:35Z sha:d7d22319f4ec
 - 2026-10-05T15:52:01Z sha:d7d22319f4ec
 - 2026-10-05T15:49:15Z sha:d7d22319f4ec
 - 2026-10-05T15:32:21Z sha:d7d22319f4ec

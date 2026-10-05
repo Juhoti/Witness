@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NASA
-updated: 2026-10-05T15:52:01Z
+updated: 2026-10-05T16:07:35Z
 tags: [token]
 address: 0x6ddb95405db6179012Bff2fFf7E0F8d49cF00137
 paused: False
@@ -17,6 +17,7 @@ address: `0x6ddb95405db6179012Bff2fFf7E0F8d49cF00137`
 Markets:
 
 ## revisions
+- 2026-10-05T16:07:35Z sha:4ed390817fe4
 - 2026-10-05T15:52:01Z sha:4ed390817fe4
 - 2026-10-05T15:49:15Z sha:4ed390817fe4
 - 2026-10-05T15:32:21Z sha:4ed390817fe4

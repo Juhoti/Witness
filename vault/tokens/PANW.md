@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PANW
-updated: 2026-10-05T15:52:02Z
+updated: 2026-10-05T16:07:35Z
 tags: [token]
 address: 0xB039597eD45CBa7B6E2fb9E8BE51802969CEe5Be
 paused: False
@@ -17,6 +17,7 @@ address: `0xB039597eD45CBa7B6E2fb9E8BE51802969CEe5Be`
 Markets:
 
 ## revisions
+- 2026-10-05T16:07:35Z sha:1213c46859de
 - 2026-10-05T15:52:02Z sha:1213c46859de
 - 2026-10-05T15:49:15Z sha:1213c46859de
 - 2026-10-05T15:32:21Z sha:1213c46859de
