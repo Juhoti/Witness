@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: KLAC
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:34Z
 tags: [token]
 address: 0x96b933C74eCB4A0926b9210cef7b743EF46be2E9
 paused: False
@@ -17,6 +17,7 @@ address: `0x96b933C74eCB4A0926b9210cef7b743EF46be2E9`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:34Z sha:896784060df8
 - 2026-10-05T06:33:35Z sha:896784060df8
 - 2026-10-05T04:49:08Z sha:896784060df8
 - 2026-10-05T04:13:38Z sha:896784060df8

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: VICR
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:33Z
 tags: [token]
 address: 0x6006ed4B2F94110851ff7509D97D034f0EeD9226
 paused: False
@@ -17,6 +17,7 @@ address: `0x6006ed4B2F94110851ff7509D97D034f0EeD9226`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:33Z sha:1981367443b1
 - 2026-10-05T06:33:35Z sha:1981367443b1
 - 2026-10-05T04:49:08Z sha:1981367443b1
 - 2026-10-05T04:13:38Z sha:1981367443b1

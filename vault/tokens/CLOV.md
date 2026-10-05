@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CLOV
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:33Z
 tags: [token]
 address: 0x62200915e7DEab1eC7f79fb246daDbB80eACdDd0
 paused: False
@@ -17,6 +17,7 @@ address: `0x62200915e7DEab1eC7f79fb246daDbB80eACdDd0`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:33Z sha:698219686780
 - 2026-10-05T06:33:35Z sha:698219686780
 - 2026-10-05T04:49:08Z sha:698219686780
 - 2026-10-05T04:13:38Z sha:698219686780

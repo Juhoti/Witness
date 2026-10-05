@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SIMO
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:33Z
 tags: [token]
 address: 0x77E655E37F4d913fB9540e0d541D824171a60e81
 paused: False
@@ -17,6 +17,7 @@ address: `0x77E655E37F4d913fB9540e0d541D824171a60e81`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:33Z sha:9850105c7c38
 - 2026-10-05T06:33:35Z sha:9850105c7c38
 - 2026-10-05T04:49:08Z sha:9850105c7c38
 - 2026-10-05T04:13:38Z sha:9850105c7c38

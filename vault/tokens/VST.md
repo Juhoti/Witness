@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: VST
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:33Z
 tags: [token]
 address: 0x561e2a49212b7cCF47f2744Ccb83e200722fADBc
 paused: False
@@ -17,6 +17,7 @@ address: `0x561e2a49212b7cCF47f2744Ccb83e200722fADBc`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:33Z sha:0d9d6961fb04
 - 2026-10-05T06:33:35Z sha:0d9d6961fb04
 - 2026-10-05T04:49:08Z sha:0d9d6961fb04
 - 2026-10-05T04:13:38Z sha:0d9d6961fb04

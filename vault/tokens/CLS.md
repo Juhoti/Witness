@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CLS
-updated: 2026-10-05T06:33:35Z
+updated: 2026-10-05T07:07:34Z
 tags: [token]
 address: 0xBf449977089c718C004a66C554B26B94ef3Ad4De
 paused: False
@@ -17,6 +17,7 @@ address: `0xBf449977089c718C004a66C554B26B94ef3Ad4De`
 Markets:
 
 ## revisions
+- 2026-10-05T07:07:34Z sha:e15bd4ef6a40
 - 2026-10-05T06:33:35Z sha:e15bd4ef6a40
 - 2026-10-05T04:49:08Z sha:e15bd4ef6a40
 - 2026-10-05T04:13:38Z sha:e15bd4ef6a40
