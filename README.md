@@ -66,6 +66,7 @@ python -m agent.census ingest        # read every log on the chain into per-cont
 python -m agent.census report        # share of activity the agent can name, and what it cannot
 python -m agent.intent sample        # count recent calls by contract and function, failed or not
 python -m agent.intent report        # functions failing most above the chain's base rate
+python -m agent.oracle_audit         # how every Morpho market is priced: constant, frozen, unlisted feed, stale
 python -m agent.audit                # check the record against itself: hashes, chain, references
 python -m agent.gate                 # consecutive clean scans toward the current gate
 ```
