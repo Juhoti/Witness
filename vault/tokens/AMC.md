@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AMC
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0x05a3d1Cd21d0C88145E82600E62e7E496e0F222B
 paused: False
@@ -17,6 +17,7 @@ address: `0x05a3d1Cd21d0C88145E82600E62e7E496e0F222B`
 Markets: [[markets/0x8c170f5c5df593791640ac9fbac297d59d08c2e92e86f38fe52d38e929e60fa3]]
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:fade812e6cb8
 - 2026-10-05T15:32:21Z sha:fade812e6cb8
 - 2026-10-05T15:28:32Z sha:fade812e6cb8
 - 2026-10-05T15:19:53Z sha:fade812e6cb8

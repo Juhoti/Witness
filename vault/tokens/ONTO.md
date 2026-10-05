@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ONTO
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0x8ff63eAeEe3fE54Ba450c4F5538064Ec5A893Aef
 paused: False
@@ -17,6 +17,7 @@ address: `0x8ff63eAeEe3fE54Ba450c4F5538064Ec5A893Aef`
 Markets:
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:5e44a10a3856
 - 2026-10-05T15:32:21Z sha:5e44a10a3856
 - 2026-10-05T15:28:32Z sha:5e44a10a3856
 - 2026-10-05T15:19:53Z sha:5e44a10a3856

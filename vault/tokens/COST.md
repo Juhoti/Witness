@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: COST
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2
 paused: False
@@ -17,6 +17,7 @@ address: `0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2`
 Markets: [[markets/0xccdfcd98e6779322b28ecdc0c513ed3bd510ccb2fd15ee6a70d6cf142398db41]], [[markets/0xb33399a677e1a21152fa9969f02c57a7a342e692ec45608a3fa0d3d92519c343]]
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:9d29a2357cc2
 - 2026-10-05T15:32:21Z sha:9d29a2357cc2
 - 2026-10-05T15:28:32Z sha:9d29a2357cc2
 - 2026-10-05T15:19:53Z sha:9d29a2357cc2

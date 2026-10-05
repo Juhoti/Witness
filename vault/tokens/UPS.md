@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: UPS
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0xf23250dac154D05Bb671CB0d0eBEf3c635c79CE2
 paused: False
@@ -17,6 +17,7 @@ address: `0xf23250dac154D05Bb671CB0d0eBEf3c635c79CE2`
 Markets:
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:6fd9a2c71a57
 - 2026-10-05T15:32:21Z sha:6fd9a2c71a57
 - 2026-10-05T15:28:32Z sha:6fd9a2c71a57
 - 2026-10-05T15:19:53Z sha:6fd9a2c71a57

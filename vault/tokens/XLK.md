@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: XLK
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0x15Cd20759CE7F3285c29A319dE2D1A2e098c6f43
 paused: False
@@ -17,6 +17,7 @@ address: `0x15Cd20759CE7F3285c29A319dE2D1A2e098c6f43`
 Markets:
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:54dcaedf5ef0
 - 2026-10-05T15:32:21Z sha:54dcaedf5ef0
 - 2026-10-05T15:28:32Z sha:54dcaedf5ef0
 - 2026-10-05T15:19:53Z sha:54dcaedf5ef0

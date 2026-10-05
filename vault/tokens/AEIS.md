@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AEIS
-updated: 2026-10-05T15:32:21Z
+updated: 2026-10-05T15:49:15Z
 tags: [token]
 address: 0xfAf9cb261B5FCC1f404Bb10CD39C5c6C1974E612
 paused: False
@@ -17,6 +17,7 @@ address: `0xfAf9cb261B5FCC1f404Bb10CD39C5c6C1974E612`
 Markets:
 
 ## revisions
+- 2026-10-05T15:49:15Z sha:c611cca33814
 - 2026-10-05T15:32:21Z sha:c611cca33814
 - 2026-10-05T15:28:32Z sha:c611cca33814
 - 2026-10-05T15:19:53Z sha:c611cca33814
