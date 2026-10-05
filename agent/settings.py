@@ -20,6 +20,10 @@ BLOCKSCOUT_API_KEY = os.getenv("BLOCKSCOUT_API_KEY", "")  # sent as x-api-key; u
 SCAN_EVERY_MINUTES = int(os.getenv("SCAN_EVERY_MINUTES", "30"))
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 PROPOSER_ENABLED = os.getenv("PROPOSER_ENABLED", "false").lower() == "true"
+# The investigator: a model works down the opportunity map's unexplained queue. Reads only; off by default.
+INVESTIGATOR_ENABLED = os.getenv("INVESTIGATOR_ENABLED", "false").lower() == "true"
+INVESTIGATOR_MODEL = os.getenv("INVESTIGATOR_MODEL", "claude-opus-5-5")
+INVESTIGATOR_DAILY_USD = float(os.getenv("INVESTIGATOR_DAILY_USD", "5"))   # hard stop for the day once estimated spend reaches this
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
