@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: OKLO
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x8B2f88497f15A18E9D4FFa1a8fFB8538399aE774
 paused: False
@@ -17,6 +17,7 @@ address: `0x8B2f88497f15A18E9D4FFa1a8fFB8538399aE774`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:34c184cf14ac
 - 2026-10-05T01:14:59Z sha:34c184cf14ac
 - 2026-10-04T21:46:11Z sha:34c184cf14ac
 - 2026-10-04T21:07:40Z sha:34c184cf14ac

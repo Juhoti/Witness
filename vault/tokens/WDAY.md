@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: WDAY
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x82DA4646242e1D962e96e932269Dc644c94a9CaA
 paused: False
@@ -17,6 +17,7 @@ address: `0x82DA4646242e1D962e96e932269Dc644c94a9CaA`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:d73eaa3605cb
 - 2026-10-05T01:14:59Z sha:d73eaa3605cb
 - 2026-10-04T21:46:11Z sha:d73eaa3605cb
 - 2026-10-04T21:07:40Z sha:d73eaa3605cb

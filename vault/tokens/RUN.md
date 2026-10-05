@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RUN
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x756Bc80af765C82da966a788858d65aDF14f3793
 paused: False
@@ -17,6 +17,7 @@ address: `0x756Bc80af765C82da966a788858d65aDF14f3793`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:bed3273ad8a4
 - 2026-10-05T01:14:59Z sha:bed3273ad8a4
 - 2026-10-04T21:46:11Z sha:bed3273ad8a4
 - 2026-10-04T21:07:40Z sha:bed3273ad8a4

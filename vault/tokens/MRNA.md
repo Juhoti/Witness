@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MRNA
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x43B07D15cE533bEc5476d70C22a78a1B2B662155
 paused: False
@@ -17,6 +17,7 @@ address: `0x43B07D15cE533bEc5476d70C22a78a1B2B662155`
 Markets: [[markets/0xe8d9b45cdbedc4401a3145be7726c9f72b715e03c5399c961439f11636ee9fb6]]
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:2647ec82d6bf
 - 2026-10-05T01:14:59Z sha:2647ec82d6bf
 - 2026-10-04T21:46:11Z sha:2647ec82d6bf
 - 2026-10-04T21:07:40Z sha:2647ec82d6bf

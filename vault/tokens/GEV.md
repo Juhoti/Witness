@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GEV
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x94B8AAE43A1cCc08Aa64B7D1F29b4D920aF4a0C9
 paused: False
@@ -17,6 +17,7 @@ address: `0x94B8AAE43A1cCc08Aa64B7D1F29b4D920aF4a0C9`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:bdc30d188c75
 - 2026-10-05T01:14:59Z sha:bdc30d188c75
 - 2026-10-04T21:46:11Z sha:bdc30d188c75
 - 2026-10-04T21:07:40Z sha:bdc30d188c75

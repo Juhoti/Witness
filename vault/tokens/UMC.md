@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: UMC
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x0E6e67Ba88e7b5d9B67636A215c76779B948dE79
 paused: False
@@ -17,6 +17,7 @@ address: `0x0E6e67Ba88e7b5d9B67636A215c76779B948dE79`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:10699a0fba90
 - 2026-10-05T01:14:59Z sha:10699a0fba90
 - 2026-10-04T21:46:11Z sha:10699a0fba90
 - 2026-10-04T21:07:40Z sha:10699a0fba90

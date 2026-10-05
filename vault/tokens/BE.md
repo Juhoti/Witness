@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BE
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T02:26:38Z
 tags: [token]
 address: 0x822CC93fFD030293E9842c30BBD678F530701867
 paused: False
@@ -17,6 +17,7 @@ address: `0x822CC93fFD030293E9842c30BBD678F530701867`
 Markets:
 
 ## revisions
+- 2026-10-05T02:26:38Z sha:72b312ff62b3
 - 2026-10-05T01:14:59Z sha:72b312ff62b3
 - 2026-10-04T21:46:11Z sha:72b312ff62b3
 - 2026-10-04T21:07:40Z sha:72b312ff62b3
