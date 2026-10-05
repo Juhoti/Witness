@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: VRT
-updated: 2026-10-05T04:13:38Z
+updated: 2026-10-05T04:49:08Z
 tags: [token]
 address: 0xFA78C12E6488814A0262E4e802749a4a737d5fB7
 paused: False
@@ -17,6 +17,7 @@ address: `0xFA78C12E6488814A0262E4e802749a4a737d5fB7`
 Markets:
 
 ## revisions
+- 2026-10-05T04:49:08Z sha:17a13a5518cc
 - 2026-10-05T04:13:38Z sha:17a13a5518cc
 - 2026-10-05T02:26:38Z sha:17a13a5518cc
 - 2026-10-05T01:14:59Z sha:17a13a5518cc

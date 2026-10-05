@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FIX
-updated: 2026-10-05T04:13:38Z
+updated: 2026-10-05T04:49:08Z
 tags: [token]
 address: 0x93Dbb1d2Dc5D63F4abACFF30485273f538Df68Ac
 paused: False
@@ -17,6 +17,7 @@ address: `0x93Dbb1d2Dc5D63F4abACFF30485273f538Df68Ac`
 Markets:
 
 ## revisions
+- 2026-10-05T04:49:08Z sha:1526c5aaf5c0
 - 2026-10-05T04:13:38Z sha:1526c5aaf5c0
 - 2026-10-05T02:26:38Z sha:1526c5aaf5c0
 - 2026-10-05T01:14:59Z sha:1526c5aaf5c0

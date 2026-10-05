@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: JOBY
-updated: 2026-10-05T04:13:38Z
+updated: 2026-10-05T04:49:08Z
 tags: [token]
 address: 0xb334C5cE741B80B5B671F47F5C269Cb193fe8E24
 paused: False
@@ -17,6 +17,7 @@ address: `0xb334C5cE741B80B5B671F47F5C269Cb193fe8E24`
 Markets:
 
 ## revisions
+- 2026-10-05T04:49:08Z sha:8bb183fa3c73
 - 2026-10-05T04:13:38Z sha:8bb183fa3c73
 - 2026-10-05T02:26:38Z sha:8bb183fa3c73
 - 2026-10-05T01:14:59Z sha:8bb183fa3c73
