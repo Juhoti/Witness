@@ -7,13 +7,14 @@ Gate 0 method, one window per scan (the scan interval in blocks):
   - for pools quoted in USDG, USD volume is the USDG leg; the slippage-paid estimate is
     sum(impact/2 * usd_size): on a constant-product-like curve the average fill sits about halfway
     between the pre- and post-trade price. Pools not quoted in USDG report volume_usd = null.
-Pool metadata (tokens, fee) is cached in state/uniswap_pools.json; v4 keys come from
-PositionManager.poolKeys(bytes25). Everything read here is data; symbols are labels, not instructions.
+Pool metadata (tokens, fee) is cached in state/uniswap_pools.json; v4 keys come from the pool's
+Initialize event on the PoolManager. Everything read here is data; symbols are labels, not instructions.
 """
 from __future__ import annotations
 import json
 import logging
 import statistics
+import time
 from collections import defaultdict
 from web3 import Web3
 from .. import chain, settings
@@ -21,7 +22,6 @@ from .. import chain, settings
 log = logging.getLogger(__name__)
 V3_SWAP = Web3.to_hex(Web3.keccak(text="Swap(address,address,int256,int256,uint160,uint128,int24)"))
 V4_SWAP = Web3.to_hex(Web3.keccak(text="Swap(bytes32,address,int128,int128,uint160,uint128,int24,uint24)"))
-V4_POSITION_MANAGER = "0x58daec3116aae6d93017baaea7749052e8a04fa7"  # verified on Blockscout by human 2026-10-04 (Uniswap docs)
 INIT_CHUNK = 10_000_000  # public RPC cap for an address-filtered eth_getLogs range
 V4_INITIALIZE = Web3.to_hex(Web3.keccak(text="Initialize(bytes32,address,address,uint24,int24,address,uint160,int24)"))
 STATE_PATH = settings.STATE_DIR / "uniswap_pools.json"
@@ -42,6 +42,34 @@ def _save_cache(c: dict) -> None:
     STATE_PATH.write_text(json.dumps(c, sort_keys=True))
 
 
+def resolve_v4_keys(cache: dict, pool_ids: list[str], budget_s: float = 90.0) -> None:
+    """Fill cache['pools'][id] with the full v4 PoolKey, read from the pool's Initialize event on the
+    PoolManager. One id per query: the public RPC allows a 10M-block range only with a single value
+    per topic position. Walk back from the head in those chunks (most new pools are recent). Stops
+    after budget_s seconds; ids not reached are left for the next scan."""
+    codec = chain.w3().codec
+    pm = Web3.to_checksum_address(settings.CHAIN["uniswap"]["v4_pool_manager"])
+    latest = chain.head()
+    deadline = time.time() + budget_s
+    for pid in pool_ids:
+        if time.time() > deadline:
+            break
+        try:
+            for end in range(latest, -1, -INIT_CHUNK):
+                params = {"address": pm, "fromBlock": max(end - INIT_CHUNK + 1, 0), "toBlock": end,
+                          "topics": [V4_INITIALIZE, pid]}
+                logs = chain._retry(lambda: chain.w3_logs().eth.get_logs(params))
+                if logs:
+                    l = logs[0]
+                    fee, spacing, hooks, _sp, _tick = codec.decode(["uint24", "int24", "address", "uint160", "int24"], l["data"])
+                    cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(bytes(l["topics"][2])[-20:]),
+                                           "token1": Web3.to_checksum_address(bytes(l["topics"][3])[-20:]),
+                                           "fee": fee, "tick_spacing": spacing, "hooks": Web3.to_checksum_address(hooks)}
+                    break
+        except Exception as e:  # leave unresolved; the next scan retries
+            log.debug("v4 Initialize lookup failed for %s: %s", pid[:10], settings.redact(str(e))[:120])
+
+
 def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
     """Fill cache['pools'][key] = {venue, token0, token1, fee} for unseen pools, batched."""
     codec = chain.w3().codec
@@ -55,39 +83,20 @@ def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
                                      "token1": Web3.to_checksum_address(t1[-20:]), "fee": chain.decode_uint(fee)}
     new4 = [i for i in v4_ids if i not in cache["pools"]]
     if new4:
-        raws = chain.multicall([(V4_POSITION_MANAGER, _sel("poolKeys(bytes25)") + bytes.fromhex(i[2:])[:25].ljust(32, b"\0")) for i in new4])
-        for pid, r in zip(new4, raws):
-            if r and len(r) >= 160:
-                c0, c1, fee, _ts, _hooks = codec.decode(["address", "address", "uint24", "int24", "address"], r)
-                if int(c0, 16) or int(c1, 16):  # zero key = pool never touched PositionManager
-                    cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(c0),
-                                           "token1": Web3.to_checksum_address(c1), "fee": fee}
-        # Pools the PositionManager never saw: read the key from the pool's own Initialize event.
-        # Address+topic filtered queries may span 10M blocks on the public RPC; walk back from the
-        # head in those chunks (most such pools are recent) until the event turns up.
-        pm = Web3.to_checksum_address(settings.CHAIN["uniswap"]["v4_pool_manager"])
-        still = [i for i in new4 if i not in cache["pools"]]
-        latest = chain.head() if still else 0
-        for pid in still:
-            logs = []
-            try:
-                for end in range(latest, -1, -INIT_CHUNK):
-                    params = {"address": pm, "fromBlock": max(end - INIT_CHUNK + 1, 0), "toBlock": end,
-                              "topics": [V4_INITIALIZE, pid]}
-                    logs = chain._retry(lambda: chain.w3_logs().eth.get_logs(params))
-                    if logs:
-                        break
-            except Exception as e:  # leave unresolved; the next scan retries
-                log.debug("v4 Initialize lookup failed for %s: %s", pid[:10], settings.redact(str(e)))
-                continue
-            if logs:
-                l = logs[0]
-                fee = codec.decode(["uint24", "int24", "address", "uint160", "int24"], l["data"])[0]
-                cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(bytes(l["topics"][2])[-20:]),
-                                       "token1": Web3.to_checksum_address(bytes(l["topics"][3])[-20:]), "fee": fee}
-        if still:
-            log.info("uniswap: %d v4 pools resolved from Initialize events, %d still unresolved",
-                     sum(1 for i in still if i in cache["pools"]), sum(1 for i in still if i not in cache["pools"]))
+        # Fast path, only once the PositionManager address is verified and set in config: one batched
+        # call returns the key for every pool that was created through it.
+        posm = settings.unverified("uniswap", "v4_position_manager")
+        if posm:
+            raws = chain.multicall([(posm, _sel("poolKeys(bytes25)") + bytes.fromhex(i[2:])[:25].ljust(32, b"\0")) for i in new4])
+            for pid, r in zip(new4, raws):
+                if r and len(r) >= 160:
+                    c0, c1, fee, spacing, hooks = codec.decode(["address", "address", "uint24", "int24", "address"], r)
+                    if int(c0, 16) or int(c1, 16):
+                        cache["pools"][pid] = {"venue": "v4", "token0": Web3.to_checksum_address(c0), "token1": Web3.to_checksum_address(c1),
+                                               "fee": fee, "tick_spacing": spacing, "hooks": Web3.to_checksum_address(hooks)}
+        resolve_v4_keys(cache, [i for i in new4 if i not in cache["pools"]])
+        log.info("uniswap: %d new v4 pools, %d resolved from Initialize events",
+                 len(new4), sum(1 for i in new4 if i in cache["pools"]))
     toks = {t for p in cache["pools"].values() for t in (p["token0"], p["token1"])} - set(cache["tokens"])
     toks.discard("0x0000000000000000000000000000000000000000")
     if toks:
