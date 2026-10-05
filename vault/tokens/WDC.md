@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: WDC
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0xF52597345A8Edf418bc4071b4a35112472277D3e
 paused: False
@@ -17,6 +17,7 @@ address: `0xF52597345A8Edf418bc4071b4a35112472277D3e`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:39095b868e2f
 - 2026-10-05T16:07:35Z sha:39095b868e2f
 - 2026-10-05T15:52:02Z sha:39095b868e2f
 - 2026-10-05T15:49:15Z sha:39095b868e2f

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TE
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0xb1969f6604CA1AE7a2cD3F1827876e914594CA2D
 paused: False
@@ -17,6 +17,7 @@ address: `0xb1969f6604CA1AE7a2cD3F1827876e914594CA2D`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:b3e477f1a45d
 - 2026-10-05T16:07:35Z sha:b3e477f1a45d
 - 2026-10-05T15:52:02Z sha:b3e477f1a45d
 - 2026-10-05T15:49:15Z sha:b3e477f1a45d

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AEHR
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x5F604fBA1162193A4388A5DFa56F556f3E133cC2
 paused: False
@@ -17,6 +17,7 @@ address: `0x5F604fBA1162193A4388A5DFa56F556f3E133cC2`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:3700784db4be
 - 2026-10-05T16:07:35Z sha:3700784db4be
 - 2026-10-05T15:52:01Z sha:3700784db4be
 - 2026-10-05T15:49:15Z sha:3700784db4be

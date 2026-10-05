@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CTSH
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x63D5a3b6939a33f1e75d8Bcd85759858239600DB
 paused: False
@@ -17,6 +17,7 @@ address: `0x63D5a3b6939a33f1e75d8Bcd85759858239600DB`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:c0b902eaa345
 - 2026-10-05T16:07:35Z sha:c0b902eaa345
 - 2026-10-05T15:52:01Z sha:c0b902eaa345
 - 2026-10-05T15:49:15Z sha:c0b902eaa345

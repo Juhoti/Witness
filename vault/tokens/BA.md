@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BA
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x4D21483a44Bf67a86b77E3dA301411880797D452
 paused: False
@@ -17,6 +17,7 @@ address: `0x4D21483a44Bf67a86b77E3dA301411880797D452`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:d75fbff5bb0c
 - 2026-10-05T16:07:35Z sha:d75fbff5bb0c
 - 2026-10-05T15:52:01Z sha:d75fbff5bb0c
 - 2026-10-05T15:49:15Z sha:d75fbff5bb0c

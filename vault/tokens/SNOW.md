@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SNOW
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E
 paused: False
@@ -17,6 +17,7 @@ address: `0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:c16ced9219cb
 - 2026-10-05T16:07:35Z sha:c16ced9219cb
 - 2026-10-05T15:52:02Z sha:c16ced9219cb
 - 2026-10-05T15:49:15Z sha:c16ced9219cb

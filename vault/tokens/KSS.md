@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: KSS
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x12e3c047bf9AeCAF9dDC98c05C31BFD1dd043993
 paused: False
@@ -17,6 +17,7 @@ address: `0x12e3c047bf9AeCAF9dDC98c05C31BFD1dd043993`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:97c933489a01
 - 2026-10-05T16:07:35Z sha:97c933489a01
 - 2026-10-05T15:52:01Z sha:97c933489a01
 - 2026-10-05T15:49:15Z sha:97c933489a01

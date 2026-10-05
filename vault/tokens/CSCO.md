@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CSCO
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0xF543967EEBB6f1917992eF0E68De63ab07a5a0dA
 paused: False
@@ -17,6 +17,7 @@ address: `0xF543967EEBB6f1917992eF0E68De63ab07a5a0dA`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:6b9ec488fd2a
 - 2026-10-05T16:07:35Z sha:6b9ec488fd2a
 - 2026-10-05T15:52:02Z sha:6b9ec488fd2a
 - 2026-10-05T15:49:15Z sha:6b9ec488fd2a

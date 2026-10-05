@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LITE
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C
 paused: False
@@ -17,6 +17,7 @@ address: `0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:6d5ef901abc0
 - 2026-10-05T16:07:35Z sha:6d5ef901abc0
 - 2026-10-05T15:52:01Z sha:6d5ef901abc0
 - 2026-10-05T15:49:15Z sha:6d5ef901abc0

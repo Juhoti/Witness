@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AXON
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0xC27dBD474aF5181c5A8777903690D8D262D12648
 paused: False
@@ -17,6 +17,7 @@ address: `0xC27dBD474aF5181c5A8777903690D8D262D12648`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:2baec6984438
 - 2026-10-05T16:07:35Z sha:2baec6984438
 - 2026-10-05T15:52:02Z sha:2baec6984438
 - 2026-10-05T15:49:15Z sha:2baec6984438

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NET
-updated: 2026-10-05T16:07:35Z
+updated: 2026-10-05T16:10:49Z
 tags: [token]
 address: 0x116F00968269B7bfbaD4109cE591d6E74c0601d4
 paused: False
@@ -17,6 +17,7 @@ address: `0x116F00968269B7bfbaD4109cE591d6E74c0601d4`
 Markets:
 
 ## revisions
+- 2026-10-05T16:10:49Z sha:7886c66b128a
 - 2026-10-05T16:07:35Z sha:7886c66b128a
 - 2026-10-05T15:52:01Z sha:7886c66b128a
 - 2026-10-05T15:49:15Z sha:7886c66b128a
