@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: P
-updated: 2026-10-05T04:49:08Z
+updated: 2026-10-05T06:33:35Z
 tags: [token]
 address: 0x1Cdad396DB64BDa184d5182A97Dd9B3C62100b7D
 paused: False
@@ -17,6 +17,7 @@ address: `0x1Cdad396DB64BDa184d5182A97Dd9B3C62100b7D`
 Markets:
 
 ## revisions
+- 2026-10-05T06:33:35Z sha:386eec08dad3
 - 2026-10-05T04:49:08Z sha:386eec08dad3
 - 2026-10-05T04:13:38Z sha:386eec08dad3
 - 2026-10-05T02:26:38Z sha:386eec08dad3

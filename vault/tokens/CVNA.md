@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CVNA
-updated: 2026-10-05T04:49:08Z
+updated: 2026-10-05T06:33:35Z
 tags: [token]
 address: 0xa4f319104089FE321dc8093C6E707d4fE190A988
 paused: False
@@ -17,6 +17,7 @@ address: `0xa4f319104089FE321dc8093C6E707d4fE190A988`
 Markets:
 
 ## revisions
+- 2026-10-05T06:33:35Z sha:37d19b8e1445
 - 2026-10-05T04:49:08Z sha:37d19b8e1445
 - 2026-10-05T04:13:38Z sha:37d19b8e1445
 - 2026-10-05T02:26:38Z sha:37d19b8e1445

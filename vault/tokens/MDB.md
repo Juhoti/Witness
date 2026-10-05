@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MDB
-updated: 2026-10-05T04:49:08Z
+updated: 2026-10-05T06:33:35Z
 tags: [token]
 address: 0xDdf2266b79abf0B48898959B0ed6E6adf512be74
 paused: False
@@ -17,6 +17,7 @@ address: `0xDdf2266b79abf0B48898959B0ed6E6adf512be74`
 Markets:
 
 ## revisions
+- 2026-10-05T06:33:35Z sha:a9f9190fd333
 - 2026-10-05T04:49:08Z sha:a9f9190fd333
 - 2026-10-05T04:13:38Z sha:a9f9190fd333
 - 2026-10-05T02:26:38Z sha:a9f9190fd333

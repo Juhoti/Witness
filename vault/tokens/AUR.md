@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AUR
-updated: 2026-10-05T04:49:08Z
+updated: 2026-10-05T06:33:35Z
 tags: [token]
 address: 0x373C06c4f7BDe527D7Dae4BA169E42b55E393CeD
 paused: False
@@ -17,6 +17,7 @@ address: `0x373C06c4f7BDe527D7Dae4BA169E42b55E393CeD`
 Markets:
 
 ## revisions
+- 2026-10-05T06:33:35Z sha:5ce287816bb6
 - 2026-10-05T04:49:08Z sha:5ce287816bb6
 - 2026-10-05T04:13:38Z sha:5ce287816bb6
 - 2026-10-05T02:26:38Z sha:5ce287816bb6
