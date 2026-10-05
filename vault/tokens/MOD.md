@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MOD
-updated: 2026-10-05T09:30:56Z
+updated: 2026-10-05T10:05:42Z
 tags: [token]
 address: 0xc6Cbad1016b38B797610c25E1dc7D95988B1f362
 paused: False
@@ -17,6 +17,7 @@ address: `0xc6Cbad1016b38B797610c25E1dc7D95988B1f362`
 Markets:
 
 ## revisions
+- 2026-10-05T10:05:42Z sha:b84238420a8b
 - 2026-10-05T09:30:56Z sha:b84238420a8b
 - 2026-10-05T08:56:36Z sha:b84238420a8b
 - 2026-10-05T08:22:32Z sha:b84238420a8b

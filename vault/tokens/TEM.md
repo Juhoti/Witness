@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TEM
-updated: 2026-10-05T09:30:56Z
+updated: 2026-10-05T10:05:42Z
 tags: [token]
 address: 0xB1CC0EC7Db69Cf43539119814df40071b9d61793
 paused: False
@@ -17,6 +17,7 @@ address: `0xB1CC0EC7Db69Cf43539119814df40071b9d61793`
 Markets:
 
 ## revisions
+- 2026-10-05T10:05:42Z sha:8cedb2846836
 - 2026-10-05T09:30:56Z sha:8cedb2846836
 - 2026-10-05T08:56:36Z sha:8cedb2846836
 - 2026-10-05T08:22:32Z sha:8cedb2846836

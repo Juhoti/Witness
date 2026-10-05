@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ABCL
-updated: 2026-10-05T09:30:56Z
+updated: 2026-10-05T10:05:42Z
 tags: [token]
 address: 0x3139D77Ace0cbAA5bDfD38bD1F1911a794AF0B0e
 paused: False
@@ -17,6 +17,7 @@ address: `0x3139D77Ace0cbAA5bDfD38bD1F1911a794AF0B0e`
 Markets:
 
 ## revisions
+- 2026-10-05T10:05:42Z sha:3e5f925f1305
 - 2026-10-05T09:30:56Z sha:3e5f925f1305
 - 2026-10-05T08:56:36Z sha:3e5f925f1305
 - 2026-10-05T08:22:32Z sha:3e5f925f1305

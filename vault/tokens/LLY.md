@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LLY
-updated: 2026-10-05T09:30:56Z
+updated: 2026-10-05T10:05:42Z
 tags: [token]
 address: 0x8005d266423c7ea827372c9c864491e5786600ea
 paused: False
@@ -17,6 +17,7 @@ address: `0x8005d266423c7ea827372c9c864491e5786600ea`
 Markets: [[markets/0x0f18d4fd8d86bd4d100b867b67e1fd38c80981fcd43e442313c2d5408da9352d]]
 
 ## revisions
+- 2026-10-05T10:05:42Z sha:3d3928e3dea9
 - 2026-10-05T09:30:56Z sha:3d3928e3dea9
 - 2026-10-05T08:56:36Z sha:3d3928e3dea9
 - 2026-10-05T08:22:32Z sha:3d3928e3dea9

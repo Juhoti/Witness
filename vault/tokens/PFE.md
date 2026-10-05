@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PFE
-updated: 2026-10-05T09:30:56Z
+updated: 2026-10-05T10:05:42Z
 tags: [token]
 address: 0x7066A64c24e4206CD62E83bf198c1E7EB361F51e
 paused: False
@@ -17,6 +17,7 @@ address: `0x7066A64c24e4206CD62E83bf198c1E7EB361F51e`
 Markets:
 
 ## revisions
+- 2026-10-05T10:05:42Z sha:c395d6b02a49
 - 2026-10-05T09:30:56Z sha:c395d6b02a49
 - 2026-10-05T08:56:36Z sha:c395d6b02a49
 - 2026-10-05T08:22:32Z sha:c395d6b02a49
