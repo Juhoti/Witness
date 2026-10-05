@@ -58,7 +58,7 @@ def tick(prev: dict | None) -> dict:
     card = scan_once()
     h = ledger.write_scorecard(card)
     try:
-        memory.remember_scorecard(card)
+        memory.remember_scorecard(card, h)
         card["vault_snapshot"] = memory.snapshot()
     except Exception as e:
         log.warning("vault update failed: %s", e)
