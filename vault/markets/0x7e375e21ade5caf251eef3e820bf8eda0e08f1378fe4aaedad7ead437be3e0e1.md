@@ -1,7 +1,7 @@
 ---
 kind: markets
 name: 0x7e375e21ade5caf251eef3e820bf8eda0e08f1378fe4aaedad7ead437be3e0e1
-updated: 2026-10-05T00:04:05Z
+updated: 2026-10-05T00:36:13Z
 tags: [market]
 collateral: AMZN
 utilization: 0
@@ -16,6 +16,7 @@ collateral: AMZN · loan: USDG · lltv: 625000000000000000
 - oracle: `0x2e5Ee5bA2F128d9aF283f365A0D8b816bD9fb2B7`
 
 ## revisions
+- 2026-10-05T00:36:13Z sha:3cf018b54cd5
 - 2026-10-05T00:04:05Z sha:3cf018b54cd5
 - 2026-10-04T23:28:41Z sha:3cf018b54cd5
 - 2026-10-04T22:54:56Z sha:3cf018b54cd5
