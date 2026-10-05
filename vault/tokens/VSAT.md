@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: VSAT
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0x26dCbfb34FC83CAbD6990f449674efDc6097fF85
 paused: False
@@ -17,6 +17,7 @@ address: `0x26dCbfb34FC83CAbD6990f449674efDc6097fF85`
 Markets:
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:7367f088e477
 - 2026-10-05T10:42:59Z sha:7367f088e477
 - 2026-10-05T10:05:42Z sha:7367f088e477
 - 2026-10-05T09:30:56Z sha:7367f088e477

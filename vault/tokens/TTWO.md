@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TTWO
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0x5e81213613b6B86EaB4c6c50d718d34359459786
 paused: False
@@ -17,6 +17,7 @@ address: `0x5e81213613b6B86EaB4c6c50d718d34359459786`
 Markets: [[markets/0xe6284cf12d0603aee18ff5ab412e262cf99f120e967579111d7a51f37f276f54]]
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:a409052adabb
 - 2026-10-05T10:42:59Z sha:a409052adabb
 - 2026-10-05T10:05:42Z sha:a409052adabb
 - 2026-10-05T09:30:56Z sha:a409052adabb

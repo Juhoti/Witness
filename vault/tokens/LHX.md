@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LHX
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0x48d60243c66437c6ac3c2495Be94747aEd5Dfe25
 paused: False
@@ -17,6 +17,7 @@ address: `0x48d60243c66437c6ac3c2495Be94747aEd5Dfe25`
 Markets:
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:210034aa6023
 - 2026-10-05T10:42:59Z sha:210034aa6023
 - 2026-10-05T10:05:42Z sha:210034aa6023
 - 2026-10-05T09:30:56Z sha:210034aa6023

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RIVN
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0xB1BF26c1D20ff267A4f93550d1E0d06ac40a114B
 paused: False
@@ -17,6 +17,7 @@ address: `0xB1BF26c1D20ff267A4f93550d1E0d06ac40a114B`
 Markets: [[markets/0x46eea143d473cdb8587505f8886dad452037f285f7729a7763e8c233c63b2e8e]]
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:809d6cb8db23
 - 2026-10-05T10:42:59Z sha:809d6cb8db23
 - 2026-10-05T10:05:42Z sha:809d6cb8db23
 - 2026-10-05T09:30:56Z sha:809d6cb8db23

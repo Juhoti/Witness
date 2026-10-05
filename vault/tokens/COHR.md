@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: COHR
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0x92F9F459F1a9a5AD266b182BE7Bffd1C6c666894
 paused: False
@@ -17,6 +17,7 @@ address: `0x92F9F459F1a9a5AD266b182BE7Bffd1C6c666894`
 Markets:
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:eef00415cfef
 - 2026-10-05T10:42:59Z sha:eef00415cfef
 - 2026-10-05T10:05:42Z sha:eef00415cfef
 - 2026-10-05T09:30:56Z sha:eef00415cfef

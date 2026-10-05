@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SMCI
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:15Z
 tags: [token]
 address: 0xc01aA1fECeC0605b13bc84874ff7256C0f5F562a
 paused: False
@@ -17,6 +17,7 @@ address: `0xc01aA1fECeC0605b13bc84874ff7256C0f5F562a`
 Markets:
 
 ## revisions
+- 2026-10-05T11:18:15Z sha:9d5219182800
 - 2026-10-05T10:42:59Z sha:9d5219182800
 - 2026-10-05T10:05:42Z sha:9d5219182800
 - 2026-10-05T09:30:56Z sha:9d5219182800

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: HPE
-updated: 2026-10-05T10:42:59Z
+updated: 2026-10-05T11:18:14Z
 tags: [token]
 address: 0x59dd09d4900C2E4B5F75b7c0d4E6796fcc234Cb1
 paused: False
@@ -17,6 +17,7 @@ address: `0x59dd09d4900C2E4B5F75b7c0d4E6796fcc234Cb1`
 Markets:
 
 ## revisions
+- 2026-10-05T11:18:14Z sha:131b56d80fab
 - 2026-10-05T10:42:59Z sha:131b56d80fab
 - 2026-10-05T10:05:42Z sha:131b56d80fab
 - 2026-10-05T09:30:56Z sha:131b56d80fab
