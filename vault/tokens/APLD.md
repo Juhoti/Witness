@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: APLD
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0xb8DBf92F9741c9ac1c32115E78581f23509916FD
 paused: False
@@ -17,6 +17,7 @@ address: `0xb8DBf92F9741c9ac1c32115E78581f23509916FD`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:7a60b87ab3e1
 - 2026-10-05T08:56:36Z sha:7a60b87ab3e1
 - 2026-10-05T08:22:32Z sha:7a60b87ab3e1
 - 2026-10-05T07:45:27Z sha:7a60b87ab3e1

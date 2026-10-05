@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: VTI
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0x0594134DF3f171a354D9C85eBD65b7A6148F6D09
 paused: False
@@ -17,6 +17,7 @@ address: `0x0594134DF3f171a354D9C85eBD65b7A6148F6D09`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:77bfc6626a6e
 - 2026-10-05T08:56:36Z sha:77bfc6626a6e
 - 2026-10-05T08:22:32Z sha:77bfc6626a6e
 - 2026-10-05T07:45:27Z sha:77bfc6626a6e

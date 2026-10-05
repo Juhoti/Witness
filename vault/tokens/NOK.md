@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NOK
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0x25EE805ac369b6E3F8bF5764c682d34a37cb7175
 paused: False
@@ -17,6 +17,7 @@ address: `0x25EE805ac369b6E3F8bF5764c682d34a37cb7175`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:bd16cdd9b0d5
 - 2026-10-05T08:56:36Z sha:bd16cdd9b0d5
 - 2026-10-05T08:22:32Z sha:bd16cdd9b0d5
 - 2026-10-05T07:45:27Z sha:bd16cdd9b0d5

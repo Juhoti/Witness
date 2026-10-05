@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RCAT
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0xFDE6b5d9BB419B10C23268c74e369AbFF39C0460
 paused: False
@@ -17,6 +17,7 @@ address: `0xFDE6b5d9BB419B10C23268c74e369AbFF39C0460`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:0ba394a5c3e6
 - 2026-10-05T08:56:36Z sha:0ba394a5c3e6
 - 2026-10-05T08:22:32Z sha:0ba394a5c3e6
 - 2026-10-05T07:45:27Z sha:0ba394a5c3e6

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: EWT
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0x1c690498150252222C275A5CEd69d3A6b1f52D5E
 paused: False
@@ -17,6 +17,7 @@ address: `0x1c690498150252222C275A5CEd69d3A6b1f52D5E`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:a4712a2c499b
 - 2026-10-05T08:56:36Z sha:a4712a2c499b
 - 2026-10-05T08:22:32Z sha:a4712a2c499b
 - 2026-10-05T07:45:27Z sha:a4712a2c499b

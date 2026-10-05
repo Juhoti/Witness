@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PENG
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0x9b23573b156B52565012F5cE02CDF60AFBaa70Be
 paused: False
@@ -17,6 +17,7 @@ address: `0x9b23573b156B52565012F5cE02CDF60AFBaa70Be`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:a975b3fdf0e2
 - 2026-10-05T08:56:36Z sha:a975b3fdf0e2
 - 2026-10-05T08:22:32Z sha:a975b3fdf0e2
 - 2026-10-05T07:45:27Z sha:a975b3fdf0e2

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ZS
-updated: 2026-10-05T08:56:36Z
+updated: 2026-10-05T09:30:56Z
 tags: [token]
 address: 0x7dc013eB55e436f30d7ED1AFE4E36d6e45e3c3f7
 paused: False
@@ -17,6 +17,7 @@ address: `0x7dc013eB55e436f30d7ED1AFE4E36d6e45e3c3f7`
 Markets:
 
 ## revisions
+- 2026-10-05T09:30:56Z sha:ad4945df4d6a
 - 2026-10-05T08:56:36Z sha:ad4945df4d6a
 - 2026-10-05T08:22:32Z sha:ad4945df4d6a
 - 2026-10-05T07:45:27Z sha:ad4945df4d6a
