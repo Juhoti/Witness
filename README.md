@@ -62,6 +62,8 @@ python -m agent.main                 # loop every SCAN_EVERY_MINUTES
 python -m agent.backfill             # one scorecard per UTC day since the chain's first block
 python -m agent.priors               # refresh vault/priors/
 python -m agent.ledger show          # list certificates
+python -m agent.audit                # check the record against itself: hashes, chain, references
+python -m agent.gate                 # consecutive clean scans toward the current gate
 ```
 
 Configuration is read from environment variables (a `.env` file in the repo root is loaded if
