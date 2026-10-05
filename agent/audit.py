@@ -16,8 +16,9 @@ from . import ledger, settings
 
 
 def scorecards() -> tuple[int, list[str]]:
+    """Scorecards and published price sets: both are named by the hash of their content."""
     bad, n = [], 0
-    for p in sorted(settings.SCORECARD_DIR.glob("*.json")):
+    for p in sorted(settings.SCORECARD_DIR.glob("*.json")) + sorted((settings.LEDGER_DIR / "prices").glob("*.json")):
         n += 1
         try:
             h = ledger.sha(json.loads(p.read_bytes()))
@@ -54,7 +55,7 @@ def main() -> int:
     n_entries, bad_entries, cited = entries()
     have = {p.stem.split("_", 1)[1] for p in settings.SCORECARD_DIR.glob("*.json")}
     missing = sorted(c for c in cited if c[:16] not in have)
-    print(f"scorecards: {n_cards} checked, {len(bad_cards)} do not match their name")
+    print(f"scorecards and price sets: {n_cards} checked, {len(bad_cards)} do not match their name")
     print(f"entries:    {n_entries} checked, {len(bad_entries)} problems in the chain")
     print(f"references: {len(cited)} scorecards cited, {len(missing)} missing")
     for line in (bad_cards + bad_entries + [f"missing scorecard {m[:16]}" for m in missing])[:20]:

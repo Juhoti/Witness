@@ -15,6 +15,9 @@ a certificate a human adopted. Anyone can fork the code; nobody can fork the rec
   pool, reverted transactions clustered by target and reason, and the gap table derived from them.
   Scorecards marked `backfilled: true` were reconstructed from chain history with the same code
   and the same sample window as a live scan.
+- `ledger/prices/` — Witness's own reference price for each asset in USDG, measured from pool
+  state and weighted by liquidity, with the Chainlink feed beside it where one exists. Each set
+  states its method, block, sources and their weights. Measurements, not an oracle.
 - `ledger/entries/` — an append-only chain of certificates. Each names the scorecard it used by
   hash, the rung it judged, the verdict, and the content hash of the agent's working notes at the
   time. Entries are never edited or deleted; failed scans stay in the record.
@@ -67,6 +70,7 @@ python -m agent.census report        # share of activity the agent can name, and
 python -m agent.intent sample        # count recent calls by contract and function, failed or not
 python -m agent.intent report        # functions failing most above the chain's base rate
 python -m agent.oracle_audit         # how every Morpho market is priced: constant, frozen, unlisted feed, stale
+python -m agent.prices               # Witness's own reference prices -> ledger/prices/
 python -m agent.audit                # check the record against itself: hashes, chain, references
 python -m agent.gate                 # consecutive clean scans toward the current gate
 ```
