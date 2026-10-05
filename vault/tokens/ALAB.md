@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ALAB
-updated: 2026-10-05T14:21:11Z
+updated: 2026-10-05T15:04:06Z
 tags: [token]
 address: 0x748c32c3ca24eDf31ea597Db1F3d330a7a6DA3Dc
 paused: False
@@ -17,6 +17,7 @@ address: `0x748c32c3ca24eDf31ea597Db1F3d330a7a6DA3Dc`
 Markets:
 
 ## revisions
+- 2026-10-05T15:04:06Z sha:13cb60a96ad4
 - 2026-10-05T14:21:11Z sha:13cb60a96ad4
 - 2026-10-05T13:44:34Z sha:13cb60a96ad4
 - 2026-10-05T13:05:06Z sha:13cb60a96ad4

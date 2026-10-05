@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ADBE
-updated: 2026-10-05T14:21:11Z
+updated: 2026-10-05T15:04:06Z
 tags: [token]
 address: 0x232B8ed6377BE97813853B0Ac104c4Cda8378d1B
 paused: False
@@ -17,6 +17,7 @@ address: `0x232B8ed6377BE97813853B0Ac104c4Cda8378d1B`
 Markets:
 
 ## revisions
+- 2026-10-05T15:04:06Z sha:23ec1d7da6a4
 - 2026-10-05T14:21:11Z sha:23ec1d7da6a4
 - 2026-10-05T13:44:34Z sha:23ec1d7da6a4
 - 2026-10-05T13:05:06Z sha:23ec1d7da6a4

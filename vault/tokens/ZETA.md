@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ZETA
-updated: 2026-10-05T14:21:11Z
+updated: 2026-10-05T15:04:06Z
 tags: [token]
 address: 0xE674C5c071821f48BB2d12CAdb83617Eff438f9e
 paused: False
@@ -17,6 +17,7 @@ address: `0xE674C5c071821f48BB2d12CAdb83617Eff438f9e`
 Markets:
 
 ## revisions
+- 2026-10-05T15:04:06Z sha:9ab878aa9971
 - 2026-10-05T14:21:11Z sha:9ab878aa9971
 - 2026-10-05T13:44:34Z sha:9ab878aa9971
 - 2026-10-05T13:05:06Z sha:9ab878aa9971

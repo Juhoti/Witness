@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GME
-updated: 2026-10-05T14:21:11Z
+updated: 2026-10-05T15:04:06Z
 tags: [token]
 address: 0x1b0E319c6A659F002271B69dB8A7df2F911c153E
 paused: False
@@ -17,6 +17,7 @@ address: `0x1b0E319c6A659F002271B69dB8A7df2F911c153E`
 Markets: [[markets/0xb1011e5297cba2daa144a443d15e6fe3b7ce0315a495796587b2c723995eaec4]], [[markets/0x4979137c23c8fb519cd507adc290944c3c2120e8a3191547531fced28360e9c2]], [[markets/0x29bb3cb1a28dd968ef42292f3817b702e3400f8d877e76af1c1bbadaa7021f37]]
 
 ## revisions
+- 2026-10-05T15:04:06Z sha:c63e83ec7fcc
 - 2026-10-05T14:21:11Z sha:c63e83ec7fcc
 - 2026-10-05T13:44:34Z sha:c63e83ec7fcc
 - 2026-10-05T13:05:06Z sha:c63e83ec7fcc
