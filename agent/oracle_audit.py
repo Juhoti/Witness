@@ -10,9 +10,18 @@ the market never noticed. For every market the audit reads the oracle on chain a
   feeds       whether each feed is in Chainlink's directory for this chain, and its age
   market      the Uniswap USDG price of the collateral where one exists, and the gap to the oracle
 
+Every market's entry keeps three things apart: `observed` (what was read from the chain, exactly),
+`reading` (what that is taken to mean) and `not_checked` (what the audit did not look at). A finding
+is a label on the observation. An early version called a wrapper it did not recognise "constant" and
+the consequence was overstated; the rule since is that an unrecognised contract is reported as
+unrecognised, never interpreted.
+
 and gives it one finding, most serious first:
   no_oracle        nothing at the oracle address, or price() reverts
-  constant         no feed and no vault behind the price, and it has not moved in seven days
+  unrecognised_unchanged
+                   the contract is not a kind this audit understands and its price has not moved in
+                   seven days. That is all that is known: the audit says so and draws no conclusion
+  constant         a standard Morpho oracle with no feed and no vault behind it: the price is a number
   fixed_with_delayed_backup
                    a meta-oracle whose active source is a constant, with a live feed as backup that
                    takes over only after the two disagree by a threshold for a timelock and someone
@@ -47,7 +56,7 @@ SLOTS = ("BASE_FEED_1()", "BASE_FEED_2()", "QUOTE_FEED_1()", "QUOTE_FEED_2()", "
 QUERY = """query($chainId:Int!,$first:Int!,$skip:Int!){ markets(where:{chainId_in:[$chainId]}, first:$first, skip:$skip){
   pageInfo{countTotal} items{ marketId lltv oracle{address} loanAsset{address symbol decimals} collateralAsset{address symbol decimals}
   state{supplyAssetsUsd borrowAssetsUsd collateralAssetsUsd utilization} } } }"""
-ORDER = ("no_oracle", "constant", "fixed_with_delayed_backup", "frozen", "vault_rate_only", "unlisted_feed", "stale_feed", "off_market", "ok")
+ORDER = ("no_oracle", "unrecognised_unchanged", "constant", "fixed_with_delayed_backup", "frozen", "vault_rate_only", "unlisted_feed", "stale_feed", "off_market", "ok")
 META = ("primaryOracle()", "backupOracle()", "currentOracle()", "deviationThreshold()", "challengeTimelockDuration()", "healingTimelockDuration()")
 
 
@@ -82,6 +91,7 @@ def audit() -> dict:
     d1_p = chain.multicall([(o, psel) for o in oracles], block=head - DAY_BLOCKS)
     d7_p = chain.multicall([(o, psel) for o in oracles], block=head - 7 * DAY_BLOCKS)
     slots = chain.multicall([(o, _sel(s)) for o in oracles for s in SLOTS])
+    standard = [chain.decode_uint(x) is not None for x in chain.multicall([(o, _sel("SCALE_FACTOR()")) for o in oracles])]
     # meta-oracles: a wrapper that picks between a primary and a backup oracle. Follow both.
     meta_raw = chain.multicall([(o, _sel(s)) for o in oracles for s in META])
     metas: dict[int, dict] = {}
@@ -142,6 +152,8 @@ def audit() -> dict:
             finding = "no_oracle"
         elif meta and meta["active_is_constant"] and meta["other_has_feed"]:
             finding = "fixed_with_delayed_backup"
+        elif not meta and not standard[i] and p7 is not None and p0 == p7 == p1:
+            finding = "unrecognised_unchanged"
         elif not fds and not vaults and p7 is not None and p0 == p7:
             finding = "constant"
         elif p7 is not None and p0 == p7 and p0 == p1:
@@ -157,11 +169,29 @@ def audit() -> dict:
         else:
             finding = "ok"
         st = m.get("state") or {}
+        kind = "meta-oracle (primary/backup wrapper)" if meta else "standard Morpho oracle" if standard[i] else "unrecognised contract"
+        observed = [f"oracle is a {kind}", f"price() now {px}" if px is not None else "price() does not answer"]
+        if p7 is not None and p0 is not None:
+            observed.append("price() is unchanged from 7 days ago" if p0 == p7 else "price() differs from 7 days ago")
+        else:
+            observed.append("the oracle did not exist or did not answer 7 days ago")
+        observed.append(f"{len(fds)} feed(s) and {len(vaults)} vault rate(s) behind the price it reads" if (standard[i] or meta) else "feed slots not readable on this contract")
+        if meta:
+            observed.append(f"reading its {meta['active']} source; switches after a {meta['deviation_threshold']:.2%} gap lasts {meta['challenge_timelock_h']:.0f} h and someone calls it")
+        if gap is not None:
+            observed.append(f"{gap:+.2%} from the Uniswap USDG price")
+        reading = {"no_oracle": "no usable price; the market cannot liquidate", "unrecognised_unchanged": "unknown; the contract was not understood",
+                   "constant": "the price is a fixed number and will not follow the asset",
+                   "fixed_with_delayed_backup": "the price follows the asset only after the stated delay and a manual call",
+                   "frozen": "the sources exist but the price has not moved; cause unknown", "vault_rate_only": "the asset's own exchange rate is the only price",
+                   "unlisted_feed": "the feed's operator is not confirmed by Chainlink's directory", "stale_feed": "the feed is older than twice its heartbeat",
+                   "off_market": "oracle and market disagree; one of them is wrong or thin", "ok": "nothing flagged"}[finding]
+        not_checked = ["contract source code", "who can change the oracle or its feeds", "behaviour under a real price fall"]
         rows.append({"market": m["marketId"], "collateral": coll["symbol"], "loan": loan["symbol"], "lltv": int(m["lltv"]) / 1e18,
                      "oracle": m["oracle"]["address"], "finding": finding, "oracle_price": px,
                      "moved_1d": (p0 != p1) if (p0 and p1) else None, "moved_7d": (p0 != p7) if (p0 and p7) else None,
                      "existed_7d_ago": p7 is not None, "feeds": [{"address": f, **feed_info[f]} for f in fds], "vaults": vaults,
-                     "meta_oracle": meta,
+                     "meta_oracle": meta, "observed": observed, "reading": reading, "not_checked": not_checked,
                      "uniswap_price": mkt, "gap_to_uniswap": round(gap, 4) if gap is not None else None,
                      "supply_usd": st.get("supplyAssetsUsd") or 0, "borrow_usd": st.get("borrowAssetsUsd") or 0})
     rows.sort(key=lambda r: (ORDER.index(r["finding"]), -r["borrow_usd"]))
