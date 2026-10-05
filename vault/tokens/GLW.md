@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GLW
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0x7c04E6A3368F2A1DE3874f0e80d2e0A1a9915da6
 paused: False
@@ -17,6 +17,7 @@ address: `0x7c04E6A3368F2A1DE3874f0e80d2e0A1a9915da6`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:05eee6c1e816
 - 2026-10-05T12:29:14Z sha:05eee6c1e816
 - 2026-10-05T11:54:26Z sha:05eee6c1e816
 - 2026-10-05T11:18:14Z sha:05eee6c1e816

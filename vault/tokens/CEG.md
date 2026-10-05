@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CEG
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0xaE517A2903E68bd929Dfd15be875F8369D53e94a
 paused: False
@@ -17,6 +17,7 @@ address: `0xaE517A2903E68bd929Dfd15be875F8369D53e94a`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:6a6aceeaa5c7
 - 2026-10-05T12:29:14Z sha:6a6aceeaa5c7
 - 2026-10-05T11:54:26Z sha:6a6aceeaa5c7
 - 2026-10-05T11:18:15Z sha:6a6aceeaa5c7

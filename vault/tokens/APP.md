@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: APP
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0xA249BAF1063Af884807C1E1400AEf7784836917E
 paused: False
@@ -17,6 +17,7 @@ address: `0xA249BAF1063Af884807C1E1400AEf7784836917E`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:cfc90c05f219
 - 2026-10-05T12:29:14Z sha:cfc90c05f219
 - 2026-10-05T11:54:26Z sha:cfc90c05f219
 - 2026-10-05T11:18:14Z sha:cfc90c05f219

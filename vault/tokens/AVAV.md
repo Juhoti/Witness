@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AVAV
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0xF6290b5e7C26502e2dA514C31509849718EA76A5
 paused: False
@@ -17,6 +17,7 @@ address: `0xF6290b5e7C26502e2dA514C31509849718EA76A5`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:01d6f5f4f544
 - 2026-10-05T12:29:14Z sha:01d6f5f4f544
 - 2026-10-05T11:54:26Z sha:01d6f5f4f544
 - 2026-10-05T11:18:15Z sha:01d6f5f4f544

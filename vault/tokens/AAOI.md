@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AAOI
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0x521Cf887E6531c6F667b5BC4D896E5d9bfE8EB2E
 paused: False
@@ -17,6 +17,7 @@ address: `0x521Cf887E6531c6F667b5BC4D896E5d9bfE8EB2E`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:d28e736dc331
 - 2026-10-05T12:29:14Z sha:d28e736dc331
 - 2026-10-05T11:54:26Z sha:d28e736dc331
 - 2026-10-05T11:18:14Z sha:d28e736dc331

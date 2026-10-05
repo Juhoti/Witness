@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MXL
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0x48961813349333209994750ffA89b3c5C22eC969
 paused: False
@@ -17,6 +17,7 @@ address: `0x48961813349333209994750ffA89b3c5C22eC969`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:427d21491cd4
 - 2026-10-05T12:29:14Z sha:427d21491cd4
 - 2026-10-05T11:54:26Z sha:427d21491cd4
 - 2026-10-05T11:18:14Z sha:427d21491cd4

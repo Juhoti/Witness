@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: JEPQ
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0x565D3ff42D7d880287e5796B4c708632bE0cA098
 paused: False
@@ -17,6 +17,7 @@ address: `0x565D3ff42D7d880287e5796B4c708632bE0cA098`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:364897c86001
 - 2026-10-05T12:29:14Z sha:364897c86001
 - 2026-10-05T11:54:26Z sha:364897c86001
 - 2026-10-05T11:18:14Z sha:364897c86001

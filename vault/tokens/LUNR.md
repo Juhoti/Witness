@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LUNR
-updated: 2026-10-05T12:29:14Z
+updated: 2026-10-05T13:05:06Z
 tags: [token]
 address: 0xa5D4968421bA94814Be3B136b15cf422101aC1a3
 paused: False
@@ -17,6 +17,7 @@ address: `0xa5D4968421bA94814Be3B136b15cf422101aC1a3`
 Markets:
 
 ## revisions
+- 2026-10-05T13:05:06Z sha:a89eb8c722c4
 - 2026-10-05T12:29:14Z sha:a89eb8c722c4
 - 2026-10-05T11:54:26Z sha:a89eb8c722c4
 - 2026-10-05T11:18:15Z sha:a89eb8c722c4
