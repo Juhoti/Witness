@@ -100,7 +100,7 @@ def fingerprint(candidates: list[str], proxies: set[str], block: int | None = No
 
 
 def discover(window_blocks: int = 50_000) -> tuple[list[dict], dict]:
-    latest = chain.w3_logs().eth.block_number
+    latest = chain.head()
     st = load_state()
     proxies = enumerate_beacon(st, latest)
     start = max(latest - window_blocks, settings.CHAIN["stock_tokens"].get("discover_from_block", 0))

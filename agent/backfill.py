@@ -50,7 +50,7 @@ def card_for_day(d: date, hour: int, proxies: list[str], hist: list[dict]) -> di
     start_ts = day_ts(d) + hour * 3600
     b_start = chain.block_at(start_ts)
     b_end = max(chain.block_at(start_ts + WINDOW_SECONDS) - 1, b_start)
-    latest = chain.w3().eth.block_number
+    latest = chain._retry(lambda: chain.w3().eth.block_number)
     if b_start > latest:
         return None  # the chain had not reached this time yet
     card: dict = {"chain_id": settings.CHAIN["chain"]["id"], "ts": start_ts + WINDOW_SECONDS,

@@ -67,13 +67,14 @@ def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
         # head in those chunks (most such pools are recent) until the event turns up.
         pm = Web3.to_checksum_address(settings.CHAIN["uniswap"]["v4_pool_manager"])
         still = [i for i in new4 if i not in cache["pools"]]
-        latest = chain.w3_logs().eth.block_number if still else 0
+        latest = chain.head() if still else 0
         for pid in still:
             logs = []
             try:
                 for end in range(latest, -1, -INIT_CHUNK):
-                    logs = chain.w3_logs().eth.get_logs({"address": pm, "fromBlock": max(end - INIT_CHUNK + 1, 0), "toBlock": end,
-                                                          "topics": [V4_INITIALIZE, pid]})
+                    params = {"address": pm, "fromBlock": max(end - INIT_CHUNK + 1, 0), "toBlock": end,
+                              "topics": [V4_INITIALIZE, pid]}
+                    logs = chain._retry(lambda: chain.w3_logs().eth.get_logs(params))
                     if logs:
                         break
             except Exception as e:  # leave unresolved; the next scan retries
@@ -215,5 +216,5 @@ def scan() -> dict:
     if not settings.unverified("uniswap", "v3_factory") or not settings.unverified("uniswap", "v4_pool_manager"):
         return {"pairs": 0, "items": [], "note": "uniswap addresses not set; scanner idle"}
     window = max(6_000, min(36_000, settings.SCAN_EVERY_MINUTES * BLOCKS_PER_MINUTE))
-    latest = chain.w3_logs().eth.block_number
+    latest = chain.head()
     return report(latest - window, latest)

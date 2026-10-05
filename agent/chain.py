@@ -14,8 +14,9 @@ _w3: dict[str, Web3] = {}
 def _connect(url: str) -> Web3:
     if url not in _w3:
         w = Web3(Web3.HTTPProvider(url, request_kwargs={"timeout": 30}))
-        if w.eth.chain_id != settings.CHAIN["chain"]["id"]:
-            raise RuntimeError(f"RPC chain id {w.eth.chain_id} != 4663; refusing to scan the wrong chain")
+        cid = _retry(lambda: w.eth.chain_id)
+        if cid != settings.CHAIN["chain"]["id"]:
+            raise RuntimeError(f"RPC chain id {cid} != 4663; refusing to scan the wrong chain")
         _w3[url] = w
     return _w3[url]
 
@@ -71,9 +72,14 @@ def _retry(fn, tries: int = 6):
             log.debug("transient rpc error (%s); retrying", settings.redact(str(e))[:80])
             time.sleep(min(2 ** i, 30))
 
+def head() -> int:
+    """Latest block on the logs endpoint. Retried: it is the first call after the loop's sleep, when
+    the server has usually closed the idle keep-alive connection."""
+    return _retry(lambda: w3_logs().eth.block_number)
+
 def iter_logs(address: str | None, topics: list, from_block: int, to_block: int | str = "latest", step: int = 20_000, min_step: int = 10):
     """Chunked eth_getLogs, one chunk at a time; public RPCs cap ranges and result counts aggressively."""
-    latest = w3_logs().eth.block_number if to_block == "latest" else to_block
+    latest = head() if to_block == "latest" else to_block
     start = from_block
     while start <= latest:
         end = min(start + step - 1, latest)
@@ -122,7 +128,7 @@ def multicall(calls: list[tuple[str, bytes]], batch: int = 300, block: int | Non
 def block_at(ts: int, lo: int = 0, hi: int | None = None) -> int:
     """First block whose timestamp is >= ts (bisection over eth_getBlockByNumber)."""
     w = w3()
-    hi = w.eth.block_number if hi is None else hi
+    hi = _retry(lambda: w.eth.block_number) if hi is None else hi
     while lo < hi:
         mid = (lo + hi) // 2
         if _retry(lambda: w.eth.get_block(mid))["timestamp"] < ts:
