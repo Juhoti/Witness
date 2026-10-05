@@ -65,3 +65,25 @@ def test_sidecar_runs_only_what_is_due_and_survives_a_failing_task(tmp_path, mon
     state = sidecar.run_pass({})
     assert calls == ["a", "c"] and set(state) == {"a", "b", "c"}                 # b failed, the others still ran
     assert sidecar.due(state, state["a"] + 11 * 60) and [n for n, _, _ in sidecar.due(state, state["a"] + 11 * 60)] == ["a", "b"]
+
+
+def test_gate_counts_scans_since_restart_and_reports_quality_separately(tmp_path, monkeypatch):
+    from agent import gate, settings
+    monkeypatch.setattr(settings, "SCORECARD_DIR", tmp_path / "cards"); monkeypatch.setattr(settings, "STATE_DIR", tmp_path)
+    monkeypatch.setattr(settings, "SCAN_EVERY_MINUTES", 5)
+    (tmp_path / "cards").mkdir()
+    def card(i, ts, err=None, backfilled=False):
+        c = {"ts": ts, "stock_tokens": {"count": 1}, "reverts": {"error": err} if err else {"clusters": 1}, "backfilled": backfilled}
+        (tmp_path / "cards" / f"{i}.json").write_text(json.dumps(c))
+    for i in range(5):
+        card(i, 1000 + 300 * i)                                   # before the restart: not counted
+    (tmp_path / "loop_started").write_text("5000")
+    for i in range(40):
+        card(100 + i, 5000 + 300 * i, err="429" if i == 7 else None)
+    card(999, 6000, backfilled=True)                               # backfill never counts
+    s = gate.status()
+    assert s["run"] == 40 and s["scans_with_an_error"] == 1 and s["errors_by_section"] == {"reverts": 1}
+    assert s["two_in_a_row"] is False and s["quality_ok"] is True and s["ready"] is False   # one blip does not reset the run
+    card(141, 5000 + 300 * 40, err="429"); card(142, 5000 + 300 * 41, err="429")
+    s = gate.status()
+    assert s["run"] == 42 and s["two_in_a_row"] is True and s["quality_ok"] is False
