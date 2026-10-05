@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LULU
-updated: 2026-10-05T15:28:32Z
+updated: 2026-10-05T15:32:21Z
 tags: [token]
 address: 0x4e62068525Ab11FE768e29dfD00ef909B9803016
 paused: False
@@ -17,6 +17,7 @@ address: `0x4e62068525Ab11FE768e29dfD00ef909B9803016`
 Markets: [[markets/0x7d4313cf1b0ede39395a2c7495dc1b1b47370caf51f70571d927f22e715e5f58]]
 
 ## revisions
+- 2026-10-05T15:32:21Z sha:782fbba387d2
 - 2026-10-05T15:28:32Z sha:782fbba387d2
 - 2026-10-05T15:19:53Z sha:782fbba387d2
 - 2026-10-05T15:04:06Z sha:782fbba387d2

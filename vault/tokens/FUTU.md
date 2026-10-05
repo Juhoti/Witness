@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FUTU
-updated: 2026-10-05T15:28:32Z
+updated: 2026-10-05T15:32:21Z
 tags: [token]
 address: 0xeB30663bDFf0622Ef4e4E5cBb4E975F19f33f51D
 paused: False
@@ -17,6 +17,7 @@ address: `0xeB30663bDFf0622Ef4e4E5cBb4E975F19f33f51D`
 Markets:
 
 ## revisions
+- 2026-10-05T15:32:21Z sha:7205f3c1e3bc
 - 2026-10-05T15:28:32Z sha:7205f3c1e3bc
 - 2026-10-05T15:19:53Z sha:7205f3c1e3bc
 - 2026-10-05T15:04:06Z sha:7205f3c1e3bc

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TER
-updated: 2026-10-05T15:28:32Z
+updated: 2026-10-05T15:32:21Z
 tags: [token]
 address: 0x2778C5024D5cA2CdB0f8eAD671ffc69963AdCD9C
 paused: False
@@ -17,6 +17,7 @@ address: `0x2778C5024D5cA2CdB0f8eAD671ffc69963AdCD9C`
 Markets:
 
 ## revisions
+- 2026-10-05T15:32:21Z sha:ab07e5e3632a
 - 2026-10-05T15:28:32Z sha:ab07e5e3632a
 - 2026-10-05T15:19:53Z sha:ab07e5e3632a
 - 2026-10-05T15:04:06Z sha:ab07e5e3632a
