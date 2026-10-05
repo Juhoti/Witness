@@ -1,14 +1,14 @@
 ---
 kind: markets
 name: 0x1b8b34fd794924dcbd8c92f5efc54ccb1e977ad4ff2386f7be6d4d26a2fbdecb
-updated: 2026-10-05T01:14:59Z
+updated: 2026-10-05T01:49:12Z
 tags: [market]
 collateral: QQQ
 utilization: 0
 ---
 # 0x1b8b34fd794924dcbd8c92f5efc54ccb1e977ad4ff2386f7be6d4d26a2fbdecb
 
-collateral: [[tokens/QQQ]] · loan: USDG · lltv: 625000000000000000
+collateral: QQQ · loan: USDG · lltv: 625000000000000000
 
 - supply_usd: 0
 - borrow_usd: 0
@@ -16,6 +16,7 @@ collateral: [[tokens/QQQ]] · loan: USDG · lltv: 625000000000000000
 - oracle: `0xEad960d619a70EEfb5d76A25895f8E0423CC6C4a`
 
 ## revisions
+- 2026-10-05T01:49:12Z sha:8eb84fc28ddd
 - 2026-10-05T01:14:59Z sha:67d1bfa53c42
 - 2026-10-05T00:36:13Z sha:8eb84fc28ddd
 - 2026-10-05T00:04:05Z sha:8eb84fc28ddd
