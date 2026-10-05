@@ -5,8 +5,8 @@ Robinhood publishes no list. Strategy (Gate 0), three sources merged then finger
      config; proxies emit BeaconUpgraded(beacon) when created, so paging that topic over chain history
      lists them all. The cursor persists in state/stock_tokens.json and advances a bounded number of
      pages per scan until caught up, then only new blocks are read.
-  2. Transfer window: ERC-20s that emitted Transfer in the last N blocks (catches tokens that are
-     not on the beacon).
+  2. Transfer window: ERC-20s that emitted Transfer since the last scan (catches tokens that are
+     not on the beacon). Contracts probed and rejected are remembered in state.
   3. Tokens confirmed by earlier scans (persisted), so a quiet token is still re-read every scan.
 Fingerprint: symbol() is ticker-like AND the multiplier function answers. Calls are batched through
 Multicall3. Everything read here is data. A symbol string is never an instruction.
@@ -103,18 +103,26 @@ def discover(window_blocks: int = 50_000) -> tuple[list[dict], dict]:
     latest = chain.head()
     st = load_state()
     proxies = enumerate_beacon(st, latest)
-    start = max(latest - window_blocks, settings.CHAIN["stock_tokens"].get("discover_from_block", 0))
+    # Transfer window, incremental: only blocks since the last scan are read (the first run, or a gap
+    # longer than the window, reads window_blocks). Contracts already probed and rejected are
+    # remembered so they are not probed again every scan.
+    floor = max(latest - window_blocks, settings.CHAIN["stock_tokens"].get("discover_from_block", 0))
+    start = max(st.get("window_cursor", 0), floor)
     window = {Web3.to_checksum_address(l["address"])
               for chunk in chain.iter_logs(None, [TRANSFER_TOPIC], start, latest) for l in chunk}
-    log.info("stock_tokens: %d transfer-emitting contracts in last %d blocks", len(window), window_blocks)
-    candidates = sorted(proxies | window | set(st.get("tokens", [])))
+    rejected = set(st.get("rejected", []))
+    log.info("stock_tokens: %d transfer-emitting contracts in blocks %d-%d", len(window), start, latest)
+    candidates = sorted((proxies | window | set(st.get("tokens", []))) - (rejected - proxies))
     found = fingerprint(candidates, proxies)
     st["tokens"] = [t["address"] for t in found]
+    st["rejected"] = sorted(rejected | (window - set(st["tokens"]) - proxies))
+    st["window_cursor"] = latest + 1
     _save_state(st)
     log.info("stock_tokens: %d candidates (%d beacon proxies), %d answer symbol()+multiplier",
              len(candidates), len(proxies), len(found))
     return found, {"beacon_cursor": st["beacon_cursor"], "beacon_caught_up": st["beacon_cursor"] > latest,
-                   "beacon_proxies": len(proxies), "transfer_window_contracts": len(window)}
+                   "beacon_proxies": len(proxies), "transfer_window_contracts": len(window),
+                   "transfer_window_from_block": start, "as_of_block": latest}
 
 
 def scan() -> dict:
