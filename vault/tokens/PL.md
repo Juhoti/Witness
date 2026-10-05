@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PL
-updated: 2026-10-05T15:19:53Z
+updated: 2026-10-05T15:28:32Z
 tags: [token]
 address: 0xAA4d64474c172010aB57719cb9951E6142a100d3
 paused: False
@@ -17,6 +17,7 @@ address: `0xAA4d64474c172010aB57719cb9951E6142a100d3`
 Markets:
 
 ## revisions
+- 2026-10-05T15:28:32Z sha:3d1bff9cbdcc
 - 2026-10-05T15:19:53Z sha:3d1bff9cbdcc
 - 2026-10-05T15:04:06Z sha:3d1bff9cbdcc
 - 2026-10-05T14:21:11Z sha:3d1bff9cbdcc

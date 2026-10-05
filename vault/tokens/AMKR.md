@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AMKR
-updated: 2026-10-05T15:19:53Z
+updated: 2026-10-05T15:28:32Z
 tags: [token]
 address: 0xDd356AA38F40A7b7076755aC854B6FBb1F0D305B
 paused: False
@@ -17,6 +17,7 @@ address: `0xDd356AA38F40A7b7076755aC854B6FBb1F0D305B`
 Markets:
 
 ## revisions
+- 2026-10-05T15:28:32Z sha:513c5c055f0e
 - 2026-10-05T15:19:53Z sha:513c5c055f0e
 - 2026-10-05T15:04:06Z sha:513c5c055f0e
 - 2026-10-05T14:21:11Z sha:513c5c055f0e
