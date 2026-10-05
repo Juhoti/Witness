@@ -82,6 +82,69 @@ def _markets() -> list[dict]:
             return items
 
 
+def classify(p0, p1, p7, has_feeds: bool, has_vaults: bool, is_standard: bool, meta: dict | None, feeds: list[dict], gap) -> str:
+    """One finding from what was observed. Pure, so every shape that has ever been misread can be
+    kept as a test. Order matters: the most serious applicable finding wins."""
+    if p0 is None or p0 == 0:
+        return "no_oracle"
+    if meta and meta.get("active_is_constant") and meta.get("other_has_feed"):
+        return "fixed_with_delayed_backup"
+    if not meta and not is_standard and p7 is not None and p0 == p7 == p1:
+        return "unrecognised_unchanged"
+    if not has_feeds and not has_vaults and p7 is not None and p0 == p7:
+        return "constant"
+    if p7 is not None and p0 == p7 and p0 == p1:
+        return "frozen"
+    if has_vaults and not has_feeds:
+        return "vault_rate_only"
+    if any(not f["in_directory"] for f in feeds):
+        return "unlisted_feed"
+    if any(f["stale"] for f in feeds):
+        return "stale_feed"
+    if gap is not None and abs(gap) > 0.05:
+        return "off_market"
+    return "ok"
+
+
+EXPECTED_NAME = {"fixed_with_delayed_backup": ("MetaOracleDeviationTimelock",), "constant": ("MorphoChainlinkOracleV2", "ChainlinkOracle"),
+                 "frozen": ("MorphoChainlinkOracleV2", "ChainlinkOracle"), "vault_rate_only": ("MorphoChainlinkOracleV2", "ChainlinkOracle"),
+                 "unlisted_feed": ("MorphoChainlinkOracleV2", "ChainlinkOracle"), "stale_feed": ("MorphoChainlinkOracleV2", "ChainlinkOracle")}
+REVIEW_FROM_USD = 10_000_000
+
+
+def _verified_name(address: str) -> dict:
+    """What the explorer says a contract is: its verified name, following a minimal proxy to its implementation."""
+    out = {"address": address, "verified": False, "name": None, "implementation": None}
+    try:
+        code = chain._retry(lambda: chain.w3().eth.get_code(Web3.to_checksum_address(address)))
+        target = address
+        if len(code) == 45 and code[:10].hex() == "363d3d373d3d3d363d73":
+            target = out["implementation"] = Web3.to_checksum_address(code[10:30])
+        if settings.BLOCKSCOUT_API_KEY:
+            r = httpx.get(settings.BLOCKSCOUT_API.rstrip("/") + f"/smart-contracts/{target}", headers={"x-api-key": settings.BLOCKSCOUT_API_KEY}, timeout=20)
+            if r.status_code == 200:
+                j = r.json()
+                out["verified"], out["name"] = bool(j.get("is_verified", j.get("name"))), (j.get("name") or None)
+    except Exception as e:
+        out["error"] = settings.redact(str(e))[:80]
+    return out
+
+
+def second_look(row: dict) -> dict:
+    """A large finding is confirmed a second way before it is more than "unreviewed": the contract's
+    verified name must be the kind the finding assumes, or a person must have reviewed this market
+    and finding (python -m agent.review). Otherwise the finding stands as unreviewed and says so."""
+    from . import review
+    info = _verified_name(row["oracle"])
+    if review.exists(row["market"], row["finding"]):
+        status = "reviewed by a person"
+    elif info.get("name") and any(n.lower() in info["name"].lower() for n in EXPECTED_NAME.get(row["finding"], ())):
+        status = "confirmed by verified contract name"
+    else:
+        status = "unreviewed"
+    return {"status": status, "contract": info}
+
+
 def audit() -> dict:
     markets = [m for m in _markets() if m.get("collateralAsset") and (m.get("oracle") or {}).get("address")]
     head = chain._retry(lambda: chain.w3().eth.block_number)
@@ -148,26 +211,8 @@ def audit() -> dict:
                     "backup_price": (sub_info[meta["backup"]]["price_raw"] or 0) / scale or None}
             if not act["constant"]:
                 fds, vaults = act["feeds"], act["vaults"]   # judged below on the source it is actually reading
-        if p0 is None or p0 == 0:
-            finding = "no_oracle"
-        elif meta and meta["active_is_constant"] and meta["other_has_feed"]:
-            finding = "fixed_with_delayed_backup"
-        elif not meta and not standard[i] and p7 is not None and p0 == p7 == p1:
-            finding = "unrecognised_unchanged"
-        elif not fds and not vaults and p7 is not None and p0 == p7:
-            finding = "constant"
-        elif p7 is not None and p0 == p7 and p0 == p1:
-            finding = "frozen"
-        elif vaults and not fds:
-            finding = "vault_rate_only"
-        elif any(not feed_info[f]["in_directory"] for f in fds):
-            finding = "unlisted_feed"
-        elif any(feed_info[f]["stale"] for f in fds):
-            finding = "stale_feed"
-        elif gap is not None and abs(gap) > 0.05:
-            finding = "off_market"
-        else:
-            finding = "ok"
+        finding = classify(p0, p1, p7, bool(fds), bool(vaults), standard[i], meta,
+                           [feed_info[f] for f in fds], gap)
         st = m.get("state") or {}
         kind = "meta-oracle (primary/backup wrapper)" if meta else "standard Morpho oracle" if standard[i] else "unrecognised contract"
         observed = [f"oracle is a {kind}", f"price() now {px}" if px is not None else "price() does not answer"]
@@ -194,6 +239,10 @@ def audit() -> dict:
                      "meta_oracle": meta, "observed": observed, "reading": reading, "not_checked": not_checked,
                      "uniswap_price": mkt, "gap_to_uniswap": round(gap, 4) if gap is not None else None,
                      "supply_usd": st.get("supplyAssetsUsd") or 0, "borrow_usd": st.get("borrowAssetsUsd") or 0})
+    for r in rows:
+        if r["finding"] != "ok" and r["borrow_usd"] >= REVIEW_FROM_USD:
+            r["second_look"] = second_look(r)
+            r["observed"].append(f"explorer: {r['second_look']['contract'].get('name') or 'no verified name'}")
     rows.sort(key=lambda r: (ORDER.index(r["finding"]), -r["borrow_usd"]))
     by = defaultdict(lambda: {"markets": 0, "supply_usd": 0.0, "borrow_usd": 0.0})
     for r in rows:

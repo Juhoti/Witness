@@ -120,6 +120,7 @@ def build() -> dict:
                               f"lasts {mo['challenge_timelock_h']:.0f} hours and someone triggers it"
                               if (mo := m.get("meta_oracle")) and m["finding"] == "fixed_with_delayed_backup"
                               else f"oracle price {m.get('oracle_price')}; moved in 7 days: {m.get('moved_7d')}"),
+                          "review": (m.get("second_look") or {}).get("status", "below review threshold"),
                           "served_by": "existing Morpho market", "needs": "watch; no exposure (draft rail)", "source": "oracle audit"})
 
     # --- unexplained ---------------------------------------------------------------------------
