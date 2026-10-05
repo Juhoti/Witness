@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AMAT
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0x36046893810a7E7fCE501229d57dc3FC8c8716d0
 paused: False
@@ -17,6 +17,7 @@ address: `0x36046893810a7E7fCE501229d57dc3FC8c8716d0`
 Markets:
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:b9d6ece28c6d
 - 2026-10-05T10:05:42Z sha:b9d6ece28c6d
 - 2026-10-05T09:30:56Z sha:b9d6ece28c6d
 - 2026-10-05T08:56:36Z sha:b9d6ece28c6d

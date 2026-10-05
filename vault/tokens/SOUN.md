@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SOUN
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0x6E3Dfd9f7e1649BaA14D25cac18C94d62dB10A54
 paused: False
@@ -17,6 +17,7 @@ address: `0x6E3Dfd9f7e1649BaA14D25cac18C94d62dB10A54`
 Markets:
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:196ba692399c
 - 2026-10-05T10:05:42Z sha:196ba692399c
 - 2026-10-05T09:30:56Z sha:196ba692399c
 - 2026-10-05T08:56:36Z sha:196ba692399c

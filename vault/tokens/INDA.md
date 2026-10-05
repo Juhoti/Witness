@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: INDA
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0xACEF2e09adb47aD6aBeBAD9fF06689E60615C2B6
 paused: False
@@ -17,6 +17,7 @@ address: `0xACEF2e09adb47aD6aBeBAD9fF06689E60615C2B6`
 Markets:
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:ba046bf2c248
 - 2026-10-05T10:05:42Z sha:ba046bf2c248
 - 2026-10-05T09:30:56Z sha:ba046bf2c248
 - 2026-10-05T08:56:36Z sha:ba046bf2c248

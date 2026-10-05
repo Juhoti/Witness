@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: DOCN
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD
 paused: False
@@ -17,6 +17,7 @@ address: `0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD`
 Markets:
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:ca632d222f72
 - 2026-10-05T10:05:42Z sha:ca632d222f72
 - 2026-10-05T09:30:56Z sha:ca632d222f72
 - 2026-10-05T08:56:36Z sha:ca632d222f72

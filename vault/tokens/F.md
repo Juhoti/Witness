@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: F
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0x25C288E6D899b9BC30160965aD9644c67e73bE0C
 paused: False
@@ -17,6 +17,7 @@ address: `0x25C288E6D899b9BC30160965aD9644c67e73bE0C`
 Markets: [[markets/0x9d61e320efb766ce5c375032b399f08afe644b095a9cb0b2d6d1f6ab68399a6f]]
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:6dab0e1fa56b
 - 2026-10-05T10:05:42Z sha:6dab0e1fa56b
 - 2026-10-05T09:30:56Z sha:6dab0e1fa56b
 - 2026-10-05T08:56:36Z sha:6dab0e1fa56b

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: OUST
-updated: 2026-10-05T10:05:42Z
+updated: 2026-10-05T10:42:59Z
 tags: [token]
 address: 0x40E7a279850e443f582059ae5dC1c3b6563E6395
 paused: False
@@ -17,6 +17,7 @@ address: `0x40E7a279850e443f582059ae5dC1c3b6563E6395`
 Markets:
 
 ## revisions
+- 2026-10-05T10:42:59Z sha:8a62e7b00fa9
 - 2026-10-05T10:05:42Z sha:8a62e7b00fa9
 - 2026-10-05T09:30:56Z sha:8a62e7b00fa9
 - 2026-10-05T08:56:36Z sha:8a62e7b00fa9
