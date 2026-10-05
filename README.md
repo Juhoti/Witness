@@ -64,6 +64,8 @@ python -m agent.priors               # refresh vault/priors/
 python -m agent.ledger show          # list certificates
 python -m agent.census ingest        # read every log on the chain into per-contract counts
 python -m agent.census report        # share of activity the agent can name, and what it cannot
+python -m agent.intent sample        # count recent calls by contract and function, failed or not
+python -m agent.intent report        # functions failing most above the chain's base rate
 python -m agent.audit                # check the record against itself: hashes, chain, references
 python -m agent.gate                 # consecutive clean scans toward the current gate
 ```
