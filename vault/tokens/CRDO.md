@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CRDO
-updated: 2026-10-05T13:44:34Z
+updated: 2026-10-05T14:21:11Z
 tags: [token]
 address: 0x4D67253bc223e6b0e104F1084c1fb2b669dDC41b
 paused: False
@@ -17,6 +17,7 @@ address: `0x4D67253bc223e6b0e104F1084c1fb2b669dDC41b`
 Markets:
 
 ## revisions
+- 2026-10-05T14:21:11Z sha:7ca44dd3d9b0
 - 2026-10-05T13:44:34Z sha:7ca44dd3d9b0
 - 2026-10-05T13:05:06Z sha:7ca44dd3d9b0
 - 2026-10-05T12:29:14Z sha:7ca44dd3d9b0

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NVTS
-updated: 2026-10-05T13:44:34Z
+updated: 2026-10-05T14:21:11Z
 tags: [token]
 address: 0xbE6702d7b70315376dC48a3293f24f0982F86386
 paused: False
@@ -17,6 +17,7 @@ address: `0xbE6702d7b70315376dC48a3293f24f0982F86386`
 Markets:
 
 ## revisions
+- 2026-10-05T14:21:11Z sha:aad41b80ccec
 - 2026-10-05T13:44:34Z sha:aad41b80ccec
 - 2026-10-05T13:05:06Z sha:aad41b80ccec
 - 2026-10-05T12:29:14Z sha:aad41b80ccec

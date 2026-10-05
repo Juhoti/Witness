@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NNE
-updated: 2026-10-05T13:44:34Z
+updated: 2026-10-05T14:21:11Z
 tags: [token]
 address: 0xBEF75684C43c4ea7BD18Dd532a2244674Ee8b926
 paused: False
@@ -17,6 +17,7 @@ address: `0xBEF75684C43c4ea7BD18Dd532a2244674Ee8b926`
 Markets:
 
 ## revisions
+- 2026-10-05T14:21:11Z sha:6e47d4a8900b
 - 2026-10-05T13:44:34Z sha:6e47d4a8900b
 - 2026-10-05T13:05:06Z sha:6e47d4a8900b
 - 2026-10-05T12:29:14Z sha:6e47d4a8900b

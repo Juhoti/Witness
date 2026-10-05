@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CLSK
-updated: 2026-10-05T13:44:34Z
+updated: 2026-10-05T14:21:11Z
 tags: [token]
 address: 0xcBB95BBF36099d34dA091dc6Fa6F49EfA257Cee3
 paused: False
@@ -17,6 +17,7 @@ address: `0xcBB95BBF36099d34dA091dc6Fa6F49EfA257Cee3`
 Markets: [[markets/0x8114b65dfc5e64222103e5588de261eca9defd25f47ea4ae2f91d49fe4fa2993]]
 
 ## revisions
+- 2026-10-05T14:21:11Z sha:fe514cee6cb7
 - 2026-10-05T13:44:34Z sha:fe514cee6cb7
 - 2026-10-05T13:05:06Z sha:fe514cee6cb7
 - 2026-10-05T12:29:14Z sha:fe514cee6cb7
