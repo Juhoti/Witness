@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: EWY
-updated: 2026-10-05T15:04:06Z
+updated: 2026-10-05T15:19:53Z
 tags: [token]
 address: 0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc
 paused: False
@@ -17,6 +17,7 @@ address: `0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc`
 Markets: [[markets/0xfdc77ba2fc1a4b41393b7531623ca73149edf30ad65f5709841f9e47f3f42418]], [[markets/0x1b3555f7c1273688f01ae82da7dc8e508e6a7841ec0038dbb15767154a277b86]]
 
 ## revisions
+- 2026-10-05T15:19:53Z sha:d5c285cbd797
 - 2026-10-05T15:04:06Z sha:d5c285cbd797
 - 2026-10-05T14:21:11Z sha:d5c285cbd797
 - 2026-10-05T13:44:34Z sha:d5c285cbd797
