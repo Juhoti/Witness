@@ -77,15 +77,32 @@ def build(scorecard: dict) -> dict:
         })
 
     # Feasibility / risk flags. These are rails from northstar.md, applied as data checks.
+    # Each is True/False when the scorecard has the measurement and None when it does not.
+    feeds = scorecard.get("feeds", {}).get("tokens")
+    pauses = scorecard.get("pause_history", {}).get("tokens")
+    depth = scorecard.get("depth", {}).get("tokens")
     for c in candidates:
-        t = tokens.get(c.get("subject")) if c.get("kind") == "new_listing" else None
+        sym = c.get("subject") if c.get("kind") in ("new_listing", "raise_cap_or_add_capacity") else None
+        is_stock = sym in tokens
+        feed = (feeds or {}).get(sym) if is_stock else None
+        ph = (pauses or {}).get(sym) if is_stock else None
+        dp = (depth or {}).get(sym) if is_stock else None
+        depth_usd = dp["depth_usd_5pct"] if dp else (0 if (is_stock and depth is not None) else None)
         c["feasibility"] = {
-            "chainlink_feed": bool(t and t.get("chainlink_feed")),
-            "halt_free_30d": None,          # needs halt history (Gate 1)
-            "liquidation_depth_ok": None,   # needs uniswap scanner
+            "chainlink_feed": (bool(feed and feed.get("answers_on_chain")) if feeds is not None and is_stock else None),
+            "feed_age_s": feed.get("age_s") if feed else None,
+            "halt_free_30d": (ph["pause_free_days"] >= 30 if ph else None),
+            "pause_free_days": ph["pause_free_days"] if ph else None,
+            "liquidation_depth_usd": depth_usd,
+            "max_cap_by_depth_usd": (depth_usd / 5 if depth_usd is not None else None),  # rail: depth >= 5x cap
+            "liquidation_depth_ok": None,   # needs a proposed cap to compare against (Gate 2)
         }
+        f = c["feasibility"]
+        c["passes_rails"] = (None if not is_stock else
+                             bool(f["chainlink_feed"] and f["halt_free_30d"] and (f["liquidation_depth_usd"] or 0) > 0))
         c["risk"] = {"needs_price_when_market_closed": c.get("kind") in ("new_listing", "raise_cap_or_add_capacity")}
         c["proposable"] = False  # Gate 0: nothing is proposable; the proposer is off
 
     candidates.sort(key=lambda c: -(c.get("demand_usd") or 0))
-    return {"candidates": len(candidates), "proposals": 0, "items": candidates[:100]}
+    return {"candidates": len(candidates), "proposals": 0,
+            "pass_rails": sum(1 for c in candidates if c.get("passes_rails")), "items": candidates[:100]}
