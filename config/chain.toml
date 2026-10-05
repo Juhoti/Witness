@@ -51,6 +51,10 @@ beacon = "0xe10b6f6b275de231345c20d14ab812db62151b00"   # verified on Blockscout
 # registry: the beacon above is the contract Blockscout names AccessControlledRegistry, i.e. the beacon and the
 # registry are one contract. Same address, recorded here so code that asks for the registry finds it.
 registry = "0xe10b6f6b275de231345c20d14ab812db62151b00"   # same contract as beacon; see above
+# Not a stock-token beacon: 0x305e23e4c670b184a280ad9f048c8bc3a1f1565f. It serves a token named
+# "McDonald's • Robinhood Token" (MCD, 0x08E91b659a545Bfb52F1a5e588Bf6Dc2FA85DE7A) that copies the naming
+# and answers uiMultiplier(). Checked on Blockscout by human 2026-10-05: does not look legitimate.
+# Tokens off the beacon above are reported as off_beacon and never counted.
 # The logic contract every stock-token proxy delegates to (beacon.implementation()). Read-only reference:
 # its verified source is where uiMultiplier / pause / blocklist functions can be read.
 implementation = "0xb35490d6f9163de4f80d88dc75c3516eb64c5ae2"   # verified on Blockscout by human 2026-10-04: Stock
