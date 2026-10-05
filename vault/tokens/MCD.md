@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MCD
-updated: 2026-10-05T07:45:27Z
+updated: 2026-10-05T08:22:32Z
 tags: [token]
 address: 0x08E91b659a545Bfb52F1a5e588Bf6Dc2FA85DE7A
 paused: False
@@ -17,6 +17,7 @@ address: `0x08E91b659a545Bfb52F1a5e588Bf6Dc2FA85DE7A`
 Markets:
 
 ## revisions
+- 2026-10-05T08:22:32Z sha:9c74d8c7e969
 - 2026-10-05T07:45:27Z sha:9c74d8c7e969
 - 2026-10-05T07:07:33Z sha:9c74d8c7e969
 - 2026-10-05T06:33:35Z sha:9c74d8c7e969

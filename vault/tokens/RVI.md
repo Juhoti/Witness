@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RVI
-updated: 2026-10-05T07:45:27Z
+updated: 2026-10-05T08:22:32Z
 tags: [token]
 address: 0xb02e3E1b7f68559427C2D9100566E4F3CC5b7611
 paused: False
@@ -17,6 +17,7 @@ address: `0xb02e3E1b7f68559427C2D9100566E4F3CC5b7611`
 Markets:
 
 ## revisions
+- 2026-10-05T08:22:32Z sha:3d3c5dfb2925
 - 2026-10-05T07:45:27Z sha:3d3c5dfb2925
 - 2026-10-05T07:07:34Z sha:3d3c5dfb2925
 - 2026-10-05T06:33:35Z sha:3d3c5dfb2925
