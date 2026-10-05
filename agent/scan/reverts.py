@@ -15,15 +15,17 @@ from .. import settings
 log = logging.getLogger(__name__)
 
 
-def _get(client: httpx.Client, url: str, params: dict, tries: int = 3) -> httpx.Response:
-    """GET with a short backoff on transport errors (timeouts, dropped connections)."""
+def _get(client: httpx.Client, url: str, params: dict, tries: int = 5) -> httpx.Response:
+    """GET with a short backoff on rate limits and transport errors."""
     for i in range(tries):
         try:
-            return client.get(url, params=params)
+            r = client.get(url, params=params)
+            if r.status_code != 429 or i == tries - 1:
+                return r
         except httpx.TransportError:
             if i == tries - 1:
                 raise
-            time.sleep(2 ** i)
+        time.sleep(2 ** i)  # rate limit or dropped connection: wait and ask again
 
 
 def _reason(tx: dict) -> str:
