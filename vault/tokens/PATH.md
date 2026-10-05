@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PATH
-updated: 2026-10-05T15:49:15Z
+updated: 2026-10-05T15:52:02Z
 tags: [token]
 address: 0xfb2664f07B6Aadd29ea7a59D8859b1AeB8645cDa
 paused: False
@@ -17,6 +17,7 @@ address: `0xfb2664f07B6Aadd29ea7a59D8859b1AeB8645cDa`
 Markets:
 
 ## revisions
+- 2026-10-05T15:52:02Z sha:7740786c62a3
 - 2026-10-05T15:49:15Z sha:7740786c62a3
 - 2026-10-05T15:32:21Z sha:7740786c62a3
 - 2026-10-05T15:28:32Z sha:7740786c62a3

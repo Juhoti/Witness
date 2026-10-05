@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MSTR
-updated: 2026-10-05T15:49:15Z
+updated: 2026-10-05T15:52:02Z
 tags: [token]
 address: 0xec262a75e413fAfD0dF80480274532C79D42da09
 paused: False
@@ -17,6 +17,7 @@ address: `0xec262a75e413fAfD0dF80480274532C79D42da09`
 Markets: [[markets/0x01baec96478004fc7b74c8dfe38abef8d716fea59ffd481b6ec74db915d3bc80]], [[markets/0x00bcba8b02759f13138726964a535bd7150aff98b955d0d6a0f65963d6559735]]
 
 ## revisions
+- 2026-10-05T15:52:02Z sha:ee29b2716d75
 - 2026-10-05T15:49:15Z sha:ee29b2716d75
 - 2026-10-05T15:32:21Z sha:ee29b2716d75
 - 2026-10-05T15:28:32Z sha:ee29b2716d75

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PLTR
-updated: 2026-10-05T15:49:15Z
+updated: 2026-10-05T15:52:01Z
 tags: [token]
 address: 0x894E1EC2D74FFE5AEF8Dc8A9e84686acCB964F2A
 paused: False
@@ -17,6 +17,7 @@ address: `0x894E1EC2D74FFE5AEF8Dc8A9e84686acCB964F2A`
 Markets: [[markets/0xb5ba72c0d55c353fa37c0bea104eb117afb2f4934473bcb736d2218ae5686746]], [[markets/0x45e3e8e4320fc21e1f5dec5181484243f4ebd360c78b6f0338265c852c1eb5df]]
 
 ## revisions
+- 2026-10-05T15:52:01Z sha:56ac682516c9
 - 2026-10-05T15:49:15Z sha:56ac682516c9
 - 2026-10-05T15:32:21Z sha:56ac682516c9
 - 2026-10-05T15:28:32Z sha:56ac682516c9

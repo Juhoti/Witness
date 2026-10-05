@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BB
-updated: 2026-10-05T15:49:15Z
+updated: 2026-10-05T15:52:01Z
 tags: [token]
 address: 0x48E39E56aCdbA37b09020C0b734A613C9a2f100A
 paused: False
@@ -17,6 +17,7 @@ address: `0x48E39E56aCdbA37b09020C0b734A613C9a2f100A`
 Markets:
 
 ## revisions
+- 2026-10-05T15:52:01Z sha:0b0314c5d83f
 - 2026-10-05T15:49:15Z sha:0b0314c5d83f
 - 2026-10-05T15:32:21Z sha:0b0314c5d83f
 - 2026-10-05T15:28:32Z sha:0b0314c5d83f

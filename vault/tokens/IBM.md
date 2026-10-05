@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: IBM
-updated: 2026-10-05T15:49:15Z
+updated: 2026-10-05T15:52:01Z
 tags: [token]
 address: 0x980dcf6766FA79f5Cf0c4AAdb3ab477ff15a9619
 paused: False
@@ -17,6 +17,7 @@ address: `0x980dcf6766FA79f5Cf0c4AAdb3ab477ff15a9619`
 Markets: [[markets/0xa85928d77bd25cc348e13ea6587b8b3ca3793f4af5e5db8ca07d0f20fd5cfa99]]
 
 ## revisions
+- 2026-10-05T15:52:01Z sha:3040aa05340b
 - 2026-10-05T15:49:15Z sha:3040aa05340b
 - 2026-10-05T15:32:21Z sha:3040aa05340b
 - 2026-10-05T15:28:32Z sha:3040aa05340b
