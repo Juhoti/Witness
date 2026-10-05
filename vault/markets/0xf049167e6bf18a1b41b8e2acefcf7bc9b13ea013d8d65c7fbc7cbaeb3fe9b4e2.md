@@ -1,21 +1,22 @@
 ---
 kind: markets
 name: 0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2
-updated: 2026-10-05T04:49:08Z
+updated: 2026-10-05T05:22:30Z
 tags: [market]
 collateral: NBIS
 utilization: 0
 ---
 # 0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2
 
-collateral: [[tokens/NBIS]] · loan: USDG · lltv: 625000000000000000
+collateral: NBIS · loan: USDG · lltv: 625000000000000000
 
-- supply_usd: 125.01045127008312
+- supply_usd: 125.00653670179095
 - borrow_usd: 0
 - utilization: 0
 - oracle: `0xAD95eFBCF91Af709A7Bf8cB6Ee5F99F4547187F8`
 
 ## revisions
+- 2026-10-05T05:22:30Z sha:935e652f49a5
 - 2026-10-05T04:49:08Z sha:3d381302b2f6
 - 2026-10-05T04:13:38Z sha:720d0e50a9ad
 - 2026-10-05T03:35:05Z sha:dfea68f9989d
