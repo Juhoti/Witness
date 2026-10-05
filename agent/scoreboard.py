@@ -114,7 +114,8 @@ def build() -> str:
         pair = r["subject"].rsplit(" ", 1)
         risk_rows += (f'<tr><td>{e(pair[0])}<div class="mono quiet">{e(pair[-1])}…</div></td>'
                       f'<td><span class="pill {sev}"><i aria-hidden="true">{ICON[sev]}</i>{e(label)}</span></td>'
-                      f'<td class="num">{usd(r["size_usd"])}</td><td class="quiet">{e(r["measured"].split(";", 1)[-1].strip())}</td></tr>')
+                      f'<td class="num">{usd(r["size_usd"])}</td><td class="quiet">{e(r["measured"].split(";", 1)[-1].strip())}</td>'
+                      f'<td class="quiet">{e(r.get("review", "—"))}</td></tr>')
 
     gap_rows = ""
     for x in [x for x in gaps if not str(x.get("size_confidence", "ok")).startswith("low")][:12]:
@@ -153,7 +154,7 @@ def build() -> str:
 <section>
   <div><h2>Markets whose price would be slow or blind to a fall</h2>
   <p class="sub">Every Morpho market reads its collateral price from an oracle. These read one that is fixed, frozen, or outside Chainlink's published list, ranked by what is borrowed against them. An unusual oracle can be a deliberate choice; this is a list of what to look at, not a verdict.</p></div>
-  <div class="scroll"><table><thead><tr><th>Market</th><th>Finding</th><th class="num">Borrowed</th><th>Oracle</th></tr></thead><tbody>{risk_rows or '<tr><td colspan="4" class="quiet">No audit yet.</td></tr>'}</tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Market</th><th>Finding</th><th class="num">Borrowed</th><th>Oracle</th><th>Checked</th></tr></thead><tbody>{risk_rows or '<tr><td colspan="5" class="quiet">No audit yet.</td></tr>'}</tbody></table></div>
 </section>
 
 <section>
@@ -185,7 +186,7 @@ def build() -> str:
 
 <section>
   <div><h2>Not yet explained</h2>
-  <p class="sub">The largest things on the chain Witness cannot name. This is the queue it works down; each answer is recorded as a claim with a check, and graded a week later. Claims graded so far: {rec['held'] + rec['failed']} ({rec['held']} held).</p></div>
+  <p class="sub">The largest things on the chain Witness cannot name. This is the queue it works down; each answer is recorded as a claim with a check, and graded a week later. Claims graded so far: {rec['held'] + rec['failed']} ({rec['held']} held, {rec['failed']} failed). Corrections published: {correct.count()}.</p></div>
   <div class="scroll"><table><thead><tr><th>Kind</th><th>Subject</th><th class="num">Share</th><th>Measured</th></tr></thead><tbody>{un_rows or '<tr><td colspan="4" class="quiet">Nothing queued.</td></tr>'}</tbody></table></div>
 </section>
 

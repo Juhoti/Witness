@@ -111,3 +111,29 @@ def test_a_held_claim_with_a_demand_hypothesis_becomes_a_request(tmp_path, monke
     assert len(grade.run(now=100)) == 3
     reqs = [json.loads(p.read_text()) for p in (tmp_path / "requests").glob("*.json")]
     assert len(reqs) == 1 and reqs[0]["demand_hypothesis"] == "people want X" and reqs[0]["status"] == "open"
+
+
+def test_oracle_shapes_that_were_once_misread_stay_fixed():
+    from agent.oracle_audit import classify
+    P = 10 ** 24
+    listed, unlisted = {"in_directory": True, "stale": False}, {"in_directory": False, "stale": False}
+    # 2026-10-05: a Steakhouse meta-oracle reading a constant primary with a live backup was called "constant"
+    wrapper = {"active_is_constant": True, "other_has_feed": True}
+    assert classify(P, P, P, False, False, False, wrapper, [], 0.0001) == "fixed_with_delayed_backup"
+    # a contract the audit does not recognise is never interpreted
+    assert classify(P, P, P, False, False, False, None, [], None) == "unrecognised_unchanged"
+    # a standard oracle with nothing behind it really is a constant
+    assert classify(P, P, P, False, False, True, None, [], None) == "constant"
+    # a wrapper whose active source is a live feed is judged on that feed
+    assert classify(P, P - 5, P - 9, True, False, False, {"active_is_constant": False, "other_has_feed": True}, [listed], 0.001) == "ok"
+    assert classify(P, P - 5, P - 9, True, False, True, None, [unlisted], 0.001) == "unlisted_feed"
+    assert classify(P, P, P, True, False, True, None, [listed], None) == "frozen"
+    assert classify(None, None, None, False, False, False, None, [], None) == "no_oracle"
+
+
+def test_reviews_apply_to_one_market_and_finding(tmp_path, monkeypatch):
+    from agent import review
+    monkeypatch.setattr(review, "DIR", tmp_path)
+    assert not review.exists("0xm", "constant")
+    review.publish("0xm", "fixed_with_delayed_backup", "owner", "read the verified source")
+    assert review.exists("0xm", "fixed_with_delayed_backup") and not review.exists("0xm", "constant") and not review.exists("0xother", "fixed_with_delayed_backup")
