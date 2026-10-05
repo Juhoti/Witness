@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NBIS
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0x9D9c6684F596F66a64C030B93A886D51Fd4D7931
 paused: False
@@ -17,6 +17,7 @@ address: `0x9D9c6684F596F66a64C030B93A886D51Fd4D7931`
 Markets: [[markets/0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2]]
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:225d0813b40d
 - 2026-10-05T11:18:14Z sha:225d0813b40d
 - 2026-10-05T10:42:59Z sha:225d0813b40d
 - 2026-10-05T10:05:42Z sha:225d0813b40d

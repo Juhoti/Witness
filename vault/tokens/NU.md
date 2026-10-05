@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: NU
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0x408c14038a04f7bD235329E26d2bf569ee20e250
 paused: False
@@ -17,6 +17,7 @@ address: `0x408c14038a04f7bD235329E26d2bf569ee20e250`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:962aa25c71af
 - 2026-10-05T11:18:14Z sha:962aa25c71af
 - 2026-10-05T10:42:59Z sha:962aa25c71af
 - 2026-10-05T10:05:42Z sha:962aa25c71af

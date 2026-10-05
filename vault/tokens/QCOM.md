@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: QCOM
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0x0f17206447090e464C277571124dD2688E48AEA9
 paused: False
@@ -17,6 +17,7 @@ address: `0x0f17206447090e464C277571124dD2688E48AEA9`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:8901ad56ac2c
 - 2026-10-05T11:18:14Z sha:8901ad56ac2c
 - 2026-10-05T10:42:59Z sha:8901ad56ac2c
 - 2026-10-05T10:05:42Z sha:8901ad56ac2c

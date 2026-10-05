@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: IREN
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0xF0AB0c93bE6F41369d302e55db1A96b3c430212D
 paused: False
@@ -17,6 +17,7 @@ address: `0xF0AB0c93bE6F41369d302e55db1A96b3c430212D`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:1bcec3d9768a
 - 2026-10-05T11:18:14Z sha:1bcec3d9768a
 - 2026-10-05T10:42:59Z sha:1bcec3d9768a
 - 2026-10-05T10:05:42Z sha:1bcec3d9768a

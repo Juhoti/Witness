@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: LMT
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0x329fcACEb9AD6F9580DD5F643fed0646900D043c
 paused: False
@@ -17,6 +17,7 @@ address: `0x329fcACEb9AD6F9580DD5F643fed0646900D043c`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:f1bf8179320e
 - 2026-10-05T11:18:14Z sha:f1bf8179320e
 - 2026-10-05T10:42:59Z sha:f1bf8179320e
 - 2026-10-05T10:05:42Z sha:f1bf8179320e

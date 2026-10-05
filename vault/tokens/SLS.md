@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SLS
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0x285b231728c7E4333799183DF1094d775246a535
 paused: False
@@ -17,6 +17,7 @@ address: `0x285b231728c7E4333799183DF1094d775246a535`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:331f20b0cf99
 - 2026-10-05T11:18:14Z sha:331f20b0cf99
 - 2026-10-05T10:42:59Z sha:331f20b0cf99
 - 2026-10-05T10:05:42Z sha:331f20b0cf99

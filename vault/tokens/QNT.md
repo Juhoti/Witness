@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: QNT
-updated: 2026-10-05T11:18:14Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0xB7EDfE2F33C1aC06830a971dFb559bDe8A2a3d76
 paused: False
@@ -17,6 +17,7 @@ address: `0xB7EDfE2F33C1aC06830a971dFb559bDe8A2a3d76`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:2b684f8dd3ad
 - 2026-10-05T11:18:14Z sha:2b684f8dd3ad
 - 2026-10-05T10:42:59Z sha:2b684f8dd3ad
 - 2026-10-05T10:05:42Z sha:2b684f8dd3ad

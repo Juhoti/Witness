@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: WEEK
-updated: 2026-10-05T11:18:15Z
+updated: 2026-10-05T11:54:26Z
 tags: [token]
 address: 0xc93a8c440CEa26D7445dF01729f193b27965099f
 paused: False
@@ -17,6 +17,7 @@ address: `0xc93a8c440CEa26D7445dF01729f193b27965099f`
 Markets:
 
 ## revisions
+- 2026-10-05T11:54:26Z sha:e8c77d3f3a8e
 - 2026-10-05T11:18:15Z sha:e8c77d3f3a8e
 - 2026-10-05T10:42:59Z sha:e8c77d3f3a8e
 - 2026-10-05T10:05:42Z sha:e8c77d3f3a8e
