@@ -139,9 +139,21 @@ def audit() -> dict:
     return out
 
 
+def publish(doc: dict) -> str:
+    """Put an audit in the record: ledger/oracle_audits/<day>_<hash>.json, named by its content."""
+    from . import ledger
+    d = settings.LEDGER_DIR / "oracle_audits"
+    d.mkdir(parents=True, exist_ok=True)
+    doc = {"kind": "oracle_audit", "chain_id": settings.CHAIN["chain"]["id"], **doc}
+    h = ledger.sha(doc)
+    (d / f"{time.strftime('%Y-%m-%d', time.gmtime(doc['ts']))}_{h[:16]}.json").write_bytes(ledger.canonical(doc))
+    return h
+
+
 def main() -> None:
     logging.basicConfig(level=logging.WARNING)
     r = audit()
+    publish(r)
     print(f"{r['markets']} markets audited at block {r['block']}")
     for k, b in r["by_finding"].items():
         print(f"  {k:16} {b['markets']:4d} markets   supplied ${b['supply_usd']:>14,.0f}   borrowed ${b['borrow_usd']:>14,.0f}")
