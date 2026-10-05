@@ -104,8 +104,8 @@ def get_logs(address: str | None, topics: list, from_block: int, to_block: int |
 def multicall(calls: list[tuple[str, bytes]], batch: int = 300, block: int | None = None) -> list[bytes | None]:
     """Batch read calls through Multicall3.aggregate3 with allowFailure; None where a call reverted.
 
-    Read-only: aggregate3 is a view aggregator and nothing here is signed. Falls back to smaller
-    batches if the RPC rejects a chunk (gas cap or payload size)."""
+    Read-only: aggregate3 is a view aggregator and nothing here is signed. Halves the batch when the
+    RPC rejects a chunk (gas cap or payload size); a call that fails even alone comes back as None."""
     mc = settings.CHAIN["chain"].get("multicall3", "0xcA11bde05977b3631167028862bE2a173976CA11")
     sel = Web3.keccak(text="aggregate3((address,bool,bytes)[])")[:4]
     out: list[bytes | None] = []
@@ -115,7 +115,10 @@ def multicall(calls: list[tuple[str, bytes]], batch: int = 300, block: int | Non
         try:
             raw = _retry(lambda: w3().eth.call({"to": Web3.to_checksum_address(mc), "data": data}, block_identifier=block or "latest"))
         except (Web3Exception, ValueError, HTTPError) as e:
-            if batch <= 20:
+            if len(chunk) == 1 and not isinstance(e, HTTPError):
+                out.append(None)  # this one call cannot be executed (e.g. out of gas); treat as a revert
+                continue
+            if batch <= 1:
                 raise
             log.debug("multicall batch of %d failed (%s); halving", batch, settings.redact(str(e)))
             out.extend(multicall(calls[i:i + batch], batch // 2, block))
