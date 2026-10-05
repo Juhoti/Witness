@@ -71,6 +71,9 @@ python -m agent.intent sample        # count recent calls by contract and functi
 python -m agent.intent report        # functions failing most above the chain's base rate
 python -m agent.oracle_audit         # how every Morpho market is priced: constant, frozen, unlisted feed, stale
 python -m agent.prices               # Witness's own reference prices -> ledger/prices/
+python -m agent.opportunity          # one ranked map of gaps, risks and the unexplained
+python -m agent.scoreboard           # the record as one readable page
+python -m agent.sidecar              # run all of the above on a schedule, beside the scan loop
 python -m agent.audit                # check the record against itself: hashes, chain, references
 python -m agent.gate                 # consecutive clean scans toward the current gate
 ```
