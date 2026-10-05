@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BULL
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0xceF9027c7d6985b85f0BA431125073529A947A68
 paused: False
@@ -17,6 +17,7 @@ address: `0xceF9027c7d6985b85f0BA431125073529A947A68`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:efe31460a383
 - 2026-10-05T11:54:26Z sha:efe31460a383
 - 2026-10-05T11:18:15Z sha:efe31460a383
 - 2026-10-05T10:42:59Z sha:efe31460a383

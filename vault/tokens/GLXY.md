@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GLXY
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0x2D427692E928fa156ec22acfaBaFA0447C5805B7
 paused: False
@@ -17,6 +17,7 @@ address: `0x2D427692E928fa156ec22acfaBaFA0447C5805B7`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:665262595734
 - 2026-10-05T11:54:26Z sha:665262595734
 - 2026-10-05T11:18:14Z sha:665262595734
 - 2026-10-05T10:42:59Z sha:665262595734

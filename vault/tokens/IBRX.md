@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: IBRX
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0x7c148F74ac7445D1F28366b7FcDC6792a9Fcd0Cf
 paused: False
@@ -17,6 +17,7 @@ address: `0x7c148F74ac7445D1F28366b7FcDC6792a9Fcd0Cf`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:216f01a58178
 - 2026-10-05T11:54:26Z sha:216f01a58178
 - 2026-10-05T11:18:14Z sha:216f01a58178
 - 2026-10-05T10:42:59Z sha:216f01a58178

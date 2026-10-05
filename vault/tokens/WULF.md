@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: WULF
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0x348Be1A8663f15edDe5CDf8A96BB69078f7aB6Fd
 paused: False
@@ -17,6 +17,7 @@ address: `0x348Be1A8663f15edDe5CDf8A96BB69078f7aB6Fd`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:1961c4f4213e
 - 2026-10-05T11:54:26Z sha:1961c4f4213e
 - 2026-10-05T11:18:14Z sha:1961c4f4213e
 - 2026-10-05T10:42:59Z sha:1961c4f4213e

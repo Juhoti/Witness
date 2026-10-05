@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: MPWR
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0x52D50D0280AD1054b43f052bD70a49a212A1b128
 paused: False
@@ -17,6 +17,7 @@ address: `0x52D50D0280AD1054b43f052bD70a49a212A1b128`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:4191adedaf4e
 - 2026-10-05T11:54:26Z sha:4191adedaf4e
 - 2026-10-05T11:18:14Z sha:4191adedaf4e
 - 2026-10-05T10:42:59Z sha:4191adedaf4e

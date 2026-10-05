@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: HWM
-updated: 2026-10-05T11:54:26Z
+updated: 2026-10-05T12:29:14Z
 tags: [token]
 address: 0xAEa445c5F3DB1a462998ccC422A875A361ee5d99
 paused: False
@@ -17,6 +17,7 @@ address: `0xAEa445c5F3DB1a462998ccC422A875A361ee5d99`
 Markets:
 
 ## revisions
+- 2026-10-05T12:29:14Z sha:b21905c3b4d4
 - 2026-10-05T11:54:26Z sha:b21905c3b4d4
 - 2026-10-05T11:18:14Z sha:b21905c3b4d4
 - 2026-10-05T10:42:59Z sha:b21905c3b4d4
