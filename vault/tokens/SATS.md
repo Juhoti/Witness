@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SATS
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x95052ddcd5DC25641657424A8Cf04834997E1730
 paused: False
@@ -17,6 +17,7 @@ address: `0x95052ddcd5DC25641657424A8Cf04834997E1730`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:4b2a936c0f7b
 - 2026-10-05T13:05:06Z sha:4b2a936c0f7b
 - 2026-10-05T12:29:14Z sha:4b2a936c0f7b
 - 2026-10-05T11:54:26Z sha:4b2a936c0f7b

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RDDT
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x05b37Fb53A299a1b874A619e1c4C404D52C36F4C
 paused: False
@@ -17,6 +17,7 @@ address: `0x05b37Fb53A299a1b874A619e1c4C404D52C36F4C`
 Markets: [[markets/0x40b8233028846e58fc22dca599a503d77bfc131b1f02d8c622bf8efa64ea6c97]], [[markets/0x298e8ff9b31f22be90507bc61b55e66ab93e78b55a60593035e309ed93137cb8]]
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:ed97a2052601
 - 2026-10-05T13:05:06Z sha:ed97a2052601
 - 2026-10-05T12:29:14Z sha:ed97a2052601
 - 2026-10-05T11:54:26Z sha:ed97a2052601

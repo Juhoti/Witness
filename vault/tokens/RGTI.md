@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RGTI
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x284358abc07F9359f19f4b5b4aC91901Be2597Ba
 paused: False
@@ -17,6 +17,7 @@ address: `0x284358abc07F9359f19f4b5b4aC91901Be2597Ba`
 Markets: [[markets/0xdd5526da32ddca02fb46eca8b982c3d396a23709e17e96ce116c71c3360f3adb]], [[markets/0x003390b057d753bd839981a0d45f9a567aa0b0ed6373fd42e951eac8ee86c2ba]]
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:297e358de301
 - 2026-10-05T13:05:06Z sha:297e358de301
 - 2026-10-05T12:29:14Z sha:297e358de301
 - 2026-10-05T11:54:26Z sha:297e358de301

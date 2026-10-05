@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: XNDU
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0xA8eB3BCcbf2017eE7CBfb652eB51CF2E1B153289
 paused: False
@@ -17,6 +17,7 @@ address: `0xA8eB3BCcbf2017eE7CBfb652eB51CF2E1B153289`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:40b53c9d85cd
 - 2026-10-05T13:05:06Z sha:40b53c9d85cd
 - 2026-10-05T12:29:14Z sha:40b53c9d85cd
 - 2026-10-05T11:54:26Z sha:40b53c9d85cd

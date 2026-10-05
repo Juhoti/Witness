@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: RDW
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x92Ef19E82bD8fF36661DE838D5eaE7e5CEF0EfFE
 paused: False
@@ -17,6 +17,7 @@ address: `0x92Ef19E82bD8fF36661DE838D5eaE7e5CEF0EfFE`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:4b9748932391
 - 2026-10-05T13:05:06Z sha:4b9748932391
 - 2026-10-05T12:29:14Z sha:4b9748932391
 - 2026-10-05T11:54:26Z sha:4b9748932391

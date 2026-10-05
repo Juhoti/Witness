@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: TEAM
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x5B97476b922F3305131B8f0B9D333172E87f4aaE
 paused: False
@@ -17,6 +17,7 @@ address: `0x5B97476b922F3305131B8f0B9D333172E87f4aaE`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:19995d98fb24
 - 2026-10-05T13:05:06Z sha:19995d98fb24
 - 2026-10-05T12:29:14Z sha:19995d98fb24
 - 2026-10-05T11:54:26Z sha:19995d98fb24

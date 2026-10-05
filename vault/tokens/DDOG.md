@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: DDOG
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x27c99fBde9D0d2AA4f4Bfb4943f237843DdF6958
 paused: False
@@ -17,6 +17,7 @@ address: `0x27c99fBde9D0d2AA4f4Bfb4943f237843DdF6958`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:0d951f6c03e8
 - 2026-10-05T13:05:06Z sha:0d951f6c03e8
 - 2026-10-05T12:29:14Z sha:0d951f6c03e8
 - 2026-10-05T11:54:26Z sha:0d951f6c03e8

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: AVGO
-updated: 2026-10-05T13:05:06Z
+updated: 2026-10-05T13:44:34Z
 tags: [token]
 address: 0x156E175DD063a8cE274C50654eF40e0032b3fbcF
 paused: False
@@ -17,6 +17,7 @@ address: `0x156E175DD063a8cE274C50654eF40e0032b3fbcF`
 Markets:
 
 ## revisions
+- 2026-10-05T13:44:34Z sha:6d510f3f2aa9
 - 2026-10-05T13:05:06Z sha:6d510f3f2aa9
 - 2026-10-05T12:29:14Z sha:6d510f3f2aa9
 - 2026-10-05T11:54:26Z sha:6d510f3f2aa9
