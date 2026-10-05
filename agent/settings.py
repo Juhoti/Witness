@@ -24,6 +24,7 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 LEDGER_GIT_REMOTE = os.getenv("LEDGER_GIT_REMOTE", "")
+LEDGER_PUSH_EVERY_MINUTES = int(os.getenv("LEDGER_PUSH_EVERY_MINUTES", "360"))  # one record commit per interval
 
 LEDGER_DIR = ROOT / "ledger"
 SCORECARD_DIR = LEDGER_DIR / "scorecards"

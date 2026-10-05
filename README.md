@@ -78,7 +78,8 @@ present; it is gitignored):
 | `RPC_URL_FALLBACK` | used when the others are unset |
 | `BLOCKSCOUT_API_KEY` | Blockscout account key, sent as `x-api-key`; unkeyed requests are refused |
 | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | optional push alerts on scan failure, token halt or multiplier step |
-| `LEDGER_GIT_REMOTE` | optional git remote; every ledger entry is committed and pushed when set |
+| `LEDGER_GIT_REMOTE` | optional git remote; the record is committed and pushed there when set |
+| `LEDGER_PUSH_EVERY_MINUTES` | how often the record is pushed, as one commit; default 360 |
 | `SCAN_EVERY_MINUTES`, `LOG_LEVEL` | loop cadence and verbosity |
 
 Secrets never reach the tree: keyed URLs and tokens are redacted from every log line, alert and

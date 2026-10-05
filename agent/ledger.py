@@ -60,12 +60,30 @@ def entries() -> list[dict]:
 
 
 def _push() -> None:
+    """Commit and push the record, at most once per LEDGER_PUSH_EVERY_MINUTES.
+
+    Entries are hash-chained, so batching them into one commit loses nothing: the order and content
+    are fixed by the hashes, and `python -m agent.audit` checks them. What the interval sets is how
+    soon a new entry becomes public."""
     if not settings.LEDGER_GIT_REMOTE:
         return
+    marker = settings.STATE_DIR / "ledger_pushed"
+    last = float(marker.read_text()) if marker.exists() else 0.0
+    if time.time() - last < settings.LEDGER_PUSH_EVERY_MINUTES * 60:
+        return
+    git = ["git", "-C", str(settings.ROOT)]
     try:
-        subprocess.run(["git", "-C", str(settings.ROOT), "add", "ledger", "vault"], check=True, capture_output=True)
-        subprocess.run(["git", "-C", str(settings.ROOT), "commit", "-qm", "ledger: entry"], capture_output=True)
-        subprocess.run(["git", "-C", str(settings.ROOT), "push", "-q", settings.LEDGER_GIT_REMOTE, "HEAD"], capture_output=True)
+        subprocess.run(git + ["add", "ledger", "vault"], check=True, capture_output=True)
+        staged = subprocess.run(git + ["diff", "--cached", "--name-only"], check=True, capture_output=True, text=True).stdout.split("\n")
+        n_entries = sum(1 for f in staged if f.startswith("ledger/entries/"))
+        n_cards = sum(1 for f in staged if f.startswith("ledger/scorecards/"))
+        if not (n_entries or n_cards):
+            return
+        msg = f"ledger: {n_entries} entries, {n_cards} scorecards to {time.strftime('%Y-%m-%d %H:%M', time.gmtime())} UTC"
+        subprocess.run(git + ["commit", "-qm", msg], capture_output=True)
+        subprocess.run(git + ["push", "-q", settings.LEDGER_GIT_REMOTE, "HEAD"], capture_output=True)
+        settings.STATE_DIR.mkdir(exist_ok=True)
+        marker.write_text(str(time.time()))
     except subprocess.CalledProcessError:
         pass  # a failed push is reported by the next scan's health check, not hidden
 
