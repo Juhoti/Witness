@@ -87,3 +87,27 @@ def test_gate_counts_scans_since_restart_and_reports_quality_separately(tmp_path
     card(141, 5000 + 300 * 40, err="429"); card(142, 5000 + 300 * 41, err="429")
     s = gate.status()
     assert s["run"] == 42 and s["two_in_a_row"] is True and s["quality_ok"] is False
+
+
+def test_liquidation_survival_and_tiers():
+    from agent import session_risk as sr
+    assert abs(sr.incentive(0.86) - 1 / (1 - 0.3 * 0.14)) < 1e-9 and sr.incentive(0.2) == 1.15
+    assert sr.survives(0.625, 0.20) and not sr.survives(0.86, 0.20)       # a 20% closed-market fall
+    assert sr.max_tier(0.05) == 0.915 and sr.max_tier(0.20) == 0.625 and sr.max_tier(0.50) == 0.385
+    assert sr.max_tier(0.70) is None                                       # nothing standard survives a 70% fall
+
+
+def test_a_held_claim_with_a_demand_hypothesis_becomes_a_request(tmp_path, monkeypatch):
+    from agent import settings
+    monkeypatch.setattr(settings, "LEDGER_DIR", tmp_path)
+    monkeypatch.setattr(grade, "FINDINGS", tmp_path / "findings"); monkeypatch.setattr(grade, "GRADES", tmp_path / "grades")
+    monkeypatch.setattr(grade, "STATE", tmp_path / "graded.json")
+    monkeypatch.setattr(grade, "world", lambda: {"ts": 1, "census": {"logs": 9, "coverage_by_contract_kind": 0.8}})
+    (tmp_path / "findings").mkdir()
+    base = {"subject": "0xabc", "category": "dex_router", "what_it_is": "a router", "prediction": {"check": "census.coverage_by_contract_kind >= 0.7", "due_ts": 1}}
+    (tmp_path / "findings" / "2026-10-05_aaaa.json").write_text(json.dumps({**base, "demand_hypothesis": "people want X", "confidence": 0.8}))
+    (tmp_path / "findings" / "2026-10-05_bbbb.json").write_text(json.dumps({**base, "demand_hypothesis": None, "confidence": 0.9}))
+    (tmp_path / "findings" / "2026-10-05_cccc.json").write_text(json.dumps({**base, "demand_hypothesis": "people want Y", "confidence": 0.2}))
+    assert len(grade.run(now=100)) == 3
+    reqs = [json.loads(p.read_text()) for p in (tmp_path / "requests").glob("*.json")]
+    assert len(reqs) == 1 and reqs[0]["demand_hypothesis"] == "people want X" and reqs[0]["status"] == "open"

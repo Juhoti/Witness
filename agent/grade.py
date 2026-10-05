@@ -76,9 +76,25 @@ def run(now: int | None = None) -> list[dict]:
         (GRADES / f"{time.strftime('%Y-%m-%d', time.gmtime(now))}_{gh[:16]}.json").write_bytes(ledger.canonical(grade))
         done.add(h)
         out.append(grade)
+        if grade["result"] == "held" and f.get("demand_hypothesis") and (f.get("confidence") or 0) >= 0.6:
+            request(h, f, gh)
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(sorted(done)))
     return out
+
+
+def request(finding_hash: str, finding: dict, grade_hash: str) -> str:
+    """A claim that named unmet demand and then held up becomes an open request: something worth
+    measuring properly or building for. Requests are the builder's queue at Gate 2; until then they
+    are a list for a person to read. Writing one changes nothing else."""
+    d = settings.LEDGER_DIR / "requests"
+    d.mkdir(parents=True, exist_ok=True)
+    doc = {"kind": "request", "status": "open", "ts": int(time.time()), "from_finding": finding_hash, "graded_by": grade_hash,
+           "subject": finding.get("subject"), "category": finding.get("category"), "what_it_is": finding.get("what_it_is"),
+           "demand_hypothesis": finding.get("demand_hypothesis"), "confidence": finding.get("confidence")}
+    h = ledger.sha(doc)
+    (d / f"{time.strftime('%Y-%m-%d', time.gmtime(doc['ts']))}_{h[:16]}.json").write_bytes(ledger.canonical(doc))
+    return h
 
 
 def record() -> dict:
