@@ -11,10 +11,10 @@ from __future__ import annotations
 import html
 import json
 import time
-from . import census, gate, grade, opportunity, settings
+from . import census, correct, gate, grade, opportunity, settings
 
 OUT = settings.STATE_DIR / "scoreboard.html"
-FINDING_LABEL = {"oracle_constant": ("critical", "Fixed price"), "oracle_fixed_with_delayed_backup": ("serious", "Fixed price, slow backup"), "oracle_frozen": ("critical", "Frozen 7 days"),
+FINDING_LABEL = {"oracle_constant": ("critical", "Fixed price"), "oracle_fixed_with_delayed_backup": ("serious", "Fixed price, slow backup"), "oracle_unrecognised_unchanged": ("warning", "Not understood, unchanged"), "oracle_frozen": ("critical", "Frozen 7 days"),
                  "oracle_vault_rate_only": ("serious", "Prices itself"), "oracle_unlisted_feed": ("warning", "Feed not in Chainlink's list"),
                  "oracle_stale_feed": ("warning", "Stale feed"), "oracle_off_market": ("warning", "Off market"), "oracle_no_oracle": ("serious", "No oracle")}
 GAP_LABEL = {"lending_capacity": "Borrowers want more than is supplied", "unlisted_collateral": "No lending market exists",
@@ -193,7 +193,7 @@ def build() -> str:
   <div><h2>The loop, unattended</h2>
   <p class="sub">{g['run']} of {g['target']} consecutive scans since the loop last started; {g['scans_with_an_error']} with a scanner error ({g['error_rate']:.1%}). {g['live_scans']:,} live scans in the record, including every failed one.</p></div>
   <div class="meter" role="img" aria-label="{g['run']} of {g['target']} scans"><b style="width:{pct * 100:.1f}%"></b></div>
-  <p class="note">Check it yourself: clone the repository and run <code>python -m agent.audit</code>. It recomputes the hash of every published file against its name and walks the chain of entries; it needs no network. Prices here are measurements with their method attached, not an oracle.</p>
+  <p class="note">Check it yourself: clone the repository and run <code>python -m agent.audit</code>. It recomputes the hash of every published file against its name and walks the chain of entries; it needs no network. Prices here are measurements with their method attached, not an oracle. Corrections published so far: {correct.count()}; they are in <code>ledger/corrections/</code>, beside what they correct.</p>
 </section>
 
 <footer>Built from scorecard at {e(stamp)}. Source and record: github.com/Juhoti/Witness</footer>
