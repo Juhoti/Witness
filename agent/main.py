@@ -5,8 +5,8 @@ import logging
 import sys
 import time
 import traceback
-from . import settings, ledger, gap, judge, notify, propose, build, memory
-from .scan import stock_tokens, morpho, uniswap, reverts, perps
+from . import settings, ledger, gap, judge, notify, propose, build, memory, history
+from .scan import stock_tokens, morpho, uniswap, reverts, perps, feeds, depth
 
 settings.LOG_DIR.mkdir(exist_ok=True)
 logging.basicConfig(
@@ -26,6 +26,15 @@ def scan_once() -> dict:
             card[name] = fn()
         except Exception as e:
             err = settings.redact(str(e))  # never let a keyed RPC URL reach the log, Telegram, or the ledger
+            log.error("scanner %s failed: %s", name, err)
+            card[name] = {"error": err}
+            notify.send(f"scanner {name} failed: {err}")
+    # Derived sections: each reads what the scanners above put in the card.
+    for name, fn in (("feeds", feeds.scan), ("depth", depth.scan), ("pause_history", history.update)):
+        try:
+            card[name] = fn(card)
+        except Exception as e:
+            err = settings.redact(str(e))
             log.error("scanner %s failed: %s", name, err)
             card[name] = {"error": err}
             notify.send(f"scanner {name} failed: {err}")
@@ -53,9 +62,10 @@ def tick(prev: dict | None) -> dict:
         card["vault_snapshot"] = memory.snapshot()
     except Exception as e:
         log.warning("vault update failed: %s", e)
-    log.info("scorecard %s: tokens=%s morpho=%s reverts=%s candidates=%s", h[:16],
+    log.info("scorecard %s: tokens=%s morpho=%s reverts=%s feeds=%s depth=%s candidates=%s pass_rails=%s", h[:16],
              card.get("stock_tokens", {}).get("count"), card.get("morpho", {}).get("markets"),
-             card.get("reverts", {}).get("clusters"), card["gap"]["candidates"])
+             card.get("reverts", {}).get("clusters"), card.get("feeds", {}).get("count"),
+             card.get("depth", {}).get("count"), card["gap"]["candidates"], card["gap"].get("pass_rails"))
     for r in judge.judge_rungs(card, h):
         ledger.append_entry({**r, "vault": card.get("vault_snapshot")})
         memory.append_daily(f"rung {r['rung']} {r['verdict']}: {r['why']}")
@@ -77,6 +87,9 @@ def tick(prev: dict | None) -> dict:
 def main() -> None:
     once = "--once" in sys.argv
     prev = None
+    if not once:  # agent.gate counts clean scans from here: a restart starts the run again
+        settings.STATE_DIR.mkdir(exist_ok=True)
+        (settings.STATE_DIR / "loop_started").write_text(str(int(time.time())))
     notify.send("witness agent started")
     while True:
         started = time.time()
