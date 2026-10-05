@@ -70,6 +70,42 @@ def resolve_v4_keys(cache: dict, pool_ids: list[str], budget_s: float = 90.0) ->
             log.debug("v4 Initialize lookup failed for %s: %s", pid[:10], settings.redact(str(e))[:120])
 
 
+def v4_usdg_pools(tokens: list[str]) -> dict[str, list[dict]]:
+    """Cached v4 pools pairing each given token with USDG, with full keys (tick spacing, hooks).
+    Entries cached before keys were kept in full are completed here: through the PositionManager when
+    its address is set, otherwise from Initialize events within the usual time budget."""
+    usdg = (settings.unverified("tokens", "usdg") or "").lower()
+    want = {t.lower() for t in tokens}
+    cache = _load_cache()
+    hits = {pid: m for pid, m in cache["pools"].items() if m["venue"] == "v4"
+            and ((m["token0"].lower() == usdg and m["token1"].lower() in want) or (m["token1"].lower() == usdg and m["token0"].lower() in want))}
+    missing = [pid for pid, m in hits.items() if "tick_spacing" not in m]
+    if missing:
+        posm = settings.unverified("uniswap", "v4_position_manager")
+        if posm:
+            codec = chain.w3().codec
+            raws = chain.multicall([(posm, _sel("poolKeys(bytes25)") + bytes.fromhex(i[2:])[:25].ljust(32, b"\0")) for i in missing])
+            for pid, r in zip(missing, raws):
+                if r and len(r) >= 160:
+                    c0, c1, fee, spacing, hooks = codec.decode(["address", "address", "uint24", "int24", "address"], r)
+                    if int(c0, 16) or int(c1, 16):
+                        cache["pools"][pid].update(tick_spacing=spacing, hooks=Web3.to_checksum_address(hooks))
+        left = [pid for pid in missing if "tick_spacing" not in cache["pools"][pid]]
+        if left:
+            fresh = {"pools": {}}
+            resolve_v4_keys(fresh, left, budget_s=45.0)
+            for pid, m in fresh["pools"].items():
+                cache["pools"][pid].update(tick_spacing=m["tick_spacing"], hooks=m["hooks"])
+        _save_cache(cache)
+    out: dict[str, list[dict]] = {}
+    for pid, m in hits.items():
+        m = cache["pools"][pid]
+        if "tick_spacing" in m:
+            tok = m["token1"] if m["token0"].lower() == usdg else m["token0"]
+            out.setdefault(tok, []).append({"id": pid, **m})
+    return out
+
+
 def _resolve_pools(cache: dict, v3_pools: set[str], v4_ids: set[str]) -> None:
     """Fill cache['pools'][key] = {venue, token0, token1, fee} for unseen pools, batched."""
     codec = chain.w3().codec
