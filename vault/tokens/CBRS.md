@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CBRS
-updated: 2026-10-05T07:07:33Z
+updated: 2026-10-05T07:45:27Z
 tags: [token]
 address: 0x5c90450Bbb4273D7b2f17CF6917AEB237A569679
 paused: False
@@ -17,6 +17,7 @@ address: `0x5c90450Bbb4273D7b2f17CF6917AEB237A569679`
 Markets:
 
 ## revisions
+- 2026-10-05T07:45:27Z sha:241a171af84a
 - 2026-10-05T07:07:33Z sha:241a171af84a
 - 2026-10-05T06:33:35Z sha:241a171af84a
 - 2026-10-05T04:49:08Z sha:241a171af84a

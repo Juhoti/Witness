@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: JBL
-updated: 2026-10-05T07:07:34Z
+updated: 2026-10-05T07:45:27Z
 tags: [token]
 address: 0xEAf2512dFC1bEAc608F8794B3793CD4E02894Aa6
 paused: False
@@ -17,6 +17,7 @@ address: `0xEAf2512dFC1bEAc608F8794B3793CD4E02894Aa6`
 Markets:
 
 ## revisions
+- 2026-10-05T07:45:27Z sha:1a09322f5f29
 - 2026-10-05T07:07:34Z sha:1a09322f5f29
 - 2026-10-05T06:33:35Z sha:1a09322f5f29
 - 2026-10-05T04:49:08Z sha:1a09322f5f29

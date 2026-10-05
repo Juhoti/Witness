@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CCL
-updated: 2026-10-05T07:07:34Z
+updated: 2026-10-05T07:45:27Z
 tags: [token]
 address: 0x9651342CeA770aE9a2969Ba2A52611523146aef9
 paused: False
@@ -17,6 +17,7 @@ address: `0x9651342CeA770aE9a2969Ba2A52611523146aef9`
 Markets:
 
 ## revisions
+- 2026-10-05T07:45:27Z sha:6892f0132de3
 - 2026-10-05T07:07:34Z sha:6892f0132de3
 - 2026-10-05T06:33:35Z sha:6892f0132de3
 - 2026-10-05T04:49:08Z sha:6892f0132de3

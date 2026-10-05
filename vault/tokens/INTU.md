@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: INTU
-updated: 2026-10-05T07:07:33Z
+updated: 2026-10-05T07:45:27Z
 tags: [token]
 address: 0x56d23beE5f41A7120170b0c603Dae30128e460e9
 paused: False
@@ -17,6 +17,7 @@ address: `0x56d23beE5f41A7120170b0c603Dae30128e460e9`
 Markets:
 
 ## revisions
+- 2026-10-05T07:45:27Z sha:83230ec49759
 - 2026-10-05T07:07:33Z sha:83230ec49759
 - 2026-10-05T06:33:35Z sha:83230ec49759
 - 2026-10-05T04:49:08Z sha:83230ec49759

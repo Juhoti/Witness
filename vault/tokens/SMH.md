@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: SMH
-updated: 2026-10-05T07:07:33Z
+updated: 2026-10-05T07:45:27Z
 tags: [token]
 address: 0x072f979c2CAc8e1391B0162a87Fee094bF8744a0
 paused: False
@@ -17,6 +17,7 @@ address: `0x072f979c2CAc8e1391B0162a87Fee094bF8744a0`
 Markets:
 
 ## revisions
+- 2026-10-05T07:45:27Z sha:469241144db6
 - 2026-10-05T07:07:33Z sha:469241144db6
 - 2026-10-05T06:33:35Z sha:469241144db6
 - 2026-10-05T04:49:08Z sha:469241144db6
