@@ -126,5 +126,13 @@ def discover(window_blocks: int = 50_000) -> tuple[list[dict], dict]:
 
 
 def scan() -> dict:
+    """Stock tokens are the proxies on the verified beacon. A contract elsewhere that carries a ticker
+    and answers the multiplier function may be a new official series or an imitation; the fingerprint
+    alone cannot tell, since anyone can deploy one. Those are reported as `off_beacon`, kept out of
+    the count, and wait for a human to check their beacon."""
     tokens, meta = discover()
-    return {"count": len(tokens), "tokens": tokens, **meta}
+    if not settings.unverified("stock_tokens", "beacon"):
+        return {"count": len(tokens), "tokens": tokens, **meta}
+    verified = [t for t in tokens if t.get("on_beacon")]
+    others = [t for t in tokens if not t.get("on_beacon")]
+    return {"count": len(verified), "tokens": verified, "off_beacon": others, "off_beacon_count": len(others), **meta}

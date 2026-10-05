@@ -54,3 +54,13 @@ def test_alerts_fire_on_pause_and_multiplier_step(monkeypatch):
     sent.clear()
     main.health_alerts(prev, prev)
     assert sent == []
+
+
+def test_only_tokens_on_the_verified_beacon_are_counted(monkeypatch):
+    from agent.scan import stock_tokens
+    real = {"symbol": "AAPL", "address": "0xA", "on_beacon": True}
+    lookalike = {"symbol": "MCD", "address": "0xB", "on_beacon": False}
+    monkeypatch.setattr(stock_tokens, "discover", lambda: ([real, lookalike], {}))
+    out = stock_tokens.scan()
+    assert out["count"] == 1 and out["tokens"] == [real]
+    assert out["off_beacon"] == [lookalike] and out["off_beacon_count"] == 1
