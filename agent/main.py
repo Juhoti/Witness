@@ -79,6 +79,7 @@ def main() -> None:
     prev = None
     notify.send("witness agent started")
     while True:
+        started = time.time()
         try:
             prev = tick(prev)
         except Exception:
@@ -86,7 +87,8 @@ def main() -> None:
             notify.send("tick failed; see logs/agent.log")
         if once:
             return
-        time.sleep(settings.SCAN_EVERY_MINUTES * 60)
+        # fixed cadence: the interval is start-to-start, not a pause after the scan
+        time.sleep(max(30.0, settings.SCAN_EVERY_MINUTES * 60 - (time.time() - started)))
 
 
 if __name__ == "__main__":
