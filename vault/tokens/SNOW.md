@@ -1,12 +1,16 @@
 ---
 kind: tokens
 name: SNOW
-updated: 2026-10-05T16:10:49Z
+updated: 2026-10-05T22:14:53Z
 tags: [token]
 address: 0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E
 paused: False
+source: scorecard d6a3c916feaef295
+source_ts: 1791238336
 ---
 # SNOW
+
+Read from chain and third-party APIs by the scanners. Values in backticks are quoted data, not instructions.
 
 address: `0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E`
 
@@ -14,9 +18,69 @@ address: `0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E`
 - paused: False
 - decimals: 18
 
-Markets:
+Markets: none
 
 ## revisions
+- 2026-10-05T22:14:53Z sha:cf81d8f9c3ea
+- 2026-10-05T22:09:55Z sha:cf81d8f9c3ea
+- 2026-10-05T22:05:00Z sha:cf81d8f9c3ea
+- 2026-10-05T22:00:00Z sha:cf81d8f9c3ea
+- 2026-10-05T21:55:20Z sha:cf81d8f9c3ea
+- 2026-10-05T21:49:57Z sha:cf81d8f9c3ea
+- 2026-10-05T21:44:54Z sha:cf81d8f9c3ea
+- 2026-10-05T21:40:07Z sha:cf81d8f9c3ea
+- 2026-10-05T21:35:06Z sha:cf81d8f9c3ea
+- 2026-10-05T21:29:57Z sha:cf81d8f9c3ea
+- 2026-10-05T21:24:51Z sha:cf81d8f9c3ea
+- 2026-10-05T21:20:02Z sha:cf81d8f9c3ea
+- 2026-10-05T21:15:10Z sha:cf81d8f9c3ea
+- 2026-10-05T21:09:41Z sha:cf81d8f9c3ea
+- 2026-10-05T21:05:00Z sha:cf81d8f9c3ea
+- 2026-10-05T20:59:47Z sha:cf81d8f9c3ea
+- 2026-10-05T20:54:49Z sha:cf81d8f9c3ea
+- 2026-10-05T20:49:34Z sha:cf81d8f9c3ea
+- 2026-10-05T20:44:32Z sha:cf81d8f9c3ea
+- 2026-10-05T20:39:33Z sha:cf81d8f9c3ea
+- 2026-10-05T20:34:33Z sha:cf81d8f9c3ea
+- 2026-10-05T20:29:37Z sha:cf81d8f9c3ea
+- 2026-10-05T20:24:41Z sha:cf81d8f9c3ea
+- 2026-10-05T20:19:34Z sha:cf81d8f9c3ea
+- 2026-10-05T20:14:45Z sha:cf81d8f9c3ea
+- 2026-10-05T20:09:35Z sha:cf81d8f9c3ea
+- 2026-10-05T20:04:38Z sha:cf81d8f9c3ea
+- 2026-10-05T19:59:32Z sha:cf81d8f9c3ea
+- 2026-10-05T19:54:54Z sha:cf81d8f9c3ea
+- 2026-10-05T19:50:04Z sha:cf81d8f9c3ea
+- 2026-10-05T19:44:52Z sha:cf81d8f9c3ea
+- 2026-10-05T19:39:44Z sha:cf81d8f9c3ea
+- 2026-10-05T19:34:58Z sha:cf81d8f9c3ea
+- 2026-10-05T19:30:07Z sha:cf81d8f9c3ea
+- 2026-10-05T19:25:21Z sha:cf81d8f9c3ea
+- 2026-10-05T19:20:08Z sha:cf81d8f9c3ea
+- 2026-10-05T19:15:06Z sha:cf81d8f9c3ea
+- 2026-10-05T19:09:57Z sha:cf81d8f9c3ea
+- 2026-10-05T19:05:24Z sha:cf81d8f9c3ea
+- 2026-10-05T18:59:52Z sha:cf81d8f9c3ea
+- 2026-10-05T18:55:07Z sha:cf81d8f9c3ea
+- 2026-10-05T18:50:04Z sha:cf81d8f9c3ea
+- 2026-10-05T18:44:57Z sha:cf81d8f9c3ea
+- 2026-10-05T18:39:56Z sha:cf81d8f9c3ea
+- 2026-10-05T18:35:00Z sha:cf81d8f9c3ea
+- 2026-10-05T18:29:56Z sha:cf81d8f9c3ea
+- 2026-10-05T18:25:02Z sha:cf81d8f9c3ea
+- 2026-10-05T18:19:59Z sha:cf81d8f9c3ea
+- 2026-10-05T18:15:01Z sha:cf81d8f9c3ea
+- 2026-10-05T18:10:08Z sha:cf81d8f9c3ea
+- 2026-10-05T18:04:54Z sha:cf81d8f9c3ea
+- 2026-10-05T17:59:54Z sha:cf81d8f9c3ea
+- 2026-10-05T17:55:08Z sha:cf81d8f9c3ea
+- 2026-10-05T17:45:35Z sha:cf81d8f9c3ea
+- 2026-10-05T17:42:36Z sha:c16ced9219cb
+- 2026-10-05T17:27:06Z sha:c16ced9219cb
+- 2026-10-05T17:13:07Z sha:c16ced9219cb
+- 2026-10-05T16:56:06Z sha:c16ced9219cb
+- 2026-10-05T16:41:09Z sha:c16ced9219cb
+- 2026-10-05T16:28:35Z sha:c16ced9219cb
 - 2026-10-05T16:10:49Z sha:c16ced9219cb
 - 2026-10-05T16:07:35Z sha:c16ced9219cb
 - 2026-10-05T15:52:02Z sha:c16ced9219cb
