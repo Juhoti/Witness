@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: FICO
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0xa48F22A46C0F1C46CA7D111CB6c137c271987180
 paused: False
@@ -17,6 +17,7 @@ address: `0xa48F22A46C0F1C46CA7D111CB6c137c271987180`
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:fd2855ed677c
 - 2026-10-04T21:46:11Z sha:fd2855ed677c
 - 2026-10-04T21:07:40Z sha:fd2855ed677c
 - 2026-10-04T20:26:03Z sha:fd2855ed677c

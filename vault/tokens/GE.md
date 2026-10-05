@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: GE
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0x63b814DDBd6BF339f25Fed8c36158a008D5B373e
 paused: False
@@ -10,13 +10,14 @@ paused: False
 
 address: `0x63b814DDBd6BF339f25Fed8c36158a008D5B373e`
 
-- multiplier_raw: 1000000000000000000
+- multiplier_raw: 1001049053505552371
 - paused: False
 - decimals: 18
 
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:5dc176cdcb75
 - 2026-10-04T21:46:11Z sha:7d410bc5fb84
 - 2026-10-04T21:07:40Z sha:7d410bc5fb84
 - 2026-10-04T20:26:03Z sha:7d410bc5fb84

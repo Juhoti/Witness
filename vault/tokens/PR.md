@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: PR
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0x4189F0c66EBBB0bfeF1C31f763131361EF32f77C
 paused: False
@@ -17,6 +17,7 @@ address: `0x4189F0c66EBBB0bfeF1C31f763131361EF32f77C`
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:93c5af5abc4c
 - 2026-10-04T21:46:11Z sha:93c5af5abc4c
 - 2026-10-04T21:07:40Z sha:93c5af5abc4c
 - 2026-10-04T20:26:03Z sha:93c5af5abc4c

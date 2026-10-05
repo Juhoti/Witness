@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: BND
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0x2F62fC9fAbb470C690f141c28340eD832bB27020
 paused: False
@@ -17,6 +17,7 @@ address: `0x2F62fC9fAbb470C690f141c28340eD832bB27020`
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:2bb8355e7d1f
 - 2026-10-04T21:46:11Z sha:2bb8355e7d1f
 - 2026-10-04T21:07:40Z sha:2bb8355e7d1f
 - 2026-10-04T20:26:03Z sha:2bb8355e7d1f

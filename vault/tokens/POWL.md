@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: POWL
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0x237c16D66590F67B886d978ACD362EAeaD8B18c7
 paused: False
@@ -17,6 +17,7 @@ address: `0x237c16D66590F67B886d978ACD362EAeaD8B18c7`
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:2ff15edc1f17
 - 2026-10-04T21:46:11Z sha:2ff15edc1f17
 - 2026-10-04T21:07:40Z sha:2ff15edc1f17
 - 2026-10-04T20:26:03Z sha:2ff15edc1f17

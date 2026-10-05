@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: CIEN
-updated: 2026-10-04T21:46:11Z
+updated: 2026-10-05T01:14:59Z
 tags: [token]
 address: 0x44f6D488021f8233B9416294d1FE9b1fEe28382d
 paused: False
@@ -17,6 +17,7 @@ address: `0x44f6D488021f8233B9416294d1FE9b1fEe28382d`
 Markets:
 
 ## revisions
+- 2026-10-05T01:14:59Z sha:1e3a948a5dc5
 - 2026-10-04T21:46:11Z sha:1e3a948a5dc5
 - 2026-10-04T21:07:40Z sha:1e3a948a5dc5
 - 2026-10-04T20:26:03Z sha:1e3a948a5dc5
