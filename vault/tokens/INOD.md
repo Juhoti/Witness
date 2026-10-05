@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: INOD
-updated: 2026-10-05T08:22:32Z
+updated: 2026-10-05T08:56:36Z
 tags: [token]
 address: 0xf1953DAB6FaD537488d5A022361FfAa8B4c95eC6
 paused: False
@@ -17,6 +17,7 @@ address: `0xf1953DAB6FaD537488d5A022361FfAa8B4c95eC6`
 Markets:
 
 ## revisions
+- 2026-10-05T08:56:36Z sha:e0a091edfdfc
 - 2026-10-05T08:22:32Z sha:e0a091edfdfc
 - 2026-10-05T07:45:27Z sha:e0a091edfdfc
 - 2026-10-05T07:07:34Z sha:e0a091edfdfc

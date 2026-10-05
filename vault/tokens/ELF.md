@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ELF
-updated: 2026-10-05T08:22:32Z
+updated: 2026-10-05T08:56:36Z
 tags: [token]
 address: 0x39EC44Bee4F6A116c6F9B8De566848a985C53C60
 paused: False
@@ -17,6 +17,7 @@ address: `0x39EC44Bee4F6A116c6F9B8De566848a985C53C60`
 Markets:
 
 ## revisions
+- 2026-10-05T08:56:36Z sha:d02b4f2fb835
 - 2026-10-05T08:22:32Z sha:d02b4f2fb835
 - 2026-10-05T07:45:27Z sha:d02b4f2fb835
 - 2026-10-05T07:07:33Z sha:d02b4f2fb835

@@ -1,7 +1,7 @@
 ---
 kind: tokens
 name: ON
-updated: 2026-10-05T08:22:32Z
+updated: 2026-10-05T08:56:36Z
 tags: [token]
 address: 0xbBD09F72b025360FeE5C928053Dca6248d35be54
 paused: False
@@ -17,6 +17,7 @@ address: `0xbBD09F72b025360FeE5C928053Dca6248d35be54`
 Markets:
 
 ## revisions
+- 2026-10-05T08:56:36Z sha:1c0bbfd46349
 - 2026-10-05T08:22:32Z sha:1c0bbfd46349
 - 2026-10-05T07:45:27Z sha:1c0bbfd46349
 - 2026-10-05T07:07:34Z sha:1c0bbfd46349
