@@ -115,8 +115,11 @@ def build() -> dict:
     for m in oracle.get("items", []):
         if m["finding"] != "ok" and m.get("borrow_usd", 0) >= 10_000:
             risks.append({"kind": f"oracle_{m['finding']}", "subject": f"{m['collateral']}/{m['loan']} {m['market'][:10]}", "size_usd": m["borrow_usd"],
-                          "measured": f"${m['borrow_usd']:,.0f} borrowed at {m['lltv']:.1%} loan-to-value; oracle price {m.get('oracle_price')}; "
-                                      f"moved in 7 days: {m.get('moved_7d')}",
+                          "measured": f"${m['borrow_usd']:,.0f} borrowed at {m['lltv']:.1%} loan-to-value; " + (
+                              f"priced at a fixed {m.get('oracle_price')}; a live feed takes over only after a {mo['deviation_threshold']:.1%} gap "
+                              f"lasts {mo['challenge_timelock_h']:.0f} hours and someone triggers it"
+                              if (mo := m.get("meta_oracle")) and m["finding"] == "fixed_with_delayed_backup"
+                              else f"oracle price {m.get('oracle_price')}; moved in 7 days: {m.get('moved_7d')}"),
                           "served_by": "existing Morpho market", "needs": "watch; no exposure (draft rail)", "source": "oracle audit"})
 
     # --- unexplained ---------------------------------------------------------------------------

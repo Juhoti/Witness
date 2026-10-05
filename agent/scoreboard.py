@@ -14,7 +14,7 @@ import time
 from . import census, gate, grade, opportunity, settings
 
 OUT = settings.STATE_DIR / "scoreboard.html"
-FINDING_LABEL = {"oracle_constant": ("critical", "Fixed price"), "oracle_frozen": ("critical", "Frozen 7 days"),
+FINDING_LABEL = {"oracle_constant": ("critical", "Fixed price"), "oracle_fixed_with_delayed_backup": ("serious", "Fixed price, slow backup"), "oracle_frozen": ("critical", "Frozen 7 days"),
                  "oracle_vault_rate_only": ("serious", "Prices itself"), "oracle_unlisted_feed": ("warning", "Feed not in Chainlink's list"),
                  "oracle_stale_feed": ("warning", "Stale feed"), "oracle_off_market": ("warning", "Off market"), "oracle_no_oracle": ("serious", "No oracle")}
 GAP_LABEL = {"lending_capacity": "Borrowers want more than is supplied", "unlisted_collateral": "No lending market exists",
@@ -104,7 +104,7 @@ def build() -> str:
 
     figures = [(f"{st.get('count', '—')}", "stock tokens on the verified registry"),
                (f"{(cen['coverage_by_contract_kind'] or 0):.0%}", "of chain activity Witness can name"),
-               (usd(risk_usd), "borrowed against prices that would not see a fall"),
+               (usd(risk_usd), "borrowed against prices slow or blind to a fall"),
                (f"{feeds.get('count', '—')} / {st.get('count', '—')}", "stock tokens with a Chainlink feed")]
     fig_html = "".join(f'<div class="fig"><span class="n">{e(n)}</span><span class="l">{e(l)}</span></div>' for n, l in figures)
 
@@ -151,7 +151,7 @@ def build() -> str:
 <div class="figures">{fig_html}</div>
 
 <section>
-  <div><h2>Markets whose price would not see a fall</h2>
+  <div><h2>Markets whose price would be slow or blind to a fall</h2>
   <p class="sub">Every Morpho market reads its collateral price from an oracle. These read one that is fixed, frozen, or outside Chainlink's published list, ranked by what is borrowed against them. An unusual oracle can be a deliberate choice; this is a list of what to look at, not a verdict.</p></div>
   <div class="scroll"><table><thead><tr><th>Market</th><th>Finding</th><th class="num">Borrowed</th><th>Oracle</th></tr></thead><tbody>{risk_rows or '<tr><td colspan="4" class="quiet">No audit yet.</td></tr>'}</tbody></table></div>
 </section>
