@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: NFLX
-updated: 2026-10-06T04:19:04Z
+updated: 2026-10-06T10:19:37Z
 tags: [token]
 address: 0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8
 paused: False
-source: scorecard 4868d552c72e0e04
-source_ts: 1791260246
+source: scorecard 2c0c09cb4b53ce6f
+source_ts: 1791281857
 ---
 # NFLX
 
@@ -21,6 +21,78 @@ address: `0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8`
 Markets: [[markets/0x892a0adf84e7e752d8ad2ad61c9248dcc9657e41c6c7f7b94267491e60f0b382]], [[markets/0x6749bf5af75108ebd1c260dd4d65c22d1693fc696ee056417d82e35775aff79f]], [[markets/0x0066bc47b87597993af0bca6f526175c0abae011b764d4bf12a3def45e1f4e78]]
 
 ## revisions
+- 2026-10-06T10:19:37Z sha:ef73e23db4ed
+- 2026-10-06T10:14:36Z sha:ef73e23db4ed
+- 2026-10-06T10:09:41Z sha:ef73e23db4ed
+- 2026-10-06T10:05:01Z sha:ef73e23db4ed
+- 2026-10-06T09:59:42Z sha:ef73e23db4ed
+- 2026-10-06T09:54:59Z sha:ef73e23db4ed
+- 2026-10-06T09:50:02Z sha:ef73e23db4ed
+- 2026-10-06T09:44:39Z sha:ef73e23db4ed
+- 2026-10-06T09:40:04Z sha:ef73e23db4ed
+- 2026-10-06T09:34:59Z sha:ef73e23db4ed
+- 2026-10-06T09:29:53Z sha:ef73e23db4ed
+- 2026-10-06T09:25:07Z sha:ef73e23db4ed
+- 2026-10-06T09:20:00Z sha:ef73e23db4ed
+- 2026-10-06T09:14:52Z sha:ef73e23db4ed
+- 2026-10-06T09:09:34Z sha:ef73e23db4ed
+- 2026-10-06T09:04:48Z sha:ef73e23db4ed
+- 2026-10-06T08:59:23Z sha:ef73e23db4ed
+- 2026-10-06T08:55:03Z sha:ef73e23db4ed
+- 2026-10-06T08:49:25Z sha:ef73e23db4ed
+- 2026-10-06T08:44:28Z sha:ef73e23db4ed
+- 2026-10-06T08:39:25Z sha:ef73e23db4ed
+- 2026-10-06T08:34:21Z sha:ef73e23db4ed
+- 2026-10-06T08:29:29Z sha:ef73e23db4ed
+- 2026-10-06T08:24:22Z sha:ef73e23db4ed
+- 2026-10-06T08:19:24Z sha:ef73e23db4ed
+- 2026-10-06T08:14:22Z sha:ef73e23db4ed
+- 2026-10-06T08:09:13Z sha:ef73e23db4ed
+- 2026-10-06T08:04:35Z sha:ef73e23db4ed
+- 2026-10-06T07:59:15Z sha:ef73e23db4ed
+- 2026-10-06T07:54:27Z sha:ef73e23db4ed
+- 2026-10-06T07:49:24Z sha:ef73e23db4ed
+- 2026-10-06T07:44:24Z sha:ef73e23db4ed
+- 2026-10-06T07:39:39Z sha:ef73e23db4ed
+- 2026-10-06T07:34:17Z sha:ef73e23db4ed
+- 2026-10-06T07:29:14Z sha:ef73e23db4ed
+- 2026-10-06T07:24:10Z sha:ef73e23db4ed
+- 2026-10-06T07:19:08Z sha:ef73e23db4ed
+- 2026-10-06T07:14:13Z sha:ef73e23db4ed
+- 2026-10-06T07:09:08Z sha:ef73e23db4ed
+- 2026-10-06T07:04:38Z sha:ef73e23db4ed
+- 2026-10-06T06:59:18Z sha:ef73e23db4ed
+- 2026-10-06T06:53:56Z sha:ef73e23db4ed
+- 2026-10-06T06:49:06Z sha:ef73e23db4ed
+- 2026-10-06T06:44:16Z sha:ef73e23db4ed
+- 2026-10-06T06:39:07Z sha:ef73e23db4ed
+- 2026-10-06T06:34:06Z sha:ef73e23db4ed
+- 2026-10-06T06:29:07Z sha:ef73e23db4ed
+- 2026-10-06T06:24:03Z sha:ef73e23db4ed
+- 2026-10-06T06:19:20Z sha:ef73e23db4ed
+- 2026-10-06T06:14:25Z sha:ef73e23db4ed
+- 2026-10-06T06:09:50Z sha:ef73e23db4ed
+- 2026-10-06T06:04:21Z sha:ef73e23db4ed
+- 2026-10-06T05:59:06Z sha:ef73e23db4ed
+- 2026-10-06T05:53:59Z sha:ef73e23db4ed
+- 2026-10-06T05:48:58Z sha:ef73e23db4ed
+- 2026-10-06T05:44:03Z sha:ef73e23db4ed
+- 2026-10-06T05:39:05Z sha:ef73e23db4ed
+- 2026-10-06T05:33:58Z sha:ef73e23db4ed
+- 2026-10-06T05:28:54Z sha:ef73e23db4ed
+- 2026-10-06T05:23:48Z sha:ef73e23db4ed
+- 2026-10-06T05:19:04Z sha:ef73e23db4ed
+- 2026-10-06T05:13:56Z sha:ef73e23db4ed
+- 2026-10-06T05:09:29Z sha:ef73e23db4ed
+- 2026-10-06T05:04:12Z sha:ef73e23db4ed
+- 2026-10-06T04:58:58Z sha:ef73e23db4ed
+- 2026-10-06T04:53:58Z sha:ef73e23db4ed
+- 2026-10-06T04:48:57Z sha:ef73e23db4ed
+- 2026-10-06T04:43:51Z sha:ef73e23db4ed
+- 2026-10-06T04:38:57Z sha:ef73e23db4ed
+- 2026-10-06T04:34:27Z sha:ef73e23db4ed
+- 2026-10-06T04:29:00Z sha:ef73e23db4ed
+- 2026-10-06T04:24:00Z sha:ef73e23db4ed
 - 2026-10-06T04:19:04Z sha:ef73e23db4ed
 - 2026-10-06T04:14:09Z sha:ef73e23db4ed
 - 2026-10-06T04:08:56Z sha:ef73e23db4ed

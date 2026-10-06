@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: EWY
-updated: 2026-10-06T04:19:04Z
+updated: 2026-10-06T10:19:37Z
 tags: [token]
 address: 0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc
 paused: False
-source: scorecard 4868d552c72e0e04
-source_ts: 1791260246
+source: scorecard 2c0c09cb4b53ce6f
+source_ts: 1791281857
 ---
 # EWY
 
@@ -21,6 +21,78 @@ address: `0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc`
 Markets: [[markets/0xfdc77ba2fc1a4b41393b7531623ca73149edf30ad65f5709841f9e47f3f42418]], [[markets/0x1b3555f7c1273688f01ae82da7dc8e508e6a7841ec0038dbb15767154a277b86]]
 
 ## revisions
+- 2026-10-06T10:19:37Z sha:ba2b51b1ebd0
+- 2026-10-06T10:14:36Z sha:ba2b51b1ebd0
+- 2026-10-06T10:09:41Z sha:ba2b51b1ebd0
+- 2026-10-06T10:05:01Z sha:ba2b51b1ebd0
+- 2026-10-06T09:59:42Z sha:ba2b51b1ebd0
+- 2026-10-06T09:54:59Z sha:ba2b51b1ebd0
+- 2026-10-06T09:50:02Z sha:ba2b51b1ebd0
+- 2026-10-06T09:44:39Z sha:ba2b51b1ebd0
+- 2026-10-06T09:40:04Z sha:ba2b51b1ebd0
+- 2026-10-06T09:34:59Z sha:ba2b51b1ebd0
+- 2026-10-06T09:29:53Z sha:ba2b51b1ebd0
+- 2026-10-06T09:25:07Z sha:ba2b51b1ebd0
+- 2026-10-06T09:20:00Z sha:ba2b51b1ebd0
+- 2026-10-06T09:14:52Z sha:ba2b51b1ebd0
+- 2026-10-06T09:09:34Z sha:ba2b51b1ebd0
+- 2026-10-06T09:04:48Z sha:ba2b51b1ebd0
+- 2026-10-06T08:59:23Z sha:ba2b51b1ebd0
+- 2026-10-06T08:55:03Z sha:ba2b51b1ebd0
+- 2026-10-06T08:49:25Z sha:ba2b51b1ebd0
+- 2026-10-06T08:44:28Z sha:ba2b51b1ebd0
+- 2026-10-06T08:39:25Z sha:ba2b51b1ebd0
+- 2026-10-06T08:34:21Z sha:ba2b51b1ebd0
+- 2026-10-06T08:29:29Z sha:ba2b51b1ebd0
+- 2026-10-06T08:24:22Z sha:ba2b51b1ebd0
+- 2026-10-06T08:19:24Z sha:ba2b51b1ebd0
+- 2026-10-06T08:14:22Z sha:ba2b51b1ebd0
+- 2026-10-06T08:09:13Z sha:ba2b51b1ebd0
+- 2026-10-06T08:04:35Z sha:ba2b51b1ebd0
+- 2026-10-06T07:59:15Z sha:ba2b51b1ebd0
+- 2026-10-06T07:54:27Z sha:ba2b51b1ebd0
+- 2026-10-06T07:49:24Z sha:ba2b51b1ebd0
+- 2026-10-06T07:44:24Z sha:ba2b51b1ebd0
+- 2026-10-06T07:39:39Z sha:ba2b51b1ebd0
+- 2026-10-06T07:34:17Z sha:ba2b51b1ebd0
+- 2026-10-06T07:29:14Z sha:ba2b51b1ebd0
+- 2026-10-06T07:24:10Z sha:ba2b51b1ebd0
+- 2026-10-06T07:19:08Z sha:ba2b51b1ebd0
+- 2026-10-06T07:14:13Z sha:ba2b51b1ebd0
+- 2026-10-06T07:09:08Z sha:ba2b51b1ebd0
+- 2026-10-06T07:04:38Z sha:ba2b51b1ebd0
+- 2026-10-06T06:59:18Z sha:ba2b51b1ebd0
+- 2026-10-06T06:53:56Z sha:ba2b51b1ebd0
+- 2026-10-06T06:49:06Z sha:ba2b51b1ebd0
+- 2026-10-06T06:44:16Z sha:ba2b51b1ebd0
+- 2026-10-06T06:39:07Z sha:ba2b51b1ebd0
+- 2026-10-06T06:34:06Z sha:ba2b51b1ebd0
+- 2026-10-06T06:29:07Z sha:ba2b51b1ebd0
+- 2026-10-06T06:24:03Z sha:ba2b51b1ebd0
+- 2026-10-06T06:19:20Z sha:ba2b51b1ebd0
+- 2026-10-06T06:14:25Z sha:ba2b51b1ebd0
+- 2026-10-06T06:09:50Z sha:ba2b51b1ebd0
+- 2026-10-06T06:04:21Z sha:ba2b51b1ebd0
+- 2026-10-06T05:59:06Z sha:ba2b51b1ebd0
+- 2026-10-06T05:53:59Z sha:ba2b51b1ebd0
+- 2026-10-06T05:48:58Z sha:ba2b51b1ebd0
+- 2026-10-06T05:44:03Z sha:ba2b51b1ebd0
+- 2026-10-06T05:39:05Z sha:ba2b51b1ebd0
+- 2026-10-06T05:33:58Z sha:ba2b51b1ebd0
+- 2026-10-06T05:28:54Z sha:ba2b51b1ebd0
+- 2026-10-06T05:23:48Z sha:ba2b51b1ebd0
+- 2026-10-06T05:19:04Z sha:ba2b51b1ebd0
+- 2026-10-06T05:13:56Z sha:ba2b51b1ebd0
+- 2026-10-06T05:09:29Z sha:ba2b51b1ebd0
+- 2026-10-06T05:04:12Z sha:ba2b51b1ebd0
+- 2026-10-06T04:58:58Z sha:ba2b51b1ebd0
+- 2026-10-06T04:53:58Z sha:ba2b51b1ebd0
+- 2026-10-06T04:48:57Z sha:ba2b51b1ebd0
+- 2026-10-06T04:43:51Z sha:ba2b51b1ebd0
+- 2026-10-06T04:38:57Z sha:ba2b51b1ebd0
+- 2026-10-06T04:34:27Z sha:ba2b51b1ebd0
+- 2026-10-06T04:29:00Z sha:ba2b51b1ebd0
+- 2026-10-06T04:23:59Z sha:ba2b51b1ebd0
 - 2026-10-06T04:19:04Z sha:ba2b51b1ebd0
 - 2026-10-06T04:14:09Z sha:ba2b51b1ebd0
 - 2026-10-06T04:08:56Z sha:ba2b51b1ebd0
