@@ -1,0 +1,66 @@
+# Projects on Robinhood Chain whose on-chain footprint Witness measures and publishes (ledger/projects/).
+# Every address names where it came from. Addresses from a project's own site or logs are their claim;
+# the measurement is what the chain says. Nothing here is used to act, only to measure.
+
+[[project]]
+name = "Harmonic Agent"
+site = "https://harmonicagent.solutions"
+claims = "autonomous agent; token with buy-and-burn; HUSD dollar fully backed by USDG; ~40 product desks"
+[[project.contract]]
+label = "HARMONIC token"
+address = "0xdEe52F2ab639b6942B0d0F0565400b93b7a0fbe5"
+source = "named in the project's own proof log, harmonicagent.solutions/api/charts/proofs, 2026-10-06"
+[[project.contract]]
+label = "HUSD dollar (candidate: not confirmed by the project)"
+address = "0x62C457926EA50890cE912175798F016a3cE1f50e"
+source = "explorer search for 'Harmonic Dollar', 2026-10-06; the project's contract page did not render"
+reserve = "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168"   # USDG; the claim is 1:1 backing
+
+[[project]]
+name = "Arca"
+site = "https://github.com/arcafi/arca"
+claims = "fully-backed stock index token rebalanced by an agent that can never withdraw; not audited yet"
+[[project.contract]]
+label = "ArcaVault index token (ARCI)"
+address = "0x04f4F5b8572d0b925557BE9F42C92B9Edce9F628"
+source = "project README, 2026-10-06"
+[[project.contract]]
+label = "ArcaUniV4Router"
+address = "0x107d393006494fce1C325e67507d33011239997f"
+source = "project README, 2026-10-06"
+
+[[project]]
+name = "Vaulta"
+site = "https://github.com/vaultarh/vaulta"
+claims = "AI-driven yield vaults, 8-40% APY tiers, 'Mainnet_Live'; audit listed as in progress"
+[[project.contract]]
+label = "deployed contract"
+address = "0x7117dB2D6590309463f278bC550719a36667C26f"
+source = "project README, 2026-10-05"
+
+[[project]]
+name = "Steakhouse USDG vault"
+site = "https://app.morpho.org"
+claims = "curated USDG lending vault; holds over 99% of vault deposits on the chain"
+[[project.contract]]
+label = "Morpho vault v2"
+address = "0xBeEff033F34C046626B8D0A041844C5d1A5409dd"
+source = "Morpho API vaultV2s, 2026-10-06"
+
+[[project]]
+name = "NetNet Credit"
+site = "https://app.morpho.org"
+claims = "USDG credit vault; likely funder of the stock-token markets"
+[[project.contract]]
+label = "Morpho vault v2"
+address = "0x99347d5F70D3838763f6Bddcf80304C8aa953B57"
+source = "Morpho API vaultV2s, 2026-10-06"
+
+[[project]]
+name = "Pons"
+site = "https://ponsfamily.com"
+claims = "token launchpad (bonding curves); linked from Harmonic's site"
+[[project.contract]]
+label = "PONS token"
+address = "0x39dbed3a2bd333467115de45665cc57f813c4571"
+source = "named in Harmonic's proof log, 2026-10-06"
