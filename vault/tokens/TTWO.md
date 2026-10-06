@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: TTWO
-updated: 2026-10-06T16:24:33Z
+updated: 2026-10-06T22:24:58Z
 tags: [token]
 address: 0x5e81213613b6B86EaB4c6c50d718d34359459786
 paused: False
-source: scorecard 4d8007139bf86161
-source_ts: 1791303666
+source: scorecard cb84d764c7b16b59
+source_ts: 1791325270
 ---
 # TTWO
 
@@ -21,23 +21,23 @@ address: `0x5e81213613b6B86EaB4c6c50d718d34359459786`
 Markets: [[markets/0xe6284cf12d0603aee18ff5ab412e262cf99f120e967579111d7a51f37f276f54]]
 
 ## revisions
-- 2026-10-06T16:24:33Z sha:cccf239d37ed
-- 2026-10-06T16:09:30Z sha:cccf239d37ed
-- 2026-10-06T15:54:13Z sha:cccf239d37ed
-- 2026-10-06T15:42:35Z sha:cccf239d37ed
-- 2026-10-06T15:27:23Z sha:cccf239d37ed
-- 2026-10-06T15:09:16Z sha:cccf239d37ed
-- 2026-10-06T14:54:48Z sha:cccf239d37ed
-- 2026-10-06T14:40:47Z sha:cccf239d37ed
-- 2026-10-06T14:25:30Z sha:cccf239d37ed
-- 2026-10-06T14:13:24Z sha:cccf239d37ed
-- 2026-10-06T13:53:26Z sha:cccf239d37ed
-- 2026-10-06T13:50:51Z sha:cccf239d37ed
-- 2026-10-06T13:46:02Z sha:cccf239d37ed
-- 2026-10-06T13:40:51Z sha:cccf239d37ed
-- 2026-10-06T13:35:57Z sha:cccf239d37ed
-- 2026-10-06T13:30:28Z sha:cccf239d37ed
-- 2026-10-06T13:25:34Z sha:cccf239d37ed
-- 2026-10-06T13:20:22Z sha:cccf239d37ed
-- 2026-10-06T13:15:14Z sha:cccf239d37ed
-- 2026-10-06T13:10:25Z sha:cccf239d37ed
+- 2026-10-06T22:24:58Z sha:cccf239d37ed
+- 2026-10-06T22:10:00Z sha:cccf239d37ed
+- 2026-10-06T21:54:58Z sha:cccf239d37ed
+- 2026-10-06T21:40:17Z sha:cccf239d37ed
+- 2026-10-06T21:24:47Z sha:cccf239d37ed
+- 2026-10-06T21:09:57Z sha:cccf239d37ed
+- 2026-10-06T20:54:37Z sha:cccf239d37ed
+- 2026-10-06T20:39:46Z sha:cccf239d37ed
+- 2026-10-06T20:24:43Z sha:cccf239d37ed
+- 2026-10-06T20:09:37Z sha:cccf239d37ed
+- 2026-10-06T19:54:32Z sha:cccf239d37ed
+- 2026-10-06T19:39:36Z sha:cccf239d37ed
+- 2026-10-06T19:24:53Z sha:cccf239d37ed
+- 2026-10-06T19:09:59Z sha:cccf239d37ed
+- 2026-10-06T18:55:08Z sha:cccf239d37ed
+- 2026-10-06T18:40:15Z sha:cccf239d37ed
+- 2026-10-06T18:25:24Z sha:cccf239d37ed
+- 2026-10-06T18:10:34Z sha:cccf239d37ed
+- 2026-10-06T17:54:37Z sha:cccf239d37ed
+- 2026-10-06T17:39:47Z sha:cccf239d37ed
