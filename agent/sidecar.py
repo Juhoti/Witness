@@ -14,7 +14,7 @@ import logging
 import sys
 import time
 import traceback
-from . import census, grade, intent, investigate, opportunity, oracle_audit, prices, scoreboard, session_risk, settings, vaults
+from . import census, grade, intent, investigate, opportunity, oracle_audit, prices, scoreboard, sellcheck, session_risk, settings, vaults
 
 log = logging.getLogger("sidecar")
 STATE = settings.STATE_DIR / "sidecar.json"
@@ -38,6 +38,7 @@ TASKS = [
     ("oracle_audit", 360, lambda: oracle_audit.publish(oracle_audit.audit())[:16]),
     ("vaults", 360, lambda: vaults.publish(vaults.build())[:16]),
     ("session_risk", 1440, lambda: session_risk.publish(session_risk.build())[:16]),
+    ("sellcheck", 360, lambda: sellcheck.publish(sellcheck.build())[:16]),
     ("opportunity", 60, _opportunity),
     ("grade", 60, lambda: len(grade.run())),
     ("scoreboard", 60, lambda: scoreboard.OUT.write_text(scoreboard.build())),
