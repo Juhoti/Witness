@@ -73,11 +73,11 @@ def _push() -> None:
         return
     git = ["git", "-C", str(settings.ROOT)]
     try:
-        subprocess.run(git + ["add", "ledger", "vault"], check=True, capture_output=True)
+        subprocess.run(git + ["add", "ledger", "vault", "feed"], check=True, capture_output=True)
         staged = subprocess.run(git + ["diff", "--cached", "--name-only"], check=True, capture_output=True, text=True).stdout.split("\n")
         n_entries = sum(1 for f in staged if f.startswith("ledger/entries/"))
         n_cards = sum(1 for f in staged if f.startswith("ledger/scorecards/"))
-        if not (n_entries or n_cards):
+        if not staged or staged == [""]:
             return
         msg = f"ledger: {n_entries} entries, {n_cards} scorecards to {time.strftime('%Y-%m-%d %H:%M', time.gmtime())} UTC"
         subprocess.run(git + ["commit", "-qm", msg], capture_output=True)

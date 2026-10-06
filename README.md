@@ -25,6 +25,23 @@ a certificate a human adopted. Anyone can fork the code; nobody can fork the rec
   log, and `vault/priors/`, borrowed base rates from other venues, each labelled as a prior with
   its source and retrieval time. Memory, not record: the ledger cites it by hash.
 
+## The feed
+
+The record arranged for use, one JSON file per question, rebuilt hourly and pushed with the record:
+
+```
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/index.json         what the files are and when each was built
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/collateral.json    every stock token against the listing rails
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/prices.json        Witness's reference price per asset
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/oracles.json       how every Morpho market is priced
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/warnings.json      tokens whose holders cannot sell
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/projects.json      projects measured beside their claims
+https://raw.githubusercontent.com/Juhoti/Witness/main/feed/opportunities.json ranked gaps, risks and the unexplained
+```
+
+Every file carries its method, when it was measured and the ledger file it came from, so any figure can
+be checked against the record. These are measurements, not an oracle.
+
 ## What it measures
 
 | signal | source | file |

@@ -14,7 +14,7 @@ import logging
 import sys
 import time
 import traceback
-from . import census, grade, intent, investigate, opportunity, oracle_audit, prices, projects, scoreboard, sellcheck, session_risk, settings, vaults
+from . import census, feed, grade, intent, investigate, opportunity, oracle_audit, prices, projects, scoreboard, sellcheck, session_risk, settings, vaults
 
 log = logging.getLogger("sidecar")
 STATE = settings.STATE_DIR / "sidecar.json"
@@ -43,6 +43,7 @@ TASKS = [
     ("opportunity", 60, _opportunity),
     ("grade", 60, lambda: len(grade.run())),
     ("scoreboard", 60, lambda: scoreboard.OUT.write_text(scoreboard.build())),
+    ("feed", 60, lambda: list(feed.build()["files"])),
     ("investigate", 30, lambda: investigate.run_once() if settings.INVESTIGATOR_ENABLED else "off"),
 ]
 

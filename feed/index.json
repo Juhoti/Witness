@@ -1,0 +1,38 @@
+{
+ "built": 1791307132,
+ "disclaimer": "Measurements from Robinhood Chain (4663) by Witness, with method and age attached. Not an oracle: no manipulation resistance beyond what each method states, no availability promise. Check any figure against the ledger file it names.",
+ "files": {
+  "collateral.json": {
+   "as_of": 1791306366,
+   "ledger_file": null,
+   "what": "every stock token against the listing rails"
+  },
+  "opportunities.json": {
+   "as_of": 1791307011,
+   "ledger_file": "2026-10-06_ab691a371448b3d5.json",
+   "what": "ranked gaps, risks and the unexplained"
+  },
+  "oracles.json": {
+   "as_of": 1791287017,
+   "ledger_file": "2026-10-06_e19d7cb5910bce49.json",
+   "what": "how every Morpho market is priced"
+  },
+  "prices.json": {
+   "as_of": 1791307008,
+   "ledger_file": "2026-10-06_21cb42df2abfe7c9.json",
+   "what": "Witness's reference price per asset"
+  },
+  "projects.json": {
+   "as_of": 1791306057,
+   "ledger_file": "2026-10-06_227f6ded5dae6f0c.json",
+   "what": "projects measured beside their claims"
+  },
+  "warnings.json": {
+   "as_of": 1791303713,
+   "ledger_file": "2026-10-06_b0e6008251d3577c.json",
+   "what": "tokens whose holders cannot sell"
+  }
+ },
+ "kind": "feed",
+ "repository": "github.com/Juhoti/Witness"
+}
