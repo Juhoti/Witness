@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "parent": "ede8762acc642a63a213f631e5acacad181dde21ac4ab77e596b9a50c0c9ba4d",
+  "listings": [
+    {
+      "symbol": "NVDA",
+      "address": "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+      "market": "0x8b16891f032a93b771347c9cb470a780e6699dd701553d3402aa3cdba6189c3e",
+      "lltv": 0.625,
+      "cap_usd": 200000,
+      "chainlink_feed": "0x379EC4f7C378F34a1B47E4F3cbeBCbAC3E8E9F15",
+      "halt_free_30d": true,
+      "liquidation_depth_usd": 1000000,
+      "oracle_finding": "ok",
+      "basis": {
+        "scorecard": "99986ae39ec192af",
+        "depth_usd_5pct": 1000000,
+        "cap_rule": "cap <= depth / 5",
+        "pause_free_days": 118,
+        "exchange_halt_free_30d": true,
+        "worst_closed_fall_5y": 0.1418,
+        "max_tier_surviving_worst": 0.77,
+        "market_utilisation": 0.9998,
+        "market_borrowed_usd": 686153,
+        "note": "first listing; the existing market at 62.5% LLTV is pinned at 100% utilisation with borrowers paying ~18%"
+      }
+    }
+  ],
+  "session_rules": {
+    "tighten_before_weekend_minutes": 60,
+    "weekend_cap_multiplier": 0.5,
+    "halt_action": "freeze_new_borrows"
+  },
+  "max_cap_increase_24h": 2.0,
+  "notes": "Changed only by a judged ledger entry. Hand edits must be recorded as proposer=human."
+}
