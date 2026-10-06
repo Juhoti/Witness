@@ -83,17 +83,57 @@ def measure_contract(c: dict, total_logs: int) -> dict:
     return out
 
 
+DISCOVER_TOP = 12
+
+
+def discovered(known: set[str]) -> list[dict]:
+    """Projects the chain itself points at, no register needed: the busiest token and vault contracts by
+    event logs in the census, and every Morpho vault with real deposits. Each carries where it was found.
+    A project discovered this way has no claim beside it until a person or the investigator adds one."""
+    con = census.db()
+    out = []
+    rows = con.execute("""SELECT address, symbol, name, kind, logs FROM contracts WHERE kind IN ('erc20','erc4626_vault','stock_token_like')
+                          AND probed_at IS NOT NULL ORDER BY logs DESC LIMIT ?""", (DISCOVER_TOP * 2,)).fetchall()
+    stock = set()
+    sp = settings.STATE_DIR / "stock_tokens.json"
+    if sp.exists():
+        import json
+        stock = set(json.loads(sp.read_text()).get("tokens", []))
+    for a, sym, name, kind, logs in rows:
+        if a in known or a in stock or a.lower() in {settings.CHAIN["tokens"]["usdg"].lower(), settings.CHAIN["tokens"]["weth"].lower()}:
+            continue
+        out.append({"name": (name or sym or a)[:60], "site": None, "claims": None, "discovered": f"census: {logs:,} logs, kind {kind}",
+                    "contract": [{"label": f"{kind} {sym or ''}".strip(), "address": a, "source": "census, busiest contracts by event logs"}]})
+        if len(out) >= DISCOVER_TOP:
+            break
+    try:
+        from . import opportunity
+        v = opportunity._latest(settings.LEDGER_DIR / "vaults") or {}
+        for x in v.get("items", []):
+            if x["deposits_usd"] >= 1000 and Web3.to_checksum_address(x["address"]) not in known:
+                out.append({"name": x["name"][:60], "site": None, "claims": None, "discovered": f"Morpho vault record: ${x['deposits_usd']:,.0f} deposited",
+                            "contract": [{"label": "Morpho vault v2", "address": x["address"], "source": "Morpho API vaultV2s, via ledger/vaults"}]})
+                known.add(Web3.to_checksum_address(x["address"]))
+    except Exception:
+        pass
+    return out
+
+
 def build() -> dict:
     cfg = tomllib.loads((settings.ROOT / "config" / "projects.toml").read_text())
     total = census.db().execute("SELECT coalesce(sum(n),0) FROM activity").fetchone()[0]
+    listed = cfg.get("project", [])
+    known = {Web3.to_checksum_address(c["address"]) for p in listed for c in p.get("contract", [])}
     projects = []
-    for p in cfg.get("project", []):
+    for p in listed + discovered(known):
         contracts = [measure_contract(c, total) for c in p.get("contract", [])]
-        projects.append({"name": p["name"], "site": p.get("site"), "claims": p.get("claims"), "contracts": contracts,
-                         "share_of_chain_logs": round(sum(c["activity"]["share_of_chain_logs"] for c in contracts), 6)})
+        projects.append({"name": p["name"], "site": p.get("site"), "claims": p.get("claims"), "discovered": p.get("discovered"),
+                         "contracts": contracts, "share_of_chain_logs": round(sum(c["activity"]["share_of_chain_logs"] for c in contracts), 6)})
+    projects.sort(key=lambda x: -x["share_of_chain_logs"])
     return {"kind": "projects", "ts": int(time.time()), "chain_id": settings.CHAIN["chain"]["id"],
-            "method": "chain reads via Multicall3, explorer counters, Witness price cache, census log counts; claims are the projects' own words",
-            "census_logs": total, "projects": projects}
+            "method": "chain reads via Multicall3, explorer counters, Witness price cache, census log counts; claims are the projects' own words; "
+                      "projects without a claim were found by the agent from the chain",
+            "census_logs": total, "registered": len(listed), "discovered": len(projects) - len(listed), "projects": projects}
 
 
 def publish(doc: dict) -> str:
@@ -107,7 +147,7 @@ if __name__ == "__main__":
     d = build()
     print(f"projects {publish(d)[:16]}: {len(d['projects'])} projects against {d['census_logs']:,} census logs")
     for p in d["projects"]:
-        print(f"\n{p['name']}  (share of chain logs {p['share_of_chain_logs']:.3%})  claims: {p['claims'][:70]}")
+        print(f"\n{p['name']}  (share of chain logs {p['share_of_chain_logs']:.3%})  " + (f"claims: {p['claims'][:70]}" if p.get('claims') else f"found by: {p.get('discovered')}"))
         for c in p["contracts"]:
             e, m, act = c["explorer"], c["market"], c["activity"]
             line = f"  {c['label'][:34]:34} {c['kind']:13} holders {e.get('holders')!s:>6} txs {e.get('transactions')!s:>7} logs {act['logs_in_census']:>7}"

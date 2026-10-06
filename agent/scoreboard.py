@@ -138,6 +138,24 @@ def build() -> str:
     un_rows = "".join(f'<tr><td>{e({"unknown_contract": "Contract", "unnamed_event": "Event type", "failing_intent": "Failing call"}.get(u["kind"], u["kind"]))}</td>'
                       f'<td class="mono">{e(u["subject"][:56])}</td><td class="num">{u["size_share"]:.2%}</td><td class="quiet">{e(u["measured"])}</td></tr>' for u in unexplained[:8])
 
+    proj = _latest("projects")
+    proj_rows = ""
+    for pr in proj.get("projects", [])[:14]:
+        c = pr["contracts"][0] if pr["contracts"] else {}
+        ex, mk = c.get("explorer", {}), c.get("market", {})
+        size = (f"${c['assets_under_management']:,.0f} {c['asset']['symbol']} under management" if c.get("assets_under_management") is not None
+                else f"${mk['fully_diluted_usd']:,.0f} fully diluted" if mk.get("fully_diluted_usd") else "—")
+        basis = "listed" if pr.get("claims") else "found by the agent"
+        proj_rows += (f'<tr><td>{e(pr["name"])}<div class="mono quiet">{e(c.get("address", "")[:10])}…</div></td><td>{e(c.get("kind", "—"))}</td>'
+                      f'<td class="num">{e(ex.get("holders") or "—")}</td><td class="num">{size}</td>'
+                      f'<td class="num">{pr["share_of_chain_logs"]:.2%}</td><td class="quiet">{e(pr.get("claims") or basis)}</td></tr>')
+    warn = _latest("warnings")
+    warn_rows = "".join(f'<tr><td>{e(x["symbol"])}<div class="mono quiet">{e(x["token"][:10])}…</div></td>'
+                        f'<td><span class="pill {"critical" if x["finding"] == "sell_blocked" else "warning"}"><i aria-hidden="true">{ICON["critical" if x["finding"] == "sell_blocked" else "warning"]}</i>'
+                        f'{"Holders cannot sell" if x["finding"] == "sell_blocked" else "Sells fail, cause unknown"}</span></td>'
+                        f'<td class="num">{x["distinct_sellers"]}</td><td class="num">{(x["eth_in_pool"] or 0):.2f} ETH</td></tr>' for x in warn.get("items", [])[:10])
+    srisk = _latest("session_risk")
+    tiers = srisk.get("tickers_by_max_surviving_tier", {})
     pct = min(g["run"] / g["target"], 1.0)
     return f"""<title>Witness Scoreboard</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap">
@@ -180,6 +198,29 @@ def build() -> str:
     <tr><td>Ever seen paused</td><td class="num">{sum(1 for h in (card.get('pause_history', {}).get('tokens') or {}).values() if h.get('last_paused'))}</td></tr>
     <tr><td>Candidates passing all three rails</td><td class="num">{e(card.get('gap', {}).get('pass_rails'))}</td></tr>
     <tr><td>Witness reference prices published</td><td class="num">{e(prices.get('priced'))}</td></tr>
+  </tbody></table></div>
+</section>
+</div>
+
+<section>
+  <div><h2>Projects on the chain</h2>
+  <p class="sub">What the chain shows for each project, beside what the project says about itself where it says anything. Projects marked "found by the agent" were picked out from the census by activity, with no claim to compare against yet.</p></div>
+  <div class="scroll"><table><thead><tr><th>Project</th><th>Kind</th><th class="num">Holders</th><th class="num">Size</th><th class="num">Share of activity</th><th>Claim</th></tr></thead><tbody>{proj_rows or '<tr><td colspan="6" class="quiet">No measurement yet.</td></tr>'}</tbody></table></div>
+</section>
+
+<div class="two">
+<section>
+  <div><h2>Tokens holders cannot sell</h2>
+  <p class="sub">Every sampled sell failed, and a holder's transfer succeeds to an unrelated address but reverts into the token's own pool. Measured by simulation; contract source not read.</p></div>
+  <div class="scroll"><table><thead><tr><th>Token</th><th>Finding</th><th class="num">Wallets that failed</th><th class="num">In pool</th></tr></thead><tbody>{warn_rows or '<tr><td colspan="4" class="quiet">None found.</td></tr>'}</tbody></table></div>
+</section>
+<section>
+  <div><h2>What a closed market can do</h2>
+  <p class="sub">For each stock, the highest Morpho loan-to-value tier that would still liquidate cleanly after the share's worst closed-market fall in five years. Share-market priors, not outcomes here.</p></div>
+  <div class="scroll"><table><thead><tr><th>Highest safe tier</th><th class="num">Stocks</th></tr></thead><tbody>
+  {"".join(f'<tr><td>{"none standard" if k == "None" else f"{float(k):.1%}"}</td><td class="num">{v}</td></tr>' for k, v in tiers.items())}
+  <tr><td class="quiet">Existing markets set above their stock's tier</td><td class="num">{e(srisk.get("markets_above_surviving_tier", "—"))}</td></tr>
+  <tr><td class="quiet">Stocks with an exchange halt in the last 30 days</td><td class="num">{e(srisk.get("exchange_halt_within_30d", "—"))}</td></tr>
   </tbody></table></div>
 </section>
 </div>
