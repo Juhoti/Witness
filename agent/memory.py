@@ -25,6 +25,7 @@ from . import settings
 
 VAULT = settings.ROOT / "vault"
 SAFE = re.compile(r"[^A-Za-z0-9_.-]")
+TRAIL = 20  # revisions kept per note
 
 
 def _path(kind: str, name: str) -> Path:
@@ -67,7 +68,9 @@ def upsert(kind: str, name: str, meta: dict, body: str, tags: list[str] | None =
     meta = {"kind": kind, "name": name, "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             "tags": "[" + ", ".join(tags or [kind]) + "]", **meta}
     trail = f"- {meta['updated']} sha:{hashlib.sha256(body.encode()).hexdigest()[:12]}\n"
-    text = _frontmatter(meta) + f"# {name}\n\n{body.strip()}\n\n## revisions\n{trail}{prev_trail}\n"
+    # keep the last TRAIL revisions: a note rewritten every scan would otherwise grow without bound
+    kept = "\n".join((trail + prev_trail).strip().split("\n")[:TRAIL])
+    text = _frontmatter(meta) + f"# {name}\n\n{body.strip()}\n\n## revisions\n{kept}\n"
     p.write_text(text)
     return p
 

@@ -108,3 +108,10 @@ def test_secrets_are_redacted_from_any_error_text(monkeypatch):
     monkeypatch.setattr(settings, "BLOCKSCOUT_API_KEY", "proapi_secret")
     out = settings.redact("400 for url: https://rpc.example/v2/SECRETKEY123 bot1234567890:AAsecretsecretsecret key proapi_secret")
     assert "SECRETKEY123" not in out and "AAsecret" not in out and "proapi_secret" not in out
+
+
+def test_revision_trail_is_capped(vault):
+    for i in range(30):
+        memory.upsert("tokens", "AAPL", {"address": "0xA"}, f"body {i}", ["token"])
+    note = (vault / "tokens" / "AAPL.md").read_text()
+    assert note.count("sha:") == memory.TRAIL and "body 29" in note
