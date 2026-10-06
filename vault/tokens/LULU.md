@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: LULU
-updated: 2026-10-05T22:14:53Z
+updated: 2026-10-06T04:19:04Z
 tags: [token]
 address: 0x4e62068525Ab11FE768e29dfD00ef909B9803016
 paused: False
-source: scorecard d6a3c916feaef295
-source_ts: 1791238336
+source: scorecard 4868d552c72e0e04
+source_ts: 1791260246
 ---
 # LULU
 
@@ -21,6 +21,79 @@ address: `0x4e62068525Ab11FE768e29dfD00ef909B9803016`
 Markets: [[markets/0x7d4313cf1b0ede39395a2c7495dc1b1b47370caf51f70571d927f22e715e5f58]]
 
 ## revisions
+- 2026-10-06T04:19:04Z sha:eefe80be0ddd
+- 2026-10-06T04:14:09Z sha:eefe80be0ddd
+- 2026-10-06T04:08:56Z sha:eefe80be0ddd
+- 2026-10-06T04:04:03Z sha:eefe80be0ddd
+- 2026-10-06T03:59:05Z sha:eefe80be0ddd
+- 2026-10-06T03:54:06Z sha:eefe80be0ddd
+- 2026-10-06T03:49:33Z sha:eefe80be0ddd
+- 2026-10-06T03:44:01Z sha:eefe80be0ddd
+- 2026-10-06T03:39:01Z sha:eefe80be0ddd
+- 2026-10-06T03:34:02Z sha:eefe80be0ddd
+- 2026-10-06T03:28:58Z sha:eefe80be0ddd
+- 2026-10-06T03:23:52Z sha:eefe80be0ddd
+- 2026-10-06T03:18:56Z sha:eefe80be0ddd
+- 2026-10-06T03:14:04Z sha:eefe80be0ddd
+- 2026-10-06T03:08:58Z sha:eefe80be0ddd
+- 2026-10-06T03:04:33Z sha:eefe80be0ddd
+- 2026-10-06T02:58:55Z sha:eefe80be0ddd
+- 2026-10-06T02:53:53Z sha:eefe80be0ddd
+- 2026-10-06T02:49:06Z sha:eefe80be0ddd
+- 2026-10-06T02:43:54Z sha:eefe80be0ddd
+- 2026-10-06T02:38:53Z sha:eefe80be0ddd
+- 2026-10-06T02:34:12Z sha:eefe80be0ddd
+- 2026-10-06T02:29:05Z sha:eefe80be0ddd
+- 2026-10-06T02:23:59Z sha:eefe80be0ddd
+- 2026-10-06T02:18:55Z sha:eefe80be0ddd
+- 2026-10-06T02:14:02Z sha:eefe80be0ddd
+- 2026-10-06T02:09:02Z sha:eefe80be0ddd
+- 2026-10-06T02:04:06Z sha:eefe80be0ddd
+- 2026-10-06T01:58:50Z sha:eefe80be0ddd
+- 2026-10-06T01:53:49Z sha:eefe80be0ddd
+- 2026-10-06T01:49:34Z sha:eefe80be0ddd
+- 2026-10-06T01:43:54Z sha:eefe80be0ddd
+- 2026-10-06T01:39:09Z sha:eefe80be0ddd
+- 2026-10-06T01:34:16Z sha:eefe80be0ddd
+- 2026-10-06T01:29:00Z sha:eefe80be0ddd
+- 2026-10-06T01:24:01Z sha:eefe80be0ddd
+- 2026-10-06T01:19:13Z sha:eefe80be0ddd
+- 2026-10-06T01:14:00Z sha:eefe80be0ddd
+- 2026-10-06T01:09:05Z sha:eefe80be0ddd
+- 2026-10-06T01:03:50Z sha:eefe80be0ddd
+- 2026-10-06T00:58:52Z sha:eefe80be0ddd
+- 2026-10-06T00:55:12Z sha:eefe80be0ddd
+- 2026-10-06T00:50:32Z sha:eefe80be0ddd
+- 2026-10-06T00:45:31Z sha:eefe80be0ddd
+- 2026-10-06T00:40:23Z sha:eefe80be0ddd
+- 2026-10-06T00:35:50Z sha:eefe80be0ddd
+- 2026-10-06T00:30:56Z sha:eefe80be0ddd
+- 2026-10-06T00:25:23Z sha:eefe80be0ddd
+- 2026-10-06T00:19:41Z sha:eefe80be0ddd
+- 2026-10-06T00:15:27Z sha:eefe80be0ddd
+- 2026-10-06T00:11:07Z sha:eefe80be0ddd
+- 2026-10-06T00:05:38Z sha:eefe80be0ddd
+- 2026-10-06T00:00:23Z sha:eefe80be0ddd
+- 2026-10-05T23:55:33Z sha:eefe80be0ddd
+- 2026-10-05T23:50:36Z sha:eefe80be0ddd
+- 2026-10-05T23:45:58Z sha:eefe80be0ddd
+- 2026-10-05T23:40:18Z sha:eefe80be0ddd
+- 2026-10-05T23:35:26Z sha:eefe80be0ddd
+- 2026-10-05T23:31:09Z sha:eefe80be0ddd
+- 2026-10-05T23:25:34Z sha:eefe80be0ddd
+- 2026-10-05T23:20:17Z sha:eefe80be0ddd
+- 2026-10-05T23:15:20Z sha:eefe80be0ddd
+- 2026-10-05T23:10:14Z sha:eefe80be0ddd
+- 2026-10-05T23:05:15Z sha:eefe80be0ddd
+- 2026-10-05T23:00:05Z sha:eefe80be0ddd
+- 2026-10-05T22:55:24Z sha:eefe80be0ddd
+- 2026-10-05T22:50:19Z sha:eefe80be0ddd
+- 2026-10-05T22:45:10Z sha:eefe80be0ddd
+- 2026-10-05T22:40:09Z sha:eefe80be0ddd
+- 2026-10-05T22:35:28Z sha:eefe80be0ddd
+- 2026-10-05T22:31:06Z sha:eefe80be0ddd
+- 2026-10-05T22:25:05Z sha:eefe80be0ddd
+- 2026-10-05T22:19:50Z sha:eefe80be0ddd
 - 2026-10-05T22:14:53Z sha:eefe80be0ddd
 - 2026-10-05T22:09:55Z sha:eefe80be0ddd
 - 2026-10-05T22:05:00Z sha:eefe80be0ddd

@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: DOCN
-updated: 2026-10-05T22:14:53Z
+updated: 2026-10-06T04:19:04Z
 tags: [token]
 address: 0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD
 paused: False
-source: scorecard d6a3c916feaef295
-source_ts: 1791238336
+source: scorecard 4868d552c72e0e04
+source_ts: 1791260246
 ---
 # DOCN
 
@@ -21,6 +21,79 @@ address: `0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD`
 Markets: none
 
 ## revisions
+- 2026-10-06T04:19:04Z sha:fa0f6e87afde
+- 2026-10-06T04:14:09Z sha:fa0f6e87afde
+- 2026-10-06T04:08:56Z sha:fa0f6e87afde
+- 2026-10-06T04:04:03Z sha:fa0f6e87afde
+- 2026-10-06T03:59:05Z sha:fa0f6e87afde
+- 2026-10-06T03:54:06Z sha:fa0f6e87afde
+- 2026-10-06T03:49:33Z sha:fa0f6e87afde
+- 2026-10-06T03:44:02Z sha:fa0f6e87afde
+- 2026-10-06T03:39:01Z sha:fa0f6e87afde
+- 2026-10-06T03:34:02Z sha:fa0f6e87afde
+- 2026-10-06T03:28:58Z sha:fa0f6e87afde
+- 2026-10-06T03:23:52Z sha:fa0f6e87afde
+- 2026-10-06T03:18:56Z sha:fa0f6e87afde
+- 2026-10-06T03:14:04Z sha:fa0f6e87afde
+- 2026-10-06T03:08:58Z sha:fa0f6e87afde
+- 2026-10-06T03:04:34Z sha:fa0f6e87afde
+- 2026-10-06T02:58:55Z sha:fa0f6e87afde
+- 2026-10-06T02:53:53Z sha:fa0f6e87afde
+- 2026-10-06T02:49:06Z sha:fa0f6e87afde
+- 2026-10-06T02:43:54Z sha:fa0f6e87afde
+- 2026-10-06T02:38:53Z sha:fa0f6e87afde
+- 2026-10-06T02:34:12Z sha:fa0f6e87afde
+- 2026-10-06T02:29:06Z sha:fa0f6e87afde
+- 2026-10-06T02:23:59Z sha:fa0f6e87afde
+- 2026-10-06T02:18:55Z sha:fa0f6e87afde
+- 2026-10-06T02:14:02Z sha:fa0f6e87afde
+- 2026-10-06T02:09:02Z sha:fa0f6e87afde
+- 2026-10-06T02:04:06Z sha:fa0f6e87afde
+- 2026-10-06T01:58:50Z sha:fa0f6e87afde
+- 2026-10-06T01:53:49Z sha:fa0f6e87afde
+- 2026-10-06T01:49:34Z sha:fa0f6e87afde
+- 2026-10-06T01:43:54Z sha:fa0f6e87afde
+- 2026-10-06T01:39:09Z sha:fa0f6e87afde
+- 2026-10-06T01:34:16Z sha:fa0f6e87afde
+- 2026-10-06T01:29:00Z sha:fa0f6e87afde
+- 2026-10-06T01:24:01Z sha:fa0f6e87afde
+- 2026-10-06T01:19:13Z sha:fa0f6e87afde
+- 2026-10-06T01:14:00Z sha:fa0f6e87afde
+- 2026-10-06T01:09:05Z sha:fa0f6e87afde
+- 2026-10-06T01:03:50Z sha:fa0f6e87afde
+- 2026-10-06T00:58:52Z sha:fa0f6e87afde
+- 2026-10-06T00:55:12Z sha:fa0f6e87afde
+- 2026-10-06T00:50:32Z sha:fa0f6e87afde
+- 2026-10-06T00:45:31Z sha:fa0f6e87afde
+- 2026-10-06T00:40:23Z sha:fa0f6e87afde
+- 2026-10-06T00:35:50Z sha:fa0f6e87afde
+- 2026-10-06T00:30:56Z sha:fa0f6e87afde
+- 2026-10-06T00:25:23Z sha:fa0f6e87afde
+- 2026-10-06T00:19:41Z sha:fa0f6e87afde
+- 2026-10-06T00:15:27Z sha:fa0f6e87afde
+- 2026-10-06T00:11:07Z sha:fa0f6e87afde
+- 2026-10-06T00:05:38Z sha:fa0f6e87afde
+- 2026-10-06T00:00:23Z sha:fa0f6e87afde
+- 2026-10-05T23:55:33Z sha:fa0f6e87afde
+- 2026-10-05T23:50:36Z sha:fa0f6e87afde
+- 2026-10-05T23:45:58Z sha:fa0f6e87afde
+- 2026-10-05T23:40:18Z sha:fa0f6e87afde
+- 2026-10-05T23:35:26Z sha:fa0f6e87afde
+- 2026-10-05T23:31:09Z sha:fa0f6e87afde
+- 2026-10-05T23:25:34Z sha:fa0f6e87afde
+- 2026-10-05T23:20:17Z sha:fa0f6e87afde
+- 2026-10-05T23:15:20Z sha:fa0f6e87afde
+- 2026-10-05T23:10:14Z sha:fa0f6e87afde
+- 2026-10-05T23:05:15Z sha:fa0f6e87afde
+- 2026-10-05T23:00:05Z sha:fa0f6e87afde
+- 2026-10-05T22:55:25Z sha:fa0f6e87afde
+- 2026-10-05T22:50:19Z sha:fa0f6e87afde
+- 2026-10-05T22:45:11Z sha:fa0f6e87afde
+- 2026-10-05T22:40:09Z sha:fa0f6e87afde
+- 2026-10-05T22:35:28Z sha:fa0f6e87afde
+- 2026-10-05T22:31:06Z sha:fa0f6e87afde
+- 2026-10-05T22:25:05Z sha:fa0f6e87afde
+- 2026-10-05T22:19:50Z sha:fa0f6e87afde
 - 2026-10-05T22:14:53Z sha:fa0f6e87afde
 - 2026-10-05T22:09:55Z sha:fa0f6e87afde
 - 2026-10-05T22:05:00Z sha:fa0f6e87afde
