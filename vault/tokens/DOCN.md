@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: DOCN
-updated: 2026-10-07T04:38:00Z
+updated: 2026-10-07T10:38:55Z
 tags: [token]
 address: 0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD
 paused: False
-source: scorecard 57e424086f13c094
-source_ts: 1791347774
+source: scorecard 257c375350f61ba3
+source_ts: 1791369378
 ---
 # DOCN
 
@@ -21,23 +21,23 @@ address: `0xc02f12B9fe9E707079EC0d546f3050d3F6C1F8bD`
 Markets: none
 
 ## revisions
-- 2026-10-07T04:38:00Z sha:fa0f6e87afde
-- 2026-10-07T04:22:58Z sha:fa0f6e87afde
-- 2026-10-07T04:13:48Z sha:fa0f6e87afde
-- 2026-10-07T03:55:26Z sha:fa0f6e87afde
-- 2026-10-07T03:40:02Z sha:fa0f6e87afde
-- 2026-10-07T03:23:10Z sha:fa0f6e87afde
-- 2026-10-07T03:10:10Z sha:fa0f6e87afde
-- 2026-10-07T02:55:01Z sha:fa0f6e87afde
-- 2026-10-07T02:40:13Z sha:fa0f6e87afde
-- 2026-10-07T02:27:31Z sha:fa0f6e87afde
-- 2026-10-07T02:13:17Z sha:fa0f6e87afde
-- 2026-10-07T01:54:57Z sha:fa0f6e87afde
-- 2026-10-07T01:40:02Z sha:fa0f6e87afde
-- 2026-10-07T01:22:58Z sha:fa0f6e87afde
-- 2026-10-07T01:09:56Z sha:fa0f6e87afde
-- 2026-10-07T00:54:59Z sha:fa0f6e87afde
-- 2026-10-07T00:40:16Z sha:fa0f6e87afde
-- 2026-10-07T00:25:00Z sha:fa0f6e87afde
-- 2026-10-07T00:10:13Z sha:fa0f6e87afde
-- 2026-10-06T23:54:39Z sha:fa0f6e87afde
+- 2026-10-07T10:38:55Z sha:fa0f6e87afde
+- 2026-10-07T10:23:58Z sha:fa0f6e87afde
+- 2026-10-07T10:09:50Z sha:fa0f6e87afde
+- 2026-10-07T09:53:47Z sha:fa0f6e87afde
+- 2026-10-07T09:38:55Z sha:fa0f6e87afde
+- 2026-10-07T09:23:51Z sha:fa0f6e87afde
+- 2026-10-07T09:08:50Z sha:fa0f6e87afde
+- 2026-10-07T08:53:40Z sha:fa0f6e87afde
+- 2026-10-07T08:38:55Z sha:fa0f6e87afde
+- 2026-10-07T08:23:44Z sha:fa0f6e87afde
+- 2026-10-07T08:08:31Z sha:fa0f6e87afde
+- 2026-10-07T07:53:18Z sha:fa0f6e87afde
+- 2026-10-07T07:38:19Z sha:fa0f6e87afde
+- 2026-10-07T07:23:10Z sha:fa0f6e87afde
+- 2026-10-07T07:08:17Z sha:fa0f6e87afde
+- 2026-10-07T06:53:12Z sha:fa0f6e87afde
+- 2026-10-07T06:38:19Z sha:fa0f6e87afde
+- 2026-10-07T06:22:59Z sha:fa0f6e87afde
+- 2026-10-07T06:07:59Z sha:fa0f6e87afde
+- 2026-10-07T05:53:30Z sha:fa0f6e87afde
