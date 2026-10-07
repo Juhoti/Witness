@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: XNDU
-updated: 2026-10-07T16:40:18Z
+updated: 2026-10-07T22:55:22Z
 tags: [token]
 address: 0xA8eB3BCcbf2017eE7CBfb652eB51CF2E1B153289
 paused: False
-source: scorecard 211e942b3d47e224
-source_ts: 1791390982
+source: scorecard c9173f43e027b9d9
+source_ts: 1791413485
 ---
 # XNDU
 
@@ -21,23 +21,23 @@ address: `0xA8eB3BCcbf2017eE7CBfb652eB51CF2E1B153289`
 Markets: none
 
 ## revisions
-- 2026-10-07T16:40:18Z sha:aec32f934fca
-- 2026-10-07T16:25:05Z sha:aec32f934fca
-- 2026-10-07T16:10:50Z sha:aec32f934fca
-- 2026-10-07T15:56:23Z sha:aec32f934fca
-- 2026-10-07T15:42:41Z sha:aec32f934fca
-- 2026-10-07T15:24:58Z sha:aec32f934fca
-- 2026-10-07T15:09:49Z sha:aec32f934fca
-- 2026-10-07T14:54:45Z sha:aec32f934fca
-- 2026-10-07T14:39:47Z sha:aec32f934fca
-- 2026-10-07T14:24:56Z sha:aec32f934fca
-- 2026-10-07T14:10:03Z sha:aec32f934fca
-- 2026-10-07T13:55:11Z sha:aec32f934fca
-- 2026-10-07T13:40:57Z sha:aec32f934fca
-- 2026-10-07T13:24:44Z sha:aec32f934fca
-- 2026-10-07T13:09:44Z sha:aec32f934fca
-- 2026-10-07T12:54:30Z sha:aec32f934fca
-- 2026-10-07T12:39:15Z sha:aec32f934fca
-- 2026-10-07T12:24:15Z sha:aec32f934fca
-- 2026-10-07T12:09:16Z sha:aec32f934fca
-- 2026-10-07T11:54:15Z sha:aec32f934fca
+- 2026-10-07T22:55:22Z sha:aec32f934fca
+- 2026-10-07T22:40:12Z sha:aec32f934fca
+- 2026-10-07T22:25:39Z sha:aec32f934fca
+- 2026-10-07T22:10:22Z sha:aec32f934fca
+- 2026-10-07T21:55:47Z sha:aec32f934fca
+- 2026-10-07T21:40:16Z sha:aec32f934fca
+- 2026-10-07T21:25:42Z sha:aec32f934fca
+- 2026-10-07T21:10:29Z sha:aec32f934fca
+- 2026-10-07T20:55:15Z sha:aec32f934fca
+- 2026-10-07T20:40:16Z sha:aec32f934fca
+- 2026-10-07T20:25:46Z sha:aec32f934fca
+- 2026-10-07T20:10:16Z sha:aec32f934fca
+- 2026-10-07T19:55:26Z sha:aec32f934fca
+- 2026-10-07T19:39:58Z sha:aec32f934fca
+- 2026-10-07T19:25:06Z sha:aec32f934fca
+- 2026-10-07T19:10:20Z sha:aec32f934fca
+- 2026-10-07T18:55:13Z sha:aec32f934fca
+- 2026-10-07T18:40:11Z sha:aec32f934fca
+- 2026-10-07T18:25:19Z sha:aec32f934fca
+- 2026-10-07T18:10:07Z sha:aec32f934fca

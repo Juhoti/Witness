@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: LULU
-updated: 2026-10-07T16:40:18Z
+updated: 2026-10-07T22:55:22Z
 tags: [token]
 address: 0x4e62068525Ab11FE768e29dfD00ef909B9803016
 paused: False
-source: scorecard 211e942b3d47e224
-source_ts: 1791390982
+source: scorecard c9173f43e027b9d9
+source_ts: 1791413485
 ---
 # LULU
 
@@ -21,23 +21,23 @@ address: `0x4e62068525Ab11FE768e29dfD00ef909B9803016`
 Markets: [[markets/0x7d4313cf1b0ede39395a2c7495dc1b1b47370caf51f70571d927f22e715e5f58]]
 
 ## revisions
-- 2026-10-07T16:40:18Z sha:eefe80be0ddd
-- 2026-10-07T16:25:05Z sha:eefe80be0ddd
-- 2026-10-07T16:10:50Z sha:eefe80be0ddd
-- 2026-10-07T15:56:23Z sha:eefe80be0ddd
-- 2026-10-07T15:42:41Z sha:eefe80be0ddd
-- 2026-10-07T15:24:58Z sha:eefe80be0ddd
-- 2026-10-07T15:09:49Z sha:eefe80be0ddd
-- 2026-10-07T14:54:45Z sha:eefe80be0ddd
-- 2026-10-07T14:39:47Z sha:eefe80be0ddd
-- 2026-10-07T14:24:56Z sha:eefe80be0ddd
-- 2026-10-07T14:10:03Z sha:eefe80be0ddd
-- 2026-10-07T13:55:11Z sha:eefe80be0ddd
-- 2026-10-07T13:40:57Z sha:eefe80be0ddd
-- 2026-10-07T13:24:44Z sha:eefe80be0ddd
-- 2026-10-07T13:09:44Z sha:eefe80be0ddd
-- 2026-10-07T12:54:30Z sha:eefe80be0ddd
-- 2026-10-07T12:39:15Z sha:eefe80be0ddd
-- 2026-10-07T12:24:15Z sha:eefe80be0ddd
-- 2026-10-07T12:09:16Z sha:eefe80be0ddd
-- 2026-10-07T11:54:15Z sha:eefe80be0ddd
+- 2026-10-07T22:55:22Z sha:eefe80be0ddd
+- 2026-10-07T22:40:12Z sha:eefe80be0ddd
+- 2026-10-07T22:25:39Z sha:eefe80be0ddd
+- 2026-10-07T22:10:22Z sha:eefe80be0ddd
+- 2026-10-07T21:55:47Z sha:eefe80be0ddd
+- 2026-10-07T21:40:16Z sha:eefe80be0ddd
+- 2026-10-07T21:25:42Z sha:eefe80be0ddd
+- 2026-10-07T21:10:29Z sha:eefe80be0ddd
+- 2026-10-07T20:55:15Z sha:eefe80be0ddd
+- 2026-10-07T20:40:16Z sha:eefe80be0ddd
+- 2026-10-07T20:25:46Z sha:eefe80be0ddd
+- 2026-10-07T20:10:16Z sha:eefe80be0ddd
+- 2026-10-07T19:55:26Z sha:eefe80be0ddd
+- 2026-10-07T19:39:58Z sha:eefe80be0ddd
+- 2026-10-07T19:25:06Z sha:eefe80be0ddd
+- 2026-10-07T19:10:20Z sha:eefe80be0ddd
+- 2026-10-07T18:55:13Z sha:eefe80be0ddd
+- 2026-10-07T18:40:11Z sha:eefe80be0ddd
+- 2026-10-07T18:25:19Z sha:eefe80be0ddd
+- 2026-10-07T18:10:07Z sha:eefe80be0ddd
