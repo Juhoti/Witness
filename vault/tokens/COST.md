@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: COST
-updated: 2026-10-07T22:55:22Z
+updated: 2026-10-08T05:08:51Z
 tags: [token]
 address: 0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2
 paused: False
-source: scorecard c9173f43e027b9d9
-source_ts: 1791413485
+source: scorecard 00af7c4a04eb06c1
+source_ts: 1791435989
 ---
 # COST
 
@@ -21,23 +21,23 @@ address: `0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2`
 Markets: [[markets/0xccdfcd98e6779322b28ecdc0c513ed3bd510ccb2fd15ee6a70d6cf142398db41]], [[markets/0xb33399a677e1a21152fa9969f02c57a7a342e692ec45608a3fa0d3d92519c343]]
 
 ## revisions
-- 2026-10-07T22:55:22Z sha:da6f25a6cc8d
-- 2026-10-07T22:40:12Z sha:da6f25a6cc8d
-- 2026-10-07T22:25:39Z sha:da6f25a6cc8d
-- 2026-10-07T22:10:22Z sha:da6f25a6cc8d
-- 2026-10-07T21:55:47Z sha:da6f25a6cc8d
-- 2026-10-07T21:40:16Z sha:da6f25a6cc8d
-- 2026-10-07T21:25:42Z sha:da6f25a6cc8d
-- 2026-10-07T21:10:29Z sha:da6f25a6cc8d
-- 2026-10-07T20:55:15Z sha:da6f25a6cc8d
-- 2026-10-07T20:40:16Z sha:da6f25a6cc8d
-- 2026-10-07T20:25:46Z sha:da6f25a6cc8d
-- 2026-10-07T20:10:16Z sha:da6f25a6cc8d
-- 2026-10-07T19:55:26Z sha:da6f25a6cc8d
-- 2026-10-07T19:39:58Z sha:da6f25a6cc8d
-- 2026-10-07T19:25:06Z sha:da6f25a6cc8d
-- 2026-10-07T19:10:20Z sha:da6f25a6cc8d
-- 2026-10-07T18:55:13Z sha:da6f25a6cc8d
-- 2026-10-07T18:40:11Z sha:da6f25a6cc8d
-- 2026-10-07T18:25:19Z sha:da6f25a6cc8d
-- 2026-10-07T18:10:07Z sha:da6f25a6cc8d
+- 2026-10-08T05:08:51Z sha:da6f25a6cc8d
+- 2026-10-08T04:53:44Z sha:da6f25a6cc8d
+- 2026-10-08T04:39:08Z sha:da6f25a6cc8d
+- 2026-10-08T04:24:17Z sha:da6f25a6cc8d
+- 2026-10-08T04:08:35Z sha:da6f25a6cc8d
+- 2026-10-08T03:53:30Z sha:da6f25a6cc8d
+- 2026-10-08T03:38:27Z sha:da6f25a6cc8d
+- 2026-10-08T03:23:19Z sha:da6f25a6cc8d
+- 2026-10-08T03:11:12Z sha:da6f25a6cc8d
+- 2026-10-08T02:53:22Z sha:da6f25a6cc8d
+- 2026-10-08T02:38:03Z sha:da6f25a6cc8d
+- 2026-10-08T02:23:14Z sha:da6f25a6cc8d
+- 2026-10-08T02:08:06Z sha:da6f25a6cc8d
+- 2026-10-08T01:53:08Z sha:da6f25a6cc8d
+- 2026-10-08T01:38:09Z sha:da6f25a6cc8d
+- 2026-10-08T01:23:14Z sha:da6f25a6cc8d
+- 2026-10-08T01:08:05Z sha:da6f25a6cc8d
+- 2026-10-08T00:53:50Z sha:da6f25a6cc8d
+- 2026-10-08T00:40:35Z sha:da6f25a6cc8d
+- 2026-10-08T00:23:45Z sha:da6f25a6cc8d
