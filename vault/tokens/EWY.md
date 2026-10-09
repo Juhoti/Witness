@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: EWY
-updated: 2026-10-08T23:25:03Z
+updated: 2026-10-09T05:39:03Z
 tags: [token]
 address: 0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc
 paused: False
-source: scorecard 9591e59141a99e0a
-source_ts: 1791501701
+source: scorecard 5b08bb50ef4e745d
+source_ts: 1791524205
 ---
 # EWY
 
@@ -21,23 +21,23 @@ address: `0x7f0aBeF0C07280F82c6a08ead09dEd6BAE2C13Fc`
 Markets: [[markets/0xfdc77ba2fc1a4b41393b7531623ca73149edf30ad65f5709841f9e47f3f42418]], [[markets/0x1b3555f7c1273688f01ae82da7dc8e508e6a7841ec0038dbb15767154a277b86]]
 
 ## revisions
-- 2026-10-08T23:25:03Z sha:ba2b51b1ebd0
-- 2026-10-08T23:10:19Z sha:ba2b51b1ebd0
-- 2026-10-08T22:54:49Z sha:ba2b51b1ebd0
-- 2026-10-08T22:39:50Z sha:ba2b51b1ebd0
-- 2026-10-08T22:24:48Z sha:ba2b51b1ebd0
-- 2026-10-08T22:09:43Z sha:ba2b51b1ebd0
-- 2026-10-08T21:54:33Z sha:ba2b51b1ebd0
-- 2026-10-08T21:39:57Z sha:ba2b51b1ebd0
-- 2026-10-08T21:24:31Z sha:ba2b51b1ebd0
-- 2026-10-08T21:11:03Z sha:ba2b51b1ebd0
-- 2026-10-08T20:54:23Z sha:ba2b51b1ebd0
-- 2026-10-08T20:39:19Z sha:ba2b51b1ebd0
-- 2026-10-08T20:24:27Z sha:ba2b51b1ebd0
-- 2026-10-08T20:09:20Z sha:ba2b51b1ebd0
-- 2026-10-08T19:57:02Z sha:ba2b51b1ebd0
-- 2026-10-08T19:41:30Z sha:ba2b51b1ebd0
-- 2026-10-08T19:24:31Z sha:ba2b51b1ebd0
-- 2026-10-08T19:09:40Z sha:ba2b51b1ebd0
-- 2026-10-08T18:54:14Z sha:ba2b51b1ebd0
-- 2026-10-08T18:39:10Z sha:ba2b51b1ebd0
+- 2026-10-09T05:39:03Z sha:ba2b51b1ebd0
+- 2026-10-09T05:23:53Z sha:ba2b51b1ebd0
+- 2026-10-09T05:08:49Z sha:ba2b51b1ebd0
+- 2026-10-09T04:53:42Z sha:ba2b51b1ebd0
+- 2026-10-09T04:38:37Z sha:ba2b51b1ebd0
+- 2026-10-09T04:23:33Z sha:ba2b51b1ebd0
+- 2026-10-09T04:08:16Z sha:ba2b51b1ebd0
+- 2026-10-09T03:53:21Z sha:ba2b51b1ebd0
+- 2026-10-09T03:38:26Z sha:ba2b51b1ebd0
+- 2026-10-09T03:23:24Z sha:ba2b51b1ebd0
+- 2026-10-09T03:08:23Z sha:ba2b51b1ebd0
+- 2026-10-09T02:53:20Z sha:ba2b51b1ebd0
+- 2026-10-09T02:38:15Z sha:ba2b51b1ebd0
+- 2026-10-09T02:23:25Z sha:ba2b51b1ebd0
+- 2026-10-09T02:08:39Z sha:ba2b51b1ebd0
+- 2026-10-09T01:55:50Z sha:ba2b51b1ebd0
+- 2026-10-09T01:40:20Z sha:ba2b51b1ebd0
+- 2026-10-09T01:25:05Z sha:ba2b51b1ebd0
+- 2026-10-09T01:09:43Z sha:ba2b51b1ebd0
+- 2026-10-09T00:54:55Z sha:ba2b51b1ebd0

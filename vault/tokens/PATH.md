@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: PATH
-updated: 2026-10-08T23:25:03Z
+updated: 2026-10-09T05:39:03Z
 tags: [token]
 address: 0xfb2664f07B6Aadd29ea7a59D8859b1AeB8645cDa
 paused: False
-source: scorecard 9591e59141a99e0a
-source_ts: 1791501701
+source: scorecard 5b08bb50ef4e745d
+source_ts: 1791524205
 ---
 # PATH
 
@@ -21,23 +21,23 @@ address: `0xfb2664f07B6Aadd29ea7a59D8859b1AeB8645cDa`
 Markets: none
 
 ## revisions
-- 2026-10-08T23:25:03Z sha:ea7e31dc37e4
-- 2026-10-08T23:10:19Z sha:ea7e31dc37e4
-- 2026-10-08T22:54:49Z sha:ea7e31dc37e4
-- 2026-10-08T22:39:51Z sha:ea7e31dc37e4
-- 2026-10-08T22:24:48Z sha:ea7e31dc37e4
-- 2026-10-08T22:09:43Z sha:ea7e31dc37e4
-- 2026-10-08T21:54:34Z sha:ea7e31dc37e4
-- 2026-10-08T21:39:57Z sha:ea7e31dc37e4
-- 2026-10-08T21:24:31Z sha:ea7e31dc37e4
-- 2026-10-08T21:11:03Z sha:ea7e31dc37e4
-- 2026-10-08T20:54:23Z sha:ea7e31dc37e4
-- 2026-10-08T20:39:19Z sha:ea7e31dc37e4
-- 2026-10-08T20:24:27Z sha:ea7e31dc37e4
-- 2026-10-08T20:09:20Z sha:ea7e31dc37e4
-- 2026-10-08T19:57:02Z sha:ea7e31dc37e4
-- 2026-10-08T19:41:30Z sha:ea7e31dc37e4
-- 2026-10-08T19:24:31Z sha:ea7e31dc37e4
-- 2026-10-08T19:09:40Z sha:ea7e31dc37e4
-- 2026-10-08T18:54:14Z sha:ea7e31dc37e4
-- 2026-10-08T18:39:10Z sha:ea7e31dc37e4
+- 2026-10-09T05:39:03Z sha:ea7e31dc37e4
+- 2026-10-09T05:23:53Z sha:ea7e31dc37e4
+- 2026-10-09T05:08:49Z sha:ea7e31dc37e4
+- 2026-10-09T04:53:42Z sha:ea7e31dc37e4
+- 2026-10-09T04:38:37Z sha:ea7e31dc37e4
+- 2026-10-09T04:23:33Z sha:ea7e31dc37e4
+- 2026-10-09T04:08:16Z sha:ea7e31dc37e4
+- 2026-10-09T03:53:21Z sha:ea7e31dc37e4
+- 2026-10-09T03:38:26Z sha:ea7e31dc37e4
+- 2026-10-09T03:23:24Z sha:ea7e31dc37e4
+- 2026-10-09T03:08:23Z sha:ea7e31dc37e4
+- 2026-10-09T02:53:20Z sha:ea7e31dc37e4
+- 2026-10-09T02:38:15Z sha:ea7e31dc37e4
+- 2026-10-09T02:23:25Z sha:ea7e31dc37e4
+- 2026-10-09T02:08:39Z sha:ea7e31dc37e4
+- 2026-10-09T01:55:50Z sha:ea7e31dc37e4
+- 2026-10-09T01:40:20Z sha:ea7e31dc37e4
+- 2026-10-09T01:25:05Z sha:ea7e31dc37e4
+- 2026-10-09T01:09:43Z sha:ea7e31dc37e4
+- 2026-10-09T00:54:55Z sha:ea7e31dc37e4
