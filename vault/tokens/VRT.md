@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: VRT
-updated: 2026-10-09T05:39:03Z
+updated: 2026-10-09T11:40:06Z
 tags: [token]
 address: 0xFA78C12E6488814A0262E4e802749a4a737d5fB7
 paused: False
-source: scorecard 5b08bb50ef4e745d
-source_ts: 1791524205
+source: scorecard cb72633bc268dec4
+source_ts: 1791545809
 ---
 # VRT
 
@@ -21,23 +21,23 @@ address: `0xFA78C12E6488814A0262E4e802749a4a737d5fB7`
 Markets: none
 
 ## revisions
-- 2026-10-09T05:39:03Z sha:ed9ae89bd6b3
-- 2026-10-09T05:23:53Z sha:ed9ae89bd6b3
-- 2026-10-09T05:08:49Z sha:ed9ae89bd6b3
-- 2026-10-09T04:53:42Z sha:ed9ae89bd6b3
-- 2026-10-09T04:38:37Z sha:ed9ae89bd6b3
-- 2026-10-09T04:23:33Z sha:ed9ae89bd6b3
-- 2026-10-09T04:08:16Z sha:ed9ae89bd6b3
-- 2026-10-09T03:53:21Z sha:ed9ae89bd6b3
-- 2026-10-09T03:38:26Z sha:ed9ae89bd6b3
-- 2026-10-09T03:23:24Z sha:ed9ae89bd6b3
-- 2026-10-09T03:08:23Z sha:ed9ae89bd6b3
-- 2026-10-09T02:53:20Z sha:ed9ae89bd6b3
-- 2026-10-09T02:38:15Z sha:ed9ae89bd6b3
-- 2026-10-09T02:23:25Z sha:ed9ae89bd6b3
-- 2026-10-09T02:08:39Z sha:ed9ae89bd6b3
-- 2026-10-09T01:55:50Z sha:ed9ae89bd6b3
-- 2026-10-09T01:40:20Z sha:ed9ae89bd6b3
-- 2026-10-09T01:25:05Z sha:ed9ae89bd6b3
-- 2026-10-09T01:09:43Z sha:ed9ae89bd6b3
-- 2026-10-09T00:54:55Z sha:ed9ae89bd6b3
+- 2026-10-09T11:40:06Z sha:ed9ae89bd6b3
+- 2026-10-09T11:24:31Z sha:ed9ae89bd6b3
+- 2026-10-09T11:09:51Z sha:ed9ae89bd6b3
+- 2026-10-09T10:55:00Z sha:ed9ae89bd6b3
+- 2026-10-09T10:39:47Z sha:ed9ae89bd6b3
+- 2026-10-09T10:24:49Z sha:ed9ae89bd6b3
+- 2026-10-09T10:09:50Z sha:ed9ae89bd6b3
+- 2026-10-09T09:54:30Z sha:ed9ae89bd6b3
+- 2026-10-09T09:39:33Z sha:ed9ae89bd6b3
+- 2026-10-09T09:24:20Z sha:ed9ae89bd6b3
+- 2026-10-09T09:09:22Z sha:ed9ae89bd6b3
+- 2026-10-09T08:54:35Z sha:ed9ae89bd6b3
+- 2026-10-09T08:39:15Z sha:ed9ae89bd6b3
+- 2026-10-09T08:24:24Z sha:ed9ae89bd6b3
+- 2026-10-09T08:09:29Z sha:ed9ae89bd6b3
+- 2026-10-09T07:54:07Z sha:ed9ae89bd6b3
+- 2026-10-09T07:39:06Z sha:ed9ae89bd6b3
+- 2026-10-09T07:24:15Z sha:ed9ae89bd6b3
+- 2026-10-09T07:08:10Z sha:ed9ae89bd6b3
+- 2026-10-09T06:54:07Z sha:ed9ae89bd6b3

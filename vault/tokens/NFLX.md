@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: NFLX
-updated: 2026-10-09T05:39:03Z
+updated: 2026-10-09T11:40:06Z
 tags: [token]
 address: 0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8
 paused: False
-source: scorecard 5b08bb50ef4e745d
-source_ts: 1791524205
+source: scorecard cb72633bc268dec4
+source_ts: 1791545809
 ---
 # NFLX
 
@@ -21,23 +21,23 @@ address: `0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8`
 Markets: [[markets/0x892a0adf84e7e752d8ad2ad61c9248dcc9657e41c6c7f7b94267491e60f0b382]], [[markets/0x6749bf5af75108ebd1c260dd4d65c22d1693fc696ee056417d82e35775aff79f]], [[markets/0x0066bc47b87597993af0bca6f526175c0abae011b764d4bf12a3def45e1f4e78]]
 
 ## revisions
-- 2026-10-09T05:39:03Z sha:ef73e23db4ed
-- 2026-10-09T05:23:53Z sha:ef73e23db4ed
-- 2026-10-09T05:08:49Z sha:ef73e23db4ed
-- 2026-10-09T04:53:42Z sha:ef73e23db4ed
-- 2026-10-09T04:38:37Z sha:ef73e23db4ed
-- 2026-10-09T04:23:33Z sha:ef73e23db4ed
-- 2026-10-09T04:08:16Z sha:ef73e23db4ed
-- 2026-10-09T03:53:21Z sha:ef73e23db4ed
-- 2026-10-09T03:38:26Z sha:ef73e23db4ed
-- 2026-10-09T03:23:24Z sha:ef73e23db4ed
-- 2026-10-09T03:08:23Z sha:ef73e23db4ed
-- 2026-10-09T02:53:20Z sha:ef73e23db4ed
-- 2026-10-09T02:38:15Z sha:ef73e23db4ed
-- 2026-10-09T02:23:25Z sha:ef73e23db4ed
-- 2026-10-09T02:08:39Z sha:ef73e23db4ed
-- 2026-10-09T01:55:50Z sha:ef73e23db4ed
-- 2026-10-09T01:40:20Z sha:ef73e23db4ed
-- 2026-10-09T01:25:05Z sha:ef73e23db4ed
-- 2026-10-09T01:09:43Z sha:ef73e23db4ed
-- 2026-10-09T00:54:55Z sha:ef73e23db4ed
+- 2026-10-09T11:40:06Z sha:ef73e23db4ed
+- 2026-10-09T11:24:31Z sha:ef73e23db4ed
+- 2026-10-09T11:09:51Z sha:ef73e23db4ed
+- 2026-10-09T10:55:00Z sha:ef73e23db4ed
+- 2026-10-09T10:39:47Z sha:ef73e23db4ed
+- 2026-10-09T10:24:49Z sha:ef73e23db4ed
+- 2026-10-09T10:09:50Z sha:ef73e23db4ed
+- 2026-10-09T09:54:30Z sha:ef73e23db4ed
+- 2026-10-09T09:39:33Z sha:ef73e23db4ed
+- 2026-10-09T09:24:20Z sha:ef73e23db4ed
+- 2026-10-09T09:09:22Z sha:ef73e23db4ed
+- 2026-10-09T08:54:35Z sha:ef73e23db4ed
+- 2026-10-09T08:39:15Z sha:ef73e23db4ed
+- 2026-10-09T08:24:24Z sha:ef73e23db4ed
+- 2026-10-09T08:09:29Z sha:ef73e23db4ed
+- 2026-10-09T07:54:07Z sha:ef73e23db4ed
+- 2026-10-09T07:39:06Z sha:ef73e23db4ed
+- 2026-10-09T07:24:15Z sha:ef73e23db4ed
+- 2026-10-09T07:08:10Z sha:ef73e23db4ed
+- 2026-10-09T06:54:07Z sha:ef73e23db4ed
