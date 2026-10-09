@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: SNOW
-updated: 2026-10-09T11:40:05Z
+updated: 2026-10-09T17:56:40Z
 tags: [token]
 address: 0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E
 paused: False
-source: scorecard cb72633bc268dec4
-source_ts: 1791545809
+source: scorecard 9ac48e3662e33b60
+source_ts: 1791568314
 ---
 # SNOW
 
@@ -21,23 +21,23 @@ address: `0xBa0CAB75495255d0cB58E22B648bFED4ECD1F47E`
 Markets: none
 
 ## revisions
-- 2026-10-09T11:40:05Z sha:cf81d8f9c3ea
-- 2026-10-09T11:24:31Z sha:cf81d8f9c3ea
-- 2026-10-09T11:09:51Z sha:cf81d8f9c3ea
-- 2026-10-09T10:55:00Z sha:cf81d8f9c3ea
-- 2026-10-09T10:39:47Z sha:cf81d8f9c3ea
-- 2026-10-09T10:24:49Z sha:cf81d8f9c3ea
-- 2026-10-09T10:09:50Z sha:cf81d8f9c3ea
-- 2026-10-09T09:54:30Z sha:cf81d8f9c3ea
-- 2026-10-09T09:39:33Z sha:cf81d8f9c3ea
-- 2026-10-09T09:24:20Z sha:cf81d8f9c3ea
-- 2026-10-09T09:09:22Z sha:cf81d8f9c3ea
-- 2026-10-09T08:54:35Z sha:cf81d8f9c3ea
-- 2026-10-09T08:39:15Z sha:cf81d8f9c3ea
-- 2026-10-09T08:24:24Z sha:cf81d8f9c3ea
-- 2026-10-09T08:09:29Z sha:cf81d8f9c3ea
-- 2026-10-09T07:54:07Z sha:cf81d8f9c3ea
-- 2026-10-09T07:39:06Z sha:cf81d8f9c3ea
-- 2026-10-09T07:24:15Z sha:cf81d8f9c3ea
-- 2026-10-09T07:08:10Z sha:cf81d8f9c3ea
-- 2026-10-09T06:54:07Z sha:cf81d8f9c3ea
+- 2026-10-09T17:56:40Z sha:cf81d8f9c3ea
+- 2026-10-09T17:39:19Z sha:cf81d8f9c3ea
+- 2026-10-09T17:24:06Z sha:cf81d8f9c3ea
+- 2026-10-09T17:09:48Z sha:cf81d8f9c3ea
+- 2026-10-09T16:53:50Z sha:cf81d8f9c3ea
+- 2026-10-09T16:38:48Z sha:cf81d8f9c3ea
+- 2026-10-09T16:23:54Z sha:cf81d8f9c3ea
+- 2026-10-09T16:08:52Z sha:cf81d8f9c3ea
+- 2026-10-09T15:55:41Z sha:cf81d8f9c3ea
+- 2026-10-09T15:40:45Z sha:cf81d8f9c3ea
+- 2026-10-09T15:25:49Z sha:cf81d8f9c3ea
+- 2026-10-09T15:10:50Z sha:cf81d8f9c3ea
+- 2026-10-09T14:56:02Z sha:cf81d8f9c3ea
+- 2026-10-09T14:40:55Z sha:cf81d8f9c3ea
+- 2026-10-09T14:26:08Z sha:cf81d8f9c3ea
+- 2026-10-09T14:11:10Z sha:cf81d8f9c3ea
+- 2026-10-09T13:55:55Z sha:cf81d8f9c3ea
+- 2026-10-09T13:40:59Z sha:cf81d8f9c3ea
+- 2026-10-09T13:25:24Z sha:cf81d8f9c3ea
+- 2026-10-09T13:10:40Z sha:cf81d8f9c3ea
