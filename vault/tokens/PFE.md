@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: PFE
-updated: 2026-10-10T00:10:07Z
+updated: 2026-10-10T06:10:47Z
 tags: [token]
 address: 0x7066A64c24e4206CD62E83bf198c1E7EB361F51e
 paused: False
-source: scorecard 6ee7a658abd2cf82
-source_ts: 1791590818
+source: scorecard f66ced15c12c1d6f
+source_ts: 1791612421
 ---
 # PFE
 
@@ -21,23 +21,23 @@ address: `0x7066A64c24e4206CD62E83bf198c1E7EB361F51e`
 Markets: none
 
 ## revisions
-- 2026-10-10T00:10:07Z sha:ef217e3dceb8
-- 2026-10-09T23:54:54Z sha:ef217e3dceb8
-- 2026-10-09T23:39:59Z sha:ef217e3dceb8
-- 2026-10-09T23:24:51Z sha:ef217e3dceb8
-- 2026-10-09T23:10:05Z sha:ef217e3dceb8
-- 2026-10-09T22:55:10Z sha:ef217e3dceb8
-- 2026-10-09T22:39:53Z sha:ef217e3dceb8
-- 2026-10-09T22:24:53Z sha:ef217e3dceb8
-- 2026-10-09T22:11:09Z sha:ef217e3dceb8
-- 2026-10-09T21:55:03Z sha:ef217e3dceb8
-- 2026-10-09T21:39:50Z sha:ef217e3dceb8
-- 2026-10-09T21:24:42Z sha:ef217e3dceb8
-- 2026-10-09T21:09:46Z sha:ef217e3dceb8
-- 2026-10-09T20:54:49Z sha:ef217e3dceb8
-- 2026-10-09T20:39:49Z sha:ef217e3dceb8
-- 2026-10-09T20:24:46Z sha:ef217e3dceb8
-- 2026-10-09T20:12:03Z sha:ef217e3dceb8
-- 2026-10-09T19:54:46Z sha:ef217e3dceb8
-- 2026-10-09T19:39:34Z sha:ef217e3dceb8
-- 2026-10-09T19:24:49Z sha:ef217e3dceb8
+- 2026-10-10T06:10:47Z sha:ef217e3dceb8
+- 2026-10-10T05:55:29Z sha:ef217e3dceb8
+- 2026-10-10T05:40:31Z sha:ef217e3dceb8
+- 2026-10-10T05:25:48Z sha:ef217e3dceb8
+- 2026-10-10T05:10:40Z sha:ef217e3dceb8
+- 2026-10-10T04:55:33Z sha:ef217e3dceb8
+- 2026-10-10T04:40:24Z sha:ef217e3dceb8
+- 2026-10-10T04:25:26Z sha:ef217e3dceb8
+- 2026-10-10T04:10:34Z sha:ef217e3dceb8
+- 2026-10-10T03:55:30Z sha:ef217e3dceb8
+- 2026-10-10T03:40:42Z sha:ef217e3dceb8
+- 2026-10-10T03:25:30Z sha:ef217e3dceb8
+- 2026-10-10T03:10:27Z sha:ef217e3dceb8
+- 2026-10-10T02:55:32Z sha:ef217e3dceb8
+- 2026-10-10T02:40:31Z sha:ef217e3dceb8
+- 2026-10-10T02:25:16Z sha:ef217e3dceb8
+- 2026-10-10T02:11:12Z sha:ef217e3dceb8
+- 2026-10-10T01:55:36Z sha:ef217e3dceb8
+- 2026-10-10T01:40:24Z sha:ef217e3dceb8
+- 2026-10-10T01:25:05Z sha:ef217e3dceb8
