@@ -1,12 +1,12 @@
 ---
 kind: markets
 name: 0x7e375e21ade5caf251eef3e820bf8eda0e08f1378fe4aaedad7ead437be3e0e1
-updated: 2026-10-09T17:56:40Z
+updated: 2026-10-10T00:10:07Z
 tags: [market]
 collateral: `AMZN`
 utilization: 0
-source: scorecard 9ac48e3662e33b60
-source_ts: 1791568314
+source: scorecard 6ee7a658abd2cf82
+source_ts: 1791590818
 ---
 # 0x7e375e21ade5caf251eef3e820bf8eda0e08f1378fe4aaedad7ead437be3e0e1
 
@@ -20,23 +20,23 @@ collateral: [[tokens/AMZN]] · loan: `USDG` · lltv: `625000000000000000`
 - oracle: `0x2e5Ee5bA2F128d9aF283f365A0D8b816bD9fb2B7`
 
 ## revisions
-- 2026-10-09T17:56:40Z sha:a9298dfa1e7a
-- 2026-10-09T17:39:19Z sha:a9298dfa1e7a
-- 2026-10-09T17:24:06Z sha:a9298dfa1e7a
-- 2026-10-09T17:09:48Z sha:a9298dfa1e7a
-- 2026-10-09T16:53:50Z sha:a9298dfa1e7a
-- 2026-10-09T16:38:49Z sha:a9298dfa1e7a
-- 2026-10-09T16:23:54Z sha:a9298dfa1e7a
-- 2026-10-09T16:08:52Z sha:a9298dfa1e7a
-- 2026-10-09T15:55:41Z sha:a9298dfa1e7a
-- 2026-10-09T15:40:46Z sha:a9298dfa1e7a
-- 2026-10-09T15:25:49Z sha:a9298dfa1e7a
-- 2026-10-09T15:10:50Z sha:a9298dfa1e7a
-- 2026-10-09T14:56:02Z sha:a9298dfa1e7a
-- 2026-10-09T14:40:55Z sha:a9298dfa1e7a
-- 2026-10-09T14:26:08Z sha:a9298dfa1e7a
-- 2026-10-09T14:11:11Z sha:a9298dfa1e7a
-- 2026-10-09T13:55:55Z sha:a9298dfa1e7a
-- 2026-10-09T13:40:59Z sha:a9298dfa1e7a
-- 2026-10-09T13:25:24Z sha:a9298dfa1e7a
-- 2026-10-09T13:10:40Z sha:a9298dfa1e7a
+- 2026-10-10T00:10:07Z sha:a9298dfa1e7a
+- 2026-10-09T23:54:54Z sha:a9298dfa1e7a
+- 2026-10-09T23:39:59Z sha:a9298dfa1e7a
+- 2026-10-09T23:24:51Z sha:a9298dfa1e7a
+- 2026-10-09T23:10:05Z sha:a9298dfa1e7a
+- 2026-10-09T22:55:10Z sha:a9298dfa1e7a
+- 2026-10-09T22:39:54Z sha:a9298dfa1e7a
+- 2026-10-09T22:24:53Z sha:a9298dfa1e7a
+- 2026-10-09T22:11:09Z sha:a9298dfa1e7a
+- 2026-10-09T21:55:03Z sha:a9298dfa1e7a
+- 2026-10-09T21:39:50Z sha:a9298dfa1e7a
+- 2026-10-09T21:24:42Z sha:a9298dfa1e7a
+- 2026-10-09T21:09:46Z sha:a9298dfa1e7a
+- 2026-10-09T20:54:49Z sha:a9298dfa1e7a
+- 2026-10-09T20:39:49Z sha:a9298dfa1e7a
+- 2026-10-09T20:24:46Z sha:a9298dfa1e7a
+- 2026-10-09T20:12:03Z sha:a9298dfa1e7a
+- 2026-10-09T19:54:46Z sha:a9298dfa1e7a
+- 2026-10-09T19:39:34Z sha:a9298dfa1e7a
+- 2026-10-09T19:24:50Z sha:a9298dfa1e7a
