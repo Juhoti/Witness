@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: SLS
-updated: 2026-10-11T00:25:54Z
+updated: 2026-10-11T06:39:02Z
 tags: [token]
 address: 0x285b231728c7E4333799183DF1094d775246a535
 paused: False
-source: scorecard e7a487f83a71c334
-source_ts: 1791678133
+source: scorecard 97b802893ced31a5
+source_ts: 1791700637
 ---
 # SLS
 
@@ -21,23 +21,23 @@ address: `0x285b231728c7E4333799183DF1094d775246a535`
 Markets: none
 
 ## revisions
-- 2026-10-11T00:25:54Z sha:c6a9a3d0b8de
-- 2026-10-11T00:10:52Z sha:c6a9a3d0b8de
-- 2026-10-10T23:55:40Z sha:c6a9a3d0b8de
-- 2026-10-10T23:41:11Z sha:c6a9a3d0b8de
-- 2026-10-10T23:25:21Z sha:c6a9a3d0b8de
-- 2026-10-10T23:11:08Z sha:c6a9a3d0b8de
-- 2026-10-10T22:55:19Z sha:c6a9a3d0b8de
-- 2026-10-10T22:40:26Z sha:c6a9a3d0b8de
-- 2026-10-10T22:25:47Z sha:c6a9a3d0b8de
-- 2026-10-10T22:10:44Z sha:c6a9a3d0b8de
-- 2026-10-10T21:55:41Z sha:c6a9a3d0b8de
-- 2026-10-10T21:40:37Z sha:c6a9a3d0b8de
-- 2026-10-10T21:25:17Z sha:c6a9a3d0b8de
-- 2026-10-10T21:10:49Z sha:c6a9a3d0b8de
-- 2026-10-10T20:55:34Z sha:c6a9a3d0b8de
-- 2026-10-10T20:40:19Z sha:c6a9a3d0b8de
-- 2026-10-10T20:25:28Z sha:c6a9a3d0b8de
-- 2026-10-10T20:10:22Z sha:c6a9a3d0b8de
-- 2026-10-10T19:55:11Z sha:c6a9a3d0b8de
-- 2026-10-10T19:40:20Z sha:c6a9a3d0b8de
+- 2026-10-11T06:39:02Z sha:c6a9a3d0b8de
+- 2026-10-11T06:24:00Z sha:c6a9a3d0b8de
+- 2026-10-11T06:09:03Z sha:c6a9a3d0b8de
+- 2026-10-11T05:54:04Z sha:c6a9a3d0b8de
+- 2026-10-11T05:38:54Z sha:c6a9a3d0b8de
+- 2026-10-11T05:23:49Z sha:c6a9a3d0b8de
+- 2026-10-11T05:08:47Z sha:c6a9a3d0b8de
+- 2026-10-11T04:53:47Z sha:c6a9a3d0b8de
+- 2026-10-11T04:38:42Z sha:c6a9a3d0b8de
+- 2026-10-11T04:23:45Z sha:c6a9a3d0b8de
+- 2026-10-11T04:08:46Z sha:c6a9a3d0b8de
+- 2026-10-11T03:53:46Z sha:c6a9a3d0b8de
+- 2026-10-11T03:38:45Z sha:c6a9a3d0b8de
+- 2026-10-11T03:23:55Z sha:c6a9a3d0b8de
+- 2026-10-11T03:08:45Z sha:c6a9a3d0b8de
+- 2026-10-11T02:55:09Z sha:c6a9a3d0b8de
+- 2026-10-11T02:41:44Z sha:c6a9a3d0b8de
+- 2026-10-11T02:26:36Z sha:c6a9a3d0b8de
+- 2026-10-11T02:11:32Z sha:c6a9a3d0b8de
+- 2026-10-11T01:56:09Z sha:c6a9a3d0b8de
