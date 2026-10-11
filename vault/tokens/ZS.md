@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: ZS
-updated: 2026-10-10T18:25:06Z
+updated: 2026-10-11T00:25:54Z
 tags: [token]
 address: 0x7dc013eB55e436f30d7ED1AFE4E36d6e45e3c3f7
 paused: False
-source: scorecard 98e3a72fe3d38f34
-source_ts: 1791656529
+source: scorecard e7a487f83a71c334
+source_ts: 1791678133
 ---
 # ZS
 
@@ -21,23 +21,23 @@ address: `0x7dc013eB55e436f30d7ED1AFE4E36d6e45e3c3f7`
 Markets: none
 
 ## revisions
-- 2026-10-10T18:25:06Z sha:622f283bfbcf
-- 2026-10-10T18:10:04Z sha:622f283bfbcf
-- 2026-10-10T17:54:52Z sha:622f283bfbcf
-- 2026-10-10T17:40:03Z sha:622f283bfbcf
-- 2026-10-10T17:25:03Z sha:622f283bfbcf
-- 2026-10-10T17:09:51Z sha:622f283bfbcf
-- 2026-10-10T16:54:52Z sha:622f283bfbcf
-- 2026-10-10T16:40:24Z sha:622f283bfbcf
-- 2026-10-10T16:25:22Z sha:622f283bfbcf
-- 2026-10-10T16:09:42Z sha:622f283bfbcf
-- 2026-10-10T15:54:37Z sha:622f283bfbcf
-- 2026-10-10T15:42:00Z sha:622f283bfbcf
-- 2026-10-10T15:24:38Z sha:622f283bfbcf
-- 2026-10-10T15:09:32Z sha:622f283bfbcf
-- 2026-10-10T14:54:40Z sha:622f283bfbcf
-- 2026-10-10T14:39:34Z sha:622f283bfbcf
-- 2026-10-10T14:24:27Z sha:622f283bfbcf
-- 2026-10-10T14:09:22Z sha:622f283bfbcf
-- 2026-10-10T13:54:19Z sha:622f283bfbcf
-- 2026-10-10T13:40:06Z sha:622f283bfbcf
+- 2026-10-11T00:25:54Z sha:622f283bfbcf
+- 2026-10-11T00:10:52Z sha:622f283bfbcf
+- 2026-10-10T23:55:40Z sha:622f283bfbcf
+- 2026-10-10T23:41:11Z sha:622f283bfbcf
+- 2026-10-10T23:25:21Z sha:622f283bfbcf
+- 2026-10-10T23:11:08Z sha:622f283bfbcf
+- 2026-10-10T22:55:19Z sha:622f283bfbcf
+- 2026-10-10T22:40:26Z sha:622f283bfbcf
+- 2026-10-10T22:25:47Z sha:622f283bfbcf
+- 2026-10-10T22:10:44Z sha:622f283bfbcf
+- 2026-10-10T21:55:41Z sha:622f283bfbcf
+- 2026-10-10T21:40:37Z sha:622f283bfbcf
+- 2026-10-10T21:25:17Z sha:622f283bfbcf
+- 2026-10-10T21:10:50Z sha:622f283bfbcf
+- 2026-10-10T20:55:34Z sha:622f283bfbcf
+- 2026-10-10T20:40:19Z sha:622f283bfbcf
+- 2026-10-10T20:25:28Z sha:622f283bfbcf
+- 2026-10-10T20:10:22Z sha:622f283bfbcf
+- 2026-10-10T19:55:12Z sha:622f283bfbcf
+- 2026-10-10T19:40:20Z sha:622f283bfbcf
