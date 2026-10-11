@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: PFE
-updated: 2026-10-11T12:40:19Z
+updated: 2026-10-11T18:41:24Z
 tags: [token]
 address: 0x7066A64c24e4206CD62E83bf198c1E7EB361F51e
 paused: False
-source: scorecard b590ce4bff6915d5
-source_ts: 1791722241
+source: scorecard 109906a1b2c4cb5e
+source_ts: 1791743845
 ---
 # PFE
 
@@ -21,23 +21,23 @@ address: `0x7066A64c24e4206CD62E83bf198c1E7EB361F51e`
 Markets: none
 
 ## revisions
-- 2026-10-11T12:40:19Z sha:ef217e3dceb8
-- 2026-10-11T12:25:38Z sha:ef217e3dceb8
-- 2026-10-11T12:10:45Z sha:ef217e3dceb8
-- 2026-10-11T11:55:13Z sha:ef217e3dceb8
-- 2026-10-11T11:39:49Z sha:ef217e3dceb8
-- 2026-10-11T11:25:06Z sha:ef217e3dceb8
-- 2026-10-11T11:10:00Z sha:ef217e3dceb8
-- 2026-10-11T10:55:01Z sha:ef217e3dceb8
-- 2026-10-11T10:39:58Z sha:ef217e3dceb8
-- 2026-10-11T10:24:58Z sha:ef217e3dceb8
-- 2026-10-11T10:09:48Z sha:ef217e3dceb8
-- 2026-10-11T09:54:51Z sha:ef217e3dceb8
-- 2026-10-11T09:39:47Z sha:ef217e3dceb8
-- 2026-10-11T09:24:53Z sha:ef217e3dceb8
-- 2026-10-11T09:09:43Z sha:ef217e3dceb8
-- 2026-10-11T08:54:35Z sha:ef217e3dceb8
-- 2026-10-11T08:39:34Z sha:ef217e3dceb8
-- 2026-10-11T08:24:36Z sha:ef217e3dceb8
-- 2026-10-11T08:09:30Z sha:ef217e3dceb8
-- 2026-10-11T07:54:22Z sha:ef217e3dceb8
+- 2026-10-11T18:41:24Z sha:ef217e3dceb8
+- 2026-10-11T18:26:33Z sha:ef217e3dceb8
+- 2026-10-11T18:11:31Z sha:ef217e3dceb8
+- 2026-10-11T17:56:32Z sha:ef217e3dceb8
+- 2026-10-11T17:41:29Z sha:ef217e3dceb8
+- 2026-10-11T17:26:26Z sha:ef217e3dceb8
+- 2026-10-11T17:11:42Z sha:ef217e3dceb8
+- 2026-10-11T16:56:35Z sha:ef217e3dceb8
+- 2026-10-11T16:43:23Z sha:ef217e3dceb8
+- 2026-10-11T16:28:29Z sha:ef217e3dceb8
+- 2026-10-11T16:14:25Z sha:ef217e3dceb8
+- 2026-10-11T15:58:14Z sha:ef217e3dceb8
+- 2026-10-11T15:41:26Z sha:ef217e3dceb8
+- 2026-10-11T15:27:50Z sha:ef217e3dceb8
+- 2026-10-11T15:11:19Z sha:ef217e3dceb8
+- 2026-10-11T14:56:40Z sha:ef217e3dceb8
+- 2026-10-11T14:40:54Z sha:ef217e3dceb8
+- 2026-10-11T14:25:33Z sha:ef217e3dceb8
+- 2026-10-11T14:10:55Z sha:ef217e3dceb8
+- 2026-10-11T13:55:36Z sha:ef217e3dceb8
