@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: AMC
-updated: 2026-10-11T06:39:02Z
+updated: 2026-10-11T12:40:19Z
 tags: [token]
 address: 0x05a3d1Cd21d0C88145E82600E62e7E496e0F222B
 paused: False
-source: scorecard 97b802893ced31a5
-source_ts: 1791700637
+source: scorecard b590ce4bff6915d5
+source_ts: 1791722241
 ---
 # AMC
 
@@ -21,23 +21,23 @@ address: `0x05a3d1Cd21d0C88145E82600E62e7E496e0F222B`
 Markets: [[markets/0x8c170f5c5df593791640ac9fbac297d59d08c2e92e86f38fe52d38e929e60fa3]]
 
 ## revisions
-- 2026-10-11T06:39:02Z sha:2b4fee87cb4e
-- 2026-10-11T06:24:00Z sha:2b4fee87cb4e
-- 2026-10-11T06:09:03Z sha:2b4fee87cb4e
-- 2026-10-11T05:54:04Z sha:2b4fee87cb4e
-- 2026-10-11T05:38:54Z sha:2b4fee87cb4e
-- 2026-10-11T05:23:49Z sha:2b4fee87cb4e
-- 2026-10-11T05:08:47Z sha:2b4fee87cb4e
-- 2026-10-11T04:53:47Z sha:2b4fee87cb4e
-- 2026-10-11T04:38:42Z sha:2b4fee87cb4e
-- 2026-10-11T04:23:45Z sha:2b4fee87cb4e
-- 2026-10-11T04:08:46Z sha:2b4fee87cb4e
-- 2026-10-11T03:53:46Z sha:2b4fee87cb4e
-- 2026-10-11T03:38:45Z sha:2b4fee87cb4e
-- 2026-10-11T03:23:55Z sha:2b4fee87cb4e
-- 2026-10-11T03:08:45Z sha:2b4fee87cb4e
-- 2026-10-11T02:55:09Z sha:2b4fee87cb4e
-- 2026-10-11T02:41:44Z sha:2b4fee87cb4e
-- 2026-10-11T02:26:36Z sha:2b4fee87cb4e
-- 2026-10-11T02:11:32Z sha:2b4fee87cb4e
-- 2026-10-11T01:56:09Z sha:2b4fee87cb4e
+- 2026-10-11T12:40:19Z sha:2b4fee87cb4e
+- 2026-10-11T12:25:38Z sha:2b4fee87cb4e
+- 2026-10-11T12:10:45Z sha:2b4fee87cb4e
+- 2026-10-11T11:55:13Z sha:2b4fee87cb4e
+- 2026-10-11T11:39:49Z sha:2b4fee87cb4e
+- 2026-10-11T11:25:06Z sha:2b4fee87cb4e
+- 2026-10-11T11:10:00Z sha:2b4fee87cb4e
+- 2026-10-11T10:55:01Z sha:2b4fee87cb4e
+- 2026-10-11T10:39:58Z sha:2b4fee87cb4e
+- 2026-10-11T10:24:58Z sha:2b4fee87cb4e
+- 2026-10-11T10:09:48Z sha:2b4fee87cb4e
+- 2026-10-11T09:54:51Z sha:2b4fee87cb4e
+- 2026-10-11T09:39:47Z sha:2b4fee87cb4e
+- 2026-10-11T09:24:53Z sha:2b4fee87cb4e
+- 2026-10-11T09:09:43Z sha:2b4fee87cb4e
+- 2026-10-11T08:54:35Z sha:2b4fee87cb4e
+- 2026-10-11T08:39:34Z sha:2b4fee87cb4e
+- 2026-10-11T08:24:36Z sha:2b4fee87cb4e
+- 2026-10-11T08:09:30Z sha:2b4fee87cb4e
+- 2026-10-11T07:54:22Z sha:2b4fee87cb4e

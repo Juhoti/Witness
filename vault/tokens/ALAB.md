@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: ALAB
-updated: 2026-10-11T06:39:02Z
+updated: 2026-10-11T12:40:19Z
 tags: [token]
 address: 0x748c32c3ca24eDf31ea597Db1F3d330a7a6DA3Dc
 paused: False
-source: scorecard 97b802893ced31a5
-source_ts: 1791700637
+source: scorecard b590ce4bff6915d5
+source_ts: 1791722241
 ---
 # ALAB
 
@@ -21,23 +21,23 @@ address: `0x748c32c3ca24eDf31ea597Db1F3d330a7a6DA3Dc`
 Markets: none
 
 ## revisions
-- 2026-10-11T06:39:02Z sha:ddf5bc6dd110
-- 2026-10-11T06:24:00Z sha:ddf5bc6dd110
-- 2026-10-11T06:09:03Z sha:ddf5bc6dd110
-- 2026-10-11T05:54:04Z sha:ddf5bc6dd110
-- 2026-10-11T05:38:54Z sha:ddf5bc6dd110
-- 2026-10-11T05:23:50Z sha:ddf5bc6dd110
-- 2026-10-11T05:08:47Z sha:ddf5bc6dd110
-- 2026-10-11T04:53:47Z sha:ddf5bc6dd110
-- 2026-10-11T04:38:42Z sha:ddf5bc6dd110
-- 2026-10-11T04:23:45Z sha:ddf5bc6dd110
-- 2026-10-11T04:08:46Z sha:ddf5bc6dd110
-- 2026-10-11T03:53:46Z sha:ddf5bc6dd110
-- 2026-10-11T03:38:45Z sha:ddf5bc6dd110
-- 2026-10-11T03:23:55Z sha:ddf5bc6dd110
-- 2026-10-11T03:08:45Z sha:ddf5bc6dd110
-- 2026-10-11T02:55:09Z sha:ddf5bc6dd110
-- 2026-10-11T02:41:44Z sha:ddf5bc6dd110
-- 2026-10-11T02:26:36Z sha:ddf5bc6dd110
-- 2026-10-11T02:11:32Z sha:ddf5bc6dd110
-- 2026-10-11T01:56:09Z sha:ddf5bc6dd110
+- 2026-10-11T12:40:19Z sha:ddf5bc6dd110
+- 2026-10-11T12:25:38Z sha:ddf5bc6dd110
+- 2026-10-11T12:10:45Z sha:ddf5bc6dd110
+- 2026-10-11T11:55:13Z sha:ddf5bc6dd110
+- 2026-10-11T11:39:49Z sha:ddf5bc6dd110
+- 2026-10-11T11:25:06Z sha:ddf5bc6dd110
+- 2026-10-11T11:10:00Z sha:ddf5bc6dd110
+- 2026-10-11T10:55:01Z sha:ddf5bc6dd110
+- 2026-10-11T10:39:58Z sha:ddf5bc6dd110
+- 2026-10-11T10:24:58Z sha:ddf5bc6dd110
+- 2026-10-11T10:09:48Z sha:ddf5bc6dd110
+- 2026-10-11T09:54:51Z sha:ddf5bc6dd110
+- 2026-10-11T09:39:47Z sha:ddf5bc6dd110
+- 2026-10-11T09:24:53Z sha:ddf5bc6dd110
+- 2026-10-11T09:09:43Z sha:ddf5bc6dd110
+- 2026-10-11T08:54:35Z sha:ddf5bc6dd110
+- 2026-10-11T08:39:34Z sha:ddf5bc6dd110
+- 2026-10-11T08:24:36Z sha:ddf5bc6dd110
+- 2026-10-11T08:09:30Z sha:ddf5bc6dd110
+- 2026-10-11T07:54:22Z sha:ddf5bc6dd110
