@@ -1,12 +1,12 @@
 ---
 kind: markets
 name: 0x1b8b34fd794924dcbd8c92f5efc54ccb1e977ad4ff2386f7be6d4d26a2fbdecb
-updated: 2026-10-11T18:41:24Z
+updated: 2026-10-12T00:54:38Z
 tags: [market]
 collateral: `QQQ`
 utilization: 0
-source: scorecard 109906a1b2c4cb5e
-source_ts: 1791743845
+source: scorecard 48a23373e951fd3c
+source_ts: 1791766349
 ---
 # 0x1b8b34fd794924dcbd8c92f5efc54ccb1e977ad4ff2386f7be6d4d26a2fbdecb
 
@@ -20,23 +20,23 @@ collateral: [[tokens/QQQ]] · loan: `USDG` · lltv: `625000000000000000`
 - oracle: `0xEad960d619a70EEfb5d76A25895f8E0423CC6C4a`
 
 ## revisions
-- 2026-10-11T18:41:24Z sha:8b9e9fe0b88f
-- 2026-10-11T18:26:33Z sha:8b9e9fe0b88f
-- 2026-10-11T18:11:31Z sha:8b9e9fe0b88f
-- 2026-10-11T17:56:32Z sha:8b9e9fe0b88f
-- 2026-10-11T17:41:30Z sha:8b9e9fe0b88f
-- 2026-10-11T17:26:26Z sha:8b9e9fe0b88f
-- 2026-10-11T17:11:42Z sha:8b9e9fe0b88f
-- 2026-10-11T16:56:35Z sha:8b9e9fe0b88f
-- 2026-10-11T16:43:23Z sha:8b9e9fe0b88f
-- 2026-10-11T16:28:29Z sha:8b9e9fe0b88f
-- 2026-10-11T16:14:25Z sha:8b9e9fe0b88f
-- 2026-10-11T15:58:14Z sha:8b9e9fe0b88f
-- 2026-10-11T15:41:27Z sha:8b9e9fe0b88f
-- 2026-10-11T15:27:51Z sha:8b9e9fe0b88f
-- 2026-10-11T15:11:19Z sha:8b9e9fe0b88f
-- 2026-10-11T14:56:40Z sha:8b9e9fe0b88f
-- 2026-10-11T14:40:54Z sha:8b9e9fe0b88f
-- 2026-10-11T14:25:33Z sha:8b9e9fe0b88f
-- 2026-10-11T14:10:56Z sha:8b9e9fe0b88f
-- 2026-10-11T13:55:36Z sha:8b9e9fe0b88f
+- 2026-10-12T00:54:38Z sha:8b9e9fe0b88f
+- 2026-10-12T00:39:22Z sha:8b9e9fe0b88f
+- 2026-10-12T00:24:18Z sha:8b9e9fe0b88f
+- 2026-10-12T00:09:26Z sha:8b9e9fe0b88f
+- 2026-10-11T23:53:57Z sha:8b9e9fe0b88f
+- 2026-10-11T23:39:06Z sha:8b9e9fe0b88f
+- 2026-10-11T23:24:07Z sha:8b9e9fe0b88f
+- 2026-10-11T23:09:07Z sha:8b9e9fe0b88f
+- 2026-10-11T22:54:28Z sha:8b9e9fe0b88f
+- 2026-10-11T22:39:03Z sha:8b9e9fe0b88f
+- 2026-10-11T22:24:16Z sha:8b9e9fe0b88f
+- 2026-10-11T22:09:04Z sha:8b9e9fe0b88f
+- 2026-10-11T21:56:06Z sha:8b9e9fe0b88f
+- 2026-10-11T21:42:56Z sha:8b9e9fe0b88f
+- 2026-10-11T21:27:45Z sha:8b9e9fe0b88f
+- 2026-10-11T21:11:46Z sha:8b9e9fe0b88f
+- 2026-10-11T20:56:57Z sha:8b9e9fe0b88f
+- 2026-10-11T20:43:46Z sha:8b9e9fe0b88f
+- 2026-10-11T20:26:40Z sha:8b9e9fe0b88f
+- 2026-10-11T20:11:43Z sha:8b9e9fe0b88f
