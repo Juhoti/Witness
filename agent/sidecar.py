@@ -29,6 +29,11 @@ def _opportunity():
     return opportunity.publish(opportunity.build())[:16]
 
 
+def _depth_plan():
+    from products.depth_plan import plan
+    return plan.publish(plan.build())[:16]
+
+
 def _watch():
     from products.depeg_watch import watch
     from products.token_check import bot
@@ -48,6 +53,7 @@ TASKS = [
     ("session_risk", 1440, lambda: session_risk.publish(session_risk.build())[:16]),
     ("sellcheck", 360, lambda: sellcheck.publish(sellcheck.build())[:16]),
     ("vault", 60, lambda: vault.status().get("status")),
+    ("depth_plan", 1440, _depth_plan),
     ("projects", 1440, lambda: projects.publish(projects.build())[:16]),
     ("opportunity", 60, _opportunity),
     ("grade", 60, lambda: len(grade.run())),
