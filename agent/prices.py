@@ -25,8 +25,8 @@ log = logging.getLogger("prices")
 OUT_DIR = settings.LEDGER_DIR / "prices"
 FEES = (100, 500, 3000, 10000)
 Q96 = 2 ** 96
-METHOD = ("spot: liquidity-weighted median of Uniswap v3+v4 USDG pool prices at one block; robust: median of Witness's hourly spot "
-          "samples over 24 h, or a 30-minute v3 TWAP when fewer samples exist; Chainlink feed shown beside both")
+METHOD = ("spot: liquidity-weighted median of Uniswap v3+v4 USDG pool prices at one block; robust: 30-minute Uniswap v3 TWAP, "
+          "else the median of Witness's last six hourly spot samples; 24 h median as context; Chainlink feed shown beside both")
 
 
 def _sel(sig: str) -> bytes:
