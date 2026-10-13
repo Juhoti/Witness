@@ -42,6 +42,17 @@ https://raw.githubusercontent.com/Juhoti/Witness/main/feed/opportunities.json ra
 Every file carries its method, when it was measured and the ledger file it came from, so any figure can
 be checked against the record. These are measurements, not an oracle.
 
+## Products
+
+| Product | What it does | State |
+|---|---|---|
+| `products/token_check` | Telegram bot: send a token address or ticker, get what the record shows: registry or imitation, sell-blocked or not, prices, feed, depth, safe loan-to-value | live |
+| `products/depeg_watch` | live gap between fixed-price oracles and their backup feeds, divergence on fragile oracles, new over-leveraged markets; alerts through the bot (/watch) and `feed/watch.json` | live |
+| `agent/prices.py` | spot and time-averaged prices for every asset, beside Chainlink where it exists | live, hourly |
+| `agent/vault.py` | curator sheet from a certified policy, and a watch on the Witness vault once it exists | waiting for the vault |
+| `products/depth_plan` | capital needed to make each stock token safely lendable, exposure already at risk, fee upper bound | live, daily |
+| `products/twap_feed` | Chainlink-shaped on-chain price from a Uniswap v3 TWAP, for tokens with no feed | fork-tested; not deployed, not audited |
+
 ## What it measures
 
 | signal | source | file |

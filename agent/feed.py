@@ -13,6 +13,7 @@ so it can be checked), the method, and that it is a measurement and not an oracl
   feed/warnings.json     tokens whose holders cannot sell, by simulation
   feed/projects.json     projects on the chain measured beside their claims
   feed/opportunities.json  the ranked map of gaps, risks and the unexplained
+  feed/depth_plan.json   capital needed to make each stock token safely lendable
   feed/watch.json        live levels of the de-peg and risky-market watch (written by the watch itself)
 
     python -m agent.feed       # rebuild feed/ from the latest record
@@ -68,7 +69,8 @@ def build() -> dict:
         None, "every stock token against the listing rails")
     for name, folder, note in (("prices", "prices", "Witness's reference price per asset"), ("oracles", "oracle_audits", "how every Morpho market is priced"),
                                ("warnings", "warnings", "tokens whose holders cannot sell"), ("projects", "projects", "projects measured beside their claims"),
-                               ("opportunities", "opportunities", "ranked gaps, risks and the unexplained")):
+                               ("opportunities", "opportunities", "ranked gaps, risks and the unexplained"),
+                               ("depth_plan", "depth_plans", "capital needed to make each stock token safely lendable")):
         doc, src = _latest_with_hash(settings.LEDGER_DIR / folder)
         if doc:
             put(name, doc, src, note)
