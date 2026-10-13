@@ -1,0 +1,4 @@
+# The Witness vault, once it exists. Fill in after creating it on Morpho (Vault V2, asset USDG) from
+# the owner's wallet. Both addresses are public on chain; nothing secret belongs here.
+address = ""   # the vault
+curator = ""   # the owner's wallet acting as curator
