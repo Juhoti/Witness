@@ -1,0 +1,110 @@
+{
+ "as_of": 1791917963,
+ "levels": {
+  "meta:0xc845da65a020ddca5f132efa8fea79676d8edfdea504226a4c01e7a9e34cddd6": {
+   "backup": 999495390000000000000000,
+   "borrow_usd": 323612028.8535442,
+   "challenge_expires": null,
+   "gap": 0.000505,
+   "level": "ok",
+   "market": "0xc845da65a020ddca5f132efa8fea79676d8edfdea504226a4c01e7a9e34cddd6",
+   "pair": "USDe/USDG",
+   "primary": 1000000000000000000000000,
+   "text": "USDe/USDG market ($324M borrowed): live feed is 0.05% from the fixed price; switch threshold 0.50%.",
+   "threshold": 0.005
+  },
+  "oracle:0x0309c02dabf0be02682af1a2bde9a457f4df0f0b6bc889cde3f948e5315e4114": {
+   "borrow_usd": 8297559.0207319325,
+   "level": "vault_rate_only",
+   "market": "0x0309c02dabf0be02682af1a2bde9a457f4df0f0b6bc889cde3f948e5315e4114",
+   "pair": "spUSDG/USDG",
+   "text": "spUSDG/USDG market ($8,297,559 borrowed): the asset's own exchange rate is the only price."
+  },
+  "oracle:0x1efd13a2d1dc66a2466e7c25820537028e604791f00454d9c686fdfbf70f404d": {
+   "borrow_usd": 29514833.773859426,
+   "level": "frozen",
+   "market": "0x1efd13a2d1dc66a2466e7c25820537028e604791f00454d9c686fdfbf70f404d",
+   "pair": "mGLO/USDG",
+   "text": "mGLO/USDG market ($29,514,834 borrowed): the sources exist but the price has not moved; cause unknown."
+  },
+  "oracle:0xc845da65a020ddca5f132efa8fea79676d8edfdea504226a4c01e7a9e34cddd6": {
+   "borrow_usd": 323612028.8535442,
+   "level": "fixed_with_delayed_backup",
+   "market": "0xc845da65a020ddca5f132efa8fea79676d8edfdea504226a4c01e7a9e34cddd6",
+   "pair": "USDe/USDG",
+   "text": "USDe/USDG market ($323,612,029 borrowed): the price follows the asset only after the stated delay and a manual call."
+  },
+  "price:0x919a9b6b94dae7c86620eaf7a08e597aae8a4c3a9e9c7671771fbaf62b6b61c7": {
+   "borrow_usd": 121361064.59567606,
+   "gap": 0.0011,
+   "level": "ok",
+   "market": "0x919a9b6b94dae7c86620eaf7a08e597aae8a4c3a9e9c7671771fbaf62b6b61c7",
+   "pair": "syrupUSDG/USDG",
+   "text": "syrupUSDG/USDG market ($121.4M borrowed): oracle is +0.11% from the Uniswap price."
+  },
+  "tier:0x003390b057d753bd839981a0d45f9a567aa0b0ed6373fd42e951eac8ee86c2ba": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0x003390b057d753bd839981a0d45f9a567aa0b0ed6373fd42e951eac8ee86c2ba",
+   "pair": "RGTI/USDG",
+   "text": "New RGTI market lends at 62.5%; RGTI's worst closed-market fall in 5 years (31.2%) is only survived up to 38.5%."
+  },
+  "tier:0x2cedec528cb3c02b27986d8e2e1cefb35d1ee39ceb268f2e0c4e55179224216d": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0x2cedec528cb3c02b27986d8e2e1cefb35d1ee39ceb268f2e0c4e55179224216d",
+   "pair": "TSLA/USDG",
+   "text": "New TSLA market lends at 86.0%; TSLA's worst closed-market fall in 5 years (10.8%) is only survived up to 77.0%."
+  },
+  "tier:0x3ce44383b860237d3a78a88caf9edcbec36b040d7be2998ef8222eec8719bd48": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0x3ce44383b860237d3a78a88caf9edcbec36b040d7be2998ef8222eec8719bd48",
+   "pair": "NVDA/USDG",
+   "text": "New NVDA market lends at 86.0%; NVDA's worst closed-market fall in 5 years (14.2%) is only survived up to 77.0%."
+  },
+  "tier:0xac34228623c8a11f192655f282895048154478a683eee46acc9d1c21996741d0": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xac34228623c8a11f192655f282895048154478a683eee46acc9d1c21996741d0",
+   "pair": "SPCX/USDG",
+   "text": "New SPCX market lends at 86.0%; SPCX's worst closed-market fall in 5 years (10.3%) is only survived up to 77.0%."
+  },
+  "tier:0xba2956531697f0c0b0b9db7b2d3148581ae69610c136287ba84bf519621a22dd": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xba2956531697f0c0b0b9db7b2d3148581ae69610c136287ba84bf519621a22dd",
+   "pair": "NVDA/USDG",
+   "text": "New NVDA market lends at 86.0%; NVDA's worst closed-market fall in 5 years (14.2%) is only survived up to 77.0%."
+  },
+  "tier:0xbd18e5899638719881163fa80c9508ed14043177c63619035355d64be5b6c761": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xbd18e5899638719881163fa80c9508ed14043177c63619035355d64be5b6c761",
+   "pair": "MU/USDG",
+   "text": "New MU market lends at 86.0%; MU's worst closed-market fall in 5 years (13.3%) is only survived up to 77.0%."
+  },
+  "tier:0xc6a3f6238a3ac2db25af6a392ba974087717bc837e00dc7177172999b85afd5f": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xc6a3f6238a3ac2db25af6a392ba974087717bc837e00dc7177172999b85afd5f",
+   "pair": "TSLA/USDG",
+   "text": "New TSLA market lends at 86.0%; TSLA's worst closed-market fall in 5 years (10.8%) is only survived up to 77.0%."
+  },
+  "tier:0xdba3765947667f0cf485473a3962cf5cf290f05e53946b4b735b70d73da207b8": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xdba3765947667f0cf485473a3962cf5cf290f05e53946b4b735b70d73da207b8",
+   "pair": "NVDA/USDG",
+   "text": "New NVDA market lends at 86.0%; NVDA's worst closed-market fall in 5 years (14.2%) is only survived up to 77.0%."
+  },
+  "tier:0xdd5526da32ddca02fb46eca8b982c3d396a23709e17e96ce116c71c3360f3adb": {
+   "borrow_usd": 0,
+   "level": "above_safe_tier",
+   "market": "0xdd5526da32ddca02fb46eca8b982c3d396a23709e17e96ce116c71c3360f3adb",
+   "pair": "RGTI/USDG",
+   "text": "New RGTI market lends at 62.5%; RGTI's worst closed-market fall in 5 years (31.2%) is only survived up to 38.5%."
+  }
+ },
+ "method": "live on-chain reads of meta-oracles; oracle audit; session risk"
+}

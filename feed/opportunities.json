@@ -1,191 +1,191 @@
 {
- "as_of": 1791307011,
+ "as_of": 1791916412,
  "chain_id": 4663,
  "coverage": {
-  "by_contract_kind": 0.7183,
-  "by_named_event": 0.9373,
-  "logs": 22158558
+  "by_contract_kind": 0.7291,
+  "by_named_event": 0.9241,
+  "logs": 144008466
  },
  "disclaimer": "Measurements from Robinhood Chain (4663) by Witness, with method and age attached. Not an oracle: no manipulation resistance beyond what each method states, no availability promise. Check any figure against the ledger file it names.",
  "gaps": [
   {
-   "blocked_by": [],
-   "days_seen": 0.99,
-   "id": "98bc9b754ec4",
-   "kind": "missing_price_feed",
-   "measured": "168 of 203 stock tokens have no feed in Chainlink's directory; size is the combined float of the 60 whose own price is backed by at least $1k of depth",
-   "members": [
-    {
-     "float_usd": 8697171,
-     "symbol": "GLD"
-    },
-    {
-     "float_usd": 3407540,
-     "symbol": "HIMS"
-    },
-    {
-     "float_usd": 2325265,
-     "symbol": "RDDT"
-    },
-    {
-     "float_usd": 2108063,
-     "symbol": "AMC"
-    },
-    {
-     "float_usd": 1832177,
-     "symbol": "DJT"
-    },
-    {
-     "float_usd": 1170422,
-     "symbol": "TTWO"
-    },
-    {
-     "float_usd": 1124023,
-     "symbol": "SKHY"
-    },
-    {
-     "float_usd": 1031201,
-     "symbol": "LLY"
-    },
-    {
-     "float_usd": 993448,
-     "symbol": "COST"
-    },
-    {
-     "float_usd": 815645,
-     "symbol": "BE"
-    },
-    {
-     "float_usd": 803825,
-     "symbol": "NFLX"
-    },
-    {
-     "float_usd": 657543,
-     "symbol": "RBLX"
-    },
-    {
-     "float_usd": 639195,
-     "symbol": "MRNA"
-    },
-    {
-     "float_usd": 509124,
-     "symbol": "IBM"
-    },
-    {
-     "float_usd": 449322,
-     "symbol": "RIVN"
-    }
-   ],
-   "needs": "a published, manipulation-resistant price for each",
-   "rank": 1,
-   "served_by": "Uniswap pool prices only",
-   "size_usd": 32547944.846249346,
-   "source": "feeds scanner",
-   "subject": "stock tokens without a Chainlink feed"
-  },
-  {
    "blocked_by": [
     "oracle is fixed with delayed backup"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "346bea3a3fd8",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": null,
-   "measured": "market at 90% utilisation with $317,501,969 borrowed",
+   "measured": "market at 91% utilisation with $323,611,861 borrowed",
    "needs": "more USDG supplied to this market under session rules",
-   "rank": 2,
-   "served_by": "Morpho market 0xc845da65, $352,256,986 supplied",
-   "size_usd": 32174439.699093673,
+   "rank": 1,
+   "served_by": "Morpho market 0xc845da65, $356,385,569 supplied",
+   "size_usd": 34962579.67887885,
    "source": "scorecard gap table",
    "subject": "USDe"
   },
   {
    "blocked_by": [],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "98bc9b754ec4",
+   "kind": "missing_price_feed",
+   "measured": "168 of 203 stock tokens have no feed in Chainlink's directory; size is the combined float of the 56 whose own price is backed by at least $1k of depth",
+   "members": [
+    {
+     "float_usd": 8096309,
+     "symbol": "GLD"
+    },
+    {
+     "float_usd": 2688561,
+     "symbol": "HIMS"
+    },
+    {
+     "float_usd": 1981269,
+     "symbol": "AMC"
+    },
+    {
+     "float_usd": 1601552,
+     "symbol": "SKHY"
+    },
+    {
+     "float_usd": 1548454,
+     "symbol": "DJT"
+    },
+    {
+     "float_usd": 1473335,
+     "symbol": "RDDT"
+    },
+    {
+     "float_usd": 1103525,
+     "symbol": "TTWO"
+    },
+    {
+     "float_usd": 1090957,
+     "symbol": "LLY"
+    },
+    {
+     "float_usd": 794947,
+     "symbol": "BE"
+    },
+    {
+     "float_usd": 775386,
+     "symbol": "COST"
+    },
+    {
+     "float_usd": 702532,
+     "symbol": "NFLX"
+    },
+    {
+     "float_usd": 633906,
+     "symbol": "MRNA"
+    },
+    {
+     "float_usd": 580333,
+     "symbol": "RBLX"
+    },
+    {
+     "float_usd": 530202,
+     "symbol": "IBM"
+    },
+    {
+     "float_usd": 421818,
+     "symbol": "RIVN"
+    }
+   ],
+   "needs": "a published, manipulation-resistant price for each",
+   "rank": 2,
+   "served_by": "Uniswap pool prices only",
+   "size_usd": 29135233.869323388,
+   "source": "feeds scanner",
+   "subject": "stock tokens without a Chainlink feed"
+  },
+  {
+   "blocked_by": [],
+   "days_seen": 8.04,
    "id": "bbdd5d40f795",
    "kind": "missing_depth",
-   "measured": "128 stock tokens lose more than 5% on a $10k sale; size is their combined float",
+   "measured": "130 stock tokens lose more than 5% on a $10k sale; size is their combined float",
    "members": [
     {
      "depth_usd": 1000,
-     "float_usd": 405240,
-     "symbol": "LULU"
+     "float_usd": 528539,
+     "symbol": "CRWV"
     },
     {
      "depth_usd": 1000,
-     "float_usd": 350355,
+     "float_usd": 488077,
+     "symbol": "USAR"
+    },
+    {
+     "depth_usd": 1000,
+     "float_usd": 421818,
+     "symbol": "RIVN"
+    },
+    {
+     "depth_usd": 1000,
+     "float_usd": 263596,
      "symbol": "MRVL"
     },
     {
      "depth_usd": 1000,
-     "float_usd": 261943,
-     "symbol": "NNE"
-    },
-    {
-     "depth_usd": 1000,
-     "float_usd": 241053,
+     "float_usd": 238534,
      "symbol": "JNJ"
     },
     {
      "depth_usd": 100,
-     "float_usd": 200736,
-     "symbol": "LITE"
+     "float_usd": 223265,
+     "symbol": "NNE"
     },
     {
      "depth_usd": 1000,
-     "float_usd": 182421,
+     "float_usd": 207351,
+     "symbol": "QUBT"
+    },
+    {
+     "depth_usd": 1000,
+     "float_usd": 162397,
      "symbol": "BULL"
     },
     {
-     "depth_usd": 1000,
-     "float_usd": 151078,
+     "depth_usd": 100,
+     "float_usd": 155120,
+     "symbol": "LITE"
+    },
+    {
+     "depth_usd": 100,
+     "float_usd": 141600,
      "symbol": "EWY"
     },
     {
-     "depth_usd": 1000,
-     "float_usd": 138642,
-     "symbol": "INDA"
-    },
-    {
-     "depth_usd": 1000,
-     "float_usd": 131884,
-     "symbol": "RCAT"
-    },
-    {
      "depth_usd": 100,
-     "float_usd": 127509,
+     "float_usd": 125103,
      "symbol": "SMH"
     },
     {
-     "depth_usd": 1000,
-     "float_usd": 116256,
-     "symbol": "WYFI"
-    },
-    {
      "depth_usd": 100,
-     "float_usd": 114886,
-     "symbol": "CBRS"
-    },
-    {
-     "depth_usd": 1000,
-     "float_usd": 95921,
-     "symbol": "RKLB"
-    },
-    {
-     "depth_usd": 100,
-     "float_usd": 92267,
+     "float_usd": 108716,
      "symbol": "AMAT"
     },
     {
+     "depth_usd": 100,
+     "float_usd": 107904,
+     "symbol": "RCAT"
+    },
+    {
      "depth_usd": 1000,
-     "float_usd": 89391,
-     "symbol": "SHOP"
+     "float_usd": 97800,
+     "symbol": "WYFI"
+    },
+    {
+     "depth_usd": 1000,
+     "float_usd": 94663,
+     "symbol": "WDC"
     }
    ],
    "needs": "liquidity on the USDG pair",
    "rank": 3,
    "served_by": "thin Uniswap pools",
-   "size_usd": 4486411.991357762,
+   "size_usd": 5192514.693134017,
    "source": "depth scanner",
    "subject": "stock tokens that cannot absorb $10k of selling"
   },
@@ -193,31 +193,48 @@
    "blocked_by": [
     "oracle is frozen"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "bf670ea7e2ac",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": null,
-   "measured": "market at 90% utilisation with $29,163,040 borrowed",
+   "measured": "market at 90% utilisation with $29,514,834 borrowed",
    "needs": "more USDG supplied to this market under session rules",
    "rank": 4,
-   "served_by": "Morpho market 0x1efd13a2, $32,292,522 supplied",
-   "size_usd": 3006405.205638782,
+   "served_by": "Morpho market 0x1efd13a2, $32,715,057 supplied",
+   "size_usd": 3015792.8346073115,
    "source": "scorecard gap table",
    "subject": "mGLO"
   },
   {
    "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "d02a4521d8f7",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 2000.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 5,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 1601906.306853629,
+   "source": "scorecard gap table",
+   "subject": "SKHY"
+  },
+  {
+   "blocked_by": [
     "oracle is vault rate only"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "0a2ef5263070",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": null,
-   "measured": "market at 90% utilisation with $11,871,744 borrowed",
+   "measured": "market at 90% utilisation with $8,297,559 borrowed",
    "needs": "more USDG supplied to this market under session rules",
-   "rank": 5,
-   "served_by": "Morpho market 0x0309c02d, $13,180,266 supplied",
-   "size_usd": 1195734.7010150573,
+   "rank": 6,
+   "served_by": "Morpho market 0x0309c02d, $9,214,162 supplied",
+   "size_usd": 834090.2066454265,
    "source": "scorecard gap table",
    "subject": "spUSDG"
   },
@@ -225,24 +242,7 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "d02a4521d8f7",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 6,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 1119555.739202438,
-   "source": "scorecard gap table",
-   "subject": "SKHY"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "f08bb3d812d6",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
@@ -251,7 +251,7 @@
    "rank": 7,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 815644.6832536985,
+   "size_usd": 793885.8593622452,
    "source": "scorecard gap table",
    "subject": "BE"
   },
@@ -259,33 +259,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "b50b3d6c0286",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 8,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 349414.3535041023,
-   "source": "scorecard gap table",
-   "subject": "MRVL"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "d91fc7006f6e",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 9,
+   "rank": 8,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 343477.0075689165,
+   "size_usd": 308433.2533808253,
    "source": "scorecard gap table",
    "subject": "GLXY"
   },
@@ -293,16 +276,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "cac066f1b4c8",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 10,
+   "rank": 9,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 333454.4360486409,
+   "size_usd": 295493.65443885146,
    "source": "scorecard gap table",
    "subject": "PFE"
   },
@@ -310,7 +293,24 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "b50b3d6c0286",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 200.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 10,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 263595.501099084,
+   "source": "scorecard gap table",
+   "subject": "MRVL"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "5107c3b34200",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
@@ -319,7 +319,7 @@
    "rank": 11,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 324417.9384757464,
+   "size_usd": 242761.12639016466,
    "source": "scorecard gap table",
    "subject": "SNAP"
   },
@@ -327,8 +327,8 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "8a097e3c3c38",
+   "days_seen": 8.04,
+   "id": "eabcd7210db7",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -336,41 +336,7 @@
    "rank": 12,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 261943.29987033614,
-   "source": "scorecard gap table",
-   "subject": "NNE"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "b6bbb2142546",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 13,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 254104.77217628696,
-   "source": "scorecard gap table",
-   "subject": "LMT"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "eabcd7210db7",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 14,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 241288.48873937162,
+   "size_usd": 238243.8978763722,
    "source": "scorecard gap table",
    "subject": "JNJ"
   },
@@ -378,84 +344,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "352c37125013",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 15,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 229064.0365072153,
-   "source": "scorecard gap table",
-   "subject": "UPS"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "fd52885aa402",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 16,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 224843.27102287384,
-   "source": "scorecard gap table",
-   "subject": "QUBT"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "3d42e8492069",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 17,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 224681.35784549097,
-   "source": "scorecard gap table",
-   "subject": "BB"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "3eae4a6c5ca4",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 18,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 208352.54020972154,
-   "source": "scorecard gap table",
-   "subject": "BA"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "d23a590bdd84",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 19,
+   "rank": 13,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 206508.22306836446,
+   "size_usd": 232083.00175025125,
    "source": "scorecard gap table",
    "subject": "AVGO"
   },
@@ -463,33 +361,101 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "ce4452d724c6",
+   "days_seen": 8.04,
+   "id": "3d42e8492069",
    "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
+   "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 20,
+   "rank": 14,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 182569.48830432765,
+   "size_usd": 216979.2202686361,
    "source": "scorecard gap table",
-   "subject": "BULL"
+   "subject": "BB"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "fd52885aa402",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 200.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 15,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 207350.73760370023,
+   "source": "scorecard gap table",
+   "subject": "QUBT"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "3eae4a6c5ca4",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 2000.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 16,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 206021.40996947038,
+   "source": "scorecard gap table",
+   "subject": "BA"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "b6bbb2142546",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 2000.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 17,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 201974.52841105612,
+   "source": "scorecard gap table",
+   "subject": "LMT"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "352c37125013",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 2000.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 18,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 190779.3696489881,
+   "source": "scorecard gap table",
+   "subject": "UPS"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "dc7b37045478",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 21,
+   "rank": 19,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 180608.65516472523,
+   "size_usd": 165299.25319582666,
    "source": "scorecard gap table",
    "subject": "FIG"
   },
@@ -497,16 +463,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "dfcff55db447",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 22,
+   "rank": 20,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 158198.25218427496,
+   "size_usd": 164861.51460793964,
    "source": "scorecard gap table",
    "subject": "NET"
   },
@@ -514,30 +480,30 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "82094de8cbb1",
+   "days_seen": 8.04,
+   "id": "ce4452d724c6",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 23,
+   "rank": 21,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 138641.87394780817,
+   "size_usd": 162277.76460009828,
    "source": "scorecard gap table",
-   "subject": "INDA"
+   "subject": "BULL"
   },
   {
    "blocked_by": [],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "cbeaf0921fc0",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": 200000.0,
-   "measured": "market at 100% utilisation with $686,141 borrowed",
+   "measured": "market at 100% utilisation with $691,489 borrowed",
    "needs": "more USDG supplied to this market under session rules",
-   "rank": 24,
-   "served_by": "Morpho market 0x8b16891f, $686,295 supplied",
-   "size_usd": 137074.21973874315,
+   "rank": 22,
+   "served_by": "Morpho market 0x8b16891f, $691,489 supplied",
+   "size_usd": 138297.79922126414,
    "source": "scorecard gap table",
    "subject": "NVDA"
   },
@@ -545,33 +511,78 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "7de038bb4ca2",
+   "days_seen": 8.04,
+   "id": "82094de8cbb1",
    "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
+   "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 25,
+   "rank": 23,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 131884.07387381967,
+   "size_usd": 127386.8964838741,
    "source": "scorecard gap table",
-   "subject": "RCAT"
+   "subject": "INDA"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "38e1066fcd90",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 2000.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 24,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 121409.30426682995,
+   "source": "scorecard gap table",
+   "subject": "DDOG"
+  },
+  {
+   "blocked_by": [],
+   "days_seen": 8.04,
+   "id": "7df30b731726",
+   "kind": "lending_capacity",
+   "max_cap_by_depth_usd": null,
+   "measured": "market at 92% utilisation with $901,821 borrowed",
+   "needs": "more USDG supplied to this market under session rules",
+   "rank": 25,
+   "served_by": "Morpho market 0xaa586d26, $979,034 supplied",
+   "size_usd": 109240.5191028138,
+   "source": "scorecard gap table",
+   "subject": "wsNET"
+  },
+  {
+   "blocked_by": [],
+   "days_seen": 8.04,
+   "id": "f51c79dd111c",
+   "kind": "lending_capacity",
+   "max_cap_by_depth_usd": 20000.0,
+   "measured": "market at 100% utilisation with $518,164 borrowed",
+   "needs": "more USDG supplied to this market under session rules",
+   "rank": 26,
+   "served_by": "Morpho market 0x9b4b47cd, $518,164 supplied",
+   "size_usd": 103632.73473826857,
+   "source": "scorecard gap table",
+   "subject": "SPCX"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "bf4c84e0ab28",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 26,
+   "rank": 27,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 121052.6147115834,
+   "size_usd": 101189.82428941542,
    "source": "scorecard gap table",
    "subject": "NU"
   },
@@ -579,24 +590,7 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "7ec5b9964b70",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 27,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 116256.02732724698,
-   "source": "scorecard gap table",
-   "subject": "WYFI"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "f4f8e5f32de6",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
@@ -605,47 +599,50 @@
    "rank": 28,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 113163.98484246254,
+   "size_usd": 100323.43906787169,
    "source": "scorecard gap table",
    "subject": "SNOW"
-  },
-  {
-   "blocked_by": [],
-   "days_seen": 0.99,
-   "id": "f51c79dd111c",
-   "kind": "lending_capacity",
-   "max_cap_by_depth_usd": 20000.0,
-   "measured": "market at 100% utilisation with $515,802 borrowed",
-   "needs": "more USDG supplied to this market under session rules",
-   "rank": 29,
-   "served_by": "Morpho market 0x9b4b47cd, $515,810 supplied",
-   "size_usd": 103152.39976734624,
-   "source": "scorecard gap table",
-   "subject": "SPCX"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "38e1066fcd90",
+   "days_seen": 8.04,
+   "id": "7ec5b9964b70",
    "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
+   "max_cap_by_depth_usd": 200.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 29,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 98091.52083568396,
+   "source": "scorecard gap table",
+   "subject": "WYFI"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "8affde26d5b1",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
    "rank": 30,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 96169.57268603113,
+   "size_usd": 94662.7433845268,
    "source": "scorecard gap table",
-   "subject": "DDOG"
+   "subject": "WDC"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "eabc93851270",
+   "days_seen": 8.04,
+   "id": "c87031e0c757",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -653,24 +650,7 @@
    "rank": 31,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 90214.81089346498,
-   "source": "scorecard gap table",
-   "subject": "SHOP"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "c87031e0c757",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 32,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 81952.950560235,
+   "size_usd": 88244.20185977695,
    "source": "scorecard gap table",
    "subject": "PENG"
   },
@@ -678,7 +658,24 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "eabc93851270",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 200.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 32,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 84833.41012580437,
+   "source": "scorecard gap table",
+   "subject": "SHOP"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "e37a731f9593",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
@@ -687,7 +684,7 @@
    "rank": 33,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 78879.03328370805,
+   "size_usd": 77640.98354680663,
    "source": "scorecard gap table",
    "subject": "QCOM"
   },
@@ -695,8 +692,8 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "8affde26d5b1",
+   "days_seen": 8.04,
+   "id": "0f5706bc9165",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -704,16 +701,16 @@
    "rank": 34,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 76391.13942663008,
+   "size_usd": 58931.82620529013,
    "source": "scorecard gap table",
-   "subject": "WDC"
+   "subject": "SOXX"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "40cff1027400",
+   "days_seen": 8.04,
+   "id": "12ed77263d08",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -721,16 +718,16 @@
    "rank": 35,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 64106.62671787859,
+   "size_usd": 58786.79270951126,
    "source": "scorecard gap table",
-   "subject": "GE"
+   "subject": "VST"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "0f5706bc9165",
+   "days_seen": 8.04,
+   "id": "40cff1027400",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -738,21 +735,21 @@
    "rank": 36,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 57245.96774868591,
+   "size_usd": 55755.73978764271,
    "source": "scorecard gap table",
-   "subject": "SOXX"
+   "subject": "GE"
   },
   {
    "blocked_by": [],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "9fd7e35d9b47",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": 20000.0,
-   "measured": "market at 100% utilisation with $259,756 borrowed",
+   "measured": "market at 100% utilisation with $260,858 borrowed",
    "needs": "more USDG supplied to this market under session rules",
    "rank": 37,
-   "served_by": "Morpho market 0x7fa81b10, $259,761 supplied",
-   "size_usd": 51946.10839105941,
+   "served_by": "Morpho market 0x7fa81b10, $260,858 supplied",
+   "size_usd": 52171.65381656362,
    "source": "scorecard gap table",
    "subject": "GOOGL"
   },
@@ -760,7 +757,7 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "f83d68e53a64",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 2000.0,
@@ -769,7 +766,7 @@
    "rank": 38,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 48373.75081856492,
+   "size_usd": 48901.92228550079,
    "source": "scorecard gap table",
    "subject": "VTI"
   },
@@ -777,8 +774,8 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "87e1608a5e6a",
+   "days_seen": 8.04,
+   "id": "c7631bb5997e",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -786,38 +783,21 @@
    "rank": 39,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 44588.71594212221,
-   "source": "scorecard gap table",
-   "subject": "ZM"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "c7631bb5997e",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 40,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 41542.63331808349,
+   "size_usd": 40052.71970007844,
    "source": "scorecard gap table",
    "subject": "ON"
   },
   {
    "blocked_by": [],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "39259115548f",
    "kind": "lending_capacity",
    "max_cap_by_depth_usd": 20000.0,
-   "measured": "market at 100% utilisation with $197,385 borrowed",
+   "measured": "market at 100% utilisation with $198,240 borrowed",
    "needs": "more USDG supplied to this market under session rules",
-   "rank": 41,
-   "served_by": "Morpho market 0xdeb4782d, $197,390 supplied",
-   "size_usd": 39472.06759055222,
+   "rank": 40,
+   "served_by": "Morpho market 0xdeb4782d, $198,240 supplied",
+   "size_usd": 39647.904080182605,
    "source": "scorecard gap table",
    "subject": "AAPL"
   },
@@ -825,7 +805,24 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "87e1608a5e6a",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 200.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 41,
+   "served_by": "nothing",
+   "size_confidence": "ok",
+   "size_usd": 37462.05778307923,
+   "source": "scorecard gap table",
+   "subject": "ZM"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "f9ee8746697f",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
@@ -834,7 +831,7 @@
    "rank": 42,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 37988.54433595527,
+   "size_usd": 36156.98997169649,
    "source": "scorecard gap table",
    "subject": "RUN"
   },
@@ -842,25 +839,25 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "0dc56dd3bb2f",
+   "days_seen": 8.04,
+   "id": "ee480d6f6952",
    "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 2000.0,
+   "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
    "rank": 43,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 36194.86831998782,
+   "size_usd": 31995.301983840403,
    "source": "scorecard gap table",
-   "subject": "CEG"
+   "subject": "CRM"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "5a1e0c3a443b",
+   "days_seen": 8.04,
+   "id": "69f548226dd0",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -868,32 +865,32 @@
    "rank": 44,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 35764.19266140168,
+   "size_usd": 30595.18187219886,
    "source": "scorecard gap table",
-   "subject": "ASTS"
+   "subject": "HPE"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "bff7ae1a8817",
+   "days_seen": 8.04,
+   "id": "0dc56dd3bb2f",
    "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
+   "max_cap_by_depth_usd": 2000.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
    "rank": 45,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 35689.184502699405,
+   "size_usd": 30527.44111535302,
    "source": "scorecard gap table",
-   "subject": "IREN"
+   "subject": "CEG"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "2401da97e97e",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
@@ -902,7 +899,7 @@
    "rank": 46,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 32855.077061458585,
+   "size_usd": 30459.038053173786,
    "source": "scorecard gap table",
    "subject": "WDAY"
   },
@@ -910,7 +907,7 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "f138fac13aa6",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
@@ -919,7 +916,7 @@
    "rank": 47,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 32188.41227013018,
+   "size_usd": 25708.54386025544,
    "source": "scorecard gap table",
    "subject": "CCL"
   },
@@ -927,8 +924,8 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "69f548226dd0",
+   "days_seen": 8.04,
+   "id": "0e7e26ef4a0b",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -936,24 +933,7 @@
    "rank": 48,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 28538.593952471867,
-   "source": "scorecard gap table",
-   "subject": "HPE"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
-   "id": "0e7e26ef4a0b",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 49,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 27525.387366956467,
+   "size_usd": 25324.12373510325,
    "source": "scorecard gap table",
    "subject": "PATH"
   },
@@ -961,33 +941,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "abcdb076ebba",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 50,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 23143.27661221335,
-   "source": "scorecard gap table",
-   "subject": "XOM"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "fdc21f584589",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 51,
+   "rank": 49,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 20217.87036147255,
+   "size_usd": 13971.611024656333,
    "source": "scorecard gap table",
    "subject": "P"
   },
@@ -995,33 +958,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "a5fd8bfffdce",
-   "kind": "unlisted_collateral",
-   "max_cap_by_depth_usd": 200.0,
-   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
-   "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 52,
-   "served_by": "nothing",
-   "size_confidence": "ok",
-   "size_usd": 17254.274239041635,
-   "source": "scorecard gap table",
-   "subject": "FLY"
-  },
-  {
-   "blocked_by": [
-    "no Chainlink feed"
-   ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "fcfab2b788ab",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 53,
+   "rank": 50,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 17227.156993566892,
+   "size_usd": 13122.128122441138,
    "source": "scorecard gap table",
    "subject": "ELF"
   },
@@ -1029,33 +975,50 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "6b7291e64bda",
+   "days_seen": 8.04,
+   "id": "475a22ffbf06",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 200.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 54,
+   "rank": 51,
    "served_by": "nothing",
    "size_confidence": "ok",
-   "size_usd": 14322.97535515794,
+   "size_usd": 7960.661635150027,
    "source": "scorecard gap table",
-   "subject": "CVNA"
+   "subject": "KSS"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "8a097e3c3c38",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 20.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 52,
+   "served_by": "nothing",
+   "size_confidence": "low: price rests on a pool that cannot absorb $1k",
+   "size_usd": 223265.26205462002,
+   "source": "scorecard gap table",
+   "subject": "NNE"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
    "id": "e50a686d4709",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 55,
+   "rank": 53,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 199381.835449566,
+   "size_usd": 155495.89324569335,
    "source": "scorecard gap table",
    "subject": "LITE"
   },
@@ -1063,16 +1026,16 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "274aaebf0671",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 56,
+   "rank": 54,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 127508.74197790743,
+   "size_usd": 127809.67733692267,
    "source": "scorecard gap table",
    "subject": "SMH"
   },
@@ -1080,33 +1043,33 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "3a6ec27bac22",
+   "days_seen": 8.04,
+   "id": "7de038bb4ca2",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 57,
+   "rank": 55,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 114885.93292658754,
+   "size_usd": 107904.44430770939,
    "source": "scorecard gap table",
-   "subject": "CBRS"
+   "subject": "RCAT"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "862d30f23b42",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
    "needs": "a lending market with a real feed and enough depth to liquidate",
-   "rank": 58,
+   "rank": 56,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 95449.54607015025,
+   "size_usd": 104636.7386636578,
    "source": "scorecard gap table",
    "subject": "AMAT"
   },
@@ -1114,8 +1077,42 @@
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "12ed77263d08",
+   "days_seen": 8.04,
+   "id": "bff7ae1a8817",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 20.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 57,
+   "served_by": "nothing",
+   "size_confidence": "low: price rests on a pool that cannot absorb $1k",
+   "size_usd": 80440.2107812481,
+   "source": "scorecard gap table",
+   "subject": "IREN"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "3a6ec27bac22",
+   "kind": "unlisted_collateral",
+   "max_cap_by_depth_usd": 20.0,
+   "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
+   "needs": "a lending market with a real feed and enough depth to liquidate",
+   "rank": 58,
+   "served_by": "nothing",
+   "size_confidence": "low: price rests on a pool that cannot absorb $1k",
+   "size_usd": 76561.52449318206,
+   "source": "scorecard gap table",
+   "subject": "CBRS"
+  },
+  {
+   "blocked_by": [
+    "no Chainlink feed"
+   ],
+   "days_seen": 8.04,
+   "id": "1bd7bd29b707",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -1123,16 +1120,16 @@
    "rank": 59,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 57960.23261913887,
+   "size_usd": 49528.38388101147,
    "source": "scorecard gap table",
-   "subject": "VST"
+   "subject": "SOFI"
   },
   {
    "blocked_by": [
     "no Chainlink feed"
    ],
-   "days_seen": 0.99,
-   "id": "1bd7bd29b707",
+   "days_seen": 8.04,
+   "id": "261b6b4c160c",
    "kind": "unlisted_collateral",
    "max_cap_by_depth_usd": 20.0,
    "measured": "on-chain float of a stock token with no lending market (an upper bound on borrowable collateral, not borrow demand)",
@@ -1140,520 +1137,497 @@
    "rank": 60,
    "served_by": "nothing",
    "size_confidence": "low: price rests on a pool that cannot absorb $1k",
-   "size_usd": 49122.24328636227,
+   "size_usd": 40200.38559259889,
    "source": "scorecard gap table",
-   "subject": "SOFI"
+   "subject": "ADBE"
   }
  ],
  "inputs": {
-  "oracle_audit_block": 81603785,
-  "prices_block": 81799916,
-  "scorecard_ts": 1791306366
+  "oracle_audit_block": 87727403,
+  "prices_block": 87727322,
+  "scorecard_ts": 1791915999
  },
  "kind": "opportunities",
- "ledger_file": "2026-10-06_ab691a371448b3d5.json",
+ "ledger_file": "2026-10-13_e9d0c0753d0124c7.json",
  "method": null,
  "risks": [
   {
-   "days_seen": 0.91,
+   "days_seen": 7.96,
    "id": "3364421b3eb0",
    "kind": "oracle_fixed_with_delayed_backup",
-   "measured": "$317,460,302 borrowed at 91.5% loan-to-value; priced at a fixed 1.0; a live feed takes over only after a 0.5% gap lasts 16 hours and someone triggers it",
+   "measured": "$323,612,029 borrowed at 91.5% loan-to-value; priced at a fixed 1.0; a live feed takes over only after a 0.5% gap lasts 16 hours and someone triggers it",
    "needs": "watch; no exposure (draft rail)",
    "rank": 1,
    "review": "reviewed by a person",
    "served_by": "existing Morpho market",
-   "size_usd": 317460302.3191578,
+   "size_usd": 323612028.8535442,
    "source": "oracle audit",
    "subject": "USDe/USDG 0xc845da65"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "c029981d6e77",
    "kind": "oracle_unlisted_feed",
-   "measured": "$120,126,164 borrowed at 91.5% loan-to-value; oracle price 1.013676037068136; moved in 7 days: True",
+   "measured": "$121,361,065 borrowed at 91.5% loan-to-value; oracle price 1.0146345946251398; moved in 7 days: True",
    "needs": "watch; no exposure (draft rail)",
    "rank": 2,
    "review": "confirmed by verified contract name",
    "served_by": "existing Morpho market",
-   "size_usd": 120126163.73820694,
+   "size_usd": 121361064.59567606,
    "source": "oracle audit",
    "subject": "syrupUSDG/USDG 0x919a9b6b"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "98b12827a3d3",
    "kind": "oracle_frozen",
-   "measured": "$29,158,997 borrowed at 91.5% loan-to-value; oracle price 0.94542037; moved in 7 days: False",
+   "measured": "$29,514,834 borrowed at 91.5% loan-to-value; oracle price 0.94542037; moved in 7 days: False",
    "needs": "watch; no exposure (draft rail)",
    "rank": 3,
    "review": "confirmed by verified contract name",
    "served_by": "existing Morpho market",
-   "size_usd": 29158996.500861593,
+   "size_usd": 29514833.773859426,
    "source": "oracle audit",
    "subject": "mGLO/USDG 0x1efd13a2"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "f9c476c5cc16",
    "kind": "oracle_vault_rate_only",
-   "measured": "$11,870,277 borrowed at 91.5% loan-to-value; oracle price 1.01008831; moved in 7 days: True",
+   "measured": "$8,297,559 borrowed at 91.5% loan-to-value; oracle price 1.01081592; moved in 7 days: True",
    "needs": "watch; no exposure (draft rail)",
    "rank": 4,
-   "review": "confirmed by verified contract name",
+   "review": "below review threshold",
    "served_by": "existing Morpho market",
-   "size_usd": 11870276.838517137,
+   "size_usd": 8297559.0207319325,
    "source": "oracle audit",
    "subject": "spUSDG/USDG 0x0309c02d"
   },
   {
-   "days_seen": 0.99,
-   "id": "0d1bd6e0de35",
-   "kind": "oracle_off_market",
-   "measured": "$660,112 borrowed at 62.5% loan-to-value; oracle price 843.0743944745211; moved in 7 days: True",
+   "days_seen": 8.04,
+   "id": "b19056e3606a",
+   "kind": "oracle_unlisted_feed",
+   "measured": "$26,149 borrowed at 38.5% loan-to-value; oracle price 0.30444175707781174; moved in 7 days: True",
    "needs": "watch; no exposure (draft rail)",
    "rank": 5,
    "review": "below review threshold",
    "served_by": "existing Morpho market",
-   "size_usd": 660112.3942120478,
-   "source": "oracle audit",
-   "subject": "wsNET/USDG 0xaa586d26"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "b19056e3606a",
-   "kind": "oracle_unlisted_feed",
-   "measured": "$35,522 borrowed at 38.5% loan-to-value; oracle price 0.39465365232443117; moved in 7 days: True",
-   "needs": "watch; no exposure (draft rail)",
-   "rank": 6,
-   "review": "below review threshold",
-   "served_by": "existing Morpho market",
-   "size_usd": 35521.570297929655,
+   "size_usd": 26149.087918472404,
    "source": "oracle audit",
    "subject": "PONS/USDG 0xaba3ac50"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "235338ec5008",
    "kind": "oracle_unlisted_feed",
-   "measured": "$23,182 borrowed at 62.5% loan-to-value; oracle price 0.3918; moved in 7 days: True",
+   "measured": "$20,939 borrowed at 62.5% loan-to-value; oracle price 0.3074; moved in 7 days: True",
    "needs": "watch; no exposure (draft rail)",
-   "rank": 7,
+   "rank": 6,
    "review": "below review threshold",
    "served_by": "existing Morpho market",
-   "size_usd": 23182.451638102684,
+   "size_usd": 20938.7069814084,
    "source": "oracle audit",
    "subject": "PONS/USDG 0x1a31d1c8"
   }
  ],
  "totals": {
-  "gap_usd": 36708224,
+  "gap_usd": 39255453,
   "gaps": 102,
-  "risk_usd": 479334556,
-  "risks": 7,
-  "unexplained": 40
+  "risk_usd": 482832574,
+  "risks": 6,
+  "unexplained": 39
  },
- "ts": 1791307011,
+ "ts": 1791916412,
  "unexplained": [
   {
-   "days_seen": 0.99,
-   "id": "0485ba02bc5c",
-   "kind": "unknown_contract",
-   "measured": "643626 logs across 3 event types in blocks 80863362-81795065",
-   "rank": 1,
-   "size_share": 0.02905,
-   "source": "census",
-   "subject": "0xb92fe925DC43a0ECdE6c8b1a2709c170Ec4fFf4f"
-  },
-  {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "b0f616f997fd",
    "kind": "unnamed_event",
-   "measured": "418179 logs from 2 contracts",
-   "rank": 2,
-   "size_share": 0.01887,
+   "measured": "3484729 logs from 3 contracts",
+   "rank": 1,
+   "size_share": 0.0242,
    "source": "census",
    "subject": "0x29e088dffd7bf6815d088137a59f364d6747163baa7ff4bc47f316a1ad1b9586"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
+   "id": "0485ba02bc5c",
+   "kind": "unknown_contract",
+   "measured": "3321968 logs across 3 event types in blocks 80863362-87726682",
+   "rank": 2,
+   "size_share": 0.02307,
+   "source": "census",
+   "subject": "0xb92fe925DC43a0ECdE6c8b1a2709c170Ec4fFf4f"
+  },
+  {
+   "days_seen": 8.04,
    "id": "a26a20d95ac7",
    "kind": "unknown_contract",
-   "measured": "312800 logs across 2 event types in blocks 80863362-81795065",
+   "measured": "2753451 logs across 4 event types in blocks 80863362-87726682",
    "rank": 3,
-   "size_share": 0.01412,
+   "size_share": 0.01912,
    "source": "census",
    "subject": "0x30a88bf894D1b806125a23ebf23D715496fD7102"
   },
   {
-   "days_seen": 0.99,
-   "id": "9fdc30229204",
-   "kind": "unknown_contract",
-   "measured": "255372 logs across 4 event types in blocks 80863362-81795065",
-   "rank": 4,
-   "size_share": 0.01152,
-   "source": "census",
-   "subject": "0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "2b4d779f9a0d",
-   "kind": "unknown_contract",
-   "measured": "248528 logs across 4 event types in blocks 80863362-81795065",
-   "rank": 5,
-   "size_share": 0.01122,
-   "source": "census",
-   "subject": "0xE5e702641Ea86F4ae6cC3cDaeD2B886f976Be044"
-  },
-  {
-   "days_seen": 0.86,
-   "id": "b0acfa6067fe",
-   "kind": "failing_intent",
-   "measured": "sell fails 100% of 3917 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 6,
-   "size_share": 0.00964,
-   "source": "intent sampler",
-   "subject": "0xc67437361c303048C61268f167ff77D7C3D8A03b:0xd04c6983"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "2dbbf8cf5155",
-   "kind": "unknown_contract",
-   "measured": "204194 logs across 5 event types in blocks 80863362-81795065",
-   "rank": 7,
-   "size_share": 0.00922,
-   "source": "census",
-   "subject": "0x8F10B468b06c6FD214B65F87778827F7D113f996"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "2c3efc943912",
-   "kind": "unknown_contract",
-   "measured": "199915 logs across 3 event types in blocks 80863362-81795065",
-   "rank": 8,
-   "size_share": 0.00902,
-   "source": "census",
-   "subject": "0x0da5899dbB36Bd741885D4228f04cD9c6304FC56"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "0e76546f072c",
-   "kind": "unknown_contract",
-   "measured": "170235 logs across 3 event types in blocks 80863362-81795065",
-   "rank": 9,
-   "size_share": 0.00768,
-   "source": "census",
-   "subject": "0x65050A9b7E5075A2bA5cED7b1b64EE66262c40Dc"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "eebe0aff7d7a",
-   "kind": "unknown_contract",
-   "measured": "155982 logs across 1 event types in blocks 80863362-81795065",
-   "rank": 10,
-   "size_share": 0.00704,
-   "source": "census",
-   "subject": "0xCcC88a9d1B4ED6b0EABA998850414b24f1c315bE"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "c198e979b38f",
-   "kind": "unknown_contract",
-   "measured": "147208 logs across 6 event types in blocks 80863362-81795065",
-   "rank": 11,
-   "size_share": 0.00664,
-   "source": "census",
-   "subject": "0x4337084D9E255Ff0702461CF8895CE9E3b5Ff108"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "13706edb9088",
-   "kind": "unknown_contract",
-   "measured": "131711 logs across 7 event types in blocks 80863362-81795065",
-   "rank": 12,
-   "size_share": 0.00594,
-   "source": "census",
-   "subject": "0x6e2A35A7AD683cF634D91492d73bb7FF774c6919"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "1095b0ce39ad",
-   "kind": "unknown_contract",
-   "measured": "121848 logs across 3 event types in blocks 80863362-81795065",
-   "rank": 13,
-   "size_share": 0.0055,
-   "source": "census",
-   "subject": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
-  },
-  {
-   "days_seen": 0.6,
-   "id": "c3ed51d1d675",
-   "kind": "unknown_contract",
-   "measured": "117883 logs across 1 event types in blocks 80863362-81795065",
-   "rank": 14,
-   "size_share": 0.00532,
-   "source": "census",
-   "subject": "0xE844701934D9C6085B292e428F41b911cC0b3872"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "0e0b0432a076",
-   "kind": "unknown_contract",
-   "measured": "98217 logs across 3 event types in blocks 80863362-81795065",
-   "rank": 15,
-   "size_share": 0.00443,
-   "source": "census",
-   "subject": "0x4cD00E387622C35bDDB9b4c962C136462338BC31"
-  },
-  {
-   "days_seen": 0.99,
+   "days_seen": 8.04,
    "id": "cc72a8a33b97",
    "kind": "unnamed_event",
-   "measured": "88607 logs from 48 contracts",
-   "rank": 16,
-   "size_share": 0.004,
+   "measured": "1991560 logs from 52 contracts",
+   "rank": 4,
+   "size_share": 0.01383,
    "source": "census",
    "subject": "0x3882913cc68f82c89cce1c0bf8531b426601a2ff3ac7c382f47bed684295b2f8"
   },
   {
-   "days_seen": 0.99,
-   "id": "809b2ad89f81",
+   "days_seen": 8.04,
+   "id": "9fdc30229204",
    "kind": "unknown_contract",
-   "measured": "86229 logs across 7 event types in blocks 80863362-81795065",
-   "rank": 17,
-   "size_share": 0.00389,
+   "measured": "1254131 logs across 4 event types in blocks 80863362-87726682",
+   "rank": 5,
+   "size_share": 0.00871,
    "source": "census",
-   "subject": "0x4e3468951D49f2EEa976eD0D6e75fFCb44a9a544"
+   "subject": "0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"
   },
   {
-   "days_seen": 0.99,
-   "id": "0a414f5b11ef",
+   "days_seen": 8.04,
+   "id": "2b4d779f9a0d",
    "kind": "unknown_contract",
-   "measured": "85476 logs across 11 event types in blocks 80863362-81795065",
-   "rank": 18,
-   "size_share": 0.00386,
+   "measured": "1179307 logs across 5 event types in blocks 80863362-87726682",
+   "rank": 6,
+   "size_share": 0.00819,
    "source": "census",
-   "subject": "0x8Bb2649f32645579725344871178002bCC6959b9"
+   "subject": "0xE5e702641Ea86F4ae6cC3cDaeD2B886f976Be044"
   },
   {
-   "days_seen": 0.72,
-   "id": "e6f24548a4bd",
-   "kind": "failing_intent",
-   "measured": "0xa6bad267 fails 100% of 1324 sampled calls (chain base rate 14%) on a not in census contract",
-   "rank": 19,
-   "size_share": 0.00326,
-   "source": "intent sampler",
-   "subject": "0xaD1a0FaDadBB025Fc2b2b50704F6Cbfb415F8e66:0xa6bad267"
+   "days_seen": 8.04,
+   "id": "2c3efc943912",
+   "kind": "unknown_contract",
+   "measured": "1026483 logs across 3 event types in blocks 80863362-87726682",
+   "rank": 7,
+   "size_share": 0.00713,
+   "source": "census",
+   "subject": "0x0da5899dbB36Bd741885D4228f04cD9c6304FC56"
   },
   {
-   "days_seen": 0.91,
-   "id": "cd37c4895b7c",
-   "kind": "failing_intent",
-   "measured": "fulfillBasicOrder_efficient_6GL6yc fails 100% of 1276 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 20,
-   "size_share": 0.00314,
-   "source": "intent sampler",
-   "subject": "0xb740DDD49Fe7Ea291843C0Ab01d5b088f2767798:0x00000000"
+   "days_seen": 8.04,
+   "id": "2dbbf8cf5155",
+   "kind": "unknown_contract",
+   "measured": "1016571 logs across 5 event types in blocks 80863362-87726682",
+   "rank": 8,
+   "size_share": 0.00706,
+   "source": "census",
+   "subject": "0x8F10B468b06c6FD214B65F87778827F7D113f996"
   },
   {
-   "days_seen": 0.94,
-   "id": "510d371f3959",
-   "kind": "failing_intent",
-   "measured": "multicallN2M_001Taw5z fails 88% of 1310 sampled calls (chain base rate 14%) on a not in census contract",
-   "rank": 21,
-   "size_share": 0.00284,
-   "source": "intent sampler",
-   "subject": "0x9c860261d3B8072aBF21c4b8a94a6b25599C4B55:0x00000001"
+   "days_seen": 8.04,
+   "id": "0e76546f072c",
+   "kind": "unknown_contract",
+   "measured": "967999 logs across 4 event types in blocks 80863362-87726682",
+   "rank": 9,
+   "size_share": 0.00672,
+   "source": "census",
+   "subject": "0x65050A9b7E5075A2bA5cED7b1b64EE66262c40Dc"
   },
   {
-   "days_seen": 0.38,
-   "id": "2030234192d0",
-   "kind": "failing_intent",
-   "measured": "mintPublic fails 33% of 3370 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 22,
-   "size_share": 0.00274,
-   "source": "intent sampler",
-   "subject": "0x00005EA00Ac477B1030CE78506496e8C2dE24bf5:0x161ac21f"
+   "days_seen": 8.04,
+   "id": "13706edb9088",
+   "kind": "unknown_contract",
+   "measured": "967535 logs across 7 event types in blocks 80863362-87726682",
+   "rank": 10,
+   "size_share": 0.00672,
+   "source": "census",
+   "subject": "0x6e2A35A7AD683cF634D91492d73bb7FF774c6919"
   },
   {
-   "days_seen": 0.98,
-   "id": "f4dc9d38fb97",
-   "kind": "failing_intent",
-   "measured": "getRich fails 93% of 1197 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 23,
-   "size_share": 0.00273,
-   "source": "intent sampler",
-   "subject": "0xB0550000024e2810b8e9E7b81b86dF4aC5a3D5E0:0x40e5c1ee"
+   "days_seen": 8.04,
+   "id": "eebe0aff7d7a",
+   "kind": "unknown_contract",
+   "measured": "805919 logs across 1 event types in blocks 80863362-87726682",
+   "rank": 11,
+   "size_share": 0.0056,
+   "source": "census",
+   "subject": "0xCcC88a9d1B4ED6b0EABA998850414b24f1c315bE"
   },
   {
-   "days_seen": 0.99,
+   "days_seen": 7.65,
+   "id": "c3ed51d1d675",
+   "kind": "unknown_contract",
+   "measured": "799817 logs across 3 event types in blocks 80863362-87726682",
+   "rank": 12,
+   "size_share": 0.00555,
+   "source": "census",
+   "subject": "0xE844701934D9C6085B292e428F41b911cC0b3872"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "1095b0ce39ad",
+   "kind": "unknown_contract",
+   "measured": "719971 logs across 3 event types in blocks 80863362-87726682",
+   "rank": 13,
+   "size_share": 0.005,
+   "source": "census",
+   "subject": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
+  },
+  {
+   "days_seen": 8.04,
    "id": "41b80eb24f93",
    "kind": "failing_intent",
-   "measured": "0x000000e7 fails 41% of 2636 sampled calls (chain base rate 14%) on a not in census contract",
-   "rank": 24,
-   "size_share": 0.00265,
+   "measured": "0x000000e7 fails 42% of 37367 sampled calls (chain base rate 17%) on a not in census contract",
+   "rank": 14,
+   "size_share": 0.00493,
    "source": "intent sampler",
    "subject": "0xc33AcC93942105c57602e59E8E448C20ba718a85:0x000000e7"
   },
   {
-   "days_seen": 0.98,
-   "id": "af57941d561b",
-   "kind": "failing_intent",
-   "measured": "execute fails 87% of 1185 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 25,
-   "size_share": 0.00254,
-   "source": "intent sampler",
-   "subject": "0xA7DfEBDDCb3dE3D74F729AC3e75E2592E77c4645:0x09c5eabe"
+   "days_seen": 8.04,
+   "id": "c198e979b38f",
+   "kind": "unknown_contract",
+   "measured": "688100 logs across 7 event types in blocks 80863362-87726682",
+   "rank": 15,
+   "size_share": 0.00478,
+   "source": "census",
+   "subject": "0x4337084D9E255Ff0702461CF8895CE9E3b5Ff108"
   },
   {
-   "days_seen": 0.26,
+   "days_seen": 5.24,
+   "id": "3ac937bbaf9a",
+   "kind": "failing_intent",
+   "measured": "0xa86854fc fails 100% of 12927 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 16,
+   "size_share": 0.00404,
+   "source": "intent sampler",
+   "subject": "0x3Af49c05E1ed3Ae8Ac7242C25ed4a1aA2a736e26:0xa86854fc"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "809b2ad89f81",
+   "kind": "unknown_contract",
+   "measured": "541271 logs across 7 event types in blocks 80863362-87726682",
+   "rank": 17,
+   "size_share": 0.00376,
+   "source": "census",
+   "subject": "0x4e3468951D49f2EEa976eD0D6e75fFCb44a9a544"
+  },
+  {
+   "days_seen": 6.88,
+   "id": "2f22b040538b",
+   "kind": "unknown_contract",
+   "measured": "534935 logs across 8 event types in blocks 80863362-87726682",
+   "rank": 18,
+   "size_share": 0.00371,
+   "source": "census",
+   "subject": "0x00005EA00Ac477B1030CE78506496e8C2dE24bf5"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "0e0b0432a076",
+   "kind": "unknown_contract",
+   "measured": "529278 logs across 3 event types in blocks 80863362-87726682",
+   "rank": 19,
+   "size_share": 0.00368,
+   "source": "census",
+   "subject": "0x4cD00E387622C35bDDB9b4c962C136462338BC31"
+  },
+  {
+   "days_seen": 7.31,
    "id": "76b7b1a1253a",
    "kind": "failing_intent",
-   "measured": "0x3d3ddae3 fails 89% of 1126 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 26,
-   "size_share": 0.00247,
+   "measured": "0x3d3ddae3 fails 96% of 12128 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 20,
+   "size_share": 0.00365,
    "source": "intent sampler",
    "subject": "0x5527CA3b80252636830dBCb1713739070C6BA5b8:0x3d3ddae3"
   },
   {
-   "days_seen": 0.99,
-   "id": "a1f806b7f41b",
-   "kind": "unnamed_event",
-   "measured": "51338 logs from 10 contracts",
-   "rank": 27,
-   "size_share": 0.00232,
-   "source": "census",
-   "subject": "anon"
+   "days_seen": 6.49,
+   "id": "99eaeceaf036",
+   "kind": "failing_intent",
+   "measured": "buy fails 100% of 9541 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 21,
+   "size_share": 0.00298,
+   "source": "intent sampler",
+   "subject": "0x2670a033b9Dc143863B3F231F3D0B1f812EE0377:0x76165adf"
   },
   {
-   "days_seen": 0.98,
+   "days_seen": 7.96,
+   "id": "cd37c4895b7c",
+   "kind": "failing_intent",
+   "measured": "fulfillBasicOrder_efficient_6GL6yc fails 100% of 9275 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 22,
+   "size_share": 0.0029,
+   "source": "intent sampler",
+   "subject": "0xb740DDD49Fe7Ea291843C0Ab01d5b088f2767798:0x00000000"
+  },
+  {
+   "days_seen": 8.04,
    "id": "b9abdc60325b",
    "kind": "failing_intent",
-   "measured": "0x00bbeac2 fails 84% of 1069 sampled calls (chain base rate 14%) on a not in census contract",
-   "rank": 28,
-   "size_share": 0.0022,
+   "measured": "0x00bbeac2 fails 86% of 9674 sampled calls (chain base rate 17%) on a not in census contract",
+   "rank": 23,
+   "size_share": 0.00259,
    "source": "intent sampler",
    "subject": "0x6c9c7c9cB0995b018CB19065Db44f85DA39c16Af:0x00bbeac2"
   },
   {
-   "days_seen": 0.3,
-   "id": "ba91a7f9f566",
+   "days_seen": 5.41,
+   "id": "ed237497fb2e",
    "kind": "failing_intent",
-   "measured": "0x01000000 fails 100% of 798 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 29,
-   "size_share": 0.00196,
+   "measured": "execute fails 83% of 9516 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 24,
+   "size_share": 0.00246,
    "source": "intent sampler",
-   "subject": "0xD027e286bc041a5BA6E7213C35F2AFe96A81146b:0x01000000"
+   "subject": "0xa8f012FaAc1c999fa6EE47E4b00C1eEa62D35ecB:0x09c5eabe"
   },
   {
-   "days_seen": 0.68,
+   "days_seen": 1.82,
+   "id": "f74a0d7ee436",
+   "kind": "failing_intent",
+   "measured": "0x3d3ddae3 fails 96% of 8016 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 25,
+   "size_share": 0.00241,
+   "source": "intent sampler",
+   "subject": "0x103b52a624dE94BDF0B9739aE5B5971ff1071809:0x3d3ddae3"
+  },
+  {
+   "days_seen": 6.92,
+   "id": "c3711bd8a88d",
+   "kind": "failing_intent",
+   "measured": "0x4c731aa3 fails 100% of 6611 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 26,
+   "size_share": 0.00206,
+   "source": "intent sampler",
+   "subject": "0x7316855af247c0BdaF80dB7b84cef3899BBf86bE:0x4c731aa3"
+  },
+  {
+   "days_seen": 6.11,
+   "id": "f37464af2e4d",
+   "kind": "failing_intent",
+   "measured": "0x4c731aa3 fails 100% of 6365 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 27,
+   "size_share": 0.00199,
+   "source": "intent sampler",
+   "subject": "0xBEAD7fe05EE33bE325CEDb53cc2BF0430324A4D6:0x4c731aa3"
+  },
+  {
+   "days_seen": 2.27,
+   "id": "7cf599ba43a3",
+   "kind": "failing_intent",
+   "measured": "0xc7824358 fails 100% of 6291 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 28,
+   "size_share": 0.00196,
+   "source": "intent sampler",
+   "subject": "0xd7572F7Ed161D3c46Ca86d7da52d94d4B2d104a9:0xc7824358"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "a1f806b7f41b",
+   "kind": "unnamed_event",
+   "measured": "269702 logs from 17 contracts",
+   "rank": 29,
+   "size_share": 0.00187,
+   "source": "census",
+   "subject": "anon"
+  },
+  {
+   "days_seen": 1.45,
+   "id": "d015858ecdcd",
+   "kind": "failing_intent",
+   "measured": "fulfillBasicOrder_efficient_6GL6yc fails 80% of 7115 sampled calls (chain base rate 17%) on a not in census contract",
+   "rank": 30,
+   "size_share": 0.00178,
+   "source": "intent sampler",
+   "subject": "0x62FC80823e766e4Cc7ccE3ca745d6Bb39fbcF4cA:0x00000000"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "f4dc9d38fb97",
+   "kind": "failing_intent",
+   "measured": "getRich fails 95% of 5456 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 31,
+   "size_share": 0.00162,
+   "source": "intent sampler",
+   "subject": "0xB0550000024e2810b8e9E7b81b86dF4aC5a3D5E0:0x40e5c1ee"
+  },
+  {
+   "days_seen": 7.73,
    "id": "395be2ce8477",
    "kind": "failing_intent",
-   "measured": "0xe8eece3e fails 100% of 661 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 30,
-   "size_share": 0.00163,
+   "measured": "0xe8eece3e fails 100% of 4925 sampled calls (chain base rate 17%) on a unknown contract",
+   "rank": 32,
+   "size_share": 0.00154,
    "source": "intent sampler",
    "subject": "0x3Af49c05E1ed3Ae8Ac7242C25ed4a1aA2a736e26:0xe8eece3e"
   },
   {
-   "days_seen": 0.99,
-   "id": "a3927a3c4ed3",
-   "kind": "unnamed_event",
-   "measured": "33389 logs from 4 contracts",
-   "rank": 31,
-   "size_share": 0.00151,
-   "source": "census",
-   "subject": "0x2ed5a8749a7e3a68a074750cc77850912a0708dc62ab7ea42b0c3e5beb36f017"
-  },
-  {
-   "days_seen": 0.94,
-   "id": "a10559bf4bea",
-   "kind": "failing_intent",
-   "measured": "fiverFiver_gwnqirj fails 100% of 588 sampled calls (chain base rate 14%) on a not in census contract",
-   "rank": 32,
-   "size_share": 0.00144,
-   "source": "intent sampler",
-   "subject": "0x1DBe78ED0206045925B63b549FC630f8efa136C1:0x00000005"
-  },
-  {
-   "days_seen": 0.72,
-   "id": "4bb0fb53c7fd",
-   "kind": "failing_intent",
-   "measured": "scan fails 100% of 569 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 33,
-   "size_share": 0.0014,
-   "source": "intent sampler",
-   "subject": "0x9128dD09404CD8dC32f0a240Aa5E16472c7360E8:0x7ccc3ebc"
-  },
-  {
-   "days_seen": 0.13,
-   "id": "a8dbb528f4b3",
-   "kind": "failing_intent",
-   "measured": "executeArb fails 98% of 576 sampled calls (chain base rate 14%) on a unknown contract",
-   "rank": 34,
-   "size_share": 0.00138,
-   "source": "intent sampler",
-   "subject": "0x9a347448BBb745abAa8CbfdD1990a08c7D5b89E5:0x5fa6519d"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "a312c53f4016",
-   "kind": "unnamed_event",
-   "measured": "26753 logs from 7 contracts",
-   "rank": 35,
-   "size_share": 0.00121,
-   "source": "census",
-   "subject": "0x56441808e0dc590c63862fb3c0c914bff286fc67b3983cd294eb33e21cca326e"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "47438aa06605",
-   "kind": "unnamed_event",
-   "measured": "25087 logs from 3 contracts",
-   "rank": 36,
-   "size_share": 0.00113,
-   "source": "census",
-   "subject": "0x321ae10f17e879f1edb9b9cf44e3d8ba26c2dba15b6d985faf2fe32955675595"
-  },
-  {
-   "days_seen": 0.98,
+   "days_seen": 8.04,
    "id": "ce86313c1f53",
    "kind": "unnamed_event",
-   "measured": "25073 logs from 2 contracts",
-   "rank": 37,
-   "size_share": 0.00113,
+   "measured": "191367 logs from 2 contracts",
+   "rank": 33,
+   "size_share": 0.00133,
    "source": "census",
    "subject": "0xa52dde41e65e83453d9899cd60c95c5901aee5fb93bdba32c04c04516597b1cb"
   },
   {
-   "days_seen": 0.09,
+   "days_seen": 8.04,
+   "id": "a3927a3c4ed3",
+   "kind": "unnamed_event",
+   "measured": "186113 logs from 4 contracts",
+   "rank": 34,
+   "size_share": 0.00129,
+   "source": "census",
+   "subject": "0x2ed5a8749a7e3a68a074750cc77850912a0708dc62ab7ea42b0c3e5beb36f017"
+  },
+  {
+   "days_seen": 8.04,
+   "id": "a312c53f4016",
+   "kind": "unnamed_event",
+   "measured": "139908 logs from 7 contracts",
+   "rank": 35,
+   "size_share": 0.00097,
+   "source": "census",
+   "subject": "0x56441808e0dc590c63862fb3c0c914bff286fc67b3983cd294eb33e21cca326e"
+  },
+  {
+   "days_seen": 7.69,
+   "id": "a7411b284304",
+   "kind": "unnamed_event",
+   "measured": "133486 logs from 1 contracts",
+   "rank": 36,
+   "size_share": 0.00093,
+   "source": "census",
+   "subject": "0x70edcc3530837a58dd423063997ada67c212d60e3841eb6a81f38db7ef0da06d"
+  },
+  {
+   "days_seen": 7.65,
+   "id": "cd03c0e0f005",
+   "kind": "unnamed_event",
+   "measured": "133485 logs from 1 contracts",
+   "rank": 37,
+   "size_share": 0.00093,
+   "source": "census",
+   "subject": "0x1eb3dc416a378d6df58cc0c12c1dfab14bec0941f50122bdf5696a1f69e82f27"
+  },
+  {
+   "days_seen": 7.14,
    "id": "4953d3910fbb",
    "kind": "unnamed_event",
-   "measured": "23082 logs from 19 contracts",
+   "measured": "128160 logs from 31 contracts",
    "rank": 38,
-   "size_share": 0.00104,
+   "size_share": 0.00089,
    "source": "census",
    "subject": "0xcad09799f755048f0fd388c6b2fcc8e0cebefd15756c6903522cc2a95f661f70"
   },
   {
-   "days_seen": 0.99,
-   "id": "a2f22e280c24",
+   "days_seen": 7.87,
+   "id": "68f07c2ff8b3",
    "kind": "unnamed_event",
-   "measured": "22648 logs from 1 contracts",
+   "measured": "125191 logs from 1 contracts",
    "rank": 39,
-   "size_share": 0.00102,
+   "size_share": 0.00087,
    "source": "census",
-   "subject": "0xa615c02f8d2e4ed8939b003560300a25353b784438c2efaa9f20fb5303a4d6d8"
-  },
-  {
-   "days_seen": 0.99,
-   "id": "ad0c6db73391",
-   "kind": "unnamed_event",
-   "measured": "22648 logs from 1 contracts",
-   "rank": 40,
-   "size_share": 0.00102,
-   "source": "census",
-   "subject": "0x5603e2fc9937b376c2db1cb5e22c4c014732266ee2d1a5976fc7cb90689e6756"
+   "subject": "0xb90adddaa78c99e54f4c9f449da07842dae841d03b142633de73b9b1b762d4d5"
   }
  ]
 }
