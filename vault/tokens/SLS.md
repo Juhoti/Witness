@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: SLS
-updated: 2026-10-13T07:24:17Z
+updated: 2026-10-13T13:25:46Z
 tags: [token]
 address: 0x285b231728c7E4333799183DF1094d775246a535
 paused: False
-source: scorecard 0c3ee80bbcc54723
-source_ts: 1791876169
+source: scorecard 96ba00175fad4c98
+source_ts: 1791897773
 ---
 # SLS
 
@@ -21,23 +21,23 @@ address: `0x285b231728c7E4333799183DF1094d775246a535`
 Markets: none
 
 ## revisions
-- 2026-10-13T07:24:17Z sha:c6a9a3d0b8de
-- 2026-10-13T07:09:14Z sha:c6a9a3d0b8de
-- 2026-10-13T06:55:27Z sha:c6a9a3d0b8de
-- 2026-10-13T06:39:14Z sha:c6a9a3d0b8de
-- 2026-10-13T06:24:18Z sha:c6a9a3d0b8de
-- 2026-10-13T06:09:37Z sha:c6a9a3d0b8de
-- 2026-10-13T05:54:19Z sha:c6a9a3d0b8de
-- 2026-10-13T05:40:24Z sha:c6a9a3d0b8de
-- 2026-10-13T05:25:54Z sha:c6a9a3d0b8de
-- 2026-10-13T05:09:28Z sha:c6a9a3d0b8de
-- 2026-10-13T04:54:17Z sha:c6a9a3d0b8de
-- 2026-10-13T04:40:11Z sha:c6a9a3d0b8de
-- 2026-10-13T04:24:45Z sha:c6a9a3d0b8de
-- 2026-10-13T04:09:18Z sha:c6a9a3d0b8de
-- 2026-10-13T03:54:44Z sha:c6a9a3d0b8de
-- 2026-10-13T03:39:46Z sha:c6a9a3d0b8de
-- 2026-10-13T03:24:42Z sha:c6a9a3d0b8de
-- 2026-10-13T03:09:32Z sha:c6a9a3d0b8de
-- 2026-10-13T02:54:40Z sha:c6a9a3d0b8de
-- 2026-10-13T02:39:40Z sha:c6a9a3d0b8de
+- 2026-10-13T13:25:46Z sha:c6a9a3d0b8de
+- 2026-10-13T13:11:04Z sha:c6a9a3d0b8de
+- 2026-10-13T12:55:50Z sha:c6a9a3d0b8de
+- 2026-10-13T12:40:47Z sha:c6a9a3d0b8de
+- 2026-10-13T12:26:01Z sha:c6a9a3d0b8de
+- 2026-10-13T12:10:38Z sha:c6a9a3d0b8de
+- 2026-10-13T11:56:47Z sha:c6a9a3d0b8de
+- 2026-10-13T11:41:04Z sha:c6a9a3d0b8de
+- 2026-10-13T11:25:26Z sha:c6a9a3d0b8de
+- 2026-10-13T11:10:09Z sha:c6a9a3d0b8de
+- 2026-10-13T10:55:04Z sha:c6a9a3d0b8de
+- 2026-10-13T10:40:12Z sha:c6a9a3d0b8de
+- 2026-10-13T10:24:57Z sha:c6a9a3d0b8de
+- 2026-10-13T10:09:49Z sha:c6a9a3d0b8de
+- 2026-10-13T09:55:04Z sha:c6a9a3d0b8de
+- 2026-10-13T09:40:03Z sha:c6a9a3d0b8de
+- 2026-10-13T09:25:00Z sha:c6a9a3d0b8de
+- 2026-10-13T09:09:53Z sha:c6a9a3d0b8de
+- 2026-10-13T08:54:46Z sha:c6a9a3d0b8de
+- 2026-10-13T08:39:35Z sha:c6a9a3d0b8de
