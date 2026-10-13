@@ -29,10 +29,17 @@ def _opportunity():
     return opportunity.publish(opportunity.build())[:16]
 
 
+def _watch():
+    from products.depeg_watch import watch
+    from products.token_check import bot
+    return watch.run(send=bot.broadcast)
+
+
 # name, every N minutes, function. Order matters within one pass: measure, then map, then act on the map.
 TASKS = [
     ("census_ingest", 10, lambda: census.ingest(minutes=1.5)),
     ("intent_sample", 10, lambda: {k: v for k, v in intent.sample(pages=90).items() if k != "blocks"}),
+    ("watch", 10, _watch),
     ("census_compact", 1440, lambda: census.compact(vacuum=time.gmtime().tm_wday == 6)),
     ("census_classify", 60, lambda: {"classified": census.classify(800), "events_named": census.name_events()}),
     ("prices", 60, _prices),

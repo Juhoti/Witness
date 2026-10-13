@@ -13,6 +13,7 @@ so it can be checked), the method, and that it is a measurement and not an oracl
   feed/warnings.json     tokens whose holders cannot sell, by simulation
   feed/projects.json     projects on the chain measured beside their claims
   feed/opportunities.json  the ranked map of gaps, risks and the unexplained
+  feed/watch.json        live levels of the de-peg and risky-market watch (written by the watch itself)
 
     python -m agent.feed       # rebuild feed/ from the latest record
 """
