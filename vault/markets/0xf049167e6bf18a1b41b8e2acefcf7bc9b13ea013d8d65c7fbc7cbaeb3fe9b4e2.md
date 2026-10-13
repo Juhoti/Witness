@@ -1,12 +1,12 @@
 ---
 kind: markets
 name: 0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2
-updated: 2026-10-13T01:11:29Z
+updated: 2026-10-13T07:24:17Z
 tags: [market]
 collateral: `NBIS`
 utilization: 0
-source: scorecard 30f47f53b7f912fa
-source_ts: 1791853665
+source: scorecard 0c3ee80bbcc54723
+source_ts: 1791876169
 ---
 # 0xf049167e6bf18a1b41b8e2acefcf7bc9b13ea013d8d65c7fbc7cbaeb3fe9b4e2
 
@@ -14,29 +14,29 @@ Read from chain and third-party APIs by the scanners. Values in backticks are qu
 
 collateral: [[tokens/NBIS]] · loan: `USDG` · lltv: `625000000000000000`
 
-- supply_usd: 125.00426431818425
+- supply_usd: 125.03621494639013
 - borrow_usd: 0
 - utilization: 0
 - oracle: `0xAD95eFBCF91Af709A7Bf8cB6Ee5F99F4547187F8`
 
 ## revisions
-- 2026-10-13T01:11:29Z sha:f042b443ad62
-- 2026-10-13T00:55:23Z sha:a34f7f2dd722
-- 2026-10-13T00:39:37Z sha:019ae9a9f172
-- 2026-10-13T00:26:18Z sha:11787cd93c0b
-- 2026-10-13T00:11:52Z sha:35357b278ac9
-- 2026-10-12T23:58:59Z sha:b510d6690893
-- 2026-10-12T23:41:31Z sha:4912719b514d
-- 2026-10-12T23:27:11Z sha:a02eb923711d
-- 2026-10-12T23:11:54Z sha:ea680ba64ae5
-- 2026-10-12T22:54:33Z sha:511e9989c880
-- 2026-10-12T22:41:00Z sha:6e007bcd5350
-- 2026-10-12T22:25:07Z sha:a2b19c27f77a
-- 2026-10-12T22:13:03Z sha:212b6e0de77e
-- 2026-10-12T21:58:39Z sha:17aebc2fb519
-- 2026-10-12T21:43:33Z sha:85ea48ebb284
-- 2026-10-12T21:25:50Z sha:7fefa6b535ff
-- 2026-10-12T21:11:44Z sha:3644fc7d5128
-- 2026-10-12T20:57:06Z sha:aafd5c94d84c
-- 2026-10-12T20:43:04Z sha:c290ebca47be
-- 2026-10-12T20:28:06Z sha:0598755ab58b
+- 2026-10-13T07:24:17Z sha:bd80e49bfee1
+- 2026-10-13T07:09:14Z sha:9058380d6494
+- 2026-10-13T06:55:27Z sha:daafeba78644
+- 2026-10-13T06:39:14Z sha:a086ab95dde9
+- 2026-10-13T06:24:18Z sha:98b212e1856c
+- 2026-10-13T06:09:37Z sha:5ff0ae14a28a
+- 2026-10-13T05:54:19Z sha:2b350bfd9528
+- 2026-10-13T05:40:24Z sha:997ec2bd294d
+- 2026-10-13T05:25:54Z sha:e3e1c83ed318
+- 2026-10-13T05:09:28Z sha:470788148e32
+- 2026-10-13T04:54:17Z sha:9b52504b87a7
+- 2026-10-13T04:40:11Z sha:d6a79c7b684b
+- 2026-10-13T04:24:45Z sha:ed4a999a90eb
+- 2026-10-13T04:09:19Z sha:e3bd323a601c
+- 2026-10-13T03:54:44Z sha:5e43206cbc53
+- 2026-10-13T03:39:46Z sha:1219934313c1
+- 2026-10-13T03:24:42Z sha:b0ac79ed6788
+- 2026-10-13T03:09:32Z sha:67db54a4c132
+- 2026-10-13T02:54:40Z sha:7da47c1f147c
+- 2026-10-13T02:39:41Z sha:eafddfe9d819

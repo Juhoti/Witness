@@ -1,12 +1,12 @@
 ---
 kind: tokens
 name: FLNC
-updated: 2026-10-13T01:11:29Z
+updated: 2026-10-13T07:24:17Z
 tags: [token]
 address: 0x282e87451E10fA6679BC7D76C69BE44cD3fC777C
 paused: False
-source: scorecard 30f47f53b7f912fa
-source_ts: 1791853665
+source: scorecard 0c3ee80bbcc54723
+source_ts: 1791876169
 ---
 # FLNC
 
@@ -21,23 +21,23 @@ address: `0x282e87451E10fA6679BC7D76C69BE44cD3fC777C`
 Markets: none
 
 ## revisions
-- 2026-10-13T01:11:29Z sha:0da30cff7cc0
-- 2026-10-13T00:55:23Z sha:0da30cff7cc0
-- 2026-10-13T00:39:37Z sha:0da30cff7cc0
-- 2026-10-13T00:26:18Z sha:0da30cff7cc0
-- 2026-10-13T00:11:52Z sha:0da30cff7cc0
-- 2026-10-12T23:58:59Z sha:0da30cff7cc0
-- 2026-10-12T23:41:31Z sha:0da30cff7cc0
-- 2026-10-12T23:27:10Z sha:0da30cff7cc0
-- 2026-10-12T23:11:54Z sha:0da30cff7cc0
-- 2026-10-12T22:54:33Z sha:0da30cff7cc0
-- 2026-10-12T22:41:00Z sha:0da30cff7cc0
-- 2026-10-12T22:25:07Z sha:0da30cff7cc0
-- 2026-10-12T22:13:03Z sha:0da30cff7cc0
-- 2026-10-12T21:58:39Z sha:0da30cff7cc0
-- 2026-10-12T21:43:33Z sha:0da30cff7cc0
-- 2026-10-12T21:25:50Z sha:0da30cff7cc0
-- 2026-10-12T21:11:44Z sha:0da30cff7cc0
-- 2026-10-12T20:57:06Z sha:0da30cff7cc0
-- 2026-10-12T20:43:04Z sha:0da30cff7cc0
-- 2026-10-12T20:28:06Z sha:0da30cff7cc0
+- 2026-10-13T07:24:17Z sha:0da30cff7cc0
+- 2026-10-13T07:09:14Z sha:0da30cff7cc0
+- 2026-10-13T06:55:27Z sha:0da30cff7cc0
+- 2026-10-13T06:39:14Z sha:0da30cff7cc0
+- 2026-10-13T06:24:18Z sha:0da30cff7cc0
+- 2026-10-13T06:09:37Z sha:0da30cff7cc0
+- 2026-10-13T05:54:19Z sha:0da30cff7cc0
+- 2026-10-13T05:40:24Z sha:0da30cff7cc0
+- 2026-10-13T05:25:54Z sha:0da30cff7cc0
+- 2026-10-13T05:09:28Z sha:0da30cff7cc0
+- 2026-10-13T04:54:17Z sha:0da30cff7cc0
+- 2026-10-13T04:40:11Z sha:0da30cff7cc0
+- 2026-10-13T04:24:45Z sha:0da30cff7cc0
+- 2026-10-13T04:09:18Z sha:0da30cff7cc0
+- 2026-10-13T03:54:44Z sha:0da30cff7cc0
+- 2026-10-13T03:39:46Z sha:0da30cff7cc0
+- 2026-10-13T03:24:42Z sha:0da30cff7cc0
+- 2026-10-13T03:09:32Z sha:0da30cff7cc0
+- 2026-10-13T02:54:40Z sha:0da30cff7cc0
+- 2026-10-13T02:39:40Z sha:0da30cff7cc0
