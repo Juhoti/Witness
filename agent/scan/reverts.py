@@ -16,11 +16,11 @@ log = logging.getLogger(__name__)
 
 
 def _get(client: httpx.Client, url: str, params: dict, tries: int = 5) -> httpx.Response:
-    """GET with a short backoff on rate limits and transport errors."""
+    """GET with a short backoff on rate limits, server errors and transport errors."""
     for i in range(tries):
         try:
             r = client.get(url, params=params)
-            if r.status_code != 429 or i == tries - 1:
+            if not (r.status_code == 429 or r.status_code >= 500) or i == tries - 1:
                 return r
         except httpx.TransportError:
             if i == tries - 1:
@@ -47,13 +47,20 @@ def scan(pages: int = 40) -> dict:
     headers = {"x-api-key": settings.BLOCKSCOUT_API_KEY} if settings.BLOCKSCOUT_API_KEY else {}
     clusters: dict[tuple, dict] = defaultdict(lambda: {"count": 0, "example": None})
     params: dict = {"filter": "validated"}
-    seen = failed = 0
+    seen = failed = pages_read = 0
     oldest_block = None
+    stopped = None
     try:
         with httpx.Client(timeout=30, headers=headers) as client:
             for _ in range(pages):
-                r = _get(client, f"{base}/transactions", params)
+                r = _get(client, f"{base}/transactions", params, tries=3 if pages_read else 5)
+                if r.status_code >= 500 and pages_read:
+                    # Blockscout fails deep pages under load. The pages already read are a valid,
+                    # smaller sample; record where it stopped rather than discard it.
+                    stopped = f"page {pages_read + 1}: HTTP {r.status_code}"
+                    break
                 r.raise_for_status()
+                pages_read += 1
                 j = r.json()
                 for tx in j.get("items", []):
                     seen += 1
@@ -76,5 +83,9 @@ def scan(pages: int = 40) -> dict:
         return {"clusters": 0, "items": [], "error": str(e)}
     items = [{"to": k[0], "reason": k[1], **v} for k, v in clusters.items()]
     items.sort(key=lambda x: -x["count"])
-    return {"clusters": len(items), "items": items[:50], "sampled_txs": seen, "failed_txs": failed,
-            "oldest_block_sampled": oldest_block}
+    out = {"clusters": len(items), "items": items[:50], "sampled_txs": seen, "failed_txs": failed,
+           "oldest_block_sampled": oldest_block, "pages_read": pages_read}
+    if stopped:
+        out["partial"] = stopped
+        log.info("reverts sample cut short at %s after %d pages", stopped, pages_read)
+    return out
