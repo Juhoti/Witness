@@ -137,3 +137,39 @@ def test_reviews_apply_to_one_market_and_finding(tmp_path, monkeypatch):
     assert not review.exists("0xm", "constant")
     review.publish("0xm", "fixed_with_delayed_backup", "owner", "read the verified source")
     assert review.exists("0xm", "fixed_with_delayed_backup") and not review.exists("0xm", "constant") and not review.exists("0xother", "fixed_with_delayed_backup")
+
+
+def test_reverts_keeps_a_partial_sample_when_a_deep_page_fails(monkeypatch):
+    from agent.scan import reverts
+    pages = [{"items": [{"status": "error", "to": {"hash": "0xa"}, "hash": "0x1", "block_number": 9}], "next_page_params": {"p": 2}},
+             None]
+    class R:
+        def __init__(self, code, body): self.status_code, self._b = code, body
+        def json(self): return self._b
+        def raise_for_status(self):
+            if self.status_code >= 400: raise RuntimeError(self.status_code)
+    calls = []
+    def fake_get(client, url, params, tries=5):
+        calls.append(params)
+        return R(200, pages[0]) if len(calls) == 1 else R(500, None)
+    monkeypatch.setattr(reverts, "_get", fake_get)
+    out = reverts.scan(pages=5)
+    assert "error" not in out and out["clusters"] == 1 and out["pages_read"] == 1 and out["partial"].startswith("page 2")
+    calls.clear(); pages[0] = None
+    monkeypatch.setattr(reverts, "_get", lambda *a, **k: R(500, None))
+    assert "error" in reverts.scan(pages=5)                      # nothing read at all is still a failure
+
+
+def test_census_compaction_keeps_totals_and_bounds_rows(tmp_path, monkeypatch):
+    from agent import census
+    monkeypatch.setattr(census, "DB_PATH", tmp_path / "chain.db")
+    con = census.db()
+    rows = [(b, "0xa", "0xt", 1) for b in range(0, 24 * 20)]           # 20 days of hourly counts
+    con.executemany("INSERT INTO activity VALUES (?,?,?,?)", rows); con.commit()
+    out = census.compact()
+    left = con.execute("SELECT count(*), sum(n), min(bucket) FROM activity").fetchone()
+    assert out["rows_before"] == 480
+    # newest bucket 479: hours 431-479 stay hourly (49 rows); older hours fold into their day's first
+    # hour; days that start before 479 - 14*24 = 143 are dropped, leaving day buckets 144..408 (12 rows)
+    assert left == (61, 11 * 24 + 23 + 49, 144)
+    assert census.compact()["rows_after"] == 61                          # running it again changes nothing

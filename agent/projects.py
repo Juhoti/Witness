@@ -78,7 +78,9 @@ def measure_contract(c: dict, total_logs: int) -> dict:
                      "fully_diluted_usd": (px["price_usdg"] * out["total_supply"]) if (px and out.get("total_supply")) else None}
     con = census.db()
     row = con.execute("SELECT logs, first_block, last_block FROM contracts WHERE address=?", (a,)).fetchone()
-    out["activity"] = {"logs_in_census": row[0] if row else 0, "share_of_chain_logs": round((row[0] if row else 0) / max(total_logs, 1), 6),
+    window = con.execute("SELECT coalesce(sum(n),0) FROM activity WHERE address=?", (a,)).fetchone()[0]
+    out["activity"] = {"logs_in_census": row[0] if row else 0, "logs_in_window": window,
+                       "share_of_chain_logs": round(window / max(total_logs, 1), 6),
                        "first_block_seen": row[1] if row else None, "last_block_seen": row[2] if row else None}
     return out
 
