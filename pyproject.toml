@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "py-solc-x>=2"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
