@@ -262,4 +262,13 @@ def scan() -> dict:
         return {"pairs": 0, "items": [], "note": "uniswap addresses not set; scanner idle"}
     window = max(6_000, min(36_000, settings.SCAN_EVERY_MINUTES * BLOCKS_PER_MINUTE))
     latest = chain.head()
-    return report(latest - window, latest)
+    out = report(latest - window, latest)
+    # Every token ever priced was riding along in each scorecard (over 1 MB of a 1.7 MB file, mostly
+    # launchpad tokens marked stale). Readers of the scorecard only use stock-token prices; the full
+    # set is published hourly in ledger/prices.
+    st = settings.STATE_DIR / "stock_tokens.json"
+    if st.exists():
+        keep = {a.lower() for a in json.loads(st.read_text()).get("tokens", [])}
+        out["prices_usdg"] = {a: v for a, v in out["prices_usdg"].items() if a.lower() in keep}
+        out["prices_scope"] = "stock tokens on the verified registry; all assets in ledger/prices"
+    return out
