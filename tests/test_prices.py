@@ -15,3 +15,12 @@ def test_price_from_sqrt_price_both_orderings():
     # USDG is token0, token is token1: raw ratio = 1e18 / (250 * 1e6)
     sp = int((10 ** 18 / (250 * 10 ** 6)) ** 0.5 * Q96)
     assert abs(usdg_per_token(sp, False, 18) - 250) < 1e-6
+
+
+def test_tick_price_matches_sqrt_price():
+    from agent.prices import tick_to_price, usdg_per_token
+    import math
+    tick = math.log(250 * 10 ** 6 / 10 ** 18, 1.0001)          # token0 = 18-dec token, token1 = USDG
+    assert abs(tick_to_price(tick, True, 18) - 250) < 1e-6
+    sp = int((1.0001 ** tick) ** 0.5 * Q96)
+    assert abs(tick_to_price(tick, True, 18) - usdg_per_token(sp, True, 18)) < 1e-6

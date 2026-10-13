@@ -119,7 +119,7 @@ def check(text: str) -> str:
     p = next((v for k, v in pr.items() if k.lower() == a), None)
     if p and p.get("price_usdg"):
         solid = ("from one pool only" if p.get("pools") == 1 else f"from {p['pools']} pools")
-        extra = f"; 24h median {_usd(p['median_24h'])}" if p.get("median_24h") else ""
+        extra = f"; time-averaged {_usd(p['robust_price'])}" if p.get("robust_price") else ""
         lines.append(f"Witness price {_usd(p['price_usdg'])} USDG, {solid}{extra}.")
     if x:
         feed = "yes" if x.get("chainlink_feed") else "no"

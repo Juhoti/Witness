@@ -14,6 +14,7 @@ there is no manipulation resistance beyond the liquidity weighting and no promis
 """
 from __future__ import annotations
 import json
+import statistics
 import logging
 import time
 from web3 import Web3
@@ -24,7 +25,8 @@ log = logging.getLogger("prices")
 OUT_DIR = settings.LEDGER_DIR / "prices"
 FEES = (100, 500, 3000, 10000)
 Q96 = 2 ** 96
-METHOD = "liquidity-weighted median of Uniswap v3+v4 USDG pool spot prices at one block; Chainlink feed shown beside it"
+METHOD = ("spot: liquidity-weighted median of Uniswap v3+v4 USDG pool prices at one block; robust: median of Witness's hourly spot "
+          "samples over 24 h, or a 30-minute v3 TWAP when fewer samples exist; Chainlink feed shown beside both")
 
 
 def _sel(sig: str) -> bytes:
@@ -69,6 +71,61 @@ def _assets(card: dict) -> dict[str, dict]:
     return out
 
 
+TWAP_S = 1800
+MIN_SAMPLES = 12
+
+
+def tick_to_price(avg_tick: float, token_is_0: bool, dec_token: int, dec_usdg: int = 6) -> float:
+    """USDG per token from an average tick. 1.0001**tick is token1 per token0 in raw units."""
+    d0, d1 = (dec_token, dec_usdg) if token_is_0 else (dec_usdg, dec_token)
+    one_per_zero = 1.0001 ** avg_tick * 10 ** (d0 - d1)
+    return one_per_zero if token_is_0 else 1 / one_per_zero
+
+
+def twap_v3(pools: dict, assets: dict, usdg: str, block: int) -> dict:
+    """30-minute time-weighted price from each asset's deepest v3 USDG pool whose oracle keeps enough
+    history. A pool that cannot answer observe() for the window is skipped, not guessed."""
+    deepest = {}
+    for a, ps in pools.items():
+        v3 = sorted((p for p in ps if p["venue"] == "v3"), key=lambda p: -p["liquidity"])
+        if v3:
+            deepest[a] = v3[0]
+    codec = chain.w3().codec
+    sel = _sel("observe(uint32[])")
+    order = sorted(deepest)
+    raws = chain.multicall([(deepest[a]["pool"], sel + codec.encode(["uint32[]"], [[TWAP_S, 0]])) for a in order], block=block)
+    out = {}
+    for a, r in zip(order, raws):
+        if not r:
+            continue
+        try:
+            ticks, _ = codec.decode(["int56[]", "uint160[]"], r)
+        except Exception:
+            continue
+        avg = (ticks[1] - ticks[0]) / TWAP_S
+        out[a] = {"price": tick_to_price(avg, a.lower() < usdg.lower(), assets[a]["decimals"]), "pool": deepest[a]["pool"],
+                  "window_s": TWAP_S, "pool_liquidity": deepest[a]["liquidity"]}
+    return out
+
+
+def sample_history(hours: int = 24) -> dict[str, list[float]]:
+    """Witness's own hourly spot prices over the last `hours`, from the published price sets."""
+    files = sorted(OUT_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime)[-hours:] if OUT_DIR.exists() else []
+    cutoff = time.time() - hours * 3600
+    hist: dict[str, list[float]] = {}
+    for f in files:
+        try:
+            d = json.loads(f.read_bytes())
+        except ValueError:
+            continue
+        if d.get("ts", 0) < cutoff:
+            continue
+        for addr, it in (d.get("items") or {}).items():
+            if it.get("price_usdg"):
+                hist.setdefault(addr.lower(), []).append(it["price_usdg"])
+    return hist
+
+
 def measure(card: dict) -> dict:
     usdg = Web3.to_checksum_address(settings.CHAIN["tokens"]["usdg"])
     factory, state_view = settings.CHAIN["uniswap"]["v3_factory"], settings.CHAIN["uniswap"]["v4_state_view"]
@@ -105,6 +162,8 @@ def measure(card: dict) -> dict:
                                             "price": usdg_per_token(sp, m["token0"].lower() == a.lower(), assets[a]["decimals"])})
     feeds = (card.get("feeds") or {}).get("tokens") or feeds_scan.scan(card)["tokens"]
     now = int(time.time())
+    twap = twap_v3(pools, assets, usdg, block)
+    history = sample_history()
     items = {}
     for a in addrs:
         ps = pools.get(a, [])
@@ -113,7 +172,20 @@ def measure(card: dict) -> dict:
         heavy = [p["price"] for p in ps if p["liquidity"] / total >= 0.10]
         feed = feeds.get(assets[a]["symbol"]) if assets[a]["kind"] == "stock_token" else None
         fp = feed.get("price_usd") if feed else None
+        hist = history.get(a.lower(), [])
+        med = statistics.median(hist) if len(hist) >= MIN_SAMPLES else None
+        recent = hist[-6:]
+        med6 = statistics.median(recent) if len(recent) >= 4 else None
+        tw = twap.get(a)
+        # A robust price must resist a one-block push and still follow a real fall: the on-chain
+        # 30-minute average first, else the median of the last six hourly samples. The 24-hour
+        # median is context only; it lags a falling market by several percent.
+        robust, robust_src = ((tw["price"], "30-minute TWAP, Uniswap v3") if tw else
+                              (med6, f"median of the last {len(recent)} hourly samples") if med6 else (None, None))
         items[a] = {
+            "twap_30m_v3": tw, "median_6h": med6, "median_24h": med, "median_24h_samples": len(hist),
+            "robust_price": robust, "robust_source": robust_src,
+            "spot_vs_robust": round(ref / robust - 1, 6) if (ref and robust) else None,
             "symbol": assets[a]["symbol"], "kind": assets[a]["kind"], "price_usdg": ref, "pools": len(ps),
             "pool_spread": round(max(heavy) / min(heavy) - 1, 6) if len(heavy) > 1 else (0.0 if heavy else None),
             "top_pool_share": round(max((p["liquidity"] for p in ps), default=0) / total, 4) if ps else None,
